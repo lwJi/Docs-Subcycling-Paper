@@ -1,0 +1,1590 @@
+# CarpetX Metadata
+---
+!carpetx-metadata-1.0.0
+nghostzones: [3, 3, 3]
+iteration: 144
+time: 0.750000000000001
+delta_time: 0.005208333333333333
+ghext: !ghext-2.0.0
+  globaldata: !globaldata-1.0.0
+    arraygroupdata:
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::ACTIVE
+          numvars: 3
+          varnames: ["active[0]", "active[1]", "active[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 1
+            - 1
+            - 1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::NUM_LEVELS
+          numvars: 3
+          varnames: ["num_levels[0]", "num_levels[1]", "num_levels[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 3
+            - 1
+            - 1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::POSITIONS
+          numvars: 9
+          varnames: ["position_x[0]", "position_x[1]", "position_x[2]", "position_y[0]", "position_y[1]", "position_y[2]", "position_z[0]", "position_z[1]", "position_z[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::RADII
+          numvars: 3
+          varnames: ["radius[0]", "radius[1]", "radius[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+        data:
+          -
+            - -1
+            - 1
+            - 0.5
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::RADIIXYZ
+          numvars: 9
+          varnames: ["radius_x[0]", "radius_x[1]", "radius_x[2]", "radius_y[0]", "radius_y[1]", "radius_y[2]", "radius_z[0]", "radius_z[1]", "radius_z[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+        data:
+          -
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+  patchdata:
+    - !patchdata-1.0.0
+      patch: 0
+      amrcore: !amrcore-1.0.0
+        maxLevel: 2
+        finestLevel: 2
+        geometry:
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [95, 95, 95]}
+            is_periodic: [1, 1, 1]
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [191, 191, 191]}
+            is_periodic: [1, 1, 1]
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [383, 383, 383]}
+            is_periodic: [1, 1, 1]
+        distributionMapping:
+          - !distributionmapping-1.0.0
+            processorMap: [3, 3, 0, 3, 3, 0, 0, 1, 1, 3, 3, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2]
+          - !distributionmapping-1.0.0
+            processorMap: [0, 2, 1, 1, 3, 3, 3, 3]
+          - !distributionmapping-1.0.0
+            processorMap: [2, 0, 1, 1, 3, 3, 3, 3]
+        boxArray:
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [0, 0, 0], big: [31, 31, 31]}
+            - !box-1.0.0 {small: [32, 0, 0], big: [63, 31, 31]}
+            - !box-1.0.0 {small: [64, 0, 0], big: [95, 31, 31]}
+            - !box-1.0.0 {small: [0, 32, 0], big: [31, 63, 31]}
+            - !box-1.0.0 {small: [32, 32, 0], big: [63, 63, 31]}
+            - !box-1.0.0 {small: [64, 32, 0], big: [95, 63, 31]}
+            - !box-1.0.0 {small: [0, 64, 0], big: [31, 95, 31]}
+            - !box-1.0.0 {small: [32, 64, 0], big: [63, 95, 31]}
+            - !box-1.0.0 {small: [64, 64, 0], big: [95, 95, 31]}
+            - !box-1.0.0 {small: [0, 0, 32], big: [31, 31, 63]}
+            - !box-1.0.0 {small: [32, 0, 32], big: [63, 31, 63]}
+            - !box-1.0.0 {small: [64, 0, 32], big: [95, 31, 63]}
+            - !box-1.0.0 {small: [0, 32, 32], big: [31, 63, 63]}
+            - !box-1.0.0 {small: [32, 32, 32], big: [63, 63, 63]}
+            - !box-1.0.0 {small: [64, 32, 32], big: [95, 63, 63]}
+            - !box-1.0.0 {small: [0, 64, 32], big: [31, 95, 63]}
+            - !box-1.0.0 {small: [32, 64, 32], big: [63, 95, 63]}
+            - !box-1.0.0 {small: [64, 64, 32], big: [95, 95, 63]}
+            - !box-1.0.0 {small: [0, 0, 64], big: [31, 31, 95]}
+            - !box-1.0.0 {small: [32, 0, 64], big: [63, 31, 95]}
+            - !box-1.0.0 {small: [64, 0, 64], big: [95, 31, 95]}
+            - !box-1.0.0 {small: [0, 32, 64], big: [31, 63, 95]}
+            - !box-1.0.0 {small: [32, 32, 64], big: [63, 63, 95]}
+            - !box-1.0.0 {small: [64, 32, 64], big: [95, 63, 95]}
+            - !box-1.0.0 {small: [0, 64, 64], big: [31, 95, 95]}
+            - !box-1.0.0 {small: [32, 64, 64], big: [63, 95, 95]}
+            - !box-1.0.0 {small: [64, 64, 64], big: [95, 95, 95]}
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [72, 72, 72], big: [103, 103, 103]}
+            - !box-1.0.0 {small: [104, 72, 72], big: [119, 103, 103]}
+            - !box-1.0.0 {small: [72, 104, 72], big: [103, 119, 103]}
+            - !box-1.0.0 {small: [104, 104, 72], big: [119, 119, 103]}
+            - !box-1.0.0 {small: [72, 72, 104], big: [103, 103, 119]}
+            - !box-1.0.0 {small: [104, 72, 104], big: [119, 103, 119]}
+            - !box-1.0.0 {small: [72, 104, 104], big: [103, 119, 119]}
+            - !box-1.0.0 {small: [104, 104, 104], big: [119, 119, 119]}
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [168, 168, 168], big: [199, 199, 199]}
+            - !box-1.0.0 {small: [200, 168, 168], big: [215, 199, 199]}
+            - !box-1.0.0 {small: [168, 200, 168], big: [199, 215, 199]}
+            - !box-1.0.0 {small: [200, 200, 168], big: [215, 215, 199]}
+            - !box-1.0.0 {small: [168, 168, 200], big: [199, 199, 215]}
+            - !box-1.0.0 {small: [200, 168, 200], big: [215, 199, 215]}
+            - !box-1.0.0 {small: [168, 200, 200], big: [199, 215, 215]}
+            - !box-1.0.0 {small: [200, 200, 200], big: [215, 215, 215]}
+      leveldata:
+        - !leveldata-1.1.0
+          patch: 0
+          level: 0
+          is_subcycling_level: false
+          iteration: !rational-1.0.0 [144, 1]
+          delta_iteration: !rational-1.0.0 [1, 1]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [0, 0, 0], big: [31, 31, 31]}
+              - !box-1.0.0 {small: [32, 0, 0], big: [63, 31, 31]}
+              - !box-1.0.0 {small: [64, 0, 0], big: [95, 31, 31]}
+              - !box-1.0.0 {small: [0, 32, 0], big: [31, 63, 31]}
+              - !box-1.0.0 {small: [32, 32, 0], big: [63, 63, 31]}
+              - !box-1.0.0 {small: [64, 32, 0], big: [95, 63, 31]}
+              - !box-1.0.0 {small: [0, 64, 0], big: [31, 95, 31]}
+              - !box-1.0.0 {small: [32, 64, 0], big: [63, 95, 31]}
+              - !box-1.0.0 {small: [64, 64, 0], big: [95, 95, 31]}
+              - !box-1.0.0 {small: [0, 0, 32], big: [31, 31, 63]}
+              - !box-1.0.0 {small: [32, 0, 32], big: [63, 31, 63]}
+              - !box-1.0.0 {small: [64, 0, 32], big: [95, 31, 63]}
+              - !box-1.0.0 {small: [0, 32, 32], big: [31, 63, 63]}
+              - !box-1.0.0 {small: [32, 32, 32], big: [63, 63, 63]}
+              - !box-1.0.0 {small: [64, 32, 32], big: [95, 63, 63]}
+              - !box-1.0.0 {small: [0, 64, 32], big: [31, 95, 63]}
+              - !box-1.0.0 {small: [32, 64, 32], big: [63, 95, 63]}
+              - !box-1.0.0 {small: [64, 64, 32], big: [95, 95, 63]}
+              - !box-1.0.0 {small: [0, 0, 64], big: [31, 31, 95]}
+              - !box-1.0.0 {small: [32, 0, 64], big: [63, 31, 95]}
+              - !box-1.0.0 {small: [64, 0, 64], big: [95, 31, 95]}
+              - !box-1.0.0 {small: [0, 32, 64], big: [31, 63, 95]}
+              - !box-1.0.0 {small: [32, 32, 64], big: [63, 63, 95]}
+              - !box-1.0.0 {small: [64, 32, 64], big: [95, 63, 95]}
+              - !box-1.0.0 {small: [0, 64, 64], big: [31, 95, 95]}
+              - !box-1.0.0 {small: [32, 64, 64], big: [63, 95, 95]}
+              - !box-1.0.0 {small: [64, 64, 64], big: [95, 95, 95]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETX::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetX::CarpetX_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetX::CarpetX_InitError: Mark output variables as valid"
+              patch: 0
+              level: 0
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_RHS: TestSubcyclingMC2::TestSubcyclingMC2_RHS: Mark output variables as valid"
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_RHS: TestSubcyclingMC2::TestSubcyclingMC2_RHS: Mark output variables as valid"
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+        - !leveldata-1.1.0
+          patch: 0
+          level: 1
+          is_subcycling_level: false
+          iteration: !rational-1.0.0 [144, 1]
+          delta_iteration: !rational-1.0.0 [1, 1]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [72, 72, 72], big: [103, 103, 103]}
+              - !box-1.0.0 {small: [104, 72, 72], big: [119, 103, 103]}
+              - !box-1.0.0 {small: [72, 104, 72], big: [103, 119, 103]}
+              - !box-1.0.0 {small: [104, 104, 72], big: [119, 119, 103]}
+              - !box-1.0.0 {small: [72, 72, 104], big: [103, 103, 119]}
+              - !box-1.0.0 {small: [104, 72, 104], big: [119, 103, 119]}
+              - !box-1.0.0 {small: [72, 104, 104], big: [103, 119, 119]}
+              - !box-1.0.0 {small: [104, 104, 104], big: [119, 119, 119]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETX::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetX::CarpetX_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetX::CarpetX_InitError: Mark output variables as valid"
+              patch: 0
+              level: 1
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_RHS: TestSubcyclingMC2::TestSubcyclingMC2_RHS: Mark output variables as valid"
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_RHS: TestSubcyclingMC2::TestSubcyclingMC2_RHS: Mark output variables as valid"
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+        - !leveldata-1.1.0
+          patch: 0
+          level: 2
+          is_subcycling_level: false
+          iteration: !rational-1.0.0 [144, 1]
+          delta_iteration: !rational-1.0.0 [1, 1]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [168, 168, 168], big: [199, 199, 199]}
+              - !box-1.0.0 {small: [200, 168, 168], big: [215, 199, 199]}
+              - !box-1.0.0 {small: [168, 200, 168], big: [199, 215, 199]}
+              - !box-1.0.0 {small: [200, 200, 168], big: [215, 215, 199]}
+              - !box-1.0.0 {small: [168, 168, 200], big: [199, 199, 215]}
+              - !box-1.0.0 {small: [200, 168, 200], big: [215, 199, 215]}
+              - !box-1.0.0 {small: [168, 200, 200], big: [199, 215, 215]}
+              - !box-1.0.0 {small: [200, 200, 200], big: [215, 215, 215]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETX::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetX::CarpetX_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetX::CarpetX_InitError: Mark output variables as valid"
+              patch: 0
+              level: 2
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_RHS: TestSubcyclingMC2::TestSubcyclingMC2_RHS: Mark output variables as valid"
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_RHS: TestSubcyclingMC2::TestSubcyclingMC2_RHS: Mark output variables as valid"
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 144 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+...

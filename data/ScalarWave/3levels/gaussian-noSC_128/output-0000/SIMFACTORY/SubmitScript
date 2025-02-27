@@ -1,0 +1,3 @@
+#! /bin/bash
+cd /home/joe/Meitner/Cactus
+exec /home/joe/Meitner/Cactus/repos/simfactory2/bin/sim run gaussian-noSC_128 --machine=actions-cpu-real64 --restart-id=0  </dev/null >/home/joe/workspace/simulations/gaussian-noSC_128/output-0000/stdlog.txt 2>&1

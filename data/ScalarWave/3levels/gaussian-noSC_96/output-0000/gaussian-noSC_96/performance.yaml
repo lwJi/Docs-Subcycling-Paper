@@ -1,0 +1,97 @@
+performance:
+  24:
+    evolution-seconds: 4.74175
+    evolution-compute-seconds: 4.71084
+    evolution-output-seconds: 0.0309072
+    evolution-cell-updates: 2.65421e+07
+    evolution-iterations: 24
+  48:
+    evolution-seconds: 9.45713
+    evolution-compute-seconds: 9.39334
+    evolution-output-seconds: 0.0637939
+    evolution-cell-updates: 5.30842e+07
+    evolution-iterations: 48
+  72:
+    evolution-seconds: 14.1909
+    evolution-compute-seconds: 14.0958
+    evolution-output-seconds: 0.0950627
+    evolution-cell-updates: 7.96262e+07
+    evolution-iterations: 72
+  96:
+    evolution-seconds: 19.0526
+    evolution-compute-seconds: 18.9216
+    evolution-output-seconds: 0.13103
+    evolution-cell-updates: 1.06168e+08
+    evolution-iterations: 96
+  120:
+    evolution-seconds: 23.794
+    evolution-compute-seconds: 23.631
+    evolution-output-seconds: 0.162975
+    evolution-cell-updates: 1.3271e+08
+    evolution-iterations: 120
+  144:
+    evolution-seconds: 28.5493
+    evolution-compute-seconds: 28.3544
+    evolution-output-seconds: 0.194899
+    evolution-cell-updates: 1.59252e+08
+    evolution-iterations: 144
+  168:
+    evolution-seconds: 33.3147
+    evolution-compute-seconds: 33.0884
+    evolution-output-seconds: 0.226251
+    evolution-cell-updates: 1.85795e+08
+    evolution-iterations: 168
+  192:
+    evolution-seconds: 38.1469
+    evolution-compute-seconds: 37.8846
+    evolution-output-seconds: 0.262353
+    evolution-cell-updates: 2.12337e+08
+    evolution-iterations: 192
+  216:
+    evolution-seconds: 42.9153
+    evolution-compute-seconds: 42.6221
+    evolution-output-seconds: 0.293241
+    evolution-cell-updates: 2.38879e+08
+    evolution-iterations: 216
+  240:
+    evolution-seconds: 47.7077
+    evolution-compute-seconds: 47.3765
+    evolution-output-seconds: 0.331194
+    evolution-cell-updates: 2.65421e+08
+    evolution-iterations: 240
+  264:
+    evolution-seconds: 52.5803
+    evolution-compute-seconds: 52.2139
+    evolution-output-seconds: 0.366451
+    evolution-cell-updates: 2.91963e+08
+    evolution-iterations: 264
+  288:
+    evolution-seconds: 57.4375
+    evolution-compute-seconds: 57.0404
+    evolution-output-seconds: 0.397116
+    evolution-cell-updates: 3.18505e+08
+    evolution-iterations: 288
+  312:
+    evolution-seconds: 62.3485
+    evolution-compute-seconds: 61.9201
+    evolution-output-seconds: 0.428318
+    evolution-cell-updates: 3.45047e+08
+    evolution-iterations: 312
+  336:
+    evolution-seconds: 67.2019
+    evolution-compute-seconds: 66.7434
+    evolution-output-seconds: 0.458593
+    evolution-cell-updates: 3.71589e+08
+    evolution-iterations: 336
+  360:
+    evolution-seconds: 72.0354
+    evolution-compute-seconds: 71.5464
+    evolution-output-seconds: 0.488971
+    evolution-cell-updates: 3.98131e+08
+    evolution-iterations: 360
+  384:
+    evolution-seconds: 76.8891
+    evolution-compute-seconds: 76.3693
+    evolution-output-seconds: 0.519745
+    evolution-cell-updates: 4.24673e+08
+    evolution-iterations: 384

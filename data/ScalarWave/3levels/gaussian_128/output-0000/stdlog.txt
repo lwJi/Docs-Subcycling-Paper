@@ -1,0 +1,58 @@
+Simulation name: gaussian_128
+Running simulation gaussian_128
+Preparing:
++ set -e
++ cd /home/joe/workspace/simulations/gaussian_128/output-0000-active
++ echo Checking:
+Checking:
++ pwd
+/home/joe/workspace/simulations/gaussian_128/output-0000-active
++ hostname
+e28900a89df2
++ date
+Thu Sep  5 04:47:26 PM UTC 2024
++ echo Environment:
+Environment:
++ export SIMULATION_ID=simulation-gaussian_128-actions-cpu-real64-actions-joe-2024.09.05-16.47.26-78811
++ SIMULATION_ID=simulation-gaussian_128-actions-cpu-real64-actions-joe-2024.09.05-16.47.26-78811
++ export CACTUS_NUM_PROCS=4
++ CACTUS_NUM_PROCS=4
++ export CACTUS_NUM_THREADS=2
++ CACTUS_NUM_THREADS=2
++ export CACTUS_SET_THREAD_BINDINGS=0
++ CACTUS_SET_THREAD_BINDINGS=0
++ export GLIBCXX_FORCE_NEW=1
++ GLIBCXX_FORCE_NEW=1
++ export GMON_OUT_PREFIX=gmon.out
++ GMON_OUT_PREFIX=gmon.out
++ export OMP_DISPLAY_ENV=TRUE
++ OMP_DISPLAY_ENV=TRUE
++ export OMP_MAX_TASKS=100
++ OMP_MAX_TASKS=100
++ export OMP_NUM_THREADS=2
++ OMP_NUM_THREADS=2
++ export OMP_PLACES=cores
++ OMP_PLACES=cores
++ export OMP_PROC_BIND=FALSE
++ OMP_PROC_BIND=FALSE
++ export OMP_STACKSIZE=8192
++ OMP_STACKSIZE=8192
++ env
++ sort
++ echo Starting:
+Starting:
+++ date +%s
++ export CACTUS_STARTTIME=1725554846
++ CACTUS_STARTTIME=1725554846
++ mpiexec -n 4 /home/joe/workspace/simulations/gaussian_128/SIMFACTORY/exe/cactus_sim -L 3 /home/joe/workspace/simulations/gaussian_128/output-0000/gaussian_128.par
+
+real	2m58.561s
+user	22m22.042s
+sys	1m20.768s
++ echo Stopping:
+Stopping:
++ date
+Thu Sep  5 04:50:25 PM UTC 2024
++ echo Done.
+Done.
+Simfactory Done at date: Thu 05 Sep 2024 04:50:25 PM UTC

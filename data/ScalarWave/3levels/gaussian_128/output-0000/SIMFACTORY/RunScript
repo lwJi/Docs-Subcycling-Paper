@@ -1,0 +1,47 @@
+#! /bin/bash
+
+echo "Preparing:"
+set -x                          # Output commands
+set -e                          # Abort on errors
+
+cd /home/joe/workspace/simulations/gaussian_128/output-0000-active
+
+echo "Checking:"
+pwd
+hostname
+date
+
+echo "Environment:"
+export "SIMULATION_ID=simulation-gaussian_128-actions-cpu-real64-actions-joe-2024.09.05-16.47.26-78811"
+# OpenMP
+export CACTUS_NUM_PROCS=4
+export CACTUS_NUM_THREADS=2
+export CACTUS_SET_THREAD_BINDINGS=0
+export GLIBCXX_FORCE_NEW=1
+export GMON_OUT_PREFIX=gmon.out
+export OMP_DISPLAY_ENV=TRUE
+export OMP_MAX_TASKS=100
+export OMP_NUM_THREADS=2
+export OMP_PLACES=cores     # threads, cores, sockets
+export OMP_PROC_BIND=FALSE  # false, true, master, close, spread
+export OMP_STACKSIZE=8192   # kByte
+env | sort >SIMFACTORY/ENVIRONMENT
+
+# ulimit -c unlimited
+
+echo "Starting:"
+export CACTUS_STARTTIME=$(date +%s)
+
+time                                            \
+    mpiexec                                     \
+    -n 4                              \
+    /home/joe/workspace/simulations/gaussian_128/SIMFACTORY/exe/cactus_sim -L 3 /home/joe/workspace/simulations/gaussian_128/output-0000/gaussian_128.par                 \
+    >stdout.txt                                 \
+    2>stderr.txt
+
+#time mpiexec -n 4 /home/joe/workspace/simulations/gaussian_128/SIMFACTORY/exe/cactus_sim -L 3 /home/joe/workspace/simulations/gaussian_128/output-0000/gaussian_128.par
+
+echo "Stopping:"
+date
+
+echo "Done."
