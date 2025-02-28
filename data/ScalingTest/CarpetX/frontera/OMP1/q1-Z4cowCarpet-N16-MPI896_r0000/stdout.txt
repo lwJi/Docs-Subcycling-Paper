@@ -1,0 +1,992 @@
+$ mkdir -p q1-Z4cowCarpet-N16-MPI896_r0000
+$ cp q1-Z4cowCarpet.par q1-Z4cowCarpet-N16-MPI896_r0000
+$ cd q1-Z4cowCarpet-N16-MPI896_r0000
+======================================================================
+Launch MPI code...
+----------------------------------------------------------------------
+MPIRUN = ibrun /work2/08708/liwei/frontera/Cannon/Cactus/exe/cactus_sim q1-Z4cowCarpet.par
+
+Job started on c201-002.frontera.tacc.utexas.edu at Sun Feb 16 12:43:40 CST 2025
+======================================================================
+TACC:  Starting up job 6924083 
+TACC:  Starting parallel tasks... 
+--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.17.0    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.17.0
+Compile date:      Feb 15 2025 (15:16:47)
+Run date:          Feb 16 2025 (12:43:57-0600)
+Run host:          c201-002.frontera.tacc.utexas.edu (pid=225105)
+Working directory: /scratch1/08708/liwei/Carpet/q1-Z4cowCarpet-N16-MPI896_r0000
+Executable:        /work2/08708/liwei/frontera/Cannon/Cactus/exe/cactus_sim
+Parameter file:    q1-Z4cowCarpet.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->Carpet CarpetLib CarpetInterp CarpetReduce IOUtil NaNChecker Boundary CartGrid3D CoordBase SymBase CarpetRegrid2 MoL Time TwoPunctures ADMBase StaticConformal TmunuBase Z4cowCarpet NewRad CarpetIOBasic TimerReport<---
+Thorn Carpet requests automatic activation of MPI
+Thorn Carpet requests automatic activation of Timers
+Thorn Carpet requests automatic activation of LoopControl
+Thorn CarpetLib requests automatic activation of Vectors
+Thorn CarpetLib requests automatic activation of CycleClock
+Thorn NewRad requests automatic activation of GenericFD
+Thorn TwoPunctures requests automatic activation of GSL
+Thorn LoopControl requests automatic activation of hwloc
+Thorn hwloc requests automatic activation of zlib
+Activating thorn ADMBase...Success -> active implementation ADMBase
+Activating thorn Boundary...Success -> active implementation boundary
+Activating thorn Carpet...Success -> active implementation Driver
+Activating thorn CarpetInterp...Success -> active implementation interp
+Activating thorn CarpetIOBasic...Success -> active implementation IOBasic
+Activating thorn CarpetLib...Success -> active implementation CarpetLib
+Activating thorn CarpetReduce...Success -> active implementation reduce
+Activating thorn CarpetRegrid2...Success -> active implementation CarpetRegrid2
+Activating thorn CartGrid3D...Success -> active implementation grid
+Activating thorn CoordBase...Success -> active implementation CoordBase
+Activating thorn CycleClock...Success -> active implementation CycleClock
+Activating thorn GenericFD...Success -> active implementation GenericFD
+Activating thorn GSL...Success -> active implementation GSL
+Activating thorn hwloc...Success -> active implementation hwloc
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn LoopControl...Success -> active implementation LoopControl
+Activating thorn MoL...Success -> active implementation MethodOfLines
+Activating thorn MPI...Success -> active implementation MPI
+Activating thorn NaNChecker...Success -> active implementation NaNChecker
+Activating thorn NewRad...Success -> active implementation NewRad
+Activating thorn StaticConformal...Success -> active implementation StaticConformal
+Activating thorn SymBase...Success -> active implementation SymBase
+Activating thorn Time...Success -> active implementation time
+Activating thorn TimerReport...Success -> active implementation timerreport
+Activating thorn Timers...Success -> active implementation Timers
+Activating thorn TmunuBase...Success -> active implementation TmunuBase
+Activating thorn TwoPunctures...Success -> active implementation TwoPunctures
+Activating thorn Vectors...Success -> active implementation Vectors
+Activating thorn Z4cowCarpet...Success -> active implementation Z4cowCarpet
+Activating thorn zlib...Success -> active implementation zlib
+--------------------------------------------------------------------------------
+  if (recover initial data)
+    Recover parameters
+  endif
+
+  Startup routines
+    [CCTK_STARTUP]
+      Carpet::MultiModel_Startup: Multi-model Startup routine
+      CycleClock::CycleClock_Setup: Set up CycleClock
+      LoopControl::LC_setup: Set up LoopControl
+      CarpetInterp::CarpetInterpStartup: Startup routine
+      CarpetReduce::CarpetReduceStartup: Startup routine
+      CartGrid3D::SymmetryStartup: Register GH Extension for GridSymmetry
+      CoordBase::CoordBase_Startup: Register a GH extension to store the coordinate system handles
+      Timers::Timer_Startup: Prepare hierarchical timers
+      Carpet::Driver_Startup: Startup routine
+      IOUtil::IOUtil_Startup: Startup routine
+      MoL::MoL_Startup: Startup banner
+      SymBase::SymBase_Startup: Register GH Extension for SymBase
+      CarpetIOBasic::CarpetIOBasicStartup: [global] Startup routine
+      Vectors::Vectors_Startup: Print startup message
+      GROUP hwloc_startup: hwloc startup group
+        hwloc::hwloc_version: Output hwloc version
+
+  Startup routines which need an existing grid hierarchy
+    [CCTK_WRAGH]
+      ADMBase::Einstein_InitSymBound: [global] Set up GF symmetries
+      Boundary::Boundary_RegisterBCs: [global] Register boundary conditions that this thorn provides
+      CarpetRegrid2::CarpetRegrid2_Initialise: [global] Initialise locations of refined regions
+      CartGrid3D::RegisterCartGrid3DCoords: [meta] Register coordinates for the Cartesian grid
+      MoL::MoL_SetupIndexArrays: Set up the MoL bookkeeping index arrays
+      MoL::MoL_SetScheduleStatus: [global] Set the flag so it is ok to register with MoL
+      TmunuBase::TmunuBase_SetStressEnergyState: [global] Set the stress_energy_state variable
+      GROUP MoL_Register: The group where physics thorns register variables with MoL
+        Z4cowCarpet::Z4cowCarpet_RegisterVars: [global] register evolution system with mol
+      GROUP SymBase_Wrapper: Wrapper group for SymBase
+        GROUP SymmetryRegister: Register your symmetries here
+          CartGrid3D::CartGrid3D_RegisterSymmetryBoundaries: [meta] Register symmetry boundaries
+        SymBase::SymBase_Statistics: Print symmetry boundary face descriptions
+      MoL::MoL_ReportNumberVariables: [meta] Report how many of each type of variable there are
+  Parameter checking routines
+    [CCTK_PARAMCHECK]
+      ADMBase::ADMBase_ParamCheck: [global] Check consistency of parameters
+      Boundary::Boundary_Check: Check dimension of grid variables
+      Carpet::CarpetParamCheck: Parameter checking routine
+      CarpetLib::CarpetLib_test_prolongate_3d_rf2: [global] Test prolongation operators
+      CarpetRegrid2::CarpetRegrid2_ParamCheck: Check parameters
+      CartGrid3D::ParamCheck_CartGrid3D: Check coordinates for CartGrid3D
+      MoL::MoL_ParamCheck: Basic parameter checking
+      TmunuBase::TmunuBase_ParamCheck: [global] Check that no deprecated parameters are used.
+      TwoPunctures::TwoPunctures_ParamCheck: Check parameters and thorn needs
+      Vectors::Vectors_Test: Run correctness tests.
+
+  Initialisation
+    if (NOT (recover initial data AND recovery_mode is 'strict'))
+      [CCTK_PREREGRIDINITIAL]
+      Set up grid hierarchy
+      [CCTK_POSTREGRIDINITIAL]
+        CartGrid3D::SpatialCoordinates: Set Coordinates after regridding
+        GROUP MaskBase_SetupMask: Set up the weight function
+          GROUP MaskBase_SetupMaskAll: Set up the weight function
+            CarpetReduce::MaskBase_AllocateMask: [global] Allocate the weight function
+            CarpetReduce::MaskBase_InitMask: [global] [loop-local] Initialise the weight function
+            GROUP SetupIMaskInternal: Set up the integer weight function (schedule other routines in here)
+              CarpetReduce::CoordBase_SetupMask: [global] [loop-local] Set up the outer boundaries of the weight function
+              CarpetReduce::CarpetMaskSetup: [global] [loop-singlemap] Set up the weight function for the restriction regions
+            GROUP SetupIMask: Set up the integer weight function (schedule other routines in here)
+            CarpetReduce::MaskBase_SetMask: [global] [loop-local] Set the weight function
+            GROUP SetupMask: Set up the real weight function (schedule other routines in here)
+            CarpetReduce::MaskBase_TestMask: [global] Test the weight function
+        GROUP MoL_PseudoEvolutionBoundaries: Apply boundary conditions to pseudo-evolved quantities
+      [CCTK_BASEGRID]
+        ADMBase::ADMBase_SetShiftStateOn: Set the shift_state variable to 1
+        ADMBase::ADMBase_SetDtLapseStateOn: Set the dtlapse_state variable to 1
+        ADMBase::ADMBase_SetDtShiftStateOn: Set the dtshift_state variable to 1
+        CartGrid3D::SpatialSpacings: Set up ranges for spatial 3D Cartesian coordinates (on all grids)
+        CartGrid3D::SpatialCoordinates: Set up spatial 3D Cartesian coordinates on the GH
+        GROUP MaskBase_SetupMask: Set up the weight function
+          GROUP MaskBase_SetupMaskAll: Set up the weight function
+            CarpetReduce::MaskBase_AllocateMask: [global] Allocate the weight function
+            CarpetReduce::MaskBase_InitMask: [global] [loop-local] Initialise the weight function
+            GROUP SetupIMaskInternal: Set up the integer weight function (schedule other routines in here)
+              CarpetReduce::CoordBase_SetupMask: [global] [loop-local] Set up the outer boundaries of the weight function
+              CarpetReduce::CarpetMaskSetup: [global] [loop-singlemap] Set up the weight function for the restriction regions
+            GROUP SetupIMask: Set up the integer weight function (schedule other routines in here)
+            CarpetReduce::MaskBase_SetMask: [global] [loop-local] Set the weight function
+            GROUP SetupMask: Set up the real weight function (schedule other routines in here)
+            CarpetReduce::MaskBase_TestMask: [global] Test the weight function
+        NaNChecker::NaNChecker_ResetCounter: [global] Reset the NaNChecker::NaNsFound counter
+        SymBase::SymBase_Check: Check whether the driver set up the grid consistently
+        Time::Time_Initialise: [global] Initialise Time variables
+        Time::TemporalSpacings: [singlemap] Set timestep based on Courant condition (courant_static)
+      [CCTK_INITIAL]
+        StaticConformal::StaticConformal_InitialiseState: Set the conformal_state variable to 0
+        GROUP ADMBase_InitialData: Schedule group for calculating ADM initial data
+          GROUP TwoPunctures_Group: TwoPunctures initial data group
+            TwoPunctures::TwoPunctures: Create puncture black hole initial data
+            TwoPunctures::TwoPunctures_Metadata: [global] Output TwoPunctures metadata
+        GROUP ADMBase_InitialGauge: Schedule group for the ADM initial gauge condition
+          ADMBase::ADMBase_ShiftZero: Set the shift to 0 at all points
+          ADMBase::ADMBase_DtLapseZero: Set the dtlapse to 0 at all points
+          ADMBase::ADMBase_DtShiftZero: Set the dtshift to 0 at all points
+        CarpetIOBasic::CarpetIOBasicInit: [global] Initialisation routine
+        MoL::MoL_StartLoop: [level] Initialise the step size control
+        GROUP ADMBase_PostInitial: Schedule group for modifying the ADM initial data, such as e.g. adding noise
+        GROUP Z4cowCarpet_InitialGroup: Convert ADM to Z4c variables
+          Z4cowCarpet::Z4cowCarpet_Initial1: Convert ADM to Z4c variables, part 1
+          Z4cowCarpet::Z4cowCarpet_Initial2: Convert ADM to Z4c variables, part 2
+          Z4cowCarpet::Z4cowCarpet_InitialLapse: Set initial lapse
+          Z4cowCarpet::Z4cowCarpet_SelectBoundConds: [level] select boundary conditions
+          GROUP Z4cowCarpet_ApplyBCs: Apply boundary conditions controlled by thorn Boundary
+            GROUP BoundaryConditions: Execute all boundary conditions
+              Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+              CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+            Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+      [CCTK_POSTINITIAL]
+        GROUP MoL_PostStepModify: The group for physics thorns to schedule enforcing constraints
+        GROUP MoL_PostStep: Ensure that everything is correct after the initial data have been set up
+          ADMBase::ADMBase_Boundaries: [level] Select ADMBase boundary conditions - may be required for mesh refinement
+          GROUP ADMBase_ApplyBCs: Apply the boundary conditions of ADMBase
+            GROUP BoundaryConditions: Execute all boundary conditions
+              Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+              CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+            Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+          GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+          GROUP SetTmunu: Group for calculating the stress-energy tensor
+            TmunuBase::TmunuBase_ZeroTmunu: Initialise the stress-energy tensor to zero
+            GROUP AddToTmunu: Add to the stress-energy tensor here
+          Z4cowCarpet::Z4cowCarpet_Enforce: Enforce algebraic Z4c constraints
+          Z4cowCarpet::Z4cowCarpet_SelectBoundConds: [level] select boundary conditions
+          GROUP Z4cowCarpet_ApplyBCs: Apply boundary conditions controlled by thorn Boundary
+            GROUP BoundaryConditions: Execute all boundary conditions
+              Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+              CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+            Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+        GROUP MoL_PseudoEvolution: Calculate pseudo-evolved quantities
+          GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+      Initialise finer grids recursively
+      Restrict from finer grids
+      [CCTK_POSTRESTRICTINITIAL]
+        GROUP MoL_PostStep: Ensure that everything is correct after restriction
+          ADMBase::ADMBase_Boundaries: [level] Select ADMBase boundary conditions - may be required for mesh refinement
+          GROUP ADMBase_ApplyBCs: Apply the boundary conditions of ADMBase
+            GROUP BoundaryConditions: Execute all boundary conditions
+              Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+              CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+            Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+          GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+          GROUP SetTmunu: Group for calculating the stress-energy tensor
+            TmunuBase::TmunuBase_ZeroTmunu: Initialise the stress-energy tensor to zero
+            GROUP AddToTmunu: Add to the stress-energy tensor here
+          Z4cowCarpet::Z4cowCarpet_Enforce: Enforce algebraic Z4c constraints
+          Z4cowCarpet::Z4cowCarpet_SelectBoundConds: [level] select boundary conditions
+          GROUP Z4cowCarpet_ApplyBCs: Apply boundary conditions controlled by thorn Boundary
+            GROUP BoundaryConditions: Execute all boundary conditions
+              Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+              CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+            Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+        GROUP MoL_PseudoEvolutionBoundaries: Apply boundary conditions to pseudo-evolved quantities
+      [CCTK_POSTPOSTINITIAL]
+      [CCTK_POSTSTEP]
+        GROUP zzz_NaNChecker_NaNCheck: Check for NaNs and count them in NaNChecker::NaNsFound
+          NaNChecker::NaNChecker_NaNCheck_Prepare: [level] Prepare data structures to check for NaNs
+          NaNChecker::NaNChecker_NaNCheck_Check: [local] Check for NaNs
+          NaNChecker::NaNChecker_NaNCheck_Finish: [level] Count NaNs in NaNChecker::NaNsFound
+        NaNChecker::NaNChecker_TakeAction: [global] [loop-level] Output NaNChecker::NaNmask and take action according to NaNChecker::action_if_found
+    endif
+    if (recover initial data)
+      [CCTK_BASEGRID]
+        ADMBase::ADMBase_SetShiftStateOn: Set the shift_state variable to 1
+        ADMBase::ADMBase_SetDtLapseStateOn: Set the dtlapse_state variable to 1
+        ADMBase::ADMBase_SetDtShiftStateOn: Set the dtshift_state variable to 1
+        CartGrid3D::SpatialSpacings: Set up ranges for spatial 3D Cartesian coordinates (on all grids)
+        CartGrid3D::SpatialCoordinates: Set up spatial 3D Cartesian coordinates on the GH
+        GROUP MaskBase_SetupMask: Set up the weight function
+          GROUP MaskBase_SetupMaskAll: Set up the weight function
+            CarpetReduce::MaskBase_AllocateMask: [global] Allocate the weight function
+            CarpetReduce::MaskBase_InitMask: [global] [loop-local] Initialise the weight function
+            GROUP SetupIMaskInternal: Set up the integer weight function (schedule other routines in here)
+              CarpetReduce::CoordBase_SetupMask: [global] [loop-local] Set up the outer boundaries of the weight function
+              CarpetReduce::CarpetMaskSetup: [global] [loop-singlemap] Set up the weight function for the restriction regions
+            GROUP SetupIMask: Set up the integer weight function (schedule other routines in here)
+            CarpetReduce::MaskBase_SetMask: [global] [loop-local] Set the weight function
+            GROUP SetupMask: Set up the real weight function (schedule other routines in here)
+            CarpetReduce::MaskBase_TestMask: [global] Test the weight function
+        NaNChecker::NaNChecker_ResetCounter: [global] Reset the NaNChecker::NaNsFound counter
+        SymBase::SymBase_Check: Check whether the driver set up the grid consistently
+        Time::Time_Initialise: [global] Initialise Time variables
+        Time::TemporalSpacings: [singlemap] Set timestep based on Courant condition (courant_static)
+      [CCTK_RECOVER_VARIABLES]
+      [CCTK_POST_RECOVER_VARIABLES]
+        GROUP MaskBase_SetupMask: Set up the weight function
+          GROUP MaskBase_SetupMaskAll: Set up the weight function
+            CarpetReduce::MaskBase_AllocateMask: [global] Allocate the weight function
+            CarpetReduce::MaskBase_InitMask: [global] [loop-local] Initialise the weight function
+            GROUP SetupIMaskInternal: Set up the integer weight function (schedule other routines in here)
+              CarpetReduce::CoordBase_SetupMask: [global] [loop-local] Set up the outer boundaries of the weight function
+              CarpetReduce::CarpetMaskSetup: [global] [loop-singlemap] Set up the weight function for the restriction regions
+            GROUP SetupIMask: Set up the integer weight function (schedule other routines in here)
+            CarpetReduce::MaskBase_SetMask: [global] [loop-local] Set the weight function
+            GROUP SetupMask: Set up the real weight function (schedule other routines in here)
+            CarpetReduce::MaskBase_TestMask: [global] Test the weight function
+        GROUP MoL_PostStep: Ensure that everything is correct after recovery
+          ADMBase::ADMBase_Boundaries: [level] Select ADMBase boundary conditions - may be required for mesh refinement
+          GROUP ADMBase_ApplyBCs: Apply the boundary conditions of ADMBase
+            GROUP BoundaryConditions: Execute all boundary conditions
+              Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+              CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+            Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+          GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+          GROUP SetTmunu: Group for calculating the stress-energy tensor
+            TmunuBase::TmunuBase_ZeroTmunu: Initialise the stress-energy tensor to zero
+            GROUP AddToTmunu: Add to the stress-energy tensor here
+          Z4cowCarpet::Z4cowCarpet_Enforce: Enforce algebraic Z4c constraints
+          Z4cowCarpet::Z4cowCarpet_SelectBoundConds: [level] select boundary conditions
+          GROUP Z4cowCarpet_ApplyBCs: Apply boundary conditions controlled by thorn Boundary
+            GROUP BoundaryConditions: Execute all boundary conditions
+              Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+              CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+            Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+        GROUP zzz_NaNChecker_NaNCheck: Check for NaNs and count them in NaNChecker::NaNsFound
+          NaNChecker::NaNChecker_NaNCheck_Prepare: [level] Prepare data structures to check for NaNs
+          NaNChecker::NaNChecker_NaNCheck_Check: [local] Check for NaNs
+          NaNChecker::NaNChecker_NaNCheck_Finish: [level] Count NaNs in NaNChecker::NaNsFound
+        NaNChecker::NaNChecker_TakeAction: [global] [loop-level] Output NaNChecker::NaNmask and take action according to NaNChecker::action_if_found
+    endif
+    if (checkpoint initial data)
+      [CCTK_CPINITIAL]
+    endif
+    if (analysis)
+      [CCTK_ANALYSIS]
+        CarpetLib::CarpetLib_printtimestats: [global] Print timing statistics if desired
+        CarpetLib::CarpetLib_printmemstats: [global] Print memory statistics if desired
+        LoopControl::LC_statistics_analysis: [meta] Output LoopControl statistics
+        TimerReport::zzz_TimerReport_Output: [global] Print the timer report
+  endif
+  Output grid variables
+
+  do loop over timesteps
+    [CCTK_PREREGRID]
+    Change grid hierarchy
+    [CCTK_POSTREGRID]
+      CartGrid3D::SpatialCoordinates: Set Coordinates after regridding
+      GROUP MaskBase_SetupMask: Set up the weight function
+        GROUP MaskBase_SetupMaskAll: Set up the weight function
+          CarpetReduce::MaskBase_AllocateMask: [global] Allocate the weight function
+          CarpetReduce::MaskBase_InitMask: [global] [loop-local] Initialise the weight function
+          GROUP SetupIMaskInternal: Set up the integer weight function (schedule other routines in here)
+            CarpetReduce::CoordBase_SetupMask: [global] [loop-local] Set up the outer boundaries of the weight function
+            CarpetReduce::CarpetMaskSetup: [global] [loop-singlemap] Set up the weight function for the restriction regions
+          GROUP SetupIMask: Set up the integer weight function (schedule other routines in here)
+          CarpetReduce::MaskBase_SetMask: [global] [loop-local] Set the weight function
+          GROUP SetupMask: Set up the real weight function (schedule other routines in here)
+          CarpetReduce::MaskBase_TestMask: [global] Test the weight function
+      GROUP MoL_PostStep: Ensure that everything is correct after regridding
+        ADMBase::ADMBase_Boundaries: [level] Select ADMBase boundary conditions - may be required for mesh refinement
+        GROUP ADMBase_ApplyBCs: Apply the boundary conditions of ADMBase
+          GROUP BoundaryConditions: Execute all boundary conditions
+            Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+            CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+          Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+        GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+        GROUP SetTmunu: Group for calculating the stress-energy tensor
+          TmunuBase::TmunuBase_ZeroTmunu: Initialise the stress-energy tensor to zero
+          GROUP AddToTmunu: Add to the stress-energy tensor here
+        Z4cowCarpet::Z4cowCarpet_Enforce: Enforce algebraic Z4c constraints
+        Z4cowCarpet::Z4cowCarpet_SelectBoundConds: [level] select boundary conditions
+        GROUP Z4cowCarpet_ApplyBCs: Apply boundary conditions controlled by thorn Boundary
+          GROUP BoundaryConditions: Execute all boundary conditions
+            Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+            CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+          Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+      GROUP MoL_PseudoEvolutionBoundaries: Apply boundary conditions to pseudo-evolved quantities
+    Rotate timelevels
+    iteration = iteration+1
+    t = t+dt
+    [CCTK_PRESTEP]
+      ADMBase::ADMBase_LapseStatic: Copy the lapse to the current time level
+      ADMBase::ADMBase_ShiftStatic: Copy the shift to the current time level
+      ADMBase::ADMBase_Static: Copy the metric and extrinsic curvature to the current time level
+      LoopControl::LC_steer: [meta] Update LoopControl algorithm preferences
+      NaNChecker::NaNChecker_ResetCounter: [global] Reset the NaNChecker::NaNsFound counter
+    [CCTK_EVOL]
+      MoL::MoL_StartLoop: [level] Initialise the step size control
+      while (MoL::MoL_Stepsize_Bad)
+        GROUP MoL_Evolution: A single Cactus evolution step using MoL
+          GROUP MoL_StartStep: MoL internal setup for the evolution step
+            MoL::MoL_SetCounter: [level] Set the counter for the ODE method to loop over
+            MoL::MoL_SetTime: [level] Ensure the correct time and timestep are used
+            MoL::MoL_AllocateScratchSpace: [level] Allocate storage for scratch levels
+          GROUP MoL_PreStep: Physics thorns can schedule preloop setup routines in here
+          MoL::MoL_AllocateScratch: Allocate sufficient space for array scratch variables
+          MoL::MoL_InitialCopy: Ensure the data is in the correct timelevel
+          while (MoL::MoL_Intermediate_Step)
+            GROUP MoL_Step: The loop over the intermediate steps for the ODE integrator
+              MoL::MoL_InitRHS: Initialise the RHS functions
+              GROUP MoL_CalcRHS: Physics thorns schedule the calculation of the discrete spatial operator in here
+                Z4cowCarpet::Z4cowCarpet_RHS: Calculate Z4c RHS
+              GROUP MoL_PostRHS: Modify RHS functions
+              GROUP MoL_RHSBoundaries: Any 'final' modifications to the RHS functions (boundaries etc.)
+              MoL::MoL_Add: Updates calculated with the efficient Runge-Kutta 4 method
+              MoL::MoL_DecrementCounter: [level] Alter the counter number
+              MoL::MoL_ResetTime: [level] If necessary, change the time
+              GROUP MoL_PostStepModify: The group for physics thorns to schedule enforcing constraints
+              GROUP MoL_PostStep: The group for physics thorns to schedule boundary calls etc.
+                ADMBase::ADMBase_Boundaries: [level] Select ADMBase boundary conditions - may be required for mesh refinement
+                GROUP ADMBase_ApplyBCs: Apply the boundary conditions of ADMBase
+                  GROUP BoundaryConditions: Execute all boundary conditions
+                    Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+                    CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+                  Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+                GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+                GROUP SetTmunu: Group for calculating the stress-energy tensor
+                  TmunuBase::TmunuBase_ZeroTmunu: Initialise the stress-energy tensor to zero
+                  GROUP AddToTmunu: Add to the stress-energy tensor here
+                Z4cowCarpet::Z4cowCarpet_Enforce: Enforce algebraic Z4c constraints
+                Z4cowCarpet::Z4cowCarpet_SelectBoundConds: [level] select boundary conditions
+                GROUP Z4cowCarpet_ApplyBCs: Apply boundary conditions controlled by thorn Boundary
+                  GROUP BoundaryConditions: Execute all boundary conditions
+                    Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+                    CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+                  Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+              MoL::MoL_ResetDeltaTime: [level] If necessary, change the timestep
+          end while
+          MoL::MoL_FinishLoop: [level] Control the step size
+          MoL::MoL_RestoreSandR: Restoring the Save and Restore variables to the original state
+          MoL::MoL_FreeScratchSpace: [level] Free storage for scratch levels
+      end while
+      GROUP MoL_PseudoEvolution: Calculate pseudo-evolved quantities
+        GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+    Evolve finer grids recursively
+    Restrict from finer grids
+    [CCTK_POSTRESTRICT]
+      GROUP MoL_PostStep: Ensure that everything is correct after restriction
+        ADMBase::ADMBase_Boundaries: [level] Select ADMBase boundary conditions - may be required for mesh refinement
+        GROUP ADMBase_ApplyBCs: Apply the boundary conditions of ADMBase
+          GROUP BoundaryConditions: Execute all boundary conditions
+            Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+            CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+          Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+        GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+        GROUP SetTmunu: Group for calculating the stress-energy tensor
+          TmunuBase::TmunuBase_ZeroTmunu: Initialise the stress-energy tensor to zero
+          GROUP AddToTmunu: Add to the stress-energy tensor here
+        Z4cowCarpet::Z4cowCarpet_Enforce: Enforce algebraic Z4c constraints
+        Z4cowCarpet::Z4cowCarpet_SelectBoundConds: [level] select boundary conditions
+        GROUP Z4cowCarpet_ApplyBCs: Apply boundary conditions controlled by thorn Boundary
+          GROUP BoundaryConditions: Execute all boundary conditions
+            Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+            CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+          Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+      GROUP MoL_PseudoEvolutionBoundaries: Apply boundary conditions to pseudo-evolved quantities
+    [CCTK_POSTSTEP]
+      GROUP zzz_NaNChecker_NaNCheck: Check for NaNs and count them in NaNChecker::NaNsFound
+        NaNChecker::NaNChecker_NaNCheck_Prepare: [level] Prepare data structures to check for NaNs
+        NaNChecker::NaNChecker_NaNCheck_Check: [local] Check for NaNs
+        NaNChecker::NaNChecker_NaNCheck_Finish: [level] Count NaNs in NaNChecker::NaNsFound
+      NaNChecker::NaNChecker_TakeAction: [global] [loop-level] Output NaNChecker::NaNmask and take action according to NaNChecker::action_if_found
+    if (checkpoint)
+      [CCTK_CHECKPOINT]
+      TimerReport::zzz_TimerReport_Checkpoint: [global] Print the timer report
+    endif
+    if (analysis)
+      [CCTK_ANALYSIS]
+      CarpetLib::CarpetLib_printtimestats: [global] Print timing statistics if desired
+      CarpetLib::CarpetLib_printmemstats: [global] Print memory statistics if desired
+      LoopControl::LC_statistics_analysis: [meta] Output LoopControl statistics
+      TimerReport::zzz_TimerReport_Output: [global] Print the timer report
+    endif
+    Output grid variables
+    enddo
+
+  Termination routines
+    [CCTK_TERMINATE]
+      LoopControl::LC_statistics_terminate: [meta] Output LoopControl statistics
+      MoL::MoL_FreeIndexArrays: Free the MoL bookkeeping index arrays
+      TimerReport::zzz_TimerReport_Output: [global] Print the timer report
+
+  Shutdown routines
+    [CCTK_SHUTDOWN]
+      Timers::Timer_Shutdown: Prepare hierarchical timers
+
+  Routines run after changing the grid hierarchy:
+    [CCTK_POSTREGRID]
+      CartGrid3D::SpatialCoordinates: Set Coordinates after regridding
+      GROUP MaskBase_SetupMask: Set up the weight function
+        GROUP MaskBase_SetupMaskAll: Set up the weight function
+          CarpetReduce::MaskBase_AllocateMask: [global] Allocate the weight function
+          CarpetReduce::MaskBase_InitMask: [global] [loop-local] Initialise the weight function
+          GROUP SetupIMaskInternal: Set up the integer weight function (schedule other routines in here)
+            CarpetReduce::CoordBase_SetupMask: [global] [loop-local] Set up the outer boundaries of the weight function
+            CarpetReduce::CarpetMaskSetup: [global] [loop-singlemap] Set up the weight function for the restriction regions
+          GROUP SetupIMask: Set up the integer weight function (schedule other routines in here)
+          CarpetReduce::MaskBase_SetMask: [global] [loop-local] Set the weight function
+          GROUP SetupMask: Set up the real weight function (schedule other routines in here)
+          CarpetReduce::MaskBase_TestMask: [global] Test the weight function
+      GROUP MoL_PostStep: Ensure that everything is correct after regridding
+        ADMBase::ADMBase_Boundaries: [level] Select ADMBase boundary conditions - may be required for mesh refinement
+        GROUP ADMBase_ApplyBCs: Apply the boundary conditions of ADMBase
+          GROUP BoundaryConditions: Execute all boundary conditions
+            Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+            CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+          Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+        GROUP ADMBase_SetADMVars: Set the ADM variables before this group, and use them afterwards
+        GROUP SetTmunu: Group for calculating the stress-energy tensor
+          TmunuBase::TmunuBase_ZeroTmunu: Initialise the stress-energy tensor to zero
+          GROUP AddToTmunu: Add to the stress-energy tensor here
+        Z4cowCarpet::Z4cowCarpet_Enforce: Enforce algebraic Z4c constraints
+        Z4cowCarpet::Z4cowCarpet_SelectBoundConds: [level] select boundary conditions
+        GROUP Z4cowCarpet_ApplyBCs: Apply boundary conditions controlled by thorn Boundary
+          GROUP BoundaryConditions: Execute all boundary conditions
+            Boundary::Boundary_ApplyPhysicalBCs: Apply all requested local physical boundary conditions
+            CartGrid3D::CartGrid3D_ApplyBC: Apply symmetry boundary conditions
+          Boundary::Boundary_ClearSelection: [level] Unselect all grid variables for boundary conditions
+      GROUP MoL_PseudoEvolutionBoundaries: Apply boundary conditions to pseudo-evolved quantities
+--------------------------------------------------------------------------------
+INFO (Carpet): Multi-Model listing:
+   model 0: "world"
+INFO (Carpet): Multi-Model process distribution:
+   processes 0-895: model 0 "world"
+INFO (Carpet): Multi-Model: This is process 0, model 0 "world"
+Current core file size limit: hard=[unlimited], soft=0 MB
+Current addres space size limit: hard=[unlimited], soft=[unlimited]
+Current data segment size limit: hard=[unlimited], soft=[unlimited]
+Current resident set size limit: hard=[unlimited], soft=[unlimited]
+INFO (CycleClock): Measuring CycleClock tick via OpenMP...
+INFO (CycleClock): Calibrated CycleClock: 0.371229 ns per clock tick (2.69376 GHz)
+INFO (Vectors): Using vector size 8 for architecture AVX512 (64-bit precision)
+INFO (hwloc): library version 2.0.4, API version 0x20000
+--------------------------------------------------------------------------------
+AMR driver provided by Carpet
+--------------------------------------------------------------------------------
+MoL: Generalized time integration.
+--------------------------------------------------------------------------------
+AMR info I/O provided by CarpetIOBasic
+--------------------------------------------------------------------------------
+
+INFO (Carpet): MPI is enabled
+INFO (Carpet): Carpet is running on 896 processes
+INFO (Carpet): This is process 0
+INFO (Carpet): OpenMP is enabled
+INFO (Carpet): This process contains 1 threads, this is thread 0
+INFO (Carpet): There are 896 threads in total
+INFO (Carpet): There are 1 threads per process
+INFO (Carpet): This process runs on host c201-002.frontera.tacc.utexas.edu, pid=225105
+INFO (Carpet): This process runs on 1 core: 0
+INFO (Carpet): Thread 0 runs on 1 core: 0
+INFO (Carpet): This simulation is running in 3 dimensions
+INFO (Carpet): Boundary specification for map 0:
+   nboundaryzones: [[3,3,3],[3,3,3]]
+   is_internal   : [[0,0,0],[0,0,0]]
+   is_staggered  : [[0,0,0],[0,0,0]]
+   shiftout      : [[0,0,0],[0,0,0]]
+INFO (Carpet): CoordBase domain specification for map 0:
+   physical extent: [-400,-400,-400] : [400,400,400]   ([800,800,800])
+   interior extent: [-396.667,-396.667,-396.667] : [396.667,396.667,396.667]   ([793.333,793.333,793.333])
+   exterior extent: [-406.667,-406.667,-406.667] : [406.667,406.667,406.667]   ([813.333,813.333,813.333])
+   base_spacing   : [3.33333,3.33333,3.33333]
+INFO (Carpet): Adapted domain specification for map 0:
+   convergence factor: 2
+   convergence level : 0
+   physical extent   : [-400,-400,-400] : [400,400,400]   ([800,800,800])
+   interior extent   : [-396.667,-396.667,-396.667] : [396.667,396.667,396.667]   ([793.333,793.333,793.333])
+   exterior extent   : [-406.667,-406.667,-406.667] : [406.667,406.667,406.667]   ([813.333,813.333,813.333])
+   spacing           : [3.33333,3.33333,3.33333]
+INFO (Carpet): Base grid specification for map 0:
+   number of grid points             : [245,245,245]
+   number of coarse grid ghost points: [[3,3,3],[3,3,3]]
+INFO (Carpet): Buffer zone counts (excluding ghosts):
+   [0]: [[0,0,0],[0,0,0]]
+   [1]: [[9,9,9],[9,9,9]]
+   [2]: [[9,9,9],[9,9,9]]
+   [3]: [[9,9,9],[9,9,9]]
+   [4]: [[9,9,9],[9,9,9]]
+   [5]: [[9,9,9],[9,9,9]]
+   [6]: [[9,9,9],[9,9,9]]
+   [7]: [[9,9,9],[9,9,9]]
+   [8]: [[9,9,9],[9,9,9]]
+INFO (Carpet): Overlap zone counts:
+   [0]: [[0,0,0],[0,0,0]]
+   [1]: [[0,0,0],[0,0,0]]
+   [2]: [[0,0,0],[0,0,0]]
+   [3]: [[0,0,0],[0,0,0]]
+   [4]: [[0,0,0],[0,0,0]]
+   [5]: [[0,0,0],[0,0,0]]
+   [6]: [[0,0,0],[0,0,0]]
+   [7]: [[0,0,0],[0,0,0]]
+   [8]: [[0,0,0],[0,0,0]]
+INFO (Carpet): Group and variable statistics:
+INFO (Carpet):    There are 654 grid functions in 48 groups
+INFO (Carpet):    There are 167 grid scalars in 30 groups
+INFO (Carpet):    There are 81 1-dimensional grid arrays in 7 groups
+INFO (Carpet):    There are 1 2-dimensional grid arrays in 1 groups
+INFO (Carpet):    There are 0 3-dimensional grid arrays in 0 groups
+INFO (Carpet):    (The number of variables counts all time levels)
+INFO (MoL): Using Runge-Kutta 4 as the time integrator.
+INFO (MoL): The maximum number of evolved variables is 385. 22 are registered.
+INFO (MoL): The maximum number of slow evolved variables is 385. 0 are registered.
+INFO (MoL): The maximum number of constrained variables is 385. 0 are registered.
+INFO (MoL): The maximum number of SandR variables is 385. 0 are registered.
+INFO (MoL): The maximum number of evolved array variables is 385. 0 are registered.
+INFO (MoL): The maximum number of constrained array variables is 385. 0 are registered.
+INFO (MoL): The maximum number of SandR array variables is 385. 0 are registered.
+INFO (MoL): The maximum size of any array variables is 0.
+INFO (Vectors): Testing vectorisation... [errors may result in segfaults]
+INFO (Vectors): 18951/18951 tests passed 
+INFO (CarpetRegrid2): Enforcing grid structure properties, iteration 0
+INFO (CarpetRegrid2): Enforcing grid structure properties, iteration 0
+INFO (CarpetRegrid2): Enforcing grid structure properties, iteration 0
+INFO (CarpetRegrid2): Enforcing grid structure properties, iteration 0
+INFO (CarpetRegrid2): Enforcing grid structure properties, iteration 0
+INFO (CarpetRegrid2): Enforcing grid structure properties, iteration 0
+INFO (CarpetRegrid2): Enforcing grid structure properties, iteration 0
+INFO (CarpetRegrid2): Enforcing grid structure properties, iteration 0
+INFO (Carpet): Grid structure (superregions, grid points):
+   [0][0][0]   exterior: [0,0,0] : [244,244,244]   ([245,245,245] + PADDING) 14706125
+   [1][0][0]   exterior: [101,103,103] : [387,385,385]   ([287,283,283] + PADDING) 22985543
+   [2][0][0]   exterior: [342,347,347] : [634,629,629]   ([293,283,283] + PADDING) 23466077
+   [3][0][0]   exterior: [825,835,835] : [1127,1117,1117]   ([303,283,283] + PADDING) 24266967
+   [4][0][0]   exterior: [1804,1823,1823] : [2100,2081,2081]   ([297,259,259] + PADDING) 19923057
+   [5][0][0]   exterior: [3761,3799,3799] : [4047,4009,4009]   ([287,211,211] + PADDING) 12777527
+   [6][0][0]   exterior: [7626,7703,7703] : [7990,7913,7913]   ([365,211,211] + PADDING) 16250165
+   [7][0][0]   exterior: [15377,15530,15530] : [15548,15702,15702]   ([172,173,173] + PADDING) 5147788
+   [7][0][1]   exterior: [15684,15530,15530] : [15855,15702,15702]   ([172,173,173] + PADDING) 5147788
+   [8][0][0]   exterior: [30839,31146,31146] : [31011,31318,31318]   ([173,173,173] + PADDING) 5177717
+   [8][0][1]   exterior: [31453,31146,31146] : [31625,31318,31318]   ([173,173,173] + PADDING) 5177717
+INFO (Carpet): Grid structure (superregions, coordinates):
+   [0][0][0]   exterior: [-406.666666666667,-406.666666666667,-406.666666666667] : [406.666666666667,406.666666666667,406.666666666667] : [3.33333333333333,3.33333333333333,3.33333333333333]
+   [1][0][0]   exterior: [-238.333333333333,-235,-235] : [238.333333333333,235,235] : [1.66666666666667,1.66666666666667,1.66666666666667]
+   [2][0][0]   exterior: [-121.666666666667,-117.5,-117.5] : [121.666666666667,117.5,117.5] : [0.833333333333333,0.833333333333333,0.833333333333333]
+   [3][0][0]   exterior: [-62.9166666666667,-58.75,-58.75] : [62.9166666666667,58.75,58.75] : [0.416666666666667,0.416666666666667,0.416666666666667]
+   [4][0][0]   exterior: [-30.8333333333333,-26.875,-26.875] : [30.8333333333333,26.875,26.875] : [0.208333333333333,0.208333333333333,0.208333333333333]
+   [5][0][0]   exterior: [-14.8958333333333,-10.9375,-10.9375] : [14.8958333333333,10.9375,10.9375] : [0.104166666666667,0.104166666666667,0.104166666666667]
+   [6][0][0]   exterior: [-9.47916666666669,-5.46875,-5.46875] : [9.47916666666669,5.46875,5.46875] : [0.0520833333333333,0.0520833333333333,0.0520833333333333]
+   [7][0][0]   exterior: [-6.22395833333331,-2.23958333333331,-2.23958333333331] : [-1.77083333333331,2.23958333333331,2.23958333333331] : [0.0260416666666667,0.0260416666666667,0.0260416666666667]
+   [7][0][1]   exterior: [1.77083333333331,-2.23958333333331,-2.23958333333331] : [6.22395833333331,2.23958333333331,2.23958333333331] : [0.0260416666666667,0.0260416666666667,0.0260416666666667]
+   [8][0][0]   exterior: [-5.1171875,-1.11979166666669,-1.11979166666669] : [-2.87760416666669,1.11979166666669,1.11979166666669] : [0.0130208333333333,0.0130208333333333,0.0130208333333333]
+   [8][0][1]   exterior: [2.87760416666669,-1.11979166666669,-1.11979166666669] : [5.1171875,1.11979166666669,1.11979166666669] : [0.0130208333333333,0.0130208333333333,0.0130208333333333]
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "TMUNUBASE::STRESS_ENERGY_SCALAR".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "TMUNUBASE::STRESS_ENERGY_VECTOR".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "TMUNUBASE::STRESS_ENERGY_TENSOR".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::ZTC".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::HC".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::MTC".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::ALLC".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::W_RHS".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::GAMMA_TILDE_RHS".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::K_HAT_RHS".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::A_TILDE_RHS".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::GAM_TILDE_RHS".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::THETA_RHS".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::ALPHAG_RHS".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): There are not enough time levels for the desired temporal prolongation order in the grid function group "Z4COWCARPET::BETAG_RHS".  With Carpet::prolongation_order_time=2, you need at least 3 time levels.
+INFO (Carpet): Global grid structure statistics:
+INFO (Carpet): GF: rhs: 8904k active, 11906k owned (+34%), 23384k total (+96%), 511 steps/time
+INFO (Carpet): GF: vars: 172, pts: 21649M active, 26483M owned (+22%), 48415M total (+83%), 1.0 comp/proc
+INFO (Carpet): GA: vars: 244, pts: 2M active, 2M total (+0%)
+INFO (Carpet): Total required memory: 386.212 GByte (for GAs and currently active GFs)
+INFO (Carpet): Load balance:  min     avg     max     sdv     max/avg-1
+INFO (Carpet): Level  0:       2M      3M      3M      0M owned     15%
+INFO (Carpet): Level  1:       4M      4M      5M      0M owned      5%
+INFO (Carpet): Level  2:       4M      5M      5M      0M owned      6%
+INFO (Carpet): Level  3:       4M      5M      5M      0M owned      6%
+INFO (Carpet): Level  4:       4M      4M      4M      0M owned      4%
+INFO (Carpet): Level  5:       2M      2M      3M      0M owned      5%
+INFO (Carpet): Level  6:       3M      3M      3M      0M owned      9%
+INFO (Carpet): Level  7:       2M      2M      2M      0M owned      5%
+INFO (Carpet): Level  8:       2M      2M      2M      0M owned      5%
+INFO (CartGrid3D): Grid Spacings:
+INFO (CartGrid3D): dx=>3.3333333e+00  dy=>3.3333333e+00  dz=>3.3333333e+00
+INFO (CartGrid3D): Computational Coordinates:
+INFO (CartGrid3D): x=>[-406.667,406.667]  y=>[-406.667,406.667]  z=>[-406.667,406.667]
+INFO (CartGrid3D): Indices of Physical Coordinates:
+INFO (CartGrid3D): x=>[0,244]  y=>[0,244]  z=>[0,244]
+INFO (Time): Timestep set to 0.833333 (courant_static)
+INFO (TwoPunctures): Solving puncture equation for BH-BH system
+INFO (TwoPunctures): b = 4
+Newton: it=0 	 |F|=3.372486e-03
+bare mass: mp=0.4824 	 mm=0.4824
+bicgstab:  itmax 100, tol 3.372486e-06
+bicgstab:     0   4.536e-02
+bicgstab:     1   1.630e-01   1.032e+00   0.000e+00   6.915e-01
+bicgstab:     2   3.747e-02   1.731e+00   2.119e-02   4.256e-01
+bicgstab:     3   6.557e-03   6.281e-01   2.121e-01   5.886e-01
+bicgstab:     4   1.216e-03   1.084e+00   8.294e-02   3.610e-01
+bicgstab:     5   6.239e-04   9.026e-01   2.751e-01   9.005e-01
+bicgstab:     6   1.090e-03   5.184e+00   9.036e-02   3.778e-01
+bicgstab:     7   6.561e-06   6.053e-02  -6.586e+01   1.151e+00
+bicgstab:     8   4.047e-06   1.984e+00  -1.037e-03   1.017e+00
+bicgstab:     9   1.548e-05  -1.708e+01  -1.717e-01   4.298e-01
+bicgstab:    10   3.618e-07  -1.733e-02  -1.047e+03   4.298e-01
+Newton: it=1 	 |F|=1.353488e-06
+bare mass: mp=0.4824 	 mm=0.4824
+bicgstab:  itmax 100, tol 1.353488e-09
+bicgstab:     0   1.593e-05
+bicgstab:     1   5.290e-05   1.197e+00   0.000e+00   6.360e-01
+bicgstab:     2   4.935e-05  -5.333e-02   8.724e-03   2.177e-01
+bicgstab:     3   9.028e-07  -1.281e+01  -1.170e+00   9.091e-01
+bicgstab:     4   9.403e-08   6.680e-01   3.517e-01   5.320e-01
+bicgstab:     5   1.134e-08   5.114e-01   1.253e-01   6.093e-01
+bicgstab:     6   2.804e-09   2.731e+00  -2.519e-01   5.379e-01
+bicgstab:     7   2.212e-09  -3.845e-01   1.911e-01   3.978e-01
+bicgstab:     8   2.481e-10  -9.326e-01  -2.798e+00   3.978e-01
+Newton: it=2 	 |F|=3.541236e-11 
+INFO (TwoPunctures): The two puncture masses are mp=0.4824 and mm=0.4824
+INFO (TwoPunctures): Puncture 1 ADM mass is 0.500098
+INFO (TwoPunctures): Puncture 2 ADM mass is 0.500098
+INFO (TwoPunctures): The total ADM mass is 0.988444
+INFO (TwoPunctures): Interpolating result
+INFO (Time): Timestep set to 0.416667 (courant_static)
+INFO (TwoPunctures): Interpolating result
+INFO (Time): Timestep set to 0.208333 (courant_static)
+INFO (TwoPunctures): Interpolating result
+INFO (Time): Timestep set to 0.104167 (courant_static)
+INFO (TwoPunctures): Interpolating result
+INFO (Time): Timestep set to 0.0520833 (courant_static)
+INFO (TwoPunctures): Interpolating result
+INFO (Time): Timestep set to 0.0260417 (courant_static)
+INFO (TwoPunctures): Interpolating result
+INFO (Time): Timestep set to 0.0130208 (courant_static)
+INFO (TwoPunctures): Interpolating result
+INFO (Time): Timestep set to 0.00651042 (courant_static)
+INFO (TwoPunctures): Interpolating result
+INFO (Time): Timestep set to 0.00325521 (courant_static)
+INFO (TwoPunctures): Interpolating result
+Memory statistics from CarpetLib:
+   Current number of objects: 1639
+   Current allocated memory:  420 MB
+   Maximum number of objects: 1657
+   Maximum allocated memory:  423 MB
+   Current administrative memory: 9.77 MB
+   Total allocated used system memory: 475 MB
+   Total allocated free system memory: 3.35 MB
+   gh::allmemory:    3393088
+   dh::allmemory:    6059680
+   th::allmemory:    8796
+   ggf::allmemory:   212272
+   gdata::allmemory: 100400
+INFO (TimerReport): Timer Report at iteration 0 time 0
+INFO (TimerReport): Top timers at iteration 0 time 0
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   71.2390 71.1880 72.0045   CCTK total time
+ 99.9   71.1696 71.1253 71.9473   meta mode/meta mode/global mode
+ 98.3   70.0032 69.7992 70.2064   main/Initialise/CallInitial
+ 78.2   55.7060 54.3458 55.9247   meta mode/meta mode/global mode/level(0)
+ 63.0   44.8856 41.4842 46.8248   main/Initialise/CallInitial/CCTK_INITIAL
+ 63.0   44.8843 41.4829 46.8235   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction
+ 55.7   39.7122 38.2454 42.5633   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction/thorns
+ 55.6   39.6289 38.1662 42.4799   [0052] TwoPunctures: TwoPunctures in CCTK_INITIAL
+ 55.6   39.6284 38.1658 42.4794   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction/thorns/TwoPunctures
+ 31.1   22.1674 22.1521 22.2093   main/Initialise/CallInitial/CallRegridInitialMeta
+ 30.7   21.8507 21.8482 21.8532   main/Initialise/CallInitial/CallRegridInitialMeta/Regrid
+ 29.5   21.0324 20.9150 21.0362   main/Initialise/CallInitial/CallRegridInitialMeta/Regrid/RegridMap
+ 29.5   21.0320 20.9146 21.0358   main/Initialise/CallInitial/CallRegridInitialMeta/Regrid/RegridMap/CarpetLib::gh::regrid
+ 29.5   21.0306 20.9134 21.0345   main/Initialise/CallInitial/CallRegridInitialMeta/Regrid/RegridMap/CarpetLib::gh::regrid/CarpetLib::dh::regrid
+ 23.0   16.3505 16.3468 16.3534   main/CarpetStartup
+ 22.8   16.2226 16.2155 16.2346   main/CarpetStartup/CarpetLib::gh::regrid
+ 22.8   16.2200 16.2129 16.2320   main/CarpetStartup/CarpetLib::gh::regrid/CarpetLib::dh::regrid
+ 11.5    8.1596  8.0473  9.3759   main/CarpetStartup/CarpetLib::gh::regrid/CarpetLib::dh::regrid/test
+  7.3    5.1678  1.6675  7.4849   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction/syncs
+  6.7    4.7770  4.7166  5.5296   main/Initialise/CallInitial/CallRegridInitialMeta/Regrid/RegridMap/CarpetLib::gh::regrid/CarpetLib::dh::regrid/test
+======================================================================
+----------------------------------
+Iteration      Time | *me_per_hour
+                    |             
+----------------------------------
+        0     0.000 |    0.0000000
+INFO (TimerReport): Timer Report at iteration 64 time 0.208333
+INFO (TimerReport): Top timers at iteration 64 time 0.208333
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   139.532 139.510 139.542   CCTK total time
+ 97.4   135.923 135.105 138.311   meta mode/meta mode/global mode
+ 67.2    93.822  93.809  96.374   main
+ 67.2    93.822  93.809  96.374   meta mode
+ 55.5    77.468  77.456  80.019   meta mode/meta mode
+ 55.5    77.449  77.440  79.979   main/Initialise
+ 50.2    70.003  69.799  70.206   main/Initialise/CallInitial
+ 40.3    56.212  54.842  56.442   meta mode/meta mode/global mode/level(0)
+ 33.4    46.633  45.840  47.342   main/Evolve/CallEvol
+ 32.9    45.943  45.144  46.653   main/Evolve/CallEvol/CCTK_EVOL
+ 32.9    45.893  45.095  46.606   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 32.2    44.886  41.484  46.825   main/Initialise/CallInitial/CCTK_INITIAL
+ 32.2    44.884  41.483  46.823   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction
+ 28.5    39.712  38.245  42.563   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction/thorns
+ 28.4    39.629  38.166  42.480   [0052] TwoPunctures: TwoPunctures in CCTK_INITIAL
+ 28.4    39.628  38.166  42.479   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction/thorns/TwoPunctures
+ 18.4    25.708  23.583  28.273   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 16.3    22.694  21.415  25.706   meta mode/meta mode/global mode/level(8)
+ 15.9    22.167  22.152  22.209   main/Initialise/CallInitial/CallRegridInitialMeta
+ 15.7    21.851  21.848  21.853   main/Initialise/CallInitial/CallRegridInitialMeta/Regrid
+======================================================================
+       64     0.208 |   10.4379129
+INFO (TimerReport): Timer Report at iteration 128 time 0.416667
+INFO (TimerReport): Top timers at iteration 128 time 0.416667
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   210.287 210.264 210.297   CCTK total time
+ 95.9   201.662 200.025 207.935   meta mode/meta mode/global mode
+ 44.6    93.822  93.809  96.374   main
+ 44.6    93.822  93.809  96.374   meta mode
+ 43.7    91.963  90.397  93.421   main/Evolve/CallEvol
+ 43.1    90.585  89.011  92.053   main/Evolve/CallEvol/CCTK_EVOL
+ 43.0    90.485  88.914  91.960   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 36.8    77.468  77.456  80.019   meta mode/meta mode
+ 36.8    77.449  77.440  79.979   main/Initialise
+ 33.3    70.003  69.799  70.206   main/Initialise/CallInitial
+ 26.8    56.310  54.937  56.586   meta mode/meta mode/global mode/level(0)
+ 24.1    50.580  46.342  55.574   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 21.3    44.886  41.484  46.825   main/Initialise/CallInitial/CCTK_INITIAL
+ 21.3    44.884  41.483  46.823   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction
+ 21.1    44.287  41.907  50.165   meta mode/meta mode/global mode/level(8)
+ 18.9    39.712  38.245  42.563   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction/thorns
+ 18.8    39.629  38.166  42.480   [0052] TwoPunctures: TwoPunctures in CCTK_INITIAL
+ 18.8    39.628  38.166  42.479   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction/thorns/TwoPunctures
+ 18.6    39.093  34.712  42.246   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns
+ 16.5    34.651  22.002  50.297   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs/Sync
+======================================================================
+      128     0.417 |   10.5177635
+INFO (TimerReport): Timer Report at iteration 192 time 0.625
+INFO (TimerReport): Top timers at iteration 192 time 0.625
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   281.870 281.847 281.881   CCTK total time
+ 95.2   268.204 265.756 278.335   meta mode/meta mode/global mode
+ 49.0   138.086 135.734 140.278   main/Evolve/CallEvol
+ 48.2   135.999 133.626 138.190   main/Evolve/CallEvol/CCTK_EVOL
+ 48.2   135.848 133.481 138.049   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 33.3    93.822  93.809  96.374   main
+ 33.3    93.822  93.809  96.374   meta mode
+ 27.5    77.468  77.456  80.019   meta mode/meta mode
+ 27.5    77.449  77.440  79.979   main/Initialise
+ 26.9    75.927  69.607  83.464   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 24.8    70.003  69.799  70.206   main/Initialise/CallInitial
+ 23.4    66.045  62.431  74.794   meta mode/meta mode/global mode/level(8)
+ 20.8    58.703  52.109  63.416   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns
+ 20.0    56.412  55.032  56.731   meta mode/meta mode/global mode/level(0)
+ 18.4    51.984  32.946  75.483   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs/Sync
+ 16.9    47.684  38.993  52.674   meta mode/meta mode/global mode/level(7)
+ 16.9    47.516  44.044  51.664   [0100] Z4cowCarpet: Z4cowCarpet_RHS in CCTK_EVOL
+ 16.8    47.413  43.971  51.530   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns/Z4cowCarpet_RHS
+ 15.9    44.886  41.484  46.825   main/Initialise/CallInitial/CCTK_INITIAL
+ 15.9    44.884  41.483  46.823   main/Initialise/CallInitial/CCTK_INITIAL/CallFunction
+======================================================================
+      192     0.625 |   10.5038454
+INFO (TimerReport): Timer Report at iteration 256 time 0.833333
+INFO (TimerReport): Top timers at iteration 256 time 0.833333
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   352.684 352.655 352.695   CCTK total time
+ 94.7   333.876 330.572 347.815   meta mode/meta mode/global mode
+ 52.0   183.465 180.329 186.426   main/Evolve/CallEvol
+ 51.2   180.681 177.520 183.644   main/Evolve/CallEvol/CCTK_EVOL
+ 51.2   180.480 177.328 183.457   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 28.6   100.846  92.399 110.901   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 26.6    93.822  93.809  96.374   main
+ 26.6    93.822  93.809  96.374   meta mode
+ 24.9    87.653  82.986  99.224   meta mode/meta mode/global mode/level(8)
+ 22.1    78.013  69.195  84.278   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns
+ 22.0    77.468  77.456  80.019   meta mode/meta mode
+ 22.0    77.449  77.440  79.979   main/Initialise
+ 19.8    70.003  69.799  70.206   main/Initialise/CallInitial
+ 19.6    69.031  43.733 100.253   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs/Sync
+ 17.9    63.277  51.705  69.927   meta mode/meta mode/global mode/level(7)
+ 17.9    63.142  58.537  68.672   [0100] Z4cowCarpet: Z4cowCarpet_RHS in CCTK_EVOL
+ 17.9    63.004  58.439  68.493   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns/Z4cowCarpet_RHS
+ 16.1    56.615  55.269  57.011   meta mode/meta mode/global mode/level(0)
+ 13.0    45.835  45.077  46.185   main/Evolve/CallRestrict
+ 12.7    44.886  41.484  46.825   main/Initialise/CallInitial/CCTK_INITIAL
+======================================================================
+      256     0.833 |   10.5279565
+INFO (TimerReport): Timer Report at iteration 320 time 1.04167
+INFO (TimerReport): Top timers at iteration 320 time 1.04167
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   424.550 424.527 424.561   CCTK total time
+ 94.4   400.733 396.658 418.545   meta mode/meta mode/global mode
+ 54.2   230.162 226.274 233.866   main/Evolve/CallEvol
+ 53.4   226.666 222.719 230.362   main/Evolve/CallEvol/CCTK_EVOL
+ 53.3   226.415 222.476 230.128   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 29.8   126.609 116.056 139.261   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 25.7   109.222 103.463 123.616   meta mode/meta mode/global mode/level(8)
+ 23.0    97.775  86.676 105.607   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns
+ 22.1    93.822  93.809  96.374   main
+ 22.1    93.822  93.809  96.374   meta mode
+ 20.4    86.679  54.955 125.830   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs/Sync
+ 18.6    79.153  73.319  86.077   [0100] Z4cowCarpet: Z4cowCarpet_RHS in CCTK_EVOL
+ 18.6    78.981  73.194  85.853   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns/Z4cowCarpet_RHS
+ 18.6    78.847  64.402  87.139   meta mode/meta mode/global mode/level(7)
+ 18.2    77.468  77.456  80.019   meta mode/meta mode
+ 18.2    77.449  77.440  79.979   main/Initialise
+ 16.5    70.003  69.799  70.206   main/Initialise/CallInitial
+ 13.5    57.164  56.207  57.643   main/Evolve/CallRestrict
+ 13.4    57.044  55.686  57.482   meta mode/meta mode/global mode/level(0)
+ 12.4    52.757  51.032  54.356   main/Evolve/CallRestrict/CCTK_POSTRESTRICT
+======================================================================
+      320     1.042 |   10.5074963
+INFO (TimerReport): Timer Report at iteration 384 time 1.25
+INFO (TimerReport): Top timers at iteration 384 time 1.25
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   495.343 495.320 495.356   CCTK total time
+ 94.2   466.507 461.602 488.158   meta mode/meta mode/global mode
+ 55.6   275.568 270.885 280.020   main/Evolve/CallEvol
+ 54.8   271.373 266.629 275.819   main/Evolve/CallEvol/CCTK_EVOL
+ 54.7   271.072 266.338 275.538   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 30.6   151.550 138.872 166.818   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 26.4   130.815 123.968 148.030   meta mode/meta mode/global mode/level(8)
+ 23.6   117.089 103.757 126.483   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns
+ 20.9   103.742  65.728 150.646   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs/Sync
+ 19.1    94.780  87.703 103.092   [0100] Z4cowCarpet: Z4cowCarpet_RHS in CCTK_EVOL
+ 19.1    94.574  87.557 102.823   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns/Z4cowCarpet_RHS
+ 19.1    94.442  77.127 104.387   meta mode/meta mode/global mode/level(7)
+ 18.9    93.822  93.809  96.374   main
+ 18.9    93.822  93.809  96.374   meta mode
+ 15.6    77.468  77.456  80.019   meta mode/meta mode
+ 15.6    77.449  77.440  79.979   main/Initialise
+ 14.1    70.003  69.799  70.206   main/Initialise/CallInitial
+ 13.9    68.655  67.526  69.235   main/Evolve/CallRestrict
+ 12.8    63.341  61.268  65.242   main/Evolve/CallRestrict/CCTK_POSTRESTRICT
+ 12.8    63.312  61.239  65.212   main/Evolve/CallRestrict/CCTK_POSTRESTRICT/CallFunction
+======================================================================
+      384     1.250 |   10.5219441
+INFO (TimerReport): Timer Report at iteration 448 time 1.45833
+INFO (TimerReport): Top timers at iteration 448 time 1.45833
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   566.863 566.836 566.871   CCTK total time
+ 94.0   532.995 527.272 558.499   meta mode/meta mode/global mode
+ 56.7   321.638 316.179 326.815   main/Evolve/CallEvol
+ 55.9   316.739 311.215 321.916   main/Evolve/CallEvol/CCTK_EVOL
+ 55.8   316.388 310.876 321.588   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 31.2   176.862 162.056 194.709   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 26.9   152.388 144.373 172.420   meta mode/meta mode/global mode/level(8)
+ 24.1   136.688 121.123 147.665   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns
+ 21.4   121.046  76.612 175.802   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs/Sync
+ 19.5   110.646 102.301 120.352   [0100] Z4cowCarpet: Z4cowCarpet_RHS in CCTK_EVOL
+ 19.5   110.405 102.133 120.038   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns/Z4cowCarpet_RHS
+ 19.4   110.022  89.806 121.643   meta mode/meta mode/global mode/level(7)
+ 16.6    93.822  93.809  96.374   main
+ 16.6    93.822  93.809  96.374   meta mode
+ 14.1    80.204  78.899  80.871   main/Evolve/CallRestrict
+ 13.7    77.468  77.456  80.019   meta mode/meta mode
+ 13.7    77.449  77.440  79.979   main/Initialise
+ 13.0    73.888  71.429  76.268   main/Evolve/CallRestrict/CCTK_POSTRESTRICT
+ 13.0    73.854  71.395  76.233   main/Evolve/CallRestrict/CCTK_POSTRESTRICT/CallFunction
+ 12.8    72.643  70.201  75.007   main/Evolve/CallRestrict/CCTK_POSTRESTRICT/CallFunction/syncs
+======================================================================
+      448     1.458 |   10.5168055
+INFO (TimerReport): Timer Report at iteration 512 time 1.66667
+INFO (TimerReport): Top timers at iteration 512 time 1.66667
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   637.552 637.527 637.560   CCTK total time
+ 93.9   598.654 592.087 627.981   meta mode/meta mode/global mode
+ 57.6   367.014 360.748 372.892   main/Evolve/CallEvol
+ 56.7   361.417 355.083 367.284   main/Evolve/CallEvol/CCTK_EVOL
+ 56.6   361.016 354.701 366.910   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 31.7   201.787 184.911 222.209   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 27.3   173.958 164.759 196.801   meta mode/meta mode/global mode/level(8)
+ 24.5   155.989 138.204 168.546   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns
+ 21.7   138.099  87.390 200.588   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs/Sync
+ 19.8   126.269 116.668 137.363   [0100] Z4cowCarpet: Z4cowCarpet_RHS in CCTK_EVOL
+ 19.8   125.994 116.476 137.005   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns/Z4cowCarpet_RHS
+ 19.7   125.602 102.503 138.918   meta mode/meta mode/global mode/level(7)
+ 14.7    93.822  93.809  96.374   main
+ 14.7    93.822  93.809  96.374   meta mode
+ 14.4    91.601  90.138  92.359   main/Evolve/CallRestrict
+ 13.2    84.332  81.534  87.008   main/Evolve/CallRestrict/CCTK_POSTRESTRICT
+ 13.2    84.293  81.495  86.968   main/Evolve/CallRestrict/CCTK_POSTRESTRICT/CallFunction
+ 13.0    82.904  80.125  85.558   main/Evolve/CallRestrict/CCTK_POSTRESTRICT/CallFunction/syncs
+ 12.8    81.626  70.646  91.053   meta mode/meta mode/global mode/level(6)
+ 12.2    77.468  77.456  80.019   meta mode/meta mode
+======================================================================
+      512     1.667 |   10.5277862
+INFO (TimerReport): Timer Report before terminating at iteration 512 time 1.66667
+INFO (TimerReport): Top timers at iteration 512 time 1.66667
+======================================================================
+    %    Time/s   Min/s   Max/s   Timer (gettimeofday)
+======================================================================
+100.0   649.937 649.913 649.943   CCTK total time
+ 93.4   606.998 600.425 640.362   meta mode/meta mode/global mode
+ 88.1   572.474 569.921 572.486   main/Evolve
+ 56.5   367.014 360.748 372.892   main/Evolve/CallEvol
+ 55.6   361.417 355.083 367.284   main/Evolve/CallEvol/CCTK_EVOL
+ 55.5   361.016 354.701 366.910   main/Evolve/CallEvol/CCTK_EVOL/CallFunction
+ 31.0   201.787 184.911 222.209   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs
+ 26.8   173.960 164.760 196.803   meta mode/meta mode/global mode/level(8)
+ 24.0   155.989 138.204 168.546   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns
+ 21.2   138.099  87.390 200.588   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/syncs/Sync
+ 19.4   126.269 116.668 137.363   [0100] Z4cowCarpet: Z4cowCarpet_RHS in CCTK_EVOL
+ 19.4   125.994 116.476 137.005   main/Evolve/CallEvol/CCTK_EVOL/CallFunction/thorns/Z4cowCarpet_RHS
+ 19.3   125.602 102.503 138.918   meta mode/meta mode/global mode/level(7)
+ 14.4    93.822  93.809  96.374   main
+ 14.4    93.822  93.809  96.374   meta mode
+ 14.1    91.601  90.138  92.359   main/Evolve/CallRestrict
+ 13.0    84.332  81.534  87.008   main/Evolve/CallRestrict/CCTK_POSTRESTRICT
+ 13.0    84.293  81.495  86.968   main/Evolve/CallRestrict/CCTK_POSTRESTRICT/CallFunction
+ 12.8    82.904  80.125  85.558   main/Evolve/CallRestrict/CCTK_POSTRESTRICT/CallFunction/syncs
+ 12.6    81.626  70.646  91.053   meta mode/meta mode/global mode/level(6)
+======================================================================
+--------------------------------------------------------------------------------
+Done.
+TACC:  Shutdown complete. Exiting. 
+======================================================================
+Job Ended at Sun Feb 16 12:55:21 CST 2025

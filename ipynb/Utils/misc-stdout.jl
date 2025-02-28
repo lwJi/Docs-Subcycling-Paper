@@ -1,224 +1,346 @@
-#
-# CHECKOUT https://github.com/lwJi/ETK-Scaling-Tests/tree/main/Utils for updated version
-#
 module MiscStdout
 
 using DelimitedFiles
-using Plots
+using Statistics
 
-function load_data(filenames, directory, pattern)
-    results = []
-    # Pre-compiled regex patterns for efficiency
-    time_pattern =
-        r"\(CarpetX\): Simulation time:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)"
+##########################
+# Basic loading function #
+##########################
+
+# Load data from dirs
+#   dirs:   [
+#             ("Z4c_L7_G128-N2-MPI16_r0000", "N2"),
+#             ("Z4c_L7_G128-N4-MPI32_r0000", "N4"),
+#           ]
+#   return: (
+#             [
+#               [[x1,x2,x3...], [y1,y2,y3...], [z1,z2,z3,...], ...],
+#               [[ ...       ], [ ...       ], [ ...        ], ...],
+#             ],
+#             [
+#               "N2",
+#               "N4",
+#             ]
+#           )
+function load_data(
+    dirs::Vector{Tuple{String,String}},
+    parent_dir::String,
+    option::String,
+)::Tuple{Vector{Vector{Vector{Float64}}},Vector{String}}
+    # Define patterns for specific options
+    patterns = Dict(
+        "TotalComputeTime" =>
+            r"total evolution compute time:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)",
+        "ZcsPerSecond2" =>  # we recalculate ZcsPerSecond using total evolution compute time here
+            r"total evolution compute time:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)",
+        "ZcsPerSecond" =>
+            r"Grid cell updates per second:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)",
+    )
+
+    # Get the appropriate pattern or throw an error for an invalid option
+    pattern = get(patterns, option) do
+        error("Invalid option: $option. Valid options are: $(keys(patterns))")
+    end
+
+    # Precompile regex patterns for better performance
     step_pattern =
         r"\(CarpetX\):   total iterations:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)"
+    time_pattern =
+        r"\(CarpetX\): Simulation time:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)"
+    cell_pattern = r"\(CarpetX\): Grid cells:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)"
 
-    for filename in filenames
-        file_path = joinpath(directory, filename)
-        data = readlines(file_path)
+    # Preallocate the dats container
+    dats = Vector{Vector{Vector{Float64}}}()
+    labs = [label for (_, label) in dirs]  # Extract labels
 
-        # Store parsed values
+    for (subdir, _) in dirs
+        file_path = joinpath(parent_dir, subdir)
+
+        # Initialize containers for matched data
         steps = Float64[]
         times = Float64[]
-        matches = Float64[]
+        cells = Float64[]
+        custom_matches = Float64[]
 
-        for row in data
-            # Matching time, steps, and custom pattern
-            time_match = match(time_pattern, row)
-            step_match = match(step_pattern, row)
-            pattern_match = match(pattern, row)
+        # Attempt to read the file
+        lines = try
+            readlines(file_path)
+        catch e
+            println("Error reading file $file_path: $e")
+            continue
+        end
 
-            if time_match !== nothing
-                push!(times, parse(Float64, time_match.captures[1]))
+        # Process each line in the file
+        for line in lines
+            # Match and parse total iterations
+            if (m_step = match(step_pattern, line)) !== nothing
+                push!(steps, parse(Float64, m_step.captures[1]))
             end
-            if step_match !== nothing
-                push!(steps, parse(Int64, step_match.captures[1]))
+            # Match and parse simulation time
+            if (m_time = match(time_pattern, line)) !== nothing
+                push!(times, parse(Float64, m_time.captures[1]))
             end
-            if pattern_match !== nothing
-                push!(matches, parse(Float64, pattern_match.captures[1]))
+            # Match and parse total cells
+            if (m_cell = match(cell_pattern, line)) !== nothing
+                push!(cells, parse(Float64, m_cell.captures[1]))
+            end
+            # Match and parse custom pattern
+            if (m_custom = match(pattern, line)) !== nothing
+                push!(custom_matches, parse(Float64, m_custom.captures[1]))
             end
         end
 
-        # Take the minimum length to avoid mismatches
-        common_length = minimum([length(steps), length(times), length(matches)])
+        # Ensure arrays are synchronized to the minimum length
+        min_len =
+            minimum([length(steps), length(times), length(cells), length(custom_matches)])
+        if min_len > 0
+            push!(
+                dats,
+                [
+                    steps[1:min_len],
+                    times[1:min_len],
+                    cells[1:min_len],
+                    custom_matches[1:min_len],
+                ],
+            )
+        else
+            println("Warning: No valid data found in file $file_path.")
+            push!(dats, [Float64[], Float64[], Float64[], Float64[]])
+        end
+    end
 
-        # Store the extracted data
-        push!(
-            results,
-            (steps[1:common_length], times[1:common_length], matches[1:common_length]),
+    return (dats, labs)
+end
+
+# Return matched directories and extracted values
+#   dir_pattern: r"Z4c_L7_G256-N\d+-MPI\d+_r0000"
+#   fname:       "stdout.txt"
+#   return:      (
+#                  [ 2, 4, 8, ...],
+#                  [
+#                    ("Z4c_L7_G256_N2_MPI16_r0000/stdout.txt", "N2"),
+#                    ("Z4c_L7_G256_N4_MPI32_r0000/stdout.txt", "N4"),
+#                    ("Z4c_L7_G256_N8_MPI64_r0000/stdout.txt", "N8"),
+#                    ...,
+#                  ],
+#                )
+function get_matched_dirs(
+    parent_dir::String,
+    dir_pattern::Regex,
+    fname::String,
+)::Tuple{Vector{Float64},Vector{Tuple{String,String}}}
+    # Validate input directory
+    @assert isdir(parent_dir) "Provided `parent_dir` is not a valid directory."
+
+    # Prepare outputs
+    matched_dirs = Vector{Tuple{String,String}}()
+    x_values = Vector{Float64}()
+
+    # Predefine regex for extracting "N" value
+    n_value_regex = r"N(\d+)"
+
+    # Iterate through directories in the parent directory
+    for dir in readdir(parent_dir; join = false)
+        if (match(dir_pattern, dir)) !== nothing
+            # Extract "N" value
+            n_match = match(n_value_regex, dir)
+            @assert n_match !== nothing "Directory name must include an 'N' followed by a number"
+
+            # Parse the extracted value
+            n_value = parse(Float64, n_match.captures[1])
+
+            # Construct the file path and label
+            dir_path = joinpath(dir, fname)
+            label = "N$n_value"
+
+            # Store directory and associated label
+            push!(matched_dirs, (dir_path, label))
+            push!(x_values, n_value)
+        end
+    end
+
+    # Sort by `x_values` and apply the same order to `matched_dirs`
+    sorted_indices = sortperm(x_values)
+
+    return (x_values[sorted_indices], matched_dirs[sorted_indices])
+end
+
+
+
+
+######################################
+# Wrapper functions for loading data #
+######################################
+
+# Function to load values based on options
+#   dir_patterns: [
+#                   (r"Z4c_L7_G256-N\d+-MPI\d+_r0000", "G256"),
+#                   (r"Z4c_L7_G128-N\d+-MPI\d+_r0000", "G128"),
+#                   ...,
+#                 ]
+#   fname:        "stdout.txt"
+#   return:       (
+#                   [
+#                     (                                                        --
+#                       [                                                        |
+#                         [[x1,x2,x3...], [y1,y2,y3...], [z1,z2,z3,...], ...],   |
+#                         [[ ...       ], [ ...       ], [ ...        ], ...],   |
+#                       ],                                                       |--> returned by load_data()
+#                       [                                                        |
+#                         "N2",                                                  |
+#                         "N4",                                                  |
+#                       ]                                                        |
+#                     ),                                                       --
+#                     (),
+#                     ...,
+#                   ],
+#                   [
+#                     "G256",
+#                     "G128",
+#                     ...,
+#                   ]
+#                 )
+function load_values(
+    dir_patterns::Vector{Tuple{Regex,String}},
+    parent_dir::String;
+    option::String = "TotalComputeTime",
+    fname::String = "stdout.txt",
+)::Tuple{Vector{Any},Vector{String}}
+    # Validate inputs
+    @assert isdir(parent_dir) "Provided `parent_dir` is not a valid directory."
+    @assert !isempty(dir_patterns) "Provided `dir_patterns` cannot be empty."
+
+    # Preallocate the dats container
+    vals = Vector{Any}()
+    labs = Vector{String}()
+
+    # Process each directory pattern
+    for (dir_pattern, label) in dir_patterns
+        # Extract matched directories
+        _, matched_dirs = get_matched_dirs(parent_dir, dir_pattern, fname)
+
+        # Load data for matched directories
+        data = load_data(matched_dirs, parent_dir, option)
+
+        # Save the vals and the label
+        push!(vals, data)
+        push!(labs, label)
+    end
+
+    return (vals, labs)
+end
+
+# Function to load averages based on options
+#   dir_patterns: [
+#                   (r"Z4c_L7_G256-N\d+-MPI\d+_r0000", "G256"),
+#                   (r"Z4c_L7_G128-N\d+-MPI\d+_r0000", "G128"),
+#                   ...,
+#                 ]
+#   fname:        "stdout.txt"
+#   return:       (
+#                   [
+#                     [ [2, 4, 8, ...], [avg2, avg4, avg8, ...] ],
+#                     [ [ ...        ], [ ...                 ] ],
+#                     ...,
+#                   ],
+#                   ,
+#                   [
+#                     "G256",
+#                     "G128",
+#                     ...,
+#                   ]
+#                 )
+function load_avgs(
+    dir_patterns::Vector{Tuple{Regex,String}},
+    parent_dir::String;
+    range = :,
+    option::String = "TotalComputeTime",
+    fname::String = "stdout.txt",
+)::Tuple{Vector{Vector{Vector{Float64}}},Vector{String}}
+    # Validate inputs
+    @assert isdir(parent_dir) "Provided `parent_dir` is not a valid directory."
+    @assert !isempty(dir_patterns) "Provided `dir_patterns` cannot be empty."
+
+    # Preallocate the dats container
+    avgs = Vector{Vector{Vector{Float64}}}()
+    labs = Vector{String}()
+
+    # Process each directory pattern
+    for (dir_pattern, label) in dir_patterns
+        # Extract matched directories and their associated x_values
+        x_values, matched_dirs = get_matched_dirs(parent_dir, dir_pattern, fname)
+
+        # Load data for the matched directories
+        dats, _ = load_data(matched_dirs, parent_dir, option)
+
+        # Save the avgs and the label
+        push!(avgs, [x_values, calc_avgs(dats, range, option)])
+        push!(labs, label)
+    end
+
+    return (avgs, labs)
+end
+
+
+
+
+##################
+# Tool functions #
+##################
+
+# Function to calculate averages for a given dataset
+#   dats:   [                                                      --
+#             [[x1,x2,x3...], [y1,y2,y3...], [z1,z2,z3,...], ...],   |
+#             [[ ...       ], [ ...       ], [ ...        ], ...],   |--> first slot of load_data()'s return
+#             ...,                                                   |
+#           ],                                                     --
+#   return: [
+#             avg1,
+#             avg2,
+#             ...,
+#           ]
+function calc_avgs(
+    dats::Vector{Vector{Vector{Float64}}},
+    range,
+    option::String,
+)::Vector{Float64}
+    # Constants for conversions
+    seconds_per_day = 3600 * 24
+
+    # Define calculations for each option using a dictionary
+    option_calculations = Dict(
+        "TotalComputeTime" =>
+            (_, t, _, v) -> seconds_per_day * ((t[end] - t[1]) / (v[end] - v[1])),
+        "ZcsPerSecond2" => (_, _, c, v) -> sum(c[2:end]) / (v[end] - v[1]),
+        "ZcsPerSecond" => (_, _, _, v) -> mean(v),
+    )
+
+    # Validate the option and retrieve the corresponding calculation function
+    calc_fn = get(option_calculations, option) do
+        error(
+            "Invalid option: '$option'. Valid options are: $(join(keys(option_calculations), ", ")).",
         )
     end
 
-    return results
-end
+    # Preallocate results
+    avgs = Vector{Float64}(undef, length(dats))
 
-function calc_avgs(datas; range = :)
-    avgs = Float64[]  # Preallocate an array for averages
+    # Process each dataset
+    for (i, dat) in enumerate(dats)
+        # Ensure the dataset has enough data
+        @assert length(dat) >= 3 "Dataset at index $i does not contain enough data (expected at least 3 entries)."
 
-    for i = 1:length(datas)
-        time_data = datas[i][2][range]  # time values
-        value_data = datas[i][3][range]  # target values
+        # Extract time and value data for the given range
+        steps = dat[1][range]
+        times = dat[2][range]
+        cells = dat[3][range]
+        values = dat[4][range]
 
-        # Ensure time_data and value_data have enough elements
-        if length(time_data) < 2 || length(value_data) < 2
-            println(
-                "Warning: Not enough data points for node $i in the selected range. Skipping.",
-            )
-            continue
-        end
-
-        # Calculate the average
-        delta_time = time_data[end] - time_data[1]
-        delta_value = value_data[end] - value_data[1]
-        average = 3600 * (delta_time / delta_value)  # Convert to M/h
-
-        push!(avgs, average)
+        # Perform the calculation and store the result
+        avgs[i] = calc_fn(steps, times, cells, values)
     end
 
     return avgs
-end
-
-function plot_speed(
-    plt,
-    nodes,
-    directory;
-    prefix = "N",
-    range = :,
-    pattern = r"total evolution compute time:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)",
-    verbose = false,
-    seriestype = :line,
-    marker = :circle,
-)
-    # Generate file paths for each node
-    file_paths = [joinpath(prefix * string(node), "stdout.txt") for node in nodes]
-
-    # Load data based on the file paths and pattern
-    datas = load_data(file_paths, directory, pattern)
-    avgs = calc_avgs(datas; range = range)
-
-    # Optionally print averages for debugging
-    if verbose
-        println("Averages speeds (M/h): ", avgs)
-        println("Num of points: ", [length(data[1]) for data in datas])
-    end
-
-    # Iterate over the loaded data to plot
-    for i = 1:length(datas)
-        label_i = string(basename(directory), "-", prefix, nodes[i])
-        steps = datas[i][1][range]  # x-values: steps
-        values = datas[i][3][range]  # y-values: matched values
-
-        # Ensure data is not empty or mismatched in length
-        if isempty(steps) || isempty(values)
-            println("Warning: No data found for node $nodes[i]. Skipping.")
-            continue
-        end
-
-        # Plot the data
-        plt =
-            plot!(steps, values, seriestype = seriestype, marker = marker, label = label_i)
-    end
-
-    # return plt
-end
-
-function plot_scaling(
-    plt,
-    nodes,
-    directories;  # (directory, label) tuples
-    prefix = "N",
-    range = :,
-    pattern = r"total evolution compute time:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)",
-    verbose = false,
-    with_ideal = false,
-    seriestype = :line,
-    marker = :circle,
-)
-    # Generate file paths for each node
-    file_paths = [joinpath(prefix * string(node), "stdout.txt") for node in nodes]
-
-    # Loop over directories
-    (directory, label) = directories
-
-    # Load data for each directory
-    datas = load_data(file_paths, directory, pattern)
-    avgs = calc_avgs(datas; range = range)
-
-    # Optionally print averages for debugging
-    if verbose
-        println("Averages speeds (M/h) for $label: ", avgs)
-    end
-
-    # Check if `avgs` is not empty before plotting
-    if !isempty(avgs)
-        # Plot the computed averages
-        plt = plot!(nodes, avgs, seriestype = seriestype, marker = marker, label = label)
-
-        # Optionally plot the ideal scaling line
-        if with_ideal
-            ideal_avgs = [avgs[1] / nodes[1] * node for node in nodes]
-            plt = plot!(
-                nodes,
-                ideal_avgs,
-                seriestype = seriestype,
-                marker = marker,
-                label = "",
-            )
-        end
-    else
-        println("Warning: No data to plot for directory $directory.")
-    end
-
-    # return plt
-end
-
-function plot_efficiency(
-    plt,
-    nodes,
-    directories;  # List of (directory, label) tuples
-    prefix = "N",
-    range = :,
-    with_ideal = false,
-    pattern = r"total evolution compute time:\s+([+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)?)",
-)
-    # Generate file paths for each node
-    file_paths = [joinpath(prefix * string(node), "stdout.txt") for node in nodes]
-
-    # Loop over directories
-    for (directory, label) in directories
-        # Load data for each directory
-        datas = load_data(file_paths, directory, pattern)
-        avgs = calc_avgs(datas, range)
-
-        # Ensure avgs is not empty and has the expected length
-        if isempty(avgs) || length(avgs) != length(nodes)
-            println("Warning: Insufficient data for directory $directory. Skipping.")
-            continue
-        end
-
-        # Compute ideal efficiency
-        ideal_avgs = [avgs[1] / nodes[1] * n for n in nodes]
-
-        # Compute efficiency
-        efficiency = [avgs[i] / ideal_avgs[i] for i = 1:length(nodes)]
-
-        # Plot efficiency
-        plt = plot!(nodes, efficiency, seriestype = :line, marker = :circle, label = label)
-
-        # Optionally plot the ideal efficiency line
-        if with_ideal
-            plt = plot!(
-                nodes,
-                [1.0 for _ in nodes],
-                seriestype = :line,
-                marker = :circle,
-                label = "Ideal",
-            )
-        end
-    end
-
-    # return plt
 end
 
 end
