@@ -1,0 +1,65 @@
+
+Currently Loaded Modules:
+  1) git/2.24.1      5) intel/23.1.0   9) boost/1.86.0   13) cmake/3.24.2
+  2) autotools/1.2   6) impi/21.9.0   10) petsc/3.22     14) adios2/2.10.2
+  3) xalt/2.10.34    7) gsl/2.7.1     11) papi/5.7.0
+  4) TACC            8) phdf5/1.14.4  12) hwloc/1.11.13
+
+ 
+
+[c207-026:22118:0:22118] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+Abort(537505281) on node 2 (rank 2 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=29520, MPI_CHAR, src=3, tag=2807, comm=0x84000002, request=0x7ffc6f0b3d18) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(805940737) on node 17 (rank 17 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=154440, MPI_CHAR, src=15, tag=2807, comm=0x84000002, request=0x7fffec15b3a8) failed
+PMPI_Irecv(114): Null buffer pointer
+[c207-026:22086:0:22086] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  22086) ====
+Abort(134852097) on node 29 (rank 29 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=458640, MPI_CHAR, src=27, tag=2793, comm=0x84000002, request=0x7ffd1b97c608) failed
+PMPI_Irecv(114): Null buffer pointer
+[c207-026:22111:0:22111] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  22111) ====
+Abort(873049601) on node 10 (rank 10 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=46800, MPI_CHAR, src=4, tag=2809, comm=0x84000002, request=0x7fffe59ba788) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(67743233) on node 22 (rank 22 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=82944, MPI_CHAR, src=7, tag=2815, comm=0x84000002, request=0x7ffc865acc98) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(1007267329) on node 23 (rank 23 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=442368, MPI_CHAR, src=25, tag=2796, comm=0x84000002, request=0x7ffca69a15b8) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(738831873) on node 30 (rank 30 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=7800, MPI_CHAR, src=27, tag=2838, comm=0x84000002, request=0x7ffd5a1a1268) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(201960961) on node 34 (rank 34 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=608400, MPI_CHAR, src=33, tag=2799, comm=0x84000002, request=0x7ffe420a1918) failed
+PMPI_Irecv(114): Null buffer pointer
+[c207-026:22103:0:22103] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  22103) ====
+[c207-026:22104:0:22104] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  22104) ====
+[c207-026:22105:0:22105] Caught signal 11 (Segmentation fault: address not mapped to object at address (nil))
+==== backtrace (tid:  22105) ====
+Abort(940158465) on node 41 (rank 41 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=20736, MPI_CHAR, src=20, tag=2839, comm=0x84000002, request=0x7ffdae4b4168) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(470396417) on node 43 (rank 43 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=229320, MPI_CHAR, src=15, tag=2808, comm=0x84000002, request=0x7fff133f7e58) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(1007267329) on node 44 (rank 44 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=46800, MPI_CHAR, src=9, tag=2795, comm=0x84000002, request=0x7fffab665468) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(940158465) on node 51 (rank 51 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=1512, MPI_CHAR, src=11, tag=2810, comm=0x84000002, request=0x7ffcddc564b8) failed
+PMPI_Irecv(114): Null buffer pointer
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+
+real	5m27.735s
+user	287m43.480s
+sys	3m28.705s

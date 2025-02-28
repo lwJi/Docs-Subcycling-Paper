@@ -1,0 +1,49 @@
+
+Currently Loaded Modules:
+  1) git/2.24.1      5) intel/23.1.0   9) boost/1.86.0   13) cmake/3.24.2
+  2) autotools/1.2   6) impi/21.9.0   10) petsc/3.22     14) adios2/2.10.2
+  3) xalt/2.10.34    7) gsl/2.7.1     11) papi/5.7.0
+  4) TACC            8) phdf5/1.14.4  12) hwloc/1.11.13
+
+ 
+
+Abort(604614145) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=229320, MPI_CHAR, src=1, tag=3291, comm=0x84000003, request=0x7ffdeb326c48) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(470396417) on node 3 (rank 3 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=101400, MPI_CHAR, src=0, tag=3329, comm=0x84000002, request=0x7ffeac177878) failed
+PMPI_Irecv(114): Null buffer pointer
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Abort(671723009) on node 8 (rank 8 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=24576, MPI_CHAR, src=17, tag=3303, comm=0x84000002, request=0x7ffef83094e8) failed
+PMPI_Irecv(114): Null buffer pointer
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Abort(1007267329) on node 11 (rank 11 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=2560, MPI_CHAR, src=3, tag=3313, comm=0x84000002, request=0x7ffde9a1a5b8) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(805940737) on node 14 (rank 14 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=84240, MPI_CHAR, src=0, tag=3319, comm=0x84000002, request=0x7ffe2cf2bf78) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(604614145) on node 19 (rank 19 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=103680, MPI_CHAR, src=3, tag=3300, comm=0x84000002, request=0x7ffd78138e18) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(403287553) on node 22 (rank 22 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=6384, MPI_CHAR, src=0, tag=3321, comm=0x84000002, request=0x7ffeac309288) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(671723009) on node 23 (rank 23 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=294624, MPI_CHAR, src=9, tag=3345, comm=0x84000002, request=0x7ffe18803a48) failed
+PMPI_Irecv(114): Null buffer pointer
+Abort(805940737) on node 24 (rank 24 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=504, MPI_CHAR, src=0, tag=3301, comm=0x84000002, request=0x7ffebcffa8d8) failed
+PMPI_Irecv(114): Null buffer pointer
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Abort(403287553) on node 27 (rank 27 in comm 0): Fatal error in PMPI_Irecv: Invalid buffer pointer, error stack:
+PMPI_Irecv(165): MPI_Irecv(buf=(nil), count=165888, MPI_CHAR, src=20, tag=3341, comm=0x84000002, request=0x7ffff71d3a08) failed
+PMPI_Irecv(114): Null buffer pointer
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+Assertion failed in file ../../src/mpid/ch4/shm/posix/eager/include/intel_transport_recv.h at line 1160: cma_read_nbytes == size
+
+real	5m53.672s
+user	314m22.108s
+sys	2m30.847s

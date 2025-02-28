@@ -1,0 +1,421 @@
+$ mkdir -p q1-Z4cowGPU-g64-N2-MPI56_r0000
+$ cp q1-Z4cowGPU-g64.par q1-Z4cowGPU-g64-N2-MPI56_r0000
+$ cd q1-Z4cowGPU-g64-N2-MPI56_r0000
+======================================================================
+Launch MPI code...
+----------------------------------------------------------------------
+MPIRUN = ibrun /home1/08708/liwei/EinsteinToolkit/Cactus/exe/cactus_etk q1-Z4cowGPU-g64.par
+
+Job started on c201-029.frontera.tacc.utexas.edu at Fri Feb  7 19:10:57 CST 2025
+======================================================================
+TACC:  Starting up job 6902861 
+TACC:  Starting parallel tasks... 
+--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.17.0    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.17.0
+Compile date:      Feb 07 2025 (14:26:20)
+Run date:          Feb 07 2025 (19:11:04-0600)
+Run host:          c201-029.frontera.tacc.utexas.edu (pid=233025)
+Working directory: /scratch1/08708/liwei/CarpetX/q1-Z4cowGPU-g64-N2-MPI56_r0000
+Executable:        /home1/08708/liwei/EinsteinToolkit/Cactus/exe/cactus_etk
+Parameter file:    q1-Z4cowGPU-g64.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->ADMBaseX BoxInBox CarpetX CoordinatesX ODESolvers TimerReport TmunuBaseX TwoPuncturesX Z4cowGPU<---
+Thorn ADMBaseX requests automatic activation of Loop
+Thorn CarpetX requests automatic activation of AMReX
+Thorn CarpetX requests automatic activation of IOUtil
+Thorn CarpetX requests automatic activation of MPI
+Thorn CarpetX requests automatic activation of yaml_cpp
+Thorn CarpetX requests automatic activation of zlib
+Thorn CarpetX requests automatic activation of Arith
+Thorn CarpetX requests automatic activation of CarpetXRegrid
+Thorn CarpetX requests automatic activation of ADIOS2
+Thorn CarpetX requests automatic activation of openPMD
+Thorn CarpetX requests automatic activation of Silo
+Thorn ODESolvers requests automatic activation of Subcycling
+Thorn TwoPuncturesX requests automatic activation of GSL
+Thorn Z4cowGPU requests automatic activation of Derivs
+Thorn Z4cowGPU requests automatic activation of NewRadX
+Thorn Arith requests automatic activation of NSIMD
+Thorn MPI requests automatic activation of hwloc
+Thorn openPMD requests automatic activation of HDF5
+Activating thorn ADIOS2...Success -> active implementation ADIOS2
+Activating thorn ADMBaseX...Success -> active implementation ADMBaseX
+Activating thorn AMReX...Success -> active implementation AMReX
+Activating thorn Arith...Success -> active implementation Arith
+Activating thorn BoxInBox...Success -> active implementation BoxInBox
+Activating thorn CarpetX...Success -> active implementation Driver
+Activating thorn CarpetXRegrid...Success -> active implementation CarpetXRegrid
+Activating thorn CoordinatesX...Success -> active implementation CoordinatesX
+Activating thorn Derivs...Success -> active implementation Derivs
+Activating thorn GSL...Success -> active implementation GSL
+Activating thorn HDF5...Success -> active implementation HDF5
+Activating thorn hwloc...Success -> active implementation hwloc
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn Loop...Success -> active implementation Loop
+Activating thorn MPI...Success -> active implementation MPI
+Activating thorn NewRadX...Success -> active implementation NewRadX
+Activating thorn NSIMD...Success -> active implementation NSIMD
+Activating thorn ODESolvers...Success -> active implementation ODESolvers
+Activating thorn openPMD...Success -> active implementation openPMD
+Activating thorn Silo...Success -> active implementation Silo
+Activating thorn Subcycling...Success -> active implementation Subcycling
+Activating thorn TimerReport...Success -> active implementation timerreport
+Activating thorn TmunuBaseX...Success -> active implementation TmunuBaseX
+Activating thorn TwoPuncturesX...Success -> active implementation TwoPuncturesX
+Activating thorn yaml_cpp...Success -> active implementation yaml_cpp
+Activating thorn Z4cowGPU...Success -> active implementation Z4cowGPU
+Activating thorn zlib...Success -> active implementation zlib
+--------------------------------------------------------------------------------
+  if (recover initial data)
+    Recover parameters
+  endif
+
+  Startup routines
+    [CCTK_STARTUP]
+      CarpetX::Driver_Startup: Start up the driver
+      IOUtil::IOUtil_Startup: Startup routine
+      GROUP hwloc_startup: hwloc startup group
+        hwloc::hwloc_version: Output hwloc version
+
+  Startup routines which need an existing grid hierarchy
+    [CCTK_WRAGH]
+      Arith::Test_smallvector: [meta] Test small vectors
+      Arith::Test_spvect: [meta] Test sparse vectors
+  Parameter checking routines
+    [CCTK_PARAMCHECK]
+      TwoPuncturesX::TwoPuncturesX_ParamCheck: Check parameters and thorn needs
+
+  Initialisation
+    if (NOT (recover initial data AND recovery_mode is 'strict'))
+      [CCTK_PREREGRIDINITIAL]
+      Set up grid hierarchy
+      [CCTK_POSTREGRIDINITIAL]
+      [CCTK_BASEGRID]
+        CarpetXRegrid::CarpetXRegrid_InitError: Initialize regridding error to zero
+        CoordinatesX::CoordinatesX_Setup: Set coordinate grid functions
+        GROUP ODESolvers_BaseGrid: Set up constants (e.g. coordinates) everywhere on the grid
+      [CCTK_INITIAL]
+        BoxInBox::BoxInBox_Init: [global] Initialize
+        GROUP ODESolvers_Initial: Set up initial conditions on interior of state vector
+          GROUP ADMBaseX_InitialData: Schedule group for calculating ADM initial data
+            GROUP TwoPuncturesX_Group: TwoPuncturesX initial data group
+              TwoPuncturesX::TwoPuncturesX_TwoPunctures: Create puncture black hole initial data
+              TwoPuncturesX::TwoPuncturesX_Metadata: [global] Output TwoPuncturesX metadata
+          GROUP ADMBaseX_InitialGauge: Schedule group for the ADM initial gauge condition
+            ADMBaseX::ADMBaseX_initial_dtlapse: Set dtlapse to zero
+            ADMBaseX::ADMBaseX_initial_shift: Set shift to zero
+            ADMBaseX::ADMBaseX_initial_dtshift: Set dtshift to zero
+          GROUP ADMBaseX_PostInitial: Schedule group for modifying the ADM initial data, such as e.g. adding noise
+        GROUP Subcycling_RMBndryGroup: Check if the ghost points are at refinement boundary
+          Subcycling::Subcycling_SetLevelNeighbor: Set level_neighbor
+          Subcycling::Subcycling_SetIsRMBndry: Set isrmbndry
+        GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+          TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+          GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+        GROUP Z4cowGPU_InitialGroup: Convert ADM to Z4c variables
+          Z4cowGPU::Z4cowGPU_Initial1: Convert ADM to Z4c variables, part 1
+          Z4cowGPU::Z4cowGPU_Initial2: Convert ADM to Z4c variables, part 2
+        GROUP Z4cowGPU_PostStepGroup: Post-process Z4c variables
+          Z4cowGPU::Z4cowGPU_Sync: Synchronize Z4c variables
+        GROUP Z4cowGPU_PostStepGroup2: Post-process Z4c variables, part 2
+      [CCTK_POSTINITIAL]
+        BoxInBox::EstimateError: Estimate error
+        GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+          GROUP Z4cowGPU_PostStepGroup: Post-process Z4c variables
+            Z4cowGPU::Z4cowGPU_Sync: Synchronize Z4c variables
+          GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+          GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+            TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+            GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+          GROUP Z4cowGPU_PostStepGroup2: Post-process Z4c variables, part 2
+          GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+        GROUP ODESolvers_EstimateError: Estimate discretization error (for regridding)
+      Initialise finer grids recursively
+      Restrict from finer grids
+      [CCTK_POSTRESTRICTINITIAL]
+      [CCTK_POSTPOSTINITIAL]
+      [CCTK_POSTSTEP]
+        BoxInBox::EstimateError: Estimate error
+        GROUP ODESolvers_EstimateError: Estimate discretization error (for regridding)
+    endif
+    if (recover initial data)
+      [CCTK_BASEGRID]
+        CarpetXRegrid::CarpetXRegrid_InitError: Initialize regridding error to zero
+        CoordinatesX::CoordinatesX_Setup: Set coordinate grid functions
+        GROUP ODESolvers_BaseGrid: Set up constants (e.g. coordinates) everywhere on the grid
+      [CCTK_RECOVER_VARIABLES]
+      [CCTK_POST_RECOVER_VARIABLES]
+        GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+          GROUP Z4cowGPU_PostStepGroup: Post-process Z4c variables
+            Z4cowGPU::Z4cowGPU_Sync: Synchronize Z4c variables
+          GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+          GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+            TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+            GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+          GROUP Z4cowGPU_PostStepGroup2: Post-process Z4c variables, part 2
+          GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+        GROUP ODESolvers_EstimateError: Estimate discretization error (for regridding)
+        GROUP Subcycling_RMBndryGroup: Check if the ghost points are at refinement boundary
+          Subcycling::Subcycling_SetLevelNeighbor: Set level_neighbor
+          Subcycling::Subcycling_SetIsRMBndry: Set isrmbndry
+    endif
+    if (checkpoint initial data)
+      [CCTK_CPINITIAL]
+        CarpetX::CarpetX_CheckpointInitial: [meta] Checkpoint initial conditions
+    endif
+    if (analysis)
+      [CCTK_ANALYSIS]
+        GROUP ODESolvers_Analysis: Calculate analysis quantities everywhere
+        TimerReport::zzz_TimerReport_Output: [global] Print the timer report
+        GROUP Z4cowGPU_AnalysisGroup: Analyse Z4c variables
+  endif
+  Output grid variables
+
+  do loop over timesteps
+    [CCTK_PREREGRID]
+    Change grid hierarchy
+    [CCTK_POSTREGRID]
+      GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+        GROUP Z4cowGPU_PostStepGroup: Post-process Z4c variables
+          Z4cowGPU::Z4cowGPU_Sync: Synchronize Z4c variables
+        GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+        GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+          TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+          GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+        GROUP Z4cowGPU_PostStepGroup2: Post-process Z4c variables, part 2
+        GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+      GROUP Subcycling_RMBndryGroup: Check if the ghost points are at refinement boundary
+        Subcycling::Subcycling_SetLevelNeighbor: Set level_neighbor
+        Subcycling::Subcycling_SetIsRMBndry: Set isrmbndry
+      GROUP Z4cowGPU_PostStepGroup: Post-process Z4c variables
+        Z4cowGPU::Z4cowGPU_Sync: Synchronize Z4c variables
+      GROUP Z4cowGPU_PostStepGroup2: Post-process Z4c variables, part 2
+    Rotate timelevels
+    iteration = iteration+1
+    t = t+dt
+    [CCTK_PRESTEP]
+    [CCTK_EVOL]
+      ODESolvers::ODESolvers_Solve_Subcycling: [level] Solve ODEs using Subcycling
+    Evolve finer grids recursively
+    Restrict from finer grids
+    [CCTK_POSTRESTRICT]
+      GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+        GROUP Z4cowGPU_PostStepGroup: Post-process Z4c variables
+          Z4cowGPU::Z4cowGPU_Sync: Synchronize Z4c variables
+        GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+        GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+          TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+          GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+        GROUP Z4cowGPU_PostStepGroup2: Post-process Z4c variables, part 2
+        GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+    [CCTK_POSTSTEP]
+      BoxInBox::EstimateError: Estimate error
+      GROUP ODESolvers_EstimateError: Estimate discretization error (for regridding)
+    if (checkpoint)
+      [CCTK_CHECKPOINT]
+      CarpetX::CarpetX_Checkpoint: [meta] Checkpoint
+      TimerReport::zzz_TimerReport_Checkpoint: [global] Print the timer report
+    endif
+    if (analysis)
+      [CCTK_ANALYSIS]
+      GROUP ODESolvers_Analysis: Calculate analysis quantities everywhere
+      TimerReport::zzz_TimerReport_Output: [global] Print the timer report
+      GROUP Z4cowGPU_AnalysisGroup: Analyse Z4c variables
+    endif
+    Output grid variables
+    enddo
+
+  Termination routines
+    [CCTK_TERMINATE]
+      CarpetX::CarpetX_CheckpointTerminate: [meta] Checkpoint before terminating
+      TimerReport::zzz_TimerReport_Output: [global] Print the timer report
+
+  Shutdown routines
+    [CCTK_SHUTDOWN]
+      CarpetX::Driver_Shutdown: [meta] Shut down the driver
+
+  Routines run after changing the grid hierarchy:
+    [CCTK_POSTREGRID]
+      GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+        GROUP Z4cowGPU_PostStepGroup: Post-process Z4c variables
+          Z4cowGPU::Z4cowGPU_Sync: Synchronize Z4c variables
+        GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+        GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+          TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+          GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+        GROUP Z4cowGPU_PostStepGroup2: Post-process Z4c variables, part 2
+        GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+      GROUP Subcycling_RMBndryGroup: Check if the ghost points are at refinement boundary
+        Subcycling::Subcycling_SetLevelNeighbor: Set level_neighbor
+        Subcycling::Subcycling_SetIsRMBndry: Set isrmbndry
+      GROUP Z4cowGPU_PostStepGroup: Post-process Z4c variables
+        Z4cowGPU::Z4cowGPU_Sync: Synchronize Z4c variables
+      GROUP Z4cowGPU_PostStepGroup2: Post-process Z4c variables, part 2
+--------------------------------------------------------------------------------
+INFO (hwloc): library version 1.11.13, API version 0x10b06
+--------------------------------------------------------------------------------
+                                                            
+   _______ _______  ______  _____  _______ _______ _     _  
+   |       |_____| |_____/ |_____] |______    |     \___/   
+   |_____  |     | |    \_ |       |______    |    _/   \_  
+                                                            
+AMR driver provided by CarpetX,
+using AMReX 24.12-14-gb3f67385e62f (MPI, OpenMP, no accelerators, optimized)
+--------------------------------------------------------------------------------
+
+Initializing AMReX (24.12-14-gb3f67385e62f)...
+MPI initialized with 56 MPI processes
+MPI initialized with thread support level 2
+OMP initialized with 2 OMP threads
+AMReX (24.12-14-gb3f67385e62f) initialized
+INFO (CarpetX): 
+Symmetries:
+  lower x: none
+  lower y: none
+  lower z: none
+  upper x: none
+  upper y: none
+  upper z: none
+Default boundaries:
+  lower x: linear_extrapolation
+  lower y: linear_extrapolation
+  lower z: linear_extrapolation
+  upper x: linear_extrapolation
+  upper y: linear_extrapolation
+  upper z: linear_extrapolation
+INFO (Arith): Test_smallvector
+INFO (Arith): Test_spvect
+INFO (CarpetX): Setting initial values for max_grid_size values for all levels
+INFO (CarpetX): Setting up initial conditions...
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Patch 0:
+INFO (CarpetX):   Grid extent:
+INFO (CarpetX):     gsh=[247,247,247]
+INFO (CarpetX):     blocking_factor=[8,8,8]
+INFO (CarpetX):     max_grid_size=[64,64,64]
+INFO (CarpetX):     max_tile_size=[10240000,4,4]
+INFO (CarpetX):   Domain extent:
+INFO (CarpetX):     xmin=[-400,-400,-400]
+INFO (CarpetX):     xmax=[400.00000000000006,400.00000000000006,400.00000000000006]
+INFO (CarpetX):     base dx=[3.3333333333333335,3.3333333333333335,3.3333333333333335]
+INFO (CarpetX): Initializing level 0...
+INFO (TwoPuncturesX): Solving puncture equation for BH-BH system
+INFO (TwoPuncturesX): b = 4
+Newton: it=0 	 |F|=3.372486e-03
+bare mass: mp=0.4824 	 mm=0.4824
+bicgstab:  itmax 100, tol 3.372486e-06
+bicgstab:     0   4.536e-02
+bicgstab:     1   1.630e-01   1.032e+00   0.000e+00   6.915e-01
+bicgstab:     2   3.747e-02   1.731e+00   2.119e-02   4.256e-01
+bicgstab:     3   6.557e-03   6.281e-01   2.121e-01   5.886e-01
+bicgstab:     4   1.216e-03   1.084e+00   8.294e-02   3.610e-01
+bicgstab:     5   6.239e-04   9.026e-01   2.751e-01   9.005e-01
+bicgstab:     6   1.090e-03   5.184e+00   9.036e-02   3.778e-01
+bicgstab:     7   6.561e-06   6.053e-02  -6.586e+01   1.151e+00
+bicgstab:     8   4.047e-06   1.984e+00  -1.037e-03   1.017e+00
+bicgstab:     9   1.548e-05  -1.708e+01  -1.717e-01   4.298e-01
+bicgstab:    10   3.618e-07  -1.733e-02  -1.047e+03   4.298e-01
+Newton: it=1 	 |F|=1.353488e-06
+bare mass: mp=0.4824 	 mm=0.4824
+bicgstab:  itmax 100, tol 1.353488e-09
+bicgstab:     0   1.593e-05
+bicgstab:     1   5.290e-05   1.197e+00   0.000e+00   6.360e-01
+bicgstab:     2   4.935e-05  -5.333e-02   8.724e-03   2.177e-01
+bicgstab:     3   9.028e-07  -1.281e+01  -1.170e+00   9.091e-01
+bicgstab:     4   9.403e-08   6.680e-01   3.517e-01   5.320e-01
+bicgstab:     5   1.134e-08   5.114e-01   1.253e-01   6.093e-01
+bicgstab:     6   2.804e-09   2.731e+00  -2.519e-01   5.379e-01
+bicgstab:     7   2.212e-09  -3.845e-01   1.911e-01   3.978e-01
+bicgstab:     8   2.481e-10  -9.325e-01  -2.798e+00   3.978e-01
+Newton: it=2 	 |F|=3.542162e-11 
+INFO (TwoPuncturesX): The two puncture masses are mp=0.4824 and mm=0.4824
+INFO (TwoPuncturesX): Puncture 1 ADM mass is 0.500098
+INFO (TwoPuncturesX): Puncture 2 ADM mass is 0.500098
+INFO (TwoPuncturesX): The total ADM mass is 0.988444
+INFO (TwoPuncturesX): Interpolating result
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 64 boxes, 13824000 cells (100%)
+INFO (CarpetX):   level 1: 125 boxes, 20123648 cells (18.2%, 18%)
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Initializing level 1...
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 64 boxes, 13824000 cells (100%)
+INFO (CarpetX):   level 1: 125 boxes, 20123648 cells (18.2%, 18%)
+INFO (CarpetX):   level 2: 125 boxes, 20123648 cells (2.275%, 12%)
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Initializing level 2...
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 64 boxes, 13824000 cells (100%)
+INFO (CarpetX):   level 1: 125 boxes, 20123648 cells (18.2%, 18%)
+INFO (CarpetX):   level 2: 125 boxes, 20123648 cells (2.275%, 12%)
+INFO (CarpetX):   level 3: 125 boxes, 21307392 cells (0.301%, 13%)
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Initializing level 3...
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 64 boxes, 13824000 cells (100%)
+INFO (CarpetX):   level 1: 125 boxes, 20123648 cells (18.2%, 18%)
+INFO (CarpetX):   level 2: 125 boxes, 20123648 cells (2.275%, 12%)
+INFO (CarpetX):   level 3: 125 boxes, 21307392 cells (0.301%, 13%)
+INFO (CarpetX):   level 4: 80 boxes, 16588800 cells (0.0293%, 10%)
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Initializing level 4...
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 64 boxes, 13824000 cells (100%)
+INFO (CarpetX):   level 1: 125 boxes, 20123648 cells (18.2%, 18%)
+INFO (CarpetX):   level 2: 125 boxes, 20123648 cells (2.275%, 12%)
+INFO (CarpetX):   level 3: 125 boxes, 21307392 cells (0.301%, 13%)
+INFO (CarpetX):   level 4: 80 boxes, 16588800 cells (0.0293%, 10%)
+INFO (CarpetX):   level 5: 90 boxes, 10027008 cells (0.002214%, 8%)
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Initializing level 5...
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 64 boxes, 13824000 cells (100%)
+INFO (CarpetX):   level 1: 125 boxes, 20123648 cells (18.2%, 18%)
+INFO (CarpetX):   level 2: 125 boxes, 20123648 cells (2.275%, 12%)
+INFO (CarpetX):   level 3: 125 boxes, 21307392 cells (0.301%, 13%)
+INFO (CarpetX):   level 4: 80 boxes, 16588800 cells (0.0293%, 10%)
+INFO (CarpetX):   level 5: 90 boxes, 10027008 cells (0.002214%, 8%)
+INFO (CarpetX):   level 6: 108 boxes, 12976128 cells (0.0003581%, 16%)
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Initializing level 6...
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 64 boxes, 13824000 cells (100%)
+INFO (CarpetX):   level 1: 125 boxes, 20123648 cells (18.2%, 18%)
+INFO (CarpetX):   level 2: 125 boxes, 20123648 cells (2.275%, 12%)
+INFO (CarpetX):   level 3: 125 boxes, 21307392 cells (0.301%, 13%)
+INFO (CarpetX):   level 4: 80 boxes, 16588800 cells (0.0293%, 10%)
+INFO (CarpetX):   level 5: 90 boxes, 10027008 cells (0.002214%, 8%)
+INFO (CarpetX):   level 6: 108 boxes, 12976128 cells (0.0003581%, 16%)
+INFO (CarpetX):   level 7: 90 boxes, 8192000 cells (2.826e-05%, 8%)
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Initializing level 7...
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 64 boxes, 13824000 cells (100%)
+INFO (CarpetX):   level 1: 125 boxes, 20123648 cells (18.2%, 18%)
+INFO (CarpetX):   level 2: 125 boxes, 20123648 cells (2.275%, 12%)
+INFO (CarpetX):   level 3: 125 boxes, 21307392 cells (0.301%, 13%)
+INFO (CarpetX):   level 4: 80 boxes, 16588800 cells (0.0293%, 10%)
+INFO (CarpetX):   level 5: 90 boxes, 10027008 cells (0.002214%, 8%)
+INFO (CarpetX):   level 6: 108 boxes, 12976128 cells (0.0003581%, 16%)
+INFO (CarpetX):   level 7: 90 boxes, 8192000 cells (2.826e-05%, 8%)
+INFO (CarpetX):   level 8: 90 boxes, 8192000 cells (3.532e-06%, 12%)
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.833333
+INFO (CarpetX): Initializing level 8...
+TACC:  MPI job exited with code: 1 
+TACC:  Shutdown complete. Exiting. 
+Error: MPI job failed.
