@@ -19,3 +19,11 @@
     CarpetX::use_subcycling_wip = yes
     CarpetX::restrict_during_sync = no
     ```
+
+## Z4cow Thorn
+
+* [Z4cow](https://github.com/lwJi/SpacetimeX/tree/development/Z4cow)
+
+* [Z4cowGPU](https://github.com/lwJi/SpacetimeX/tree/development/Z4cowGPU) (optimized for GPU)
+
+* [Z4cowCarpet](https://github.com/lwJi/Spacetime/tree/main/Z4cowCarpet) (Carpet version)
