@@ -1,0 +1,412 @@
+#==============================================================================
+
+ActiveThorns = "lazev admanalysis admbase admcoupling admmacros coordgauge spacemask StaticConformal  boundary time cartgrid3d ioutil iobasic nanchecker CoordBase aeilocalinterp KillRun Slab SphericalSurface LocalReduce MoL Carpet CarpetInterp CarpetIOASCII CarpetLib CarpetReduce CarpetSlab CarpetRegrid2 LazRegrid2 AHFinderDirect SphericalSurface AntennaSimple CarpetIOHDF5 CarpetIOScalar TwoPunctures InitBase SymBase LoopControl GSL RotatingSymmetry180 ReflectionSymmetry"
+LoopControl::settle_after_iteration = 0 
+
+
+ActiveThorns = "TimerReport"
+
+TimerReport::out_every    = 512
+TimerReport::out_filename = "TimerReport"
+Carpet::output_timers_every = 512
+#------------------------------------------------------------------------------
+
+# Run parameters
+#------------------------------------------------------------------------------
+
+# Grid
+
+mol::ode_method                        = "RK4"
+mol::mol_intermediate_steps            = 4
+mol::mol_num_scratch_levels            = 1
+#mol::initial_data_is_crap = true
+
+
+
+CoordBase::domainsize       = "minmax"
+CoordBase::xmin             = 0
+CoordBase::ymin             = -400
+CoordBase::zmin             = 0
+CoordBase::xmax             = 400
+CoordBase::ymax             = 400
+CoordBase::zmax             = 400
+CoordBase::spacing          = "numcells"
+CoordBase::ncells_x         = 174
+CoordBase::ncells_y         = 174*2
+CoordBase::ncells_z         = 174
+CartGrid3D::type            = "coordbase"
+CartGrid3D::domain          = "full"
+CartGrid3D::bitant_plane    = "xy"
+CartGrid3D::avoid_originx   = no
+CartGrid3D::avoid_originy   = no
+CartGrid3D::avoid_originz   = no
+
+CoordBase::boundary_size_x_lower        = 4
+CoordBase::boundary_size_y_lower        = 1
+CoordBase::boundary_size_z_lower        = 4
+CoordBase::boundary_shiftout_x_lower    = 1
+CoordBase::boundary_shiftout_y_lower    = 0
+CoordBase::boundary_shiftout_z_lower    = 1
+
+CoordBase::boundary_size_x_upper        = 1
+CoordBase::boundary_size_y_upper        = 1
+CoordBase::boundary_size_z_upper        = 1
+
+ReflectionSymmetry::reflection_x="no"
+ReflectionSymmetry::reflection_y="no"
+ReflectionSymmetry::reflection_z="yes"
+ReflectionSymmetry::avoid_origin_x="no"
+ReflectionSymmetry::avoid_origin_y="no"
+ReflectionSymmetry::avoid_origin_z="no"
+ReflectionSymmetry::avoid_origin_upper_x="no"
+ReflectionSymmetry::avoid_origin_upper_y="no"
+ReflectionSymmetry::avoid_origin_upper_z="no"
+
+
+
+#SymHelp::grid_domain = "cartgrid3d"
+#SymHelp::grid_avoid_origin = "no"
+
+
+driver::ghost_size                        = 4
+#driver::ghost_size                        = 9
+#driver::storage_verbose = "report" #  Memory usage
+
+#---------------------------------------------------------------------------
+
+#cactus::cctk_itlast                     = 2000
+#cactus::cctk_itlast                     = 0
+cactus::cctk_itlast                     = 200000
+
+#--- fisheye
+#fisheye::fisheye_active                 = "no"
+
+
+#time::dtfac                        = .007421875
+time::dtfac                        = .25
+Carpet::domain_from_coordbase       = yes
+Carpet::prolongation_order_space   = 5
+Carpet::prolongation_order_time    = 2
+Carpet::max_refinement_levels      = 11 #5
+Carpet::use_buffer_zones = yes
+Carpet::verbose           = no
+Carpet::schedule_barriers = no
+Carpet::veryverbose       = no
+#Carpet::constant_load_per_processor = yes
+
+CarpetLib::output_bboxes  = no
+CarpetLib::check_bboxes              = no
+CarpetLib::interleave_communications = yes
+CarpetLib::combine_sends             = yes
+
+Carpet::init_3_timelevels = "yes"
+Carpet::init_each_timelevel = "no"
+Carpet::enable_all_storage     = no
+Carpet::regrid_during_recovery = no
+
+
+CarpetRegrid2::regrid_every = 32
+
+CarpetRegrid2::num_centres = 2
+CarpetRegrid2::symmetry_rotating180 = yes
+
+CarpetRegrid2::num_levels_1 = 9
+CarpetRegrid2::position_x_1 = 4
+CarpetRegrid2::position_y_1 = 0
+CarpetRegrid2::position_z_1 = 0
+CarpetRegrid2::radius_1[ 1] = 220
+CarpetRegrid2::radius_1[ 2] = 110
+CarpetRegrid2::radius_1[ 3] = 55
+CarpetRegrid2::radius_1[ 4] = 25
+CarpetRegrid2::radius_1[ 5] = 10
+CarpetRegrid2::radius_1[ 6] = 5
+CarpetRegrid2::radius_1[ 7] = 2
+CarpetRegrid2::radius_1[ 8] = 1
+CarpetRegrid2::radius_1[ 9] = 0.6
+
+CarpetRegrid2::num_levels_2 = 9
+CarpetRegrid2::position_x_2 = -4
+CarpetRegrid2::position_y_2 = 0
+CarpetRegrid2::position_z_2 = 0
+CarpetRegrid2::radius_2[ 1] = 220
+CarpetRegrid2::radius_2[ 2] = 110
+CarpetRegrid2::radius_2[ 3] = 55
+CarpetRegrid2::radius_2[ 4] = 25
+CarpetRegrid2::radius_2[ 5] = 10
+CarpetRegrid2::radius_2[ 6] = 5
+CarpetRegrid2::radius_2[ 7] = 2
+CarpetRegrid2::radius_2[ 8] = 1
+CarpetRegrid2::radius_2[ 9] = 0.6
+
+
+# MODEL 
+initbase::initial_data_setup_method = init_some_levels
+ADMBase::initial_data = "twopunctures"
+TwoPunctures::keep_u_around     = no
+
+TwoPunctures::npoints_A         = 60
+TwoPunctures::npoints_B         = 60
+TwoPunctures::npoints_phi       = 60
+
+
+TwoPunctures::par_X_plus[0]     = 4.0
+TwoPunctures::par_X_plus[1]     = 0
+TwoPunctures::par_X_plus[2]     = 0
+TwoPunctures::par_m_plus        = 0.4824
+TwoPunctures::par_P_plus[0]     = 0.0
+TwoPunctures::par_P_plus[1]     = 0.114
+TwoPunctures::par_P_plus[2]     = 0
+TwoPunctures::par_S_plus[0]     = 0
+TwoPunctures::par_S_plus[1]     = 0
+TwoPunctures::par_S_plus[2]     = 0
+
+TwoPunctures::par_X_minus[0]    = -4.0
+TwoPunctures::par_X_minus[1]    = 0
+TwoPunctures::par_X_minus[2]    = 0
+TwoPunctures::par_m_minus       = 0.4824
+TwoPunctures::par_P_minus[0]    = 0
+TwoPunctures::par_P_minus[1]    = -0.114
+TwoPunctures::par_P_minus[2]    = 0
+TwoPunctures::par_S_minus[0]    = 0
+TwoPunctures::par_S_minus[1]    = 0
+TwoPunctures::par_S_minus[2]    = 0
+TwoPunctures::Newton_maxit = 20
+TwoPunctures::Newton_tol = 2.0e-10
+
+TwoPunctures::grid_setup_method = "evaluation"
+
+
+
+
+
+admbase::metric_type                    = "Physical"
+#staticconformal::conformal_storage      = "factor+derivs+2nd derivs"
+
+#--- numerics
+
+admbase::evolution_method       = "lazev"
+boundary::radpower              = 2
+
+
+# 4th order evolution with RK
+admbase::lapse_evolution_method         = "lazev"
+
+admbase::shift_evolution_method         = "lazev"
+#admbase::shift_evolution_method         = "static"
+
+lazev::use_dissipation = "yes"
+lazev::dissipation_coefficient = 0.1
+LazEv::calculate_constraints = "yes"
+
+
+# Gamma Driver parameters
+# F = 3/4 alpha /psi^4, eta = 2.8 M
+lazev::veta_central = 2.0
+lazev::veta_width=40.00
+
+
+lazev::force_xi_positive = "no"
+lazev::xi_minimum_early = 1.0e-30
+lazev::xi_minimum_late =  1.0e-30
+lazev::xi_minimum_transition_time = -1
+lazev::force_lapse_positive = "yes"
+lazev::lapse_minimum=1.0e-30
+lazev::jenna_xi_minimum = 1.0e-30
+
+
+admbase::initial_shift                  = "zero"
+
+lazev::initial_lapse_psi_power=2
+admbase::initial_lapse                  = "inverse_psi_power"
+lazev::lapse_num_puncts=2
+lazev::lapse_punct_m[0] = 0.5
+lazev::lapse_punct_m[1] = 0.5
+lazev::lapse_punct_x[0] = 4
+lazev::lapse_punct_x[1] = -4
+
+
+#------------------------------------------------------------------------------
+# Output
+#------------------------------------------------------------------------------
+IO::out_dir                             = $parfile
+IO::out_fileinfo   			= "none"
+
+
+
+
+CarpetIOASCII::out1D_every                    = 512
+#CarpetIOASCII::out1D_every                    = 1
+#CarpetIOASCII::out1D_vars                     = "admbase::alp  admbase::metric  admbase::curv admbase::shift lazev::Gammat lazev::trK lazev::xi  lazev::track_punct lazev::gt lazev::at AntennaSimple::weyl_scalars"
+CarpetIOASCII::out1D_vars                     = "admbase::alp  admbase::metric  admbase::curv admbase::shift lazev::Gammat lazev::trK lazev::xi  lazev::track_punct LazEv::admconstraints_scalar LazEv::admconstraints_vector LazEv::BSSNconstraints CarpetReduce::weight"
+CarpetIOASCII::out1D_d=no
+#ADMMacros::spatial_order=4
+CarpetIOScalar::outScalar_vars = "lazev::xi admbase::alp LazEv::admconstraints_scalar LazEv::admconstraints_vector LazEv::BSSNconstraints"
+CarpetIOScalar::outScalar_every = 256
+CarpetIOScalar::outScalar_reductions = "minimum maximum norm2 norm_inf"
+
+#==============================================================================
+NaNChecker::check_every 	=	16
+NaNChecker::check_vars	 	=	"lazev::gt LazEv::At"
+#NaNChecker::action_if_found	=	"terminate"
+NaNChecker::action_if_found	=	"abort"
+NaNChecker::check_after=2
+
+cactus::terminate="runtime"
+cactus::max_runtime=288000  #  46 days
+
+
+AntennaSimple::extract_every = 32
+
+AntennaSimple::order = 4
+AntennaSimple::elecmag_weyl = "yes"
+AntennaSimple::coordinate_radius_type = "physical"
+AntennaSimple::num_radial_observers=7
+AntennaSimple::theta_points=37
+AntennaSimple::phi_points=73
+AntennaSimple::spherical_integrate_every=32
+AntennaSimple::l_max = 4
+AntennaSimple::only_even_l = "no"
+AntennaSimple::radial_observer[0] = 50
+AntennaSimple::radial_observer[1] = 60
+AntennaSimple::radial_observer[2] = 70
+AntennaSimple::radial_observer[3] = 80
+AntennaSimple::radial_observer[4] = 90
+AntennaSimple::radial_observer[5] = 100
+AntennaSimple::radial_observer[6] = 110
+AntennaSimple::use_external_sylm_decomp = no
+#
+
+lazev::track_punctures = "yes"
+lazev::num_tracked_punctures = 2
+lazev::tracked_punct_x0[0] = 4
+lazev::tracked_punct_y0[0] = 0
+lazev::tracked_punct_z0[0] = 0
+lazev::tracked_punct_x0[1] = -4
+lazev::tracked_punct_y0[1] = 0
+lazev::tracked_punct_z0[1] = 0
+lazev::track_punctures_with_pi_sym = "yes"
+LazEv::out_track_every=16
+
+
+lazev::MaxNumEvolvedVars=21
+
+AHFinderDirect::find_every   = 16
+AHFinderDirect::move_origins = yes
+
+AHFinderDirect::geometry_interpolator_name = "Lagrange polynomial interpolation"
+AHFinderDirect::geometry_interpolator_pars = "order=3"
+AHFinderDirect::surface_interpolator_name  = "Lagrange polynomial interpolation"
+AHFinderDirect::surface_interpolator_pars  = "order=3"
+
+AHFinderDirect::N_horizons = 3
+
+AHFinderDirect::origin_x                                 [1] =  4
+AHFinderDirect::origin_y                                 [1] =  0
+AHFinderDirect::origin_z                                 [1] =  0
+AHFinderDirect::initial_guess__coord_sphere__x_center    [1] =  4
+AHFinderDirect::initial_guess__coord_sphere__y_center    [1] =  0
+AHFinderDirect::initial_guess__coord_sphere__z_center    [1] =  0
+AHFinderDirect::initial_guess__coord_sphere__radius      [1] =  0.4
+AHFinderDirect::which_surface_to_store_info              [1] = 0
+AHFinderDirect::reset_horizon_after_not_finding          [1] = no
+AHFinderDirect::patch_system_type                        [1] = "full sphere"
+
+AHFinderDirect::origin_x                                 [2] =  -4
+AHFinderDirect::origin_y                                 [2] =  0
+AHFinderDirect::origin_z                                 [2] =  0
+AHFinderDirect::initial_guess__coord_sphere__x_center    [2] =  -4
+AHFinderDirect::initial_guess__coord_sphere__y_center    [2] =  0
+AHFinderDirect::initial_guess__coord_sphere__z_center    [2] =  0
+AHFinderDirect::initial_guess__coord_sphere__radius      [2] =  0.4
+AHFinderDirect::which_surface_to_store_info              [2] = 1
+AHFinderDirect::reset_horizon_after_not_finding          [2] = no
+AHFinderDirect::patch_system_type                        [2] = "full sphere"
+
+AHFinderDirect::origin_x                                 [3] =  0
+AHFinderDirect::origin_y                                 [3] =  0
+AHFinderDirect::origin_z                                 [3] =  0
+AHFinderDirect::initial_guess__coord_sphere__x_center    [3] =  0
+AHFinderDirect::initial_guess__coord_sphere__y_center    [3] =  0
+AHFinderDirect::initial_guess__coord_sphere__z_center    [3] =  0
+AHFinderDirect::initial_guess__coord_sphere__radius      [3] =  1.5
+AHFinderDirect::which_surface_to_store_info              [3] = 2
+AHFinderDirect::reset_horizon_after_not_finding          [3] = no
+AHFinderDirect::patch_system_type                        [3] = "full sphere"
+
+SphericalSurface::nsurfaces = 3
+SphericalSurface::maxntheta = 39
+SphericalSurface::maxnphi   = 76
+
+SphericalSurface::ntheta      [0] = 39
+SphericalSurface::nphi        [0] = 76
+SphericalSurface::nghoststheta[0] = 2
+SphericalSurface::nghostsphi  [0] = 2
+
+SphericalSurface::ntheta      [1] = 39
+SphericalSurface::nphi        [1] = 76
+SphericalSurface::nghoststheta[1] = 2
+SphericalSurface::nghostsphi  [1] = 2
+
+SphericalSurface::ntheta      [2] = 39
+SphericalSurface::nphi        [2] = 76
+SphericalSurface::nghoststheta[2] = 2
+SphericalSurface::nghostsphi  [2] = 2
+
+ActiveThorns="CarpetMask"
+CarpetMask::verbose = no
+
+CarpetMask::excluded_surface       [0] = 0
+CarpetMask::excluded_surface_factor[0] = 1.0
+
+CarpetMask::excluded_surface       [1] = 1
+CarpetMask::excluded_surface_factor[1] = 1.0
+
+CarpetMask::excluded_surface       [2] = 2
+CarpetMask::excluded_surface_factor[2] = 1.0
+
+
+ActiveThorns="HorizonSpin2"
+##
+HorizonSpin2::calculate_spin_every = 512
+HorizonSpin2::theta_points = 161
+HorizonSpin2::phi_points = 321
+HorizonSpin2::num_horizons = 3
+HorizonSpin2::max_hor_rad = 10
+##
+HorizonSpin2::initial_spinx[1] = 0
+HorizonSpin2::initial_spiny[1] = 0
+HorizonSpin2::initial_spinz[1] = 1
+HorizonSpin2::initial_spinx[2] = 0
+HorizonSpin2::initial_spiny[2] = 0
+HorizonSpin2::initial_spinz[2] = 1
+HorizonSpin2::initial_spinx[3] = 0
+HorizonSpin2::initial_spiny[3] = 0
+HorizonSpin2::initial_spinz[3] = 1
+
+HorizonSpin2::adjust_spin_direction = "no"
+HorizonSpin2::max_iterations=10
+
+HorizonSpin2::horizon_average_vars="LazEv::admconstraints_scalar LazEv::admconstraints_vector LazEv::bssnconstraints ADMBase::alp LazEv::xi"
+HorizonSpin2::horizon_vector_flux_groups="LazEv::admconstraints_vector LazEv::bssnconstraints"
+
+
+#
+#
+CarpetIOHDF5::out2D_every=1024
+CarpetIOHDF5::out2D_vars= "LazEv::gt LazEv::At LazEv::trK LazEv::xi LazEv::Gammat ADMBase::alp ADMBase::shift LazEv::admconstraints_scalar LazEv::admconstraints_vector LazEv::BSSNconstraints AntennaSimple::rpsi4"
+
+ActiveThorns="SimpleProperDistance"
+SimpleProperDistance::integration_points=2001
+SimpleProperDistance::find_proper_distance_every=512
+
+CarpetIOHDF5::checkpoint = "yes"
+
+IO::checkpoint_ID = "no"
+IO::checkpoint_every = 9750
+IO::checkpoint_keep=2
+IO::checkpoint_on_terminate = yes
+
+
+IO::recover = "autoprobe"
+IO::checkpoint_dir="checkpoint"
+IO::recover_dir="checkpoint"
