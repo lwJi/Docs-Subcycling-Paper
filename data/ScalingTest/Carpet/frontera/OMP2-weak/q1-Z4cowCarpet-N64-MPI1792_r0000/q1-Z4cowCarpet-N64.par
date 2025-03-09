@@ -1,0 +1,262 @@
+# q1
+$itlast = 512
+$final_time = 1000
+$xmin = -400.0
+$xmax = +400.0
+#$deltax = 3.333333333333333
+$nlevels = 9
+$dtfac = 0.25
+$out_every = 64
+
+
+ActiveThorns = "Carpet CarpetLib CarpetInterp CarpetReduce"
+ActiveThorns = "IOUtil"
+ActiveThorns = "NaNChecker"
+ActiveThorns = "Boundary CartGrid3D CoordBase"
+#ActiveThorns = "ReflectionSymmetry RotatingSymmetry180"
+ActiveThorns = "SymBase"
+ActiveThorns = "CarpetRegrid2"
+ActiveThorns = "MoL Time"
+ActiveThorns = "TwoPunctures"
+ActiveThorns = "ADMBase StaticConformal TmunuBase"
+ActiveThorns = "Z4cowCarpet NewRad"
+#ActiveThorns = "Dissipation"
+ActiveThorns = "CarpetIOBasic"
+#ActiveThorns = "CarpetIOScalar"
+ActiveThorns = "CarpetIOASCII"
+ActiveThorns = "TimerReport"
+
+
+Cactus::cctk_run_title = "Q1"
+Cactus::cctk_full_warnings         = yes
+Cactus::highlight_warning_messages = no
+
+Cactus::terminate       = "iteration"
+Cactus::cctk_itlast     = $itlast
+Cactus::cctk_final_time = $final_time
+
+
+Carpet::verbose           = no
+Carpet::veryverbose       = no
+Carpet::schedule_barriers = no
+Carpet::storage_verbose   = no
+#Carpet::timers_verbose    = no
+CarpetLib::output_bboxes  = no
+
+Carpet::domain_from_coordbase = yes
+Carpet::max_refinement_levels = $nlevels
+
+driver::ghost_size       = 3
+Carpet::use_buffer_zones = yes
+
+Carpet::prolongation_order_space = 5
+Carpet::prolongation_order_time  = 2
+
+#Carpet::convergence_level = 0
+
+Carpet::init_fill_timelevels = yes
+#Carpet::init_3_timelevels = yes
+
+Carpet::poison_new_timelevels = yes
+CarpetLib::poison_new_memory  = yes
+
+Carpet::output_timers_every      = 1024
+CarpetLib::print_timestats_every = 1024
+CarpetLib::print_memstats_every  = 1024
+
+#NaNChecker::check_every     = 16
+##NaNChecker::verbose         = "all"
+#NaNChecker::action_if_found = "just warn"
+##NaNChecker::action_if_found = "terminate"
+#NaNChecker::check_vars      = "
+#  Z4cowCarpet::W
+#  Z4cowCarpet::gamma_tilde
+#  Z4cowCarpet::K_hat
+#  Z4cowCarpet::A_tilde
+#  Z4cowCarpet::Gam_tilde
+#  Z4cowCarpet::Theta
+#  Z4cowCarpet::alphaG
+#  Z4cowCarpet::betaG
+#"
+
+CoordBase::domainsize = "minmax"
+
+CoordBase::xmin = $xmin
+CoordBase::ymin = $xmin
+CoordBase::zmin = $xmin
+CoordBase::xmax = $xmax
+CoordBase::ymax = $xmax
+CoordBase::zmax = $xmax
+CoordBase::spacing  = "numcells"
+CoordBase::ncells_x = 240
+CoordBase::ncells_y = 240
+CoordBase::ncells_z = 3840
+#CoordBase::dx   = $deltax
+#CoordBase::dy   = $deltax
+#CoordBase::dz   = $deltax
+
+CoordBase::boundary_size_x_lower     = 3
+CoordBase::boundary_size_y_lower     = 3
+CoordBase::boundary_size_z_lower     = 3
+CoordBase::boundary_size_x_upper     = 3
+CoordBase::boundary_size_y_upper     = 3
+CoordBase::boundary_size_z_upper     = 3
+#CoordBase::boundary_shiftout_x_lower = 1
+#CoordBase::boundary_shiftout_z_lower = 1
+
+CartGrid3D::type = "coordbase"
+
+
+CarpetRegrid2::regrid_every            = 32
+CarpetRegrid2::freeze_unaligned_levels = yes
+CarpetRegrid2::verbose                 = no
+
+CarpetRegrid2::num_centres = 2
+CarpetRegrid2::num_levels_1         =  $nlevels
+CarpetRegrid2::position_x_1         = +4.0
+CarpetRegrid2::radius_1[ 1]         = 220.0
+CarpetRegrid2::radius_1[ 2]         = 110.0
+CarpetRegrid2::radius_1[ 3]         =  55.0
+CarpetRegrid2::radius_1[ 4]         =  25.0
+CarpetRegrid2::radius_1[ 5]         =  10.0
+CarpetRegrid2::radius_1[ 6]         =   5.0
+CarpetRegrid2::radius_1[ 7]         =   2.0
+CarpetRegrid2::radius_1[ 8]         =   1.0
+CarpetRegrid2::movement_threshold_1 =   0.16
+CarpetRegrid2::num_levels_2         =  $nlevels
+CarpetRegrid2::position_x_2         = -4.0
+CarpetRegrid2::radius_2[ 1]         = 220.0
+CarpetRegrid2::radius_2[ 2]         = 110.0
+CarpetRegrid2::radius_2[ 3]         =  55.0
+CarpetRegrid2::radius_2[ 4]         =  25.0
+CarpetRegrid2::radius_2[ 5]         =  10.0
+CarpetRegrid2::radius_2[ 6]         =   5.0
+CarpetRegrid2::radius_2[ 7]         =   2.0
+CarpetRegrid2::radius_2[ 8]         =   1.0
+CarpetRegrid2::movement_threshold_2 =   0.16
+
+
+MoL::ODE_Method             = "RK4"
+MoL::MoL_Intermediate_Steps = 4
+MoL::MoL_Num_Scratch_Levels = 1
+#Carpet::time_refinement_factors = "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+Time::dtfac = $dtfac
+
+
+# Q1-setup
+TwoPunctures::par_b             = 4.0
+TwoPunctures::par_m_plus        =  0.4824
+TwoPunctures::par_m_minus       =  0.4824
+TwoPunctures::par_P_plus [1]    = +0.114
+TwoPunctures::par_P_minus[1]    = -0.114
+TwoPunctures::grid_setup_method = "evaluation"
+TwoPunctures::TP_epsilon        = 1.0e-2
+TwoPunctures::TP_Tiny           = 1.0e-2
+TwoPunctures::verbose           = yes
+#TwoPunctures::npoints_A         = 16
+#TwoPunctures::npoints_B         = 16
+#TwoPunctures::npoints_phi       = 8
+
+
+ADMBase::initial_data  = "TwoPunctures"
+ADMBase::initial_lapse = "TwoPunctures-averaged"
+ADMBase::initial_shift   = "zero"
+ADMBase::initial_dtlapse = "zero"
+ADMBase::initial_dtshift = "zero"
+
+ADMBase::lapse_timelevels = 3
+ADMBase::shift_timelevels = 3
+ADMBase::metric_timelevels = 3
+
+TmunuBase::stress_energy_storage = yes
+TmunuBase::stress_energy_at_RHS  = yes
+
+
+Z4cowCarpet::calc_ADM_vars    = no
+Z4cowCarpet::calc_constraints = no
+Z4cowCarpet::deriv_order      = 4
+Z4cowCarpet::diss_order       = 5
+Z4cowCarpet::W_floor          = 1.0e-30
+Z4cowCarpet::alphaG_floor     = 1.0e-30
+Z4cowCarpet::epsdiss          = 0.4
+Z4cowCarpet::f_mu_S           = 0.75
+Z4cowCarpet::veta_central     = 2.0
+Z4cowCarpet::veta_width       = 40.00
+Z4cowCarpet::bound = "none"
+#Boundary::radpower = 2
+
+
+#Dissipation::order = 5
+#Dissipation::vars  = "
+#  Z4cowCarpet::W
+#  Z4cowCarpet::gamma_tilde
+#  Z4cowCarpet::K_hat
+#  Z4cowCarpet::A_tilde
+#  Z4cowCarpet::Gam_tilde
+#  Z4cowCarpet::Theta
+#  Z4cowCarpet::alphaG
+#  Z4cowCarpet::betaG
+#"
+
+
+IO::out_dir = $parfile
+IO::out_every = $out_every
+#IO::parfile_write = no
+
+IOBasic::outInfo_every      = $out_every
+IOBasic::outInfo_reductions = "norm2"
+IOBasic::outInfo_vars       = "
+  Carpet::physical_time_per_hour
+"
+
+#IOScalar::one_file_per_group = yes
+#IOScalar::outScalar_every = $out_every
+#IOScalar::outScalar_vars  = "
+#  #CarpetReduce::weight
+#  ADMBase::metric
+#  ADMBase::curv
+#  ADMBase::lapse
+#  ADMBase::shift
+#"
+#
+IOASCII::one_file_per_group = yes
+IOASCII::output_symmetry_points = no
+IOASCII::out3D_ghosts           = no
+IOASCII::out0D_every = $out_every
+IOASCII::out0D_vars  = "
+  Carpet::timing
+"
+#IOASCII::out1D_every = $out_every
+#IOASCII::out1D_vars  = "
+#  #Carpet::timing
+#  #CarpetReduce::weight
+#  Z4cowCarpet::W
+#  Z4cowCarpet::gamma_tilde
+#  Z4cowCarpet::K_hat
+#  Z4cowCarpet::A_tilde
+#  Z4cowCarpet::Gam_tilde
+#  Z4cowCarpet::Theta
+#  Z4cowCarpet::alphaG
+#  Z4cowCarpet::betaG
+#  Z4cowCarpet::W_rhs
+#  Z4cowCarpet::gamma_tilde_rhs
+#  Z4cowCarpet::K_hat_rhs
+#  Z4cowCarpet::A_tilde_rhs
+#  Z4cowCarpet::Gam_tilde_rhs
+#  Z4cowCarpet::Theta_rhs
+#  Z4cowCarpet::alphaG_rhs
+#  Z4cowCarpet::betaG_rhs
+#  ADMBase::metric
+#  ADMBase::curv
+#  ADMBase::lapse
+#  ADMBase::shift
+#  TmunuBase::stress_energy_scalar
+#  TmunuBase::stress_energy_vector
+#  TmunuBase::stress_energy_tensor
+#"
+
+TimerReport::out_every                  = $out_every
+TimerReport::out_filename               = "TimerReport"
+TimerReport::output_all_timers_together = yes
+TimerReport::output_all_timers_readable = yes
+TimerReport::n_top_timers               = 20
