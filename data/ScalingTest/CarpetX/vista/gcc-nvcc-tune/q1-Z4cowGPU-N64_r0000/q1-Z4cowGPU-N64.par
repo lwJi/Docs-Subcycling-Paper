@@ -1,5 +1,5 @@
 # q1
-$itlast = 2 # 512
+$itlast = 512
 $final_time = 1000
 $xmin = -400.0
 $xmax = +400.0
