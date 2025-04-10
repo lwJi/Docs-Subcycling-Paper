@@ -4,15 +4,15 @@
 
 1. use repo (branch `development`)
     ```bash
-    git@github.com:lwJi/CarpetX.git
+    https://github.com/lwJi/CarpetX.git
     ```
 2. use repo (branch `feature/subcycle`)
     ```bash
-    git@github.com:lwJi/AsterX.git
+    https://github.com/lwJi/AsterX.git
     ```
 3. use repo (branch `development`)
     ```bash
-    git@github.com:EinsteinToolkit/SpacetimeX.git
+    https://github.com/lwJi/SpacetimeX.git
     ```
 4. add the following pars to the parameter file
     ```bash
