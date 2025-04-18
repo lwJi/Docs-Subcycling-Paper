@@ -1,0 +1,2784 @@
+# CarpetX Metadata
+---
+!carpetx-metadata-1.0.0
+nghostzones: [3, 3, 3]
+iteration: 448
+time: 0.875
+delta_time: 0.0078125
+ghext: !ghext-2.0.0
+  globaldata: !globaldata-1.0.0
+    arraygroupdata:
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::ACTIVE
+          numvars: 3
+          varnames: ["active[0]", "active[1]", "active[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 1
+            - 1
+            - 1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::NUM_LEVELS
+          numvars: 3
+          varnames: ["num_levels[0]", "num_levels[1]", "num_levels[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 3
+            - 1
+            - 1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::POSITIONS
+          numvars: 9
+          varnames: ["position_x[0]", "position_x[1]", "position_x[2]", "position_y[0]", "position_y[1]", "position_y[2]", "position_z[0]", "position_z[1]", "position_z[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::RADII
+          numvars: 3
+          varnames: ["radius[0]", "radius[1]", "radius[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+        data:
+          -
+            - -1
+            - 1
+            - 0.5
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::RADIIXYZ
+          numvars: 9
+          varnames: ["radius_x[0]", "radius_x[1]", "radius_x[2]", "radius_y[0]", "radius_y[1]", "radius_y[2]", "radius_z[0]", "radius_z[1]", "radius_z[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+        data:
+          -
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+  patchdata:
+    - !patchdata-1.0.0
+      patch: 0
+      amrcore: !amrcore-1.0.0
+        maxLevel: 2
+        finestLevel: 2
+        geometry:
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [255, 255, 255]}
+            is_periodic: [1, 1, 1]
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [511, 511, 511]}
+            is_periodic: [1, 1, 1]
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [1023, 1023, 1023]}
+            is_periodic: [1, 1, 1]
+        distributionMapping:
+          - !distributionmapping-1.0.0
+            processorMap: [8, 8, 8, 8, 0, 0, 0, 11, 8, 8, 8, 8, 0, 0, 11, 11, 8, 8, 9, 9, 11, 11, 11, 11, 9, 9, 9, 9, 11, 11, 11, 12, 13, 13, 13, 13, 2, 2, 2, 16, 13, 13, 13, 13, 2, 2, 16, 16, 13, 13, 14, 14, 16, 16, 16, 16, 14, 14, 14, 14, 16, 16, 16, 17, 8, 8, 8, 8, 0, 0, 11, 11, 8, 8, 8, 8, 0, 0, 11, 11, 9, 9, 9, 9, 11, 11, 12, 12, 9, 9, 9, 9, 11, 11, 12, 12, 13, 13, 13, 13, 2, 2, 16, 16, 13, 13, 13, 13, 2, 2, 16, 16, 14, 14, 14, 14, 16, 16, 17, 17, 14, 14, 14, 14, 16, 16, 17, 17, 9, 9, 10, 10, 12, 12, 12, 12, 9, 9, 10, 10, 12, 12, 12, 12, 10, 10, 0, 0, 1, 1, 1, 1, 10, 10, 0, 0, 1, 1, 1, 1, 14, 14, 15, 15, 17, 17, 17, 17, 14, 14, 15, 15, 17, 17, 17, 17, 15, 15, 2, 2, 3, 3, 3, 3, 15, 15, 2, 2, 3, 3, 3, 3, 10, 10, 10, 10, 12, 12, 12, 1, 10, 10, 10, 10, 12, 12, 1, 1, 10, 10, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 15, 15, 15, 15, 17, 17, 17, 3, 15, 15, 15, 15, 17, 17, 3, 3, 15, 15, 2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 3, 3, 3, 3, 18, 18, 18, 18, 4, 4, 4, 21, 18, 18, 18, 18, 4, 4, 21, 21, 18, 18, 19, 19, 21, 21, 21, 21, 19, 19, 19, 19, 21, 21, 21, 22, 23, 23, 23, 23, 6, 6, 6, 26, 23, 23, 23, 23, 6, 6, 26, 26, 23, 23, 24, 24, 26, 26, 26, 26, 24, 24, 24, 24, 26, 26, 26, 27, 18, 18, 18, 18, 4, 4, 21, 21, 18, 18, 18, 18, 4, 4, 21, 21, 19, 19, 19, 19, 21, 21, 22, 22, 19, 19, 19, 19, 21, 21, 22, 22, 23, 23, 23, 23, 6, 6, 26, 26, 23, 23, 23, 23, 6, 6, 26, 26, 24, 24, 24, 24, 26, 26, 27, 27, 24, 24, 24, 24, 26, 26, 27, 27, 19, 19, 20, 20, 22, 22, 22, 22, 19, 19, 20, 20, 22, 22, 22, 22, 20, 20, 4, 4, 5, 5, 5, 5, 20, 20, 4, 4, 5, 5, 5, 5, 24, 24, 25, 25, 27, 27, 27, 27, 24, 24, 25, 25, 27, 27, 27, 27, 25, 25, 6, 6, 7, 7, 7, 7, 25, 25, 6, 6, 7, 7, 7, 7, 20, 20, 20, 20, 22, 22, 22, 5, 20, 20, 20, 20, 22, 22, 5, 5, 20, 20, 4, 4, 5, 5, 5, 5, 4, 4, 4, 4, 5, 5, 5, 5, 25, 25, 25, 25, 27, 27, 27, 7, 25, 25, 25, 25, 27, 27, 7, 7, 25, 25, 6, 6, 7, 7, 7, 7, 6, 6, 6, 6, 7, 7, 7, 7]
+          - !distributionmapping-1.0.0
+            processorMap: [16, 16, 8, 19, 17, 17, 19, 20, 21, 21, 10, 24, 22, 22, 24, 25, 18, 18, 20, 9, 8, 8, 9, 9, 23, 23, 25, 11, 10, 10, 11, 11, 26, 26, 12, 1, 27, 27, 1, 2, 3, 3, 14, 6, 4, 4, 6, 7, 0, 0, 2, 13, 12, 12, 13, 13, 5, 5, 7, 15, 14, 14, 15, 15]
+          - !distributionmapping-1.0.0
+            processorMap: [24, 24, 16, 27, 25, 25, 27, 0, 1, 1, 18, 4, 2, 2, 4, 5, 26, 26, 0, 17, 16, 16, 17, 17, 3, 3, 5, 19, 18, 18, 19, 19, 6, 6, 20, 9, 7, 7, 9, 10, 11, 11, 22, 14, 12, 12, 14, 15, 8, 8, 10, 21, 20, 20, 21, 21, 13, 13, 15, 23, 22, 22, 23, 23]
+        boxArray:
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [0, 0, 0], big: [31, 31, 31]}
+            - !box-1.0.0 {small: [32, 0, 0], big: [63, 31, 31]}
+            - !box-1.0.0 {small: [64, 0, 0], big: [95, 31, 31]}
+            - !box-1.0.0 {small: [96, 0, 0], big: [127, 31, 31]}
+            - !box-1.0.0 {small: [128, 0, 0], big: [159, 31, 31]}
+            - !box-1.0.0 {small: [160, 0, 0], big: [191, 31, 31]}
+            - !box-1.0.0 {small: [192, 0, 0], big: [223, 31, 31]}
+            - !box-1.0.0 {small: [224, 0, 0], big: [255, 31, 31]}
+            - !box-1.0.0 {small: [0, 32, 0], big: [31, 63, 31]}
+            - !box-1.0.0 {small: [32, 32, 0], big: [63, 63, 31]}
+            - !box-1.0.0 {small: [64, 32, 0], big: [95, 63, 31]}
+            - !box-1.0.0 {small: [96, 32, 0], big: [127, 63, 31]}
+            - !box-1.0.0 {small: [128, 32, 0], big: [159, 63, 31]}
+            - !box-1.0.0 {small: [160, 32, 0], big: [191, 63, 31]}
+            - !box-1.0.0 {small: [192, 32, 0], big: [223, 63, 31]}
+            - !box-1.0.0 {small: [224, 32, 0], big: [255, 63, 31]}
+            - !box-1.0.0 {small: [0, 64, 0], big: [31, 95, 31]}
+            - !box-1.0.0 {small: [32, 64, 0], big: [63, 95, 31]}
+            - !box-1.0.0 {small: [64, 64, 0], big: [95, 95, 31]}
+            - !box-1.0.0 {small: [96, 64, 0], big: [127, 95, 31]}
+            - !box-1.0.0 {small: [128, 64, 0], big: [159, 95, 31]}
+            - !box-1.0.0 {small: [160, 64, 0], big: [191, 95, 31]}
+            - !box-1.0.0 {small: [192, 64, 0], big: [223, 95, 31]}
+            - !box-1.0.0 {small: [224, 64, 0], big: [255, 95, 31]}
+            - !box-1.0.0 {small: [0, 96, 0], big: [31, 127, 31]}
+            - !box-1.0.0 {small: [32, 96, 0], big: [63, 127, 31]}
+            - !box-1.0.0 {small: [64, 96, 0], big: [95, 127, 31]}
+            - !box-1.0.0 {small: [96, 96, 0], big: [127, 127, 31]}
+            - !box-1.0.0 {small: [128, 96, 0], big: [159, 127, 31]}
+            - !box-1.0.0 {small: [160, 96, 0], big: [191, 127, 31]}
+            - !box-1.0.0 {small: [192, 96, 0], big: [223, 127, 31]}
+            - !box-1.0.0 {small: [224, 96, 0], big: [255, 127, 31]}
+            - !box-1.0.0 {small: [0, 128, 0], big: [31, 159, 31]}
+            - !box-1.0.0 {small: [32, 128, 0], big: [63, 159, 31]}
+            - !box-1.0.0 {small: [64, 128, 0], big: [95, 159, 31]}
+            - !box-1.0.0 {small: [96, 128, 0], big: [127, 159, 31]}
+            - !box-1.0.0 {small: [128, 128, 0], big: [159, 159, 31]}
+            - !box-1.0.0 {small: [160, 128, 0], big: [191, 159, 31]}
+            - !box-1.0.0 {small: [192, 128, 0], big: [223, 159, 31]}
+            - !box-1.0.0 {small: [224, 128, 0], big: [255, 159, 31]}
+            - !box-1.0.0 {small: [0, 160, 0], big: [31, 191, 31]}
+            - !box-1.0.0 {small: [32, 160, 0], big: [63, 191, 31]}
+            - !box-1.0.0 {small: [64, 160, 0], big: [95, 191, 31]}
+            - !box-1.0.0 {small: [96, 160, 0], big: [127, 191, 31]}
+            - !box-1.0.0 {small: [128, 160, 0], big: [159, 191, 31]}
+            - !box-1.0.0 {small: [160, 160, 0], big: [191, 191, 31]}
+            - !box-1.0.0 {small: [192, 160, 0], big: [223, 191, 31]}
+            - !box-1.0.0 {small: [224, 160, 0], big: [255, 191, 31]}
+            - !box-1.0.0 {small: [0, 192, 0], big: [31, 223, 31]}
+            - !box-1.0.0 {small: [32, 192, 0], big: [63, 223, 31]}
+            - !box-1.0.0 {small: [64, 192, 0], big: [95, 223, 31]}
+            - !box-1.0.0 {small: [96, 192, 0], big: [127, 223, 31]}
+            - !box-1.0.0 {small: [128, 192, 0], big: [159, 223, 31]}
+            - !box-1.0.0 {small: [160, 192, 0], big: [191, 223, 31]}
+            - !box-1.0.0 {small: [192, 192, 0], big: [223, 223, 31]}
+            - !box-1.0.0 {small: [224, 192, 0], big: [255, 223, 31]}
+            - !box-1.0.0 {small: [0, 224, 0], big: [31, 255, 31]}
+            - !box-1.0.0 {small: [32, 224, 0], big: [63, 255, 31]}
+            - !box-1.0.0 {small: [64, 224, 0], big: [95, 255, 31]}
+            - !box-1.0.0 {small: [96, 224, 0], big: [127, 255, 31]}
+            - !box-1.0.0 {small: [128, 224, 0], big: [159, 255, 31]}
+            - !box-1.0.0 {small: [160, 224, 0], big: [191, 255, 31]}
+            - !box-1.0.0 {small: [192, 224, 0], big: [223, 255, 31]}
+            - !box-1.0.0 {small: [224, 224, 0], big: [255, 255, 31]}
+            - !box-1.0.0 {small: [0, 0, 32], big: [31, 31, 63]}
+            - !box-1.0.0 {small: [32, 0, 32], big: [63, 31, 63]}
+            - !box-1.0.0 {small: [64, 0, 32], big: [95, 31, 63]}
+            - !box-1.0.0 {small: [96, 0, 32], big: [127, 31, 63]}
+            - !box-1.0.0 {small: [128, 0, 32], big: [159, 31, 63]}
+            - !box-1.0.0 {small: [160, 0, 32], big: [191, 31, 63]}
+            - !box-1.0.0 {small: [192, 0, 32], big: [223, 31, 63]}
+            - !box-1.0.0 {small: [224, 0, 32], big: [255, 31, 63]}
+            - !box-1.0.0 {small: [0, 32, 32], big: [31, 63, 63]}
+            - !box-1.0.0 {small: [32, 32, 32], big: [63, 63, 63]}
+            - !box-1.0.0 {small: [64, 32, 32], big: [95, 63, 63]}
+            - !box-1.0.0 {small: [96, 32, 32], big: [127, 63, 63]}
+            - !box-1.0.0 {small: [128, 32, 32], big: [159, 63, 63]}
+            - !box-1.0.0 {small: [160, 32, 32], big: [191, 63, 63]}
+            - !box-1.0.0 {small: [192, 32, 32], big: [223, 63, 63]}
+            - !box-1.0.0 {small: [224, 32, 32], big: [255, 63, 63]}
+            - !box-1.0.0 {small: [0, 64, 32], big: [31, 95, 63]}
+            - !box-1.0.0 {small: [32, 64, 32], big: [63, 95, 63]}
+            - !box-1.0.0 {small: [64, 64, 32], big: [95, 95, 63]}
+            - !box-1.0.0 {small: [96, 64, 32], big: [127, 95, 63]}
+            - !box-1.0.0 {small: [128, 64, 32], big: [159, 95, 63]}
+            - !box-1.0.0 {small: [160, 64, 32], big: [191, 95, 63]}
+            - !box-1.0.0 {small: [192, 64, 32], big: [223, 95, 63]}
+            - !box-1.0.0 {small: [224, 64, 32], big: [255, 95, 63]}
+            - !box-1.0.0 {small: [0, 96, 32], big: [31, 127, 63]}
+            - !box-1.0.0 {small: [32, 96, 32], big: [63, 127, 63]}
+            - !box-1.0.0 {small: [64, 96, 32], big: [95, 127, 63]}
+            - !box-1.0.0 {small: [96, 96, 32], big: [127, 127, 63]}
+            - !box-1.0.0 {small: [128, 96, 32], big: [159, 127, 63]}
+            - !box-1.0.0 {small: [160, 96, 32], big: [191, 127, 63]}
+            - !box-1.0.0 {small: [192, 96, 32], big: [223, 127, 63]}
+            - !box-1.0.0 {small: [224, 96, 32], big: [255, 127, 63]}
+            - !box-1.0.0 {small: [0, 128, 32], big: [31, 159, 63]}
+            - !box-1.0.0 {small: [32, 128, 32], big: [63, 159, 63]}
+            - !box-1.0.0 {small: [64, 128, 32], big: [95, 159, 63]}
+            - !box-1.0.0 {small: [96, 128, 32], big: [127, 159, 63]}
+            - !box-1.0.0 {small: [128, 128, 32], big: [159, 159, 63]}
+            - !box-1.0.0 {small: [160, 128, 32], big: [191, 159, 63]}
+            - !box-1.0.0 {small: [192, 128, 32], big: [223, 159, 63]}
+            - !box-1.0.0 {small: [224, 128, 32], big: [255, 159, 63]}
+            - !box-1.0.0 {small: [0, 160, 32], big: [31, 191, 63]}
+            - !box-1.0.0 {small: [32, 160, 32], big: [63, 191, 63]}
+            - !box-1.0.0 {small: [64, 160, 32], big: [95, 191, 63]}
+            - !box-1.0.0 {small: [96, 160, 32], big: [127, 191, 63]}
+            - !box-1.0.0 {small: [128, 160, 32], big: [159, 191, 63]}
+            - !box-1.0.0 {small: [160, 160, 32], big: [191, 191, 63]}
+            - !box-1.0.0 {small: [192, 160, 32], big: [223, 191, 63]}
+            - !box-1.0.0 {small: [224, 160, 32], big: [255, 191, 63]}
+            - !box-1.0.0 {small: [0, 192, 32], big: [31, 223, 63]}
+            - !box-1.0.0 {small: [32, 192, 32], big: [63, 223, 63]}
+            - !box-1.0.0 {small: [64, 192, 32], big: [95, 223, 63]}
+            - !box-1.0.0 {small: [96, 192, 32], big: [127, 223, 63]}
+            - !box-1.0.0 {small: [128, 192, 32], big: [159, 223, 63]}
+            - !box-1.0.0 {small: [160, 192, 32], big: [191, 223, 63]}
+            - !box-1.0.0 {small: [192, 192, 32], big: [223, 223, 63]}
+            - !box-1.0.0 {small: [224, 192, 32], big: [255, 223, 63]}
+            - !box-1.0.0 {small: [0, 224, 32], big: [31, 255, 63]}
+            - !box-1.0.0 {small: [32, 224, 32], big: [63, 255, 63]}
+            - !box-1.0.0 {small: [64, 224, 32], big: [95, 255, 63]}
+            - !box-1.0.0 {small: [96, 224, 32], big: [127, 255, 63]}
+            - !box-1.0.0 {small: [128, 224, 32], big: [159, 255, 63]}
+            - !box-1.0.0 {small: [160, 224, 32], big: [191, 255, 63]}
+            - !box-1.0.0 {small: [192, 224, 32], big: [223, 255, 63]}
+            - !box-1.0.0 {small: [224, 224, 32], big: [255, 255, 63]}
+            - !box-1.0.0 {small: [0, 0, 64], big: [31, 31, 95]}
+            - !box-1.0.0 {small: [32, 0, 64], big: [63, 31, 95]}
+            - !box-1.0.0 {small: [64, 0, 64], big: [95, 31, 95]}
+            - !box-1.0.0 {small: [96, 0, 64], big: [127, 31, 95]}
+            - !box-1.0.0 {small: [128, 0, 64], big: [159, 31, 95]}
+            - !box-1.0.0 {small: [160, 0, 64], big: [191, 31, 95]}
+            - !box-1.0.0 {small: [192, 0, 64], big: [223, 31, 95]}
+            - !box-1.0.0 {small: [224, 0, 64], big: [255, 31, 95]}
+            - !box-1.0.0 {small: [0, 32, 64], big: [31, 63, 95]}
+            - !box-1.0.0 {small: [32, 32, 64], big: [63, 63, 95]}
+            - !box-1.0.0 {small: [64, 32, 64], big: [95, 63, 95]}
+            - !box-1.0.0 {small: [96, 32, 64], big: [127, 63, 95]}
+            - !box-1.0.0 {small: [128, 32, 64], big: [159, 63, 95]}
+            - !box-1.0.0 {small: [160, 32, 64], big: [191, 63, 95]}
+            - !box-1.0.0 {small: [192, 32, 64], big: [223, 63, 95]}
+            - !box-1.0.0 {small: [224, 32, 64], big: [255, 63, 95]}
+            - !box-1.0.0 {small: [0, 64, 64], big: [31, 95, 95]}
+            - !box-1.0.0 {small: [32, 64, 64], big: [63, 95, 95]}
+            - !box-1.0.0 {small: [64, 64, 64], big: [95, 95, 95]}
+            - !box-1.0.0 {small: [96, 64, 64], big: [127, 95, 95]}
+            - !box-1.0.0 {small: [128, 64, 64], big: [159, 95, 95]}
+            - !box-1.0.0 {small: [160, 64, 64], big: [191, 95, 95]}
+            - !box-1.0.0 {small: [192, 64, 64], big: [223, 95, 95]}
+            - !box-1.0.0 {small: [224, 64, 64], big: [255, 95, 95]}
+            - !box-1.0.0 {small: [0, 96, 64], big: [31, 127, 95]}
+            - !box-1.0.0 {small: [32, 96, 64], big: [63, 127, 95]}
+            - !box-1.0.0 {small: [64, 96, 64], big: [95, 127, 95]}
+            - !box-1.0.0 {small: [96, 96, 64], big: [127, 127, 95]}
+            - !box-1.0.0 {small: [128, 96, 64], big: [159, 127, 95]}
+            - !box-1.0.0 {small: [160, 96, 64], big: [191, 127, 95]}
+            - !box-1.0.0 {small: [192, 96, 64], big: [223, 127, 95]}
+            - !box-1.0.0 {small: [224, 96, 64], big: [255, 127, 95]}
+            - !box-1.0.0 {small: [0, 128, 64], big: [31, 159, 95]}
+            - !box-1.0.0 {small: [32, 128, 64], big: [63, 159, 95]}
+            - !box-1.0.0 {small: [64, 128, 64], big: [95, 159, 95]}
+            - !box-1.0.0 {small: [96, 128, 64], big: [127, 159, 95]}
+            - !box-1.0.0 {small: [128, 128, 64], big: [159, 159, 95]}
+            - !box-1.0.0 {small: [160, 128, 64], big: [191, 159, 95]}
+            - !box-1.0.0 {small: [192, 128, 64], big: [223, 159, 95]}
+            - !box-1.0.0 {small: [224, 128, 64], big: [255, 159, 95]}
+            - !box-1.0.0 {small: [0, 160, 64], big: [31, 191, 95]}
+            - !box-1.0.0 {small: [32, 160, 64], big: [63, 191, 95]}
+            - !box-1.0.0 {small: [64, 160, 64], big: [95, 191, 95]}
+            - !box-1.0.0 {small: [96, 160, 64], big: [127, 191, 95]}
+            - !box-1.0.0 {small: [128, 160, 64], big: [159, 191, 95]}
+            - !box-1.0.0 {small: [160, 160, 64], big: [191, 191, 95]}
+            - !box-1.0.0 {small: [192, 160, 64], big: [223, 191, 95]}
+            - !box-1.0.0 {small: [224, 160, 64], big: [255, 191, 95]}
+            - !box-1.0.0 {small: [0, 192, 64], big: [31, 223, 95]}
+            - !box-1.0.0 {small: [32, 192, 64], big: [63, 223, 95]}
+            - !box-1.0.0 {small: [64, 192, 64], big: [95, 223, 95]}
+            - !box-1.0.0 {small: [96, 192, 64], big: [127, 223, 95]}
+            - !box-1.0.0 {small: [128, 192, 64], big: [159, 223, 95]}
+            - !box-1.0.0 {small: [160, 192, 64], big: [191, 223, 95]}
+            - !box-1.0.0 {small: [192, 192, 64], big: [223, 223, 95]}
+            - !box-1.0.0 {small: [224, 192, 64], big: [255, 223, 95]}
+            - !box-1.0.0 {small: [0, 224, 64], big: [31, 255, 95]}
+            - !box-1.0.0 {small: [32, 224, 64], big: [63, 255, 95]}
+            - !box-1.0.0 {small: [64, 224, 64], big: [95, 255, 95]}
+            - !box-1.0.0 {small: [96, 224, 64], big: [127, 255, 95]}
+            - !box-1.0.0 {small: [128, 224, 64], big: [159, 255, 95]}
+            - !box-1.0.0 {small: [160, 224, 64], big: [191, 255, 95]}
+            - !box-1.0.0 {small: [192, 224, 64], big: [223, 255, 95]}
+            - !box-1.0.0 {small: [224, 224, 64], big: [255, 255, 95]}
+            - !box-1.0.0 {small: [0, 0, 96], big: [31, 31, 127]}
+            - !box-1.0.0 {small: [32, 0, 96], big: [63, 31, 127]}
+            - !box-1.0.0 {small: [64, 0, 96], big: [95, 31, 127]}
+            - !box-1.0.0 {small: [96, 0, 96], big: [127, 31, 127]}
+            - !box-1.0.0 {small: [128, 0, 96], big: [159, 31, 127]}
+            - !box-1.0.0 {small: [160, 0, 96], big: [191, 31, 127]}
+            - !box-1.0.0 {small: [192, 0, 96], big: [223, 31, 127]}
+            - !box-1.0.0 {small: [224, 0, 96], big: [255, 31, 127]}
+            - !box-1.0.0 {small: [0, 32, 96], big: [31, 63, 127]}
+            - !box-1.0.0 {small: [32, 32, 96], big: [63, 63, 127]}
+            - !box-1.0.0 {small: [64, 32, 96], big: [95, 63, 127]}
+            - !box-1.0.0 {small: [96, 32, 96], big: [127, 63, 127]}
+            - !box-1.0.0 {small: [128, 32, 96], big: [159, 63, 127]}
+            - !box-1.0.0 {small: [160, 32, 96], big: [191, 63, 127]}
+            - !box-1.0.0 {small: [192, 32, 96], big: [223, 63, 127]}
+            - !box-1.0.0 {small: [224, 32, 96], big: [255, 63, 127]}
+            - !box-1.0.0 {small: [0, 64, 96], big: [31, 95, 127]}
+            - !box-1.0.0 {small: [32, 64, 96], big: [63, 95, 127]}
+            - !box-1.0.0 {small: [64, 64, 96], big: [95, 95, 127]}
+            - !box-1.0.0 {small: [96, 64, 96], big: [127, 95, 127]}
+            - !box-1.0.0 {small: [128, 64, 96], big: [159, 95, 127]}
+            - !box-1.0.0 {small: [160, 64, 96], big: [191, 95, 127]}
+            - !box-1.0.0 {small: [192, 64, 96], big: [223, 95, 127]}
+            - !box-1.0.0 {small: [224, 64, 96], big: [255, 95, 127]}
+            - !box-1.0.0 {small: [0, 96, 96], big: [31, 127, 127]}
+            - !box-1.0.0 {small: [32, 96, 96], big: [63, 127, 127]}
+            - !box-1.0.0 {small: [64, 96, 96], big: [95, 127, 127]}
+            - !box-1.0.0 {small: [96, 96, 96], big: [127, 127, 127]}
+            - !box-1.0.0 {small: [128, 96, 96], big: [159, 127, 127]}
+            - !box-1.0.0 {small: [160, 96, 96], big: [191, 127, 127]}
+            - !box-1.0.0 {small: [192, 96, 96], big: [223, 127, 127]}
+            - !box-1.0.0 {small: [224, 96, 96], big: [255, 127, 127]}
+            - !box-1.0.0 {small: [0, 128, 96], big: [31, 159, 127]}
+            - !box-1.0.0 {small: [32, 128, 96], big: [63, 159, 127]}
+            - !box-1.0.0 {small: [64, 128, 96], big: [95, 159, 127]}
+            - !box-1.0.0 {small: [96, 128, 96], big: [127, 159, 127]}
+            - !box-1.0.0 {small: [128, 128, 96], big: [159, 159, 127]}
+            - !box-1.0.0 {small: [160, 128, 96], big: [191, 159, 127]}
+            - !box-1.0.0 {small: [192, 128, 96], big: [223, 159, 127]}
+            - !box-1.0.0 {small: [224, 128, 96], big: [255, 159, 127]}
+            - !box-1.0.0 {small: [0, 160, 96], big: [31, 191, 127]}
+            - !box-1.0.0 {small: [32, 160, 96], big: [63, 191, 127]}
+            - !box-1.0.0 {small: [64, 160, 96], big: [95, 191, 127]}
+            - !box-1.0.0 {small: [96, 160, 96], big: [127, 191, 127]}
+            - !box-1.0.0 {small: [128, 160, 96], big: [159, 191, 127]}
+            - !box-1.0.0 {small: [160, 160, 96], big: [191, 191, 127]}
+            - !box-1.0.0 {small: [192, 160, 96], big: [223, 191, 127]}
+            - !box-1.0.0 {small: [224, 160, 96], big: [255, 191, 127]}
+            - !box-1.0.0 {small: [0, 192, 96], big: [31, 223, 127]}
+            - !box-1.0.0 {small: [32, 192, 96], big: [63, 223, 127]}
+            - !box-1.0.0 {small: [64, 192, 96], big: [95, 223, 127]}
+            - !box-1.0.0 {small: [96, 192, 96], big: [127, 223, 127]}
+            - !box-1.0.0 {small: [128, 192, 96], big: [159, 223, 127]}
+            - !box-1.0.0 {small: [160, 192, 96], big: [191, 223, 127]}
+            - !box-1.0.0 {small: [192, 192, 96], big: [223, 223, 127]}
+            - !box-1.0.0 {small: [224, 192, 96], big: [255, 223, 127]}
+            - !box-1.0.0 {small: [0, 224, 96], big: [31, 255, 127]}
+            - !box-1.0.0 {small: [32, 224, 96], big: [63, 255, 127]}
+            - !box-1.0.0 {small: [64, 224, 96], big: [95, 255, 127]}
+            - !box-1.0.0 {small: [96, 224, 96], big: [127, 255, 127]}
+            - !box-1.0.0 {small: [128, 224, 96], big: [159, 255, 127]}
+            - !box-1.0.0 {small: [160, 224, 96], big: [191, 255, 127]}
+            - !box-1.0.0 {small: [192, 224, 96], big: [223, 255, 127]}
+            - !box-1.0.0 {small: [224, 224, 96], big: [255, 255, 127]}
+            - !box-1.0.0 {small: [0, 0, 128], big: [31, 31, 159]}
+            - !box-1.0.0 {small: [32, 0, 128], big: [63, 31, 159]}
+            - !box-1.0.0 {small: [64, 0, 128], big: [95, 31, 159]}
+            - !box-1.0.0 {small: [96, 0, 128], big: [127, 31, 159]}
+            - !box-1.0.0 {small: [128, 0, 128], big: [159, 31, 159]}
+            - !box-1.0.0 {small: [160, 0, 128], big: [191, 31, 159]}
+            - !box-1.0.0 {small: [192, 0, 128], big: [223, 31, 159]}
+            - !box-1.0.0 {small: [224, 0, 128], big: [255, 31, 159]}
+            - !box-1.0.0 {small: [0, 32, 128], big: [31, 63, 159]}
+            - !box-1.0.0 {small: [32, 32, 128], big: [63, 63, 159]}
+            - !box-1.0.0 {small: [64, 32, 128], big: [95, 63, 159]}
+            - !box-1.0.0 {small: [96, 32, 128], big: [127, 63, 159]}
+            - !box-1.0.0 {small: [128, 32, 128], big: [159, 63, 159]}
+            - !box-1.0.0 {small: [160, 32, 128], big: [191, 63, 159]}
+            - !box-1.0.0 {small: [192, 32, 128], big: [223, 63, 159]}
+            - !box-1.0.0 {small: [224, 32, 128], big: [255, 63, 159]}
+            - !box-1.0.0 {small: [0, 64, 128], big: [31, 95, 159]}
+            - !box-1.0.0 {small: [32, 64, 128], big: [63, 95, 159]}
+            - !box-1.0.0 {small: [64, 64, 128], big: [95, 95, 159]}
+            - !box-1.0.0 {small: [96, 64, 128], big: [127, 95, 159]}
+            - !box-1.0.0 {small: [128, 64, 128], big: [159, 95, 159]}
+            - !box-1.0.0 {small: [160, 64, 128], big: [191, 95, 159]}
+            - !box-1.0.0 {small: [192, 64, 128], big: [223, 95, 159]}
+            - !box-1.0.0 {small: [224, 64, 128], big: [255, 95, 159]}
+            - !box-1.0.0 {small: [0, 96, 128], big: [31, 127, 159]}
+            - !box-1.0.0 {small: [32, 96, 128], big: [63, 127, 159]}
+            - !box-1.0.0 {small: [64, 96, 128], big: [95, 127, 159]}
+            - !box-1.0.0 {small: [96, 96, 128], big: [127, 127, 159]}
+            - !box-1.0.0 {small: [128, 96, 128], big: [159, 127, 159]}
+            - !box-1.0.0 {small: [160, 96, 128], big: [191, 127, 159]}
+            - !box-1.0.0 {small: [192, 96, 128], big: [223, 127, 159]}
+            - !box-1.0.0 {small: [224, 96, 128], big: [255, 127, 159]}
+            - !box-1.0.0 {small: [0, 128, 128], big: [31, 159, 159]}
+            - !box-1.0.0 {small: [32, 128, 128], big: [63, 159, 159]}
+            - !box-1.0.0 {small: [64, 128, 128], big: [95, 159, 159]}
+            - !box-1.0.0 {small: [96, 128, 128], big: [127, 159, 159]}
+            - !box-1.0.0 {small: [128, 128, 128], big: [159, 159, 159]}
+            - !box-1.0.0 {small: [160, 128, 128], big: [191, 159, 159]}
+            - !box-1.0.0 {small: [192, 128, 128], big: [223, 159, 159]}
+            - !box-1.0.0 {small: [224, 128, 128], big: [255, 159, 159]}
+            - !box-1.0.0 {small: [0, 160, 128], big: [31, 191, 159]}
+            - !box-1.0.0 {small: [32, 160, 128], big: [63, 191, 159]}
+            - !box-1.0.0 {small: [64, 160, 128], big: [95, 191, 159]}
+            - !box-1.0.0 {small: [96, 160, 128], big: [127, 191, 159]}
+            - !box-1.0.0 {small: [128, 160, 128], big: [159, 191, 159]}
+            - !box-1.0.0 {small: [160, 160, 128], big: [191, 191, 159]}
+            - !box-1.0.0 {small: [192, 160, 128], big: [223, 191, 159]}
+            - !box-1.0.0 {small: [224, 160, 128], big: [255, 191, 159]}
+            - !box-1.0.0 {small: [0, 192, 128], big: [31, 223, 159]}
+            - !box-1.0.0 {small: [32, 192, 128], big: [63, 223, 159]}
+            - !box-1.0.0 {small: [64, 192, 128], big: [95, 223, 159]}
+            - !box-1.0.0 {small: [96, 192, 128], big: [127, 223, 159]}
+            - !box-1.0.0 {small: [128, 192, 128], big: [159, 223, 159]}
+            - !box-1.0.0 {small: [160, 192, 128], big: [191, 223, 159]}
+            - !box-1.0.0 {small: [192, 192, 128], big: [223, 223, 159]}
+            - !box-1.0.0 {small: [224, 192, 128], big: [255, 223, 159]}
+            - !box-1.0.0 {small: [0, 224, 128], big: [31, 255, 159]}
+            - !box-1.0.0 {small: [32, 224, 128], big: [63, 255, 159]}
+            - !box-1.0.0 {small: [64, 224, 128], big: [95, 255, 159]}
+            - !box-1.0.0 {small: [96, 224, 128], big: [127, 255, 159]}
+            - !box-1.0.0 {small: [128, 224, 128], big: [159, 255, 159]}
+            - !box-1.0.0 {small: [160, 224, 128], big: [191, 255, 159]}
+            - !box-1.0.0 {small: [192, 224, 128], big: [223, 255, 159]}
+            - !box-1.0.0 {small: [224, 224, 128], big: [255, 255, 159]}
+            - !box-1.0.0 {small: [0, 0, 160], big: [31, 31, 191]}
+            - !box-1.0.0 {small: [32, 0, 160], big: [63, 31, 191]}
+            - !box-1.0.0 {small: [64, 0, 160], big: [95, 31, 191]}
+            - !box-1.0.0 {small: [96, 0, 160], big: [127, 31, 191]}
+            - !box-1.0.0 {small: [128, 0, 160], big: [159, 31, 191]}
+            - !box-1.0.0 {small: [160, 0, 160], big: [191, 31, 191]}
+            - !box-1.0.0 {small: [192, 0, 160], big: [223, 31, 191]}
+            - !box-1.0.0 {small: [224, 0, 160], big: [255, 31, 191]}
+            - !box-1.0.0 {small: [0, 32, 160], big: [31, 63, 191]}
+            - !box-1.0.0 {small: [32, 32, 160], big: [63, 63, 191]}
+            - !box-1.0.0 {small: [64, 32, 160], big: [95, 63, 191]}
+            - !box-1.0.0 {small: [96, 32, 160], big: [127, 63, 191]}
+            - !box-1.0.0 {small: [128, 32, 160], big: [159, 63, 191]}
+            - !box-1.0.0 {small: [160, 32, 160], big: [191, 63, 191]}
+            - !box-1.0.0 {small: [192, 32, 160], big: [223, 63, 191]}
+            - !box-1.0.0 {small: [224, 32, 160], big: [255, 63, 191]}
+            - !box-1.0.0 {small: [0, 64, 160], big: [31, 95, 191]}
+            - !box-1.0.0 {small: [32, 64, 160], big: [63, 95, 191]}
+            - !box-1.0.0 {small: [64, 64, 160], big: [95, 95, 191]}
+            - !box-1.0.0 {small: [96, 64, 160], big: [127, 95, 191]}
+            - !box-1.0.0 {small: [128, 64, 160], big: [159, 95, 191]}
+            - !box-1.0.0 {small: [160, 64, 160], big: [191, 95, 191]}
+            - !box-1.0.0 {small: [192, 64, 160], big: [223, 95, 191]}
+            - !box-1.0.0 {small: [224, 64, 160], big: [255, 95, 191]}
+            - !box-1.0.0 {small: [0, 96, 160], big: [31, 127, 191]}
+            - !box-1.0.0 {small: [32, 96, 160], big: [63, 127, 191]}
+            - !box-1.0.0 {small: [64, 96, 160], big: [95, 127, 191]}
+            - !box-1.0.0 {small: [96, 96, 160], big: [127, 127, 191]}
+            - !box-1.0.0 {small: [128, 96, 160], big: [159, 127, 191]}
+            - !box-1.0.0 {small: [160, 96, 160], big: [191, 127, 191]}
+            - !box-1.0.0 {small: [192, 96, 160], big: [223, 127, 191]}
+            - !box-1.0.0 {small: [224, 96, 160], big: [255, 127, 191]}
+            - !box-1.0.0 {small: [0, 128, 160], big: [31, 159, 191]}
+            - !box-1.0.0 {small: [32, 128, 160], big: [63, 159, 191]}
+            - !box-1.0.0 {small: [64, 128, 160], big: [95, 159, 191]}
+            - !box-1.0.0 {small: [96, 128, 160], big: [127, 159, 191]}
+            - !box-1.0.0 {small: [128, 128, 160], big: [159, 159, 191]}
+            - !box-1.0.0 {small: [160, 128, 160], big: [191, 159, 191]}
+            - !box-1.0.0 {small: [192, 128, 160], big: [223, 159, 191]}
+            - !box-1.0.0 {small: [224, 128, 160], big: [255, 159, 191]}
+            - !box-1.0.0 {small: [0, 160, 160], big: [31, 191, 191]}
+            - !box-1.0.0 {small: [32, 160, 160], big: [63, 191, 191]}
+            - !box-1.0.0 {small: [64, 160, 160], big: [95, 191, 191]}
+            - !box-1.0.0 {small: [96, 160, 160], big: [127, 191, 191]}
+            - !box-1.0.0 {small: [128, 160, 160], big: [159, 191, 191]}
+            - !box-1.0.0 {small: [160, 160, 160], big: [191, 191, 191]}
+            - !box-1.0.0 {small: [192, 160, 160], big: [223, 191, 191]}
+            - !box-1.0.0 {small: [224, 160, 160], big: [255, 191, 191]}
+            - !box-1.0.0 {small: [0, 192, 160], big: [31, 223, 191]}
+            - !box-1.0.0 {small: [32, 192, 160], big: [63, 223, 191]}
+            - !box-1.0.0 {small: [64, 192, 160], big: [95, 223, 191]}
+            - !box-1.0.0 {small: [96, 192, 160], big: [127, 223, 191]}
+            - !box-1.0.0 {small: [128, 192, 160], big: [159, 223, 191]}
+            - !box-1.0.0 {small: [160, 192, 160], big: [191, 223, 191]}
+            - !box-1.0.0 {small: [192, 192, 160], big: [223, 223, 191]}
+            - !box-1.0.0 {small: [224, 192, 160], big: [255, 223, 191]}
+            - !box-1.0.0 {small: [0, 224, 160], big: [31, 255, 191]}
+            - !box-1.0.0 {small: [32, 224, 160], big: [63, 255, 191]}
+            - !box-1.0.0 {small: [64, 224, 160], big: [95, 255, 191]}
+            - !box-1.0.0 {small: [96, 224, 160], big: [127, 255, 191]}
+            - !box-1.0.0 {small: [128, 224, 160], big: [159, 255, 191]}
+            - !box-1.0.0 {small: [160, 224, 160], big: [191, 255, 191]}
+            - !box-1.0.0 {small: [192, 224, 160], big: [223, 255, 191]}
+            - !box-1.0.0 {small: [224, 224, 160], big: [255, 255, 191]}
+            - !box-1.0.0 {small: [0, 0, 192], big: [31, 31, 223]}
+            - !box-1.0.0 {small: [32, 0, 192], big: [63, 31, 223]}
+            - !box-1.0.0 {small: [64, 0, 192], big: [95, 31, 223]}
+            - !box-1.0.0 {small: [96, 0, 192], big: [127, 31, 223]}
+            - !box-1.0.0 {small: [128, 0, 192], big: [159, 31, 223]}
+            - !box-1.0.0 {small: [160, 0, 192], big: [191, 31, 223]}
+            - !box-1.0.0 {small: [192, 0, 192], big: [223, 31, 223]}
+            - !box-1.0.0 {small: [224, 0, 192], big: [255, 31, 223]}
+            - !box-1.0.0 {small: [0, 32, 192], big: [31, 63, 223]}
+            - !box-1.0.0 {small: [32, 32, 192], big: [63, 63, 223]}
+            - !box-1.0.0 {small: [64, 32, 192], big: [95, 63, 223]}
+            - !box-1.0.0 {small: [96, 32, 192], big: [127, 63, 223]}
+            - !box-1.0.0 {small: [128, 32, 192], big: [159, 63, 223]}
+            - !box-1.0.0 {small: [160, 32, 192], big: [191, 63, 223]}
+            - !box-1.0.0 {small: [192, 32, 192], big: [223, 63, 223]}
+            - !box-1.0.0 {small: [224, 32, 192], big: [255, 63, 223]}
+            - !box-1.0.0 {small: [0, 64, 192], big: [31, 95, 223]}
+            - !box-1.0.0 {small: [32, 64, 192], big: [63, 95, 223]}
+            - !box-1.0.0 {small: [64, 64, 192], big: [95, 95, 223]}
+            - !box-1.0.0 {small: [96, 64, 192], big: [127, 95, 223]}
+            - !box-1.0.0 {small: [128, 64, 192], big: [159, 95, 223]}
+            - !box-1.0.0 {small: [160, 64, 192], big: [191, 95, 223]}
+            - !box-1.0.0 {small: [192, 64, 192], big: [223, 95, 223]}
+            - !box-1.0.0 {small: [224, 64, 192], big: [255, 95, 223]}
+            - !box-1.0.0 {small: [0, 96, 192], big: [31, 127, 223]}
+            - !box-1.0.0 {small: [32, 96, 192], big: [63, 127, 223]}
+            - !box-1.0.0 {small: [64, 96, 192], big: [95, 127, 223]}
+            - !box-1.0.0 {small: [96, 96, 192], big: [127, 127, 223]}
+            - !box-1.0.0 {small: [128, 96, 192], big: [159, 127, 223]}
+            - !box-1.0.0 {small: [160, 96, 192], big: [191, 127, 223]}
+            - !box-1.0.0 {small: [192, 96, 192], big: [223, 127, 223]}
+            - !box-1.0.0 {small: [224, 96, 192], big: [255, 127, 223]}
+            - !box-1.0.0 {small: [0, 128, 192], big: [31, 159, 223]}
+            - !box-1.0.0 {small: [32, 128, 192], big: [63, 159, 223]}
+            - !box-1.0.0 {small: [64, 128, 192], big: [95, 159, 223]}
+            - !box-1.0.0 {small: [96, 128, 192], big: [127, 159, 223]}
+            - !box-1.0.0 {small: [128, 128, 192], big: [159, 159, 223]}
+            - !box-1.0.0 {small: [160, 128, 192], big: [191, 159, 223]}
+            - !box-1.0.0 {small: [192, 128, 192], big: [223, 159, 223]}
+            - !box-1.0.0 {small: [224, 128, 192], big: [255, 159, 223]}
+            - !box-1.0.0 {small: [0, 160, 192], big: [31, 191, 223]}
+            - !box-1.0.0 {small: [32, 160, 192], big: [63, 191, 223]}
+            - !box-1.0.0 {small: [64, 160, 192], big: [95, 191, 223]}
+            - !box-1.0.0 {small: [96, 160, 192], big: [127, 191, 223]}
+            - !box-1.0.0 {small: [128, 160, 192], big: [159, 191, 223]}
+            - !box-1.0.0 {small: [160, 160, 192], big: [191, 191, 223]}
+            - !box-1.0.0 {small: [192, 160, 192], big: [223, 191, 223]}
+            - !box-1.0.0 {small: [224, 160, 192], big: [255, 191, 223]}
+            - !box-1.0.0 {small: [0, 192, 192], big: [31, 223, 223]}
+            - !box-1.0.0 {small: [32, 192, 192], big: [63, 223, 223]}
+            - !box-1.0.0 {small: [64, 192, 192], big: [95, 223, 223]}
+            - !box-1.0.0 {small: [96, 192, 192], big: [127, 223, 223]}
+            - !box-1.0.0 {small: [128, 192, 192], big: [159, 223, 223]}
+            - !box-1.0.0 {small: [160, 192, 192], big: [191, 223, 223]}
+            - !box-1.0.0 {small: [192, 192, 192], big: [223, 223, 223]}
+            - !box-1.0.0 {small: [224, 192, 192], big: [255, 223, 223]}
+            - !box-1.0.0 {small: [0, 224, 192], big: [31, 255, 223]}
+            - !box-1.0.0 {small: [32, 224, 192], big: [63, 255, 223]}
+            - !box-1.0.0 {small: [64, 224, 192], big: [95, 255, 223]}
+            - !box-1.0.0 {small: [96, 224, 192], big: [127, 255, 223]}
+            - !box-1.0.0 {small: [128, 224, 192], big: [159, 255, 223]}
+            - !box-1.0.0 {small: [160, 224, 192], big: [191, 255, 223]}
+            - !box-1.0.0 {small: [192, 224, 192], big: [223, 255, 223]}
+            - !box-1.0.0 {small: [224, 224, 192], big: [255, 255, 223]}
+            - !box-1.0.0 {small: [0, 0, 224], big: [31, 31, 255]}
+            - !box-1.0.0 {small: [32, 0, 224], big: [63, 31, 255]}
+            - !box-1.0.0 {small: [64, 0, 224], big: [95, 31, 255]}
+            - !box-1.0.0 {small: [96, 0, 224], big: [127, 31, 255]}
+            - !box-1.0.0 {small: [128, 0, 224], big: [159, 31, 255]}
+            - !box-1.0.0 {small: [160, 0, 224], big: [191, 31, 255]}
+            - !box-1.0.0 {small: [192, 0, 224], big: [223, 31, 255]}
+            - !box-1.0.0 {small: [224, 0, 224], big: [255, 31, 255]}
+            - !box-1.0.0 {small: [0, 32, 224], big: [31, 63, 255]}
+            - !box-1.0.0 {small: [32, 32, 224], big: [63, 63, 255]}
+            - !box-1.0.0 {small: [64, 32, 224], big: [95, 63, 255]}
+            - !box-1.0.0 {small: [96, 32, 224], big: [127, 63, 255]}
+            - !box-1.0.0 {small: [128, 32, 224], big: [159, 63, 255]}
+            - !box-1.0.0 {small: [160, 32, 224], big: [191, 63, 255]}
+            - !box-1.0.0 {small: [192, 32, 224], big: [223, 63, 255]}
+            - !box-1.0.0 {small: [224, 32, 224], big: [255, 63, 255]}
+            - !box-1.0.0 {small: [0, 64, 224], big: [31, 95, 255]}
+            - !box-1.0.0 {small: [32, 64, 224], big: [63, 95, 255]}
+            - !box-1.0.0 {small: [64, 64, 224], big: [95, 95, 255]}
+            - !box-1.0.0 {small: [96, 64, 224], big: [127, 95, 255]}
+            - !box-1.0.0 {small: [128, 64, 224], big: [159, 95, 255]}
+            - !box-1.0.0 {small: [160, 64, 224], big: [191, 95, 255]}
+            - !box-1.0.0 {small: [192, 64, 224], big: [223, 95, 255]}
+            - !box-1.0.0 {small: [224, 64, 224], big: [255, 95, 255]}
+            - !box-1.0.0 {small: [0, 96, 224], big: [31, 127, 255]}
+            - !box-1.0.0 {small: [32, 96, 224], big: [63, 127, 255]}
+            - !box-1.0.0 {small: [64, 96, 224], big: [95, 127, 255]}
+            - !box-1.0.0 {small: [96, 96, 224], big: [127, 127, 255]}
+            - !box-1.0.0 {small: [128, 96, 224], big: [159, 127, 255]}
+            - !box-1.0.0 {small: [160, 96, 224], big: [191, 127, 255]}
+            - !box-1.0.0 {small: [192, 96, 224], big: [223, 127, 255]}
+            - !box-1.0.0 {small: [224, 96, 224], big: [255, 127, 255]}
+            - !box-1.0.0 {small: [0, 128, 224], big: [31, 159, 255]}
+            - !box-1.0.0 {small: [32, 128, 224], big: [63, 159, 255]}
+            - !box-1.0.0 {small: [64, 128, 224], big: [95, 159, 255]}
+            - !box-1.0.0 {small: [96, 128, 224], big: [127, 159, 255]}
+            - !box-1.0.0 {small: [128, 128, 224], big: [159, 159, 255]}
+            - !box-1.0.0 {small: [160, 128, 224], big: [191, 159, 255]}
+            - !box-1.0.0 {small: [192, 128, 224], big: [223, 159, 255]}
+            - !box-1.0.0 {small: [224, 128, 224], big: [255, 159, 255]}
+            - !box-1.0.0 {small: [0, 160, 224], big: [31, 191, 255]}
+            - !box-1.0.0 {small: [32, 160, 224], big: [63, 191, 255]}
+            - !box-1.0.0 {small: [64, 160, 224], big: [95, 191, 255]}
+            - !box-1.0.0 {small: [96, 160, 224], big: [127, 191, 255]}
+            - !box-1.0.0 {small: [128, 160, 224], big: [159, 191, 255]}
+            - !box-1.0.0 {small: [160, 160, 224], big: [191, 191, 255]}
+            - !box-1.0.0 {small: [192, 160, 224], big: [223, 191, 255]}
+            - !box-1.0.0 {small: [224, 160, 224], big: [255, 191, 255]}
+            - !box-1.0.0 {small: [0, 192, 224], big: [31, 223, 255]}
+            - !box-1.0.0 {small: [32, 192, 224], big: [63, 223, 255]}
+            - !box-1.0.0 {small: [64, 192, 224], big: [95, 223, 255]}
+            - !box-1.0.0 {small: [96, 192, 224], big: [127, 223, 255]}
+            - !box-1.0.0 {small: [128, 192, 224], big: [159, 223, 255]}
+            - !box-1.0.0 {small: [160, 192, 224], big: [191, 223, 255]}
+            - !box-1.0.0 {small: [192, 192, 224], big: [223, 223, 255]}
+            - !box-1.0.0 {small: [224, 192, 224], big: [255, 223, 255]}
+            - !box-1.0.0 {small: [0, 224, 224], big: [31, 255, 255]}
+            - !box-1.0.0 {small: [32, 224, 224], big: [63, 255, 255]}
+            - !box-1.0.0 {small: [64, 224, 224], big: [95, 255, 255]}
+            - !box-1.0.0 {small: [96, 224, 224], big: [127, 255, 255]}
+            - !box-1.0.0 {small: [128, 224, 224], big: [159, 255, 255]}
+            - !box-1.0.0 {small: [160, 224, 224], big: [191, 255, 255]}
+            - !box-1.0.0 {small: [192, 224, 224], big: [223, 255, 255]}
+            - !box-1.0.0 {small: [224, 224, 224], big: [255, 255, 255]}
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [192, 192, 192], big: [223, 223, 223]}
+            - !box-1.0.0 {small: [224, 192, 192], big: [255, 223, 223]}
+            - !box-1.0.0 {small: [256, 192, 192], big: [287, 223, 223]}
+            - !box-1.0.0 {small: [288, 192, 192], big: [319, 223, 223]}
+            - !box-1.0.0 {small: [192, 224, 192], big: [223, 255, 223]}
+            - !box-1.0.0 {small: [224, 224, 192], big: [255, 255, 223]}
+            - !box-1.0.0 {small: [256, 224, 192], big: [287, 255, 223]}
+            - !box-1.0.0 {small: [288, 224, 192], big: [319, 255, 223]}
+            - !box-1.0.0 {small: [192, 256, 192], big: [223, 287, 223]}
+            - !box-1.0.0 {small: [224, 256, 192], big: [255, 287, 223]}
+            - !box-1.0.0 {small: [256, 256, 192], big: [287, 287, 223]}
+            - !box-1.0.0 {small: [288, 256, 192], big: [319, 287, 223]}
+            - !box-1.0.0 {small: [192, 288, 192], big: [223, 319, 223]}
+            - !box-1.0.0 {small: [224, 288, 192], big: [255, 319, 223]}
+            - !box-1.0.0 {small: [256, 288, 192], big: [287, 319, 223]}
+            - !box-1.0.0 {small: [288, 288, 192], big: [319, 319, 223]}
+            - !box-1.0.0 {small: [192, 192, 224], big: [223, 223, 255]}
+            - !box-1.0.0 {small: [224, 192, 224], big: [255, 223, 255]}
+            - !box-1.0.0 {small: [256, 192, 224], big: [287, 223, 255]}
+            - !box-1.0.0 {small: [288, 192, 224], big: [319, 223, 255]}
+            - !box-1.0.0 {small: [192, 224, 224], big: [223, 255, 255]}
+            - !box-1.0.0 {small: [224, 224, 224], big: [255, 255, 255]}
+            - !box-1.0.0 {small: [256, 224, 224], big: [287, 255, 255]}
+            - !box-1.0.0 {small: [288, 224, 224], big: [319, 255, 255]}
+            - !box-1.0.0 {small: [192, 256, 224], big: [223, 287, 255]}
+            - !box-1.0.0 {small: [224, 256, 224], big: [255, 287, 255]}
+            - !box-1.0.0 {small: [256, 256, 224], big: [287, 287, 255]}
+            - !box-1.0.0 {small: [288, 256, 224], big: [319, 287, 255]}
+            - !box-1.0.0 {small: [192, 288, 224], big: [223, 319, 255]}
+            - !box-1.0.0 {small: [224, 288, 224], big: [255, 319, 255]}
+            - !box-1.0.0 {small: [256, 288, 224], big: [287, 319, 255]}
+            - !box-1.0.0 {small: [288, 288, 224], big: [319, 319, 255]}
+            - !box-1.0.0 {small: [192, 192, 256], big: [223, 223, 287]}
+            - !box-1.0.0 {small: [224, 192, 256], big: [255, 223, 287]}
+            - !box-1.0.0 {small: [256, 192, 256], big: [287, 223, 287]}
+            - !box-1.0.0 {small: [288, 192, 256], big: [319, 223, 287]}
+            - !box-1.0.0 {small: [192, 224, 256], big: [223, 255, 287]}
+            - !box-1.0.0 {small: [224, 224, 256], big: [255, 255, 287]}
+            - !box-1.0.0 {small: [256, 224, 256], big: [287, 255, 287]}
+            - !box-1.0.0 {small: [288, 224, 256], big: [319, 255, 287]}
+            - !box-1.0.0 {small: [192, 256, 256], big: [223, 287, 287]}
+            - !box-1.0.0 {small: [224, 256, 256], big: [255, 287, 287]}
+            - !box-1.0.0 {small: [256, 256, 256], big: [287, 287, 287]}
+            - !box-1.0.0 {small: [288, 256, 256], big: [319, 287, 287]}
+            - !box-1.0.0 {small: [192, 288, 256], big: [223, 319, 287]}
+            - !box-1.0.0 {small: [224, 288, 256], big: [255, 319, 287]}
+            - !box-1.0.0 {small: [256, 288, 256], big: [287, 319, 287]}
+            - !box-1.0.0 {small: [288, 288, 256], big: [319, 319, 287]}
+            - !box-1.0.0 {small: [192, 192, 288], big: [223, 223, 319]}
+            - !box-1.0.0 {small: [224, 192, 288], big: [255, 223, 319]}
+            - !box-1.0.0 {small: [256, 192, 288], big: [287, 223, 319]}
+            - !box-1.0.0 {small: [288, 192, 288], big: [319, 223, 319]}
+            - !box-1.0.0 {small: [192, 224, 288], big: [223, 255, 319]}
+            - !box-1.0.0 {small: [224, 224, 288], big: [255, 255, 319]}
+            - !box-1.0.0 {small: [256, 224, 288], big: [287, 255, 319]}
+            - !box-1.0.0 {small: [288, 224, 288], big: [319, 255, 319]}
+            - !box-1.0.0 {small: [192, 256, 288], big: [223, 287, 319]}
+            - !box-1.0.0 {small: [224, 256, 288], big: [255, 287, 319]}
+            - !box-1.0.0 {small: [256, 256, 288], big: [287, 287, 319]}
+            - !box-1.0.0 {small: [288, 256, 288], big: [319, 287, 319]}
+            - !box-1.0.0 {small: [192, 288, 288], big: [223, 319, 319]}
+            - !box-1.0.0 {small: [224, 288, 288], big: [255, 319, 319]}
+            - !box-1.0.0 {small: [256, 288, 288], big: [287, 319, 319]}
+            - !box-1.0.0 {small: [288, 288, 288], big: [319, 319, 319]}
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [448, 448, 448], big: [479, 479, 479]}
+            - !box-1.0.0 {small: [480, 448, 448], big: [511, 479, 479]}
+            - !box-1.0.0 {small: [512, 448, 448], big: [543, 479, 479]}
+            - !box-1.0.0 {small: [544, 448, 448], big: [575, 479, 479]}
+            - !box-1.0.0 {small: [448, 480, 448], big: [479, 511, 479]}
+            - !box-1.0.0 {small: [480, 480, 448], big: [511, 511, 479]}
+            - !box-1.0.0 {small: [512, 480, 448], big: [543, 511, 479]}
+            - !box-1.0.0 {small: [544, 480, 448], big: [575, 511, 479]}
+            - !box-1.0.0 {small: [448, 512, 448], big: [479, 543, 479]}
+            - !box-1.0.0 {small: [480, 512, 448], big: [511, 543, 479]}
+            - !box-1.0.0 {small: [512, 512, 448], big: [543, 543, 479]}
+            - !box-1.0.0 {small: [544, 512, 448], big: [575, 543, 479]}
+            - !box-1.0.0 {small: [448, 544, 448], big: [479, 575, 479]}
+            - !box-1.0.0 {small: [480, 544, 448], big: [511, 575, 479]}
+            - !box-1.0.0 {small: [512, 544, 448], big: [543, 575, 479]}
+            - !box-1.0.0 {small: [544, 544, 448], big: [575, 575, 479]}
+            - !box-1.0.0 {small: [448, 448, 480], big: [479, 479, 511]}
+            - !box-1.0.0 {small: [480, 448, 480], big: [511, 479, 511]}
+            - !box-1.0.0 {small: [512, 448, 480], big: [543, 479, 511]}
+            - !box-1.0.0 {small: [544, 448, 480], big: [575, 479, 511]}
+            - !box-1.0.0 {small: [448, 480, 480], big: [479, 511, 511]}
+            - !box-1.0.0 {small: [480, 480, 480], big: [511, 511, 511]}
+            - !box-1.0.0 {small: [512, 480, 480], big: [543, 511, 511]}
+            - !box-1.0.0 {small: [544, 480, 480], big: [575, 511, 511]}
+            - !box-1.0.0 {small: [448, 512, 480], big: [479, 543, 511]}
+            - !box-1.0.0 {small: [480, 512, 480], big: [511, 543, 511]}
+            - !box-1.0.0 {small: [512, 512, 480], big: [543, 543, 511]}
+            - !box-1.0.0 {small: [544, 512, 480], big: [575, 543, 511]}
+            - !box-1.0.0 {small: [448, 544, 480], big: [479, 575, 511]}
+            - !box-1.0.0 {small: [480, 544, 480], big: [511, 575, 511]}
+            - !box-1.0.0 {small: [512, 544, 480], big: [543, 575, 511]}
+            - !box-1.0.0 {small: [544, 544, 480], big: [575, 575, 511]}
+            - !box-1.0.0 {small: [448, 448, 512], big: [479, 479, 543]}
+            - !box-1.0.0 {small: [480, 448, 512], big: [511, 479, 543]}
+            - !box-1.0.0 {small: [512, 448, 512], big: [543, 479, 543]}
+            - !box-1.0.0 {small: [544, 448, 512], big: [575, 479, 543]}
+            - !box-1.0.0 {small: [448, 480, 512], big: [479, 511, 543]}
+            - !box-1.0.0 {small: [480, 480, 512], big: [511, 511, 543]}
+            - !box-1.0.0 {small: [512, 480, 512], big: [543, 511, 543]}
+            - !box-1.0.0 {small: [544, 480, 512], big: [575, 511, 543]}
+            - !box-1.0.0 {small: [448, 512, 512], big: [479, 543, 543]}
+            - !box-1.0.0 {small: [480, 512, 512], big: [511, 543, 543]}
+            - !box-1.0.0 {small: [512, 512, 512], big: [543, 543, 543]}
+            - !box-1.0.0 {small: [544, 512, 512], big: [575, 543, 543]}
+            - !box-1.0.0 {small: [448, 544, 512], big: [479, 575, 543]}
+            - !box-1.0.0 {small: [480, 544, 512], big: [511, 575, 543]}
+            - !box-1.0.0 {small: [512, 544, 512], big: [543, 575, 543]}
+            - !box-1.0.0 {small: [544, 544, 512], big: [575, 575, 543]}
+            - !box-1.0.0 {small: [448, 448, 544], big: [479, 479, 575]}
+            - !box-1.0.0 {small: [480, 448, 544], big: [511, 479, 575]}
+            - !box-1.0.0 {small: [512, 448, 544], big: [543, 479, 575]}
+            - !box-1.0.0 {small: [544, 448, 544], big: [575, 479, 575]}
+            - !box-1.0.0 {small: [448, 480, 544], big: [479, 511, 575]}
+            - !box-1.0.0 {small: [480, 480, 544], big: [511, 511, 575]}
+            - !box-1.0.0 {small: [512, 480, 544], big: [543, 511, 575]}
+            - !box-1.0.0 {small: [544, 480, 544], big: [575, 511, 575]}
+            - !box-1.0.0 {small: [448, 512, 544], big: [479, 543, 575]}
+            - !box-1.0.0 {small: [480, 512, 544], big: [511, 543, 575]}
+            - !box-1.0.0 {small: [512, 512, 544], big: [543, 543, 575]}
+            - !box-1.0.0 {small: [544, 512, 544], big: [575, 543, 575]}
+            - !box-1.0.0 {small: [448, 544, 544], big: [479, 575, 575]}
+            - !box-1.0.0 {small: [480, 544, 544], big: [511, 575, 575]}
+            - !box-1.0.0 {small: [512, 544, 544], big: [543, 575, 575]}
+            - !box-1.0.0 {small: [544, 544, 544], big: [575, 575, 575]}
+      leveldata:
+        - !leveldata-1.1.0
+          patch: 0
+          level: 0
+          is_subcycling_level: false
+          iteration: !rational-1.0.0 [112, 1]
+          delta_iteration: !rational-1.0.0 [1, 1]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [0, 0, 0], big: [31, 31, 31]}
+              - !box-1.0.0 {small: [32, 0, 0], big: [63, 31, 31]}
+              - !box-1.0.0 {small: [64, 0, 0], big: [95, 31, 31]}
+              - !box-1.0.0 {small: [96, 0, 0], big: [127, 31, 31]}
+              - !box-1.0.0 {small: [128, 0, 0], big: [159, 31, 31]}
+              - !box-1.0.0 {small: [160, 0, 0], big: [191, 31, 31]}
+              - !box-1.0.0 {small: [192, 0, 0], big: [223, 31, 31]}
+              - !box-1.0.0 {small: [224, 0, 0], big: [255, 31, 31]}
+              - !box-1.0.0 {small: [0, 32, 0], big: [31, 63, 31]}
+              - !box-1.0.0 {small: [32, 32, 0], big: [63, 63, 31]}
+              - !box-1.0.0 {small: [64, 32, 0], big: [95, 63, 31]}
+              - !box-1.0.0 {small: [96, 32, 0], big: [127, 63, 31]}
+              - !box-1.0.0 {small: [128, 32, 0], big: [159, 63, 31]}
+              - !box-1.0.0 {small: [160, 32, 0], big: [191, 63, 31]}
+              - !box-1.0.0 {small: [192, 32, 0], big: [223, 63, 31]}
+              - !box-1.0.0 {small: [224, 32, 0], big: [255, 63, 31]}
+              - !box-1.0.0 {small: [0, 64, 0], big: [31, 95, 31]}
+              - !box-1.0.0 {small: [32, 64, 0], big: [63, 95, 31]}
+              - !box-1.0.0 {small: [64, 64, 0], big: [95, 95, 31]}
+              - !box-1.0.0 {small: [96, 64, 0], big: [127, 95, 31]}
+              - !box-1.0.0 {small: [128, 64, 0], big: [159, 95, 31]}
+              - !box-1.0.0 {small: [160, 64, 0], big: [191, 95, 31]}
+              - !box-1.0.0 {small: [192, 64, 0], big: [223, 95, 31]}
+              - !box-1.0.0 {small: [224, 64, 0], big: [255, 95, 31]}
+              - !box-1.0.0 {small: [0, 96, 0], big: [31, 127, 31]}
+              - !box-1.0.0 {small: [32, 96, 0], big: [63, 127, 31]}
+              - !box-1.0.0 {small: [64, 96, 0], big: [95, 127, 31]}
+              - !box-1.0.0 {small: [96, 96, 0], big: [127, 127, 31]}
+              - !box-1.0.0 {small: [128, 96, 0], big: [159, 127, 31]}
+              - !box-1.0.0 {small: [160, 96, 0], big: [191, 127, 31]}
+              - !box-1.0.0 {small: [192, 96, 0], big: [223, 127, 31]}
+              - !box-1.0.0 {small: [224, 96, 0], big: [255, 127, 31]}
+              - !box-1.0.0 {small: [0, 128, 0], big: [31, 159, 31]}
+              - !box-1.0.0 {small: [32, 128, 0], big: [63, 159, 31]}
+              - !box-1.0.0 {small: [64, 128, 0], big: [95, 159, 31]}
+              - !box-1.0.0 {small: [96, 128, 0], big: [127, 159, 31]}
+              - !box-1.0.0 {small: [128, 128, 0], big: [159, 159, 31]}
+              - !box-1.0.0 {small: [160, 128, 0], big: [191, 159, 31]}
+              - !box-1.0.0 {small: [192, 128, 0], big: [223, 159, 31]}
+              - !box-1.0.0 {small: [224, 128, 0], big: [255, 159, 31]}
+              - !box-1.0.0 {small: [0, 160, 0], big: [31, 191, 31]}
+              - !box-1.0.0 {small: [32, 160, 0], big: [63, 191, 31]}
+              - !box-1.0.0 {small: [64, 160, 0], big: [95, 191, 31]}
+              - !box-1.0.0 {small: [96, 160, 0], big: [127, 191, 31]}
+              - !box-1.0.0 {small: [128, 160, 0], big: [159, 191, 31]}
+              - !box-1.0.0 {small: [160, 160, 0], big: [191, 191, 31]}
+              - !box-1.0.0 {small: [192, 160, 0], big: [223, 191, 31]}
+              - !box-1.0.0 {small: [224, 160, 0], big: [255, 191, 31]}
+              - !box-1.0.0 {small: [0, 192, 0], big: [31, 223, 31]}
+              - !box-1.0.0 {small: [32, 192, 0], big: [63, 223, 31]}
+              - !box-1.0.0 {small: [64, 192, 0], big: [95, 223, 31]}
+              - !box-1.0.0 {small: [96, 192, 0], big: [127, 223, 31]}
+              - !box-1.0.0 {small: [128, 192, 0], big: [159, 223, 31]}
+              - !box-1.0.0 {small: [160, 192, 0], big: [191, 223, 31]}
+              - !box-1.0.0 {small: [192, 192, 0], big: [223, 223, 31]}
+              - !box-1.0.0 {small: [224, 192, 0], big: [255, 223, 31]}
+              - !box-1.0.0 {small: [0, 224, 0], big: [31, 255, 31]}
+              - !box-1.0.0 {small: [32, 224, 0], big: [63, 255, 31]}
+              - !box-1.0.0 {small: [64, 224, 0], big: [95, 255, 31]}
+              - !box-1.0.0 {small: [96, 224, 0], big: [127, 255, 31]}
+              - !box-1.0.0 {small: [128, 224, 0], big: [159, 255, 31]}
+              - !box-1.0.0 {small: [160, 224, 0], big: [191, 255, 31]}
+              - !box-1.0.0 {small: [192, 224, 0], big: [223, 255, 31]}
+              - !box-1.0.0 {small: [224, 224, 0], big: [255, 255, 31]}
+              - !box-1.0.0 {small: [0, 0, 32], big: [31, 31, 63]}
+              - !box-1.0.0 {small: [32, 0, 32], big: [63, 31, 63]}
+              - !box-1.0.0 {small: [64, 0, 32], big: [95, 31, 63]}
+              - !box-1.0.0 {small: [96, 0, 32], big: [127, 31, 63]}
+              - !box-1.0.0 {small: [128, 0, 32], big: [159, 31, 63]}
+              - !box-1.0.0 {small: [160, 0, 32], big: [191, 31, 63]}
+              - !box-1.0.0 {small: [192, 0, 32], big: [223, 31, 63]}
+              - !box-1.0.0 {small: [224, 0, 32], big: [255, 31, 63]}
+              - !box-1.0.0 {small: [0, 32, 32], big: [31, 63, 63]}
+              - !box-1.0.0 {small: [32, 32, 32], big: [63, 63, 63]}
+              - !box-1.0.0 {small: [64, 32, 32], big: [95, 63, 63]}
+              - !box-1.0.0 {small: [96, 32, 32], big: [127, 63, 63]}
+              - !box-1.0.0 {small: [128, 32, 32], big: [159, 63, 63]}
+              - !box-1.0.0 {small: [160, 32, 32], big: [191, 63, 63]}
+              - !box-1.0.0 {small: [192, 32, 32], big: [223, 63, 63]}
+              - !box-1.0.0 {small: [224, 32, 32], big: [255, 63, 63]}
+              - !box-1.0.0 {small: [0, 64, 32], big: [31, 95, 63]}
+              - !box-1.0.0 {small: [32, 64, 32], big: [63, 95, 63]}
+              - !box-1.0.0 {small: [64, 64, 32], big: [95, 95, 63]}
+              - !box-1.0.0 {small: [96, 64, 32], big: [127, 95, 63]}
+              - !box-1.0.0 {small: [128, 64, 32], big: [159, 95, 63]}
+              - !box-1.0.0 {small: [160, 64, 32], big: [191, 95, 63]}
+              - !box-1.0.0 {small: [192, 64, 32], big: [223, 95, 63]}
+              - !box-1.0.0 {small: [224, 64, 32], big: [255, 95, 63]}
+              - !box-1.0.0 {small: [0, 96, 32], big: [31, 127, 63]}
+              - !box-1.0.0 {small: [32, 96, 32], big: [63, 127, 63]}
+              - !box-1.0.0 {small: [64, 96, 32], big: [95, 127, 63]}
+              - !box-1.0.0 {small: [96, 96, 32], big: [127, 127, 63]}
+              - !box-1.0.0 {small: [128, 96, 32], big: [159, 127, 63]}
+              - !box-1.0.0 {small: [160, 96, 32], big: [191, 127, 63]}
+              - !box-1.0.0 {small: [192, 96, 32], big: [223, 127, 63]}
+              - !box-1.0.0 {small: [224, 96, 32], big: [255, 127, 63]}
+              - !box-1.0.0 {small: [0, 128, 32], big: [31, 159, 63]}
+              - !box-1.0.0 {small: [32, 128, 32], big: [63, 159, 63]}
+              - !box-1.0.0 {small: [64, 128, 32], big: [95, 159, 63]}
+              - !box-1.0.0 {small: [96, 128, 32], big: [127, 159, 63]}
+              - !box-1.0.0 {small: [128, 128, 32], big: [159, 159, 63]}
+              - !box-1.0.0 {small: [160, 128, 32], big: [191, 159, 63]}
+              - !box-1.0.0 {small: [192, 128, 32], big: [223, 159, 63]}
+              - !box-1.0.0 {small: [224, 128, 32], big: [255, 159, 63]}
+              - !box-1.0.0 {small: [0, 160, 32], big: [31, 191, 63]}
+              - !box-1.0.0 {small: [32, 160, 32], big: [63, 191, 63]}
+              - !box-1.0.0 {small: [64, 160, 32], big: [95, 191, 63]}
+              - !box-1.0.0 {small: [96, 160, 32], big: [127, 191, 63]}
+              - !box-1.0.0 {small: [128, 160, 32], big: [159, 191, 63]}
+              - !box-1.0.0 {small: [160, 160, 32], big: [191, 191, 63]}
+              - !box-1.0.0 {small: [192, 160, 32], big: [223, 191, 63]}
+              - !box-1.0.0 {small: [224, 160, 32], big: [255, 191, 63]}
+              - !box-1.0.0 {small: [0, 192, 32], big: [31, 223, 63]}
+              - !box-1.0.0 {small: [32, 192, 32], big: [63, 223, 63]}
+              - !box-1.0.0 {small: [64, 192, 32], big: [95, 223, 63]}
+              - !box-1.0.0 {small: [96, 192, 32], big: [127, 223, 63]}
+              - !box-1.0.0 {small: [128, 192, 32], big: [159, 223, 63]}
+              - !box-1.0.0 {small: [160, 192, 32], big: [191, 223, 63]}
+              - !box-1.0.0 {small: [192, 192, 32], big: [223, 223, 63]}
+              - !box-1.0.0 {small: [224, 192, 32], big: [255, 223, 63]}
+              - !box-1.0.0 {small: [0, 224, 32], big: [31, 255, 63]}
+              - !box-1.0.0 {small: [32, 224, 32], big: [63, 255, 63]}
+              - !box-1.0.0 {small: [64, 224, 32], big: [95, 255, 63]}
+              - !box-1.0.0 {small: [96, 224, 32], big: [127, 255, 63]}
+              - !box-1.0.0 {small: [128, 224, 32], big: [159, 255, 63]}
+              - !box-1.0.0 {small: [160, 224, 32], big: [191, 255, 63]}
+              - !box-1.0.0 {small: [192, 224, 32], big: [223, 255, 63]}
+              - !box-1.0.0 {small: [224, 224, 32], big: [255, 255, 63]}
+              - !box-1.0.0 {small: [0, 0, 64], big: [31, 31, 95]}
+              - !box-1.0.0 {small: [32, 0, 64], big: [63, 31, 95]}
+              - !box-1.0.0 {small: [64, 0, 64], big: [95, 31, 95]}
+              - !box-1.0.0 {small: [96, 0, 64], big: [127, 31, 95]}
+              - !box-1.0.0 {small: [128, 0, 64], big: [159, 31, 95]}
+              - !box-1.0.0 {small: [160, 0, 64], big: [191, 31, 95]}
+              - !box-1.0.0 {small: [192, 0, 64], big: [223, 31, 95]}
+              - !box-1.0.0 {small: [224, 0, 64], big: [255, 31, 95]}
+              - !box-1.0.0 {small: [0, 32, 64], big: [31, 63, 95]}
+              - !box-1.0.0 {small: [32, 32, 64], big: [63, 63, 95]}
+              - !box-1.0.0 {small: [64, 32, 64], big: [95, 63, 95]}
+              - !box-1.0.0 {small: [96, 32, 64], big: [127, 63, 95]}
+              - !box-1.0.0 {small: [128, 32, 64], big: [159, 63, 95]}
+              - !box-1.0.0 {small: [160, 32, 64], big: [191, 63, 95]}
+              - !box-1.0.0 {small: [192, 32, 64], big: [223, 63, 95]}
+              - !box-1.0.0 {small: [224, 32, 64], big: [255, 63, 95]}
+              - !box-1.0.0 {small: [0, 64, 64], big: [31, 95, 95]}
+              - !box-1.0.0 {small: [32, 64, 64], big: [63, 95, 95]}
+              - !box-1.0.0 {small: [64, 64, 64], big: [95, 95, 95]}
+              - !box-1.0.0 {small: [96, 64, 64], big: [127, 95, 95]}
+              - !box-1.0.0 {small: [128, 64, 64], big: [159, 95, 95]}
+              - !box-1.0.0 {small: [160, 64, 64], big: [191, 95, 95]}
+              - !box-1.0.0 {small: [192, 64, 64], big: [223, 95, 95]}
+              - !box-1.0.0 {small: [224, 64, 64], big: [255, 95, 95]}
+              - !box-1.0.0 {small: [0, 96, 64], big: [31, 127, 95]}
+              - !box-1.0.0 {small: [32, 96, 64], big: [63, 127, 95]}
+              - !box-1.0.0 {small: [64, 96, 64], big: [95, 127, 95]}
+              - !box-1.0.0 {small: [96, 96, 64], big: [127, 127, 95]}
+              - !box-1.0.0 {small: [128, 96, 64], big: [159, 127, 95]}
+              - !box-1.0.0 {small: [160, 96, 64], big: [191, 127, 95]}
+              - !box-1.0.0 {small: [192, 96, 64], big: [223, 127, 95]}
+              - !box-1.0.0 {small: [224, 96, 64], big: [255, 127, 95]}
+              - !box-1.0.0 {small: [0, 128, 64], big: [31, 159, 95]}
+              - !box-1.0.0 {small: [32, 128, 64], big: [63, 159, 95]}
+              - !box-1.0.0 {small: [64, 128, 64], big: [95, 159, 95]}
+              - !box-1.0.0 {small: [96, 128, 64], big: [127, 159, 95]}
+              - !box-1.0.0 {small: [128, 128, 64], big: [159, 159, 95]}
+              - !box-1.0.0 {small: [160, 128, 64], big: [191, 159, 95]}
+              - !box-1.0.0 {small: [192, 128, 64], big: [223, 159, 95]}
+              - !box-1.0.0 {small: [224, 128, 64], big: [255, 159, 95]}
+              - !box-1.0.0 {small: [0, 160, 64], big: [31, 191, 95]}
+              - !box-1.0.0 {small: [32, 160, 64], big: [63, 191, 95]}
+              - !box-1.0.0 {small: [64, 160, 64], big: [95, 191, 95]}
+              - !box-1.0.0 {small: [96, 160, 64], big: [127, 191, 95]}
+              - !box-1.0.0 {small: [128, 160, 64], big: [159, 191, 95]}
+              - !box-1.0.0 {small: [160, 160, 64], big: [191, 191, 95]}
+              - !box-1.0.0 {small: [192, 160, 64], big: [223, 191, 95]}
+              - !box-1.0.0 {small: [224, 160, 64], big: [255, 191, 95]}
+              - !box-1.0.0 {small: [0, 192, 64], big: [31, 223, 95]}
+              - !box-1.0.0 {small: [32, 192, 64], big: [63, 223, 95]}
+              - !box-1.0.0 {small: [64, 192, 64], big: [95, 223, 95]}
+              - !box-1.0.0 {small: [96, 192, 64], big: [127, 223, 95]}
+              - !box-1.0.0 {small: [128, 192, 64], big: [159, 223, 95]}
+              - !box-1.0.0 {small: [160, 192, 64], big: [191, 223, 95]}
+              - !box-1.0.0 {small: [192, 192, 64], big: [223, 223, 95]}
+              - !box-1.0.0 {small: [224, 192, 64], big: [255, 223, 95]}
+              - !box-1.0.0 {small: [0, 224, 64], big: [31, 255, 95]}
+              - !box-1.0.0 {small: [32, 224, 64], big: [63, 255, 95]}
+              - !box-1.0.0 {small: [64, 224, 64], big: [95, 255, 95]}
+              - !box-1.0.0 {small: [96, 224, 64], big: [127, 255, 95]}
+              - !box-1.0.0 {small: [128, 224, 64], big: [159, 255, 95]}
+              - !box-1.0.0 {small: [160, 224, 64], big: [191, 255, 95]}
+              - !box-1.0.0 {small: [192, 224, 64], big: [223, 255, 95]}
+              - !box-1.0.0 {small: [224, 224, 64], big: [255, 255, 95]}
+              - !box-1.0.0 {small: [0, 0, 96], big: [31, 31, 127]}
+              - !box-1.0.0 {small: [32, 0, 96], big: [63, 31, 127]}
+              - !box-1.0.0 {small: [64, 0, 96], big: [95, 31, 127]}
+              - !box-1.0.0 {small: [96, 0, 96], big: [127, 31, 127]}
+              - !box-1.0.0 {small: [128, 0, 96], big: [159, 31, 127]}
+              - !box-1.0.0 {small: [160, 0, 96], big: [191, 31, 127]}
+              - !box-1.0.0 {small: [192, 0, 96], big: [223, 31, 127]}
+              - !box-1.0.0 {small: [224, 0, 96], big: [255, 31, 127]}
+              - !box-1.0.0 {small: [0, 32, 96], big: [31, 63, 127]}
+              - !box-1.0.0 {small: [32, 32, 96], big: [63, 63, 127]}
+              - !box-1.0.0 {small: [64, 32, 96], big: [95, 63, 127]}
+              - !box-1.0.0 {small: [96, 32, 96], big: [127, 63, 127]}
+              - !box-1.0.0 {small: [128, 32, 96], big: [159, 63, 127]}
+              - !box-1.0.0 {small: [160, 32, 96], big: [191, 63, 127]}
+              - !box-1.0.0 {small: [192, 32, 96], big: [223, 63, 127]}
+              - !box-1.0.0 {small: [224, 32, 96], big: [255, 63, 127]}
+              - !box-1.0.0 {small: [0, 64, 96], big: [31, 95, 127]}
+              - !box-1.0.0 {small: [32, 64, 96], big: [63, 95, 127]}
+              - !box-1.0.0 {small: [64, 64, 96], big: [95, 95, 127]}
+              - !box-1.0.0 {small: [96, 64, 96], big: [127, 95, 127]}
+              - !box-1.0.0 {small: [128, 64, 96], big: [159, 95, 127]}
+              - !box-1.0.0 {small: [160, 64, 96], big: [191, 95, 127]}
+              - !box-1.0.0 {small: [192, 64, 96], big: [223, 95, 127]}
+              - !box-1.0.0 {small: [224, 64, 96], big: [255, 95, 127]}
+              - !box-1.0.0 {small: [0, 96, 96], big: [31, 127, 127]}
+              - !box-1.0.0 {small: [32, 96, 96], big: [63, 127, 127]}
+              - !box-1.0.0 {small: [64, 96, 96], big: [95, 127, 127]}
+              - !box-1.0.0 {small: [96, 96, 96], big: [127, 127, 127]}
+              - !box-1.0.0 {small: [128, 96, 96], big: [159, 127, 127]}
+              - !box-1.0.0 {small: [160, 96, 96], big: [191, 127, 127]}
+              - !box-1.0.0 {small: [192, 96, 96], big: [223, 127, 127]}
+              - !box-1.0.0 {small: [224, 96, 96], big: [255, 127, 127]}
+              - !box-1.0.0 {small: [0, 128, 96], big: [31, 159, 127]}
+              - !box-1.0.0 {small: [32, 128, 96], big: [63, 159, 127]}
+              - !box-1.0.0 {small: [64, 128, 96], big: [95, 159, 127]}
+              - !box-1.0.0 {small: [96, 128, 96], big: [127, 159, 127]}
+              - !box-1.0.0 {small: [128, 128, 96], big: [159, 159, 127]}
+              - !box-1.0.0 {small: [160, 128, 96], big: [191, 159, 127]}
+              - !box-1.0.0 {small: [192, 128, 96], big: [223, 159, 127]}
+              - !box-1.0.0 {small: [224, 128, 96], big: [255, 159, 127]}
+              - !box-1.0.0 {small: [0, 160, 96], big: [31, 191, 127]}
+              - !box-1.0.0 {small: [32, 160, 96], big: [63, 191, 127]}
+              - !box-1.0.0 {small: [64, 160, 96], big: [95, 191, 127]}
+              - !box-1.0.0 {small: [96, 160, 96], big: [127, 191, 127]}
+              - !box-1.0.0 {small: [128, 160, 96], big: [159, 191, 127]}
+              - !box-1.0.0 {small: [160, 160, 96], big: [191, 191, 127]}
+              - !box-1.0.0 {small: [192, 160, 96], big: [223, 191, 127]}
+              - !box-1.0.0 {small: [224, 160, 96], big: [255, 191, 127]}
+              - !box-1.0.0 {small: [0, 192, 96], big: [31, 223, 127]}
+              - !box-1.0.0 {small: [32, 192, 96], big: [63, 223, 127]}
+              - !box-1.0.0 {small: [64, 192, 96], big: [95, 223, 127]}
+              - !box-1.0.0 {small: [96, 192, 96], big: [127, 223, 127]}
+              - !box-1.0.0 {small: [128, 192, 96], big: [159, 223, 127]}
+              - !box-1.0.0 {small: [160, 192, 96], big: [191, 223, 127]}
+              - !box-1.0.0 {small: [192, 192, 96], big: [223, 223, 127]}
+              - !box-1.0.0 {small: [224, 192, 96], big: [255, 223, 127]}
+              - !box-1.0.0 {small: [0, 224, 96], big: [31, 255, 127]}
+              - !box-1.0.0 {small: [32, 224, 96], big: [63, 255, 127]}
+              - !box-1.0.0 {small: [64, 224, 96], big: [95, 255, 127]}
+              - !box-1.0.0 {small: [96, 224, 96], big: [127, 255, 127]}
+              - !box-1.0.0 {small: [128, 224, 96], big: [159, 255, 127]}
+              - !box-1.0.0 {small: [160, 224, 96], big: [191, 255, 127]}
+              - !box-1.0.0 {small: [192, 224, 96], big: [223, 255, 127]}
+              - !box-1.0.0 {small: [224, 224, 96], big: [255, 255, 127]}
+              - !box-1.0.0 {small: [0, 0, 128], big: [31, 31, 159]}
+              - !box-1.0.0 {small: [32, 0, 128], big: [63, 31, 159]}
+              - !box-1.0.0 {small: [64, 0, 128], big: [95, 31, 159]}
+              - !box-1.0.0 {small: [96, 0, 128], big: [127, 31, 159]}
+              - !box-1.0.0 {small: [128, 0, 128], big: [159, 31, 159]}
+              - !box-1.0.0 {small: [160, 0, 128], big: [191, 31, 159]}
+              - !box-1.0.0 {small: [192, 0, 128], big: [223, 31, 159]}
+              - !box-1.0.0 {small: [224, 0, 128], big: [255, 31, 159]}
+              - !box-1.0.0 {small: [0, 32, 128], big: [31, 63, 159]}
+              - !box-1.0.0 {small: [32, 32, 128], big: [63, 63, 159]}
+              - !box-1.0.0 {small: [64, 32, 128], big: [95, 63, 159]}
+              - !box-1.0.0 {small: [96, 32, 128], big: [127, 63, 159]}
+              - !box-1.0.0 {small: [128, 32, 128], big: [159, 63, 159]}
+              - !box-1.0.0 {small: [160, 32, 128], big: [191, 63, 159]}
+              - !box-1.0.0 {small: [192, 32, 128], big: [223, 63, 159]}
+              - !box-1.0.0 {small: [224, 32, 128], big: [255, 63, 159]}
+              - !box-1.0.0 {small: [0, 64, 128], big: [31, 95, 159]}
+              - !box-1.0.0 {small: [32, 64, 128], big: [63, 95, 159]}
+              - !box-1.0.0 {small: [64, 64, 128], big: [95, 95, 159]}
+              - !box-1.0.0 {small: [96, 64, 128], big: [127, 95, 159]}
+              - !box-1.0.0 {small: [128, 64, 128], big: [159, 95, 159]}
+              - !box-1.0.0 {small: [160, 64, 128], big: [191, 95, 159]}
+              - !box-1.0.0 {small: [192, 64, 128], big: [223, 95, 159]}
+              - !box-1.0.0 {small: [224, 64, 128], big: [255, 95, 159]}
+              - !box-1.0.0 {small: [0, 96, 128], big: [31, 127, 159]}
+              - !box-1.0.0 {small: [32, 96, 128], big: [63, 127, 159]}
+              - !box-1.0.0 {small: [64, 96, 128], big: [95, 127, 159]}
+              - !box-1.0.0 {small: [96, 96, 128], big: [127, 127, 159]}
+              - !box-1.0.0 {small: [128, 96, 128], big: [159, 127, 159]}
+              - !box-1.0.0 {small: [160, 96, 128], big: [191, 127, 159]}
+              - !box-1.0.0 {small: [192, 96, 128], big: [223, 127, 159]}
+              - !box-1.0.0 {small: [224, 96, 128], big: [255, 127, 159]}
+              - !box-1.0.0 {small: [0, 128, 128], big: [31, 159, 159]}
+              - !box-1.0.0 {small: [32, 128, 128], big: [63, 159, 159]}
+              - !box-1.0.0 {small: [64, 128, 128], big: [95, 159, 159]}
+              - !box-1.0.0 {small: [96, 128, 128], big: [127, 159, 159]}
+              - !box-1.0.0 {small: [128, 128, 128], big: [159, 159, 159]}
+              - !box-1.0.0 {small: [160, 128, 128], big: [191, 159, 159]}
+              - !box-1.0.0 {small: [192, 128, 128], big: [223, 159, 159]}
+              - !box-1.0.0 {small: [224, 128, 128], big: [255, 159, 159]}
+              - !box-1.0.0 {small: [0, 160, 128], big: [31, 191, 159]}
+              - !box-1.0.0 {small: [32, 160, 128], big: [63, 191, 159]}
+              - !box-1.0.0 {small: [64, 160, 128], big: [95, 191, 159]}
+              - !box-1.0.0 {small: [96, 160, 128], big: [127, 191, 159]}
+              - !box-1.0.0 {small: [128, 160, 128], big: [159, 191, 159]}
+              - !box-1.0.0 {small: [160, 160, 128], big: [191, 191, 159]}
+              - !box-1.0.0 {small: [192, 160, 128], big: [223, 191, 159]}
+              - !box-1.0.0 {small: [224, 160, 128], big: [255, 191, 159]}
+              - !box-1.0.0 {small: [0, 192, 128], big: [31, 223, 159]}
+              - !box-1.0.0 {small: [32, 192, 128], big: [63, 223, 159]}
+              - !box-1.0.0 {small: [64, 192, 128], big: [95, 223, 159]}
+              - !box-1.0.0 {small: [96, 192, 128], big: [127, 223, 159]}
+              - !box-1.0.0 {small: [128, 192, 128], big: [159, 223, 159]}
+              - !box-1.0.0 {small: [160, 192, 128], big: [191, 223, 159]}
+              - !box-1.0.0 {small: [192, 192, 128], big: [223, 223, 159]}
+              - !box-1.0.0 {small: [224, 192, 128], big: [255, 223, 159]}
+              - !box-1.0.0 {small: [0, 224, 128], big: [31, 255, 159]}
+              - !box-1.0.0 {small: [32, 224, 128], big: [63, 255, 159]}
+              - !box-1.0.0 {small: [64, 224, 128], big: [95, 255, 159]}
+              - !box-1.0.0 {small: [96, 224, 128], big: [127, 255, 159]}
+              - !box-1.0.0 {small: [128, 224, 128], big: [159, 255, 159]}
+              - !box-1.0.0 {small: [160, 224, 128], big: [191, 255, 159]}
+              - !box-1.0.0 {small: [192, 224, 128], big: [223, 255, 159]}
+              - !box-1.0.0 {small: [224, 224, 128], big: [255, 255, 159]}
+              - !box-1.0.0 {small: [0, 0, 160], big: [31, 31, 191]}
+              - !box-1.0.0 {small: [32, 0, 160], big: [63, 31, 191]}
+              - !box-1.0.0 {small: [64, 0, 160], big: [95, 31, 191]}
+              - !box-1.0.0 {small: [96, 0, 160], big: [127, 31, 191]}
+              - !box-1.0.0 {small: [128, 0, 160], big: [159, 31, 191]}
+              - !box-1.0.0 {small: [160, 0, 160], big: [191, 31, 191]}
+              - !box-1.0.0 {small: [192, 0, 160], big: [223, 31, 191]}
+              - !box-1.0.0 {small: [224, 0, 160], big: [255, 31, 191]}
+              - !box-1.0.0 {small: [0, 32, 160], big: [31, 63, 191]}
+              - !box-1.0.0 {small: [32, 32, 160], big: [63, 63, 191]}
+              - !box-1.0.0 {small: [64, 32, 160], big: [95, 63, 191]}
+              - !box-1.0.0 {small: [96, 32, 160], big: [127, 63, 191]}
+              - !box-1.0.0 {small: [128, 32, 160], big: [159, 63, 191]}
+              - !box-1.0.0 {small: [160, 32, 160], big: [191, 63, 191]}
+              - !box-1.0.0 {small: [192, 32, 160], big: [223, 63, 191]}
+              - !box-1.0.0 {small: [224, 32, 160], big: [255, 63, 191]}
+              - !box-1.0.0 {small: [0, 64, 160], big: [31, 95, 191]}
+              - !box-1.0.0 {small: [32, 64, 160], big: [63, 95, 191]}
+              - !box-1.0.0 {small: [64, 64, 160], big: [95, 95, 191]}
+              - !box-1.0.0 {small: [96, 64, 160], big: [127, 95, 191]}
+              - !box-1.0.0 {small: [128, 64, 160], big: [159, 95, 191]}
+              - !box-1.0.0 {small: [160, 64, 160], big: [191, 95, 191]}
+              - !box-1.0.0 {small: [192, 64, 160], big: [223, 95, 191]}
+              - !box-1.0.0 {small: [224, 64, 160], big: [255, 95, 191]}
+              - !box-1.0.0 {small: [0, 96, 160], big: [31, 127, 191]}
+              - !box-1.0.0 {small: [32, 96, 160], big: [63, 127, 191]}
+              - !box-1.0.0 {small: [64, 96, 160], big: [95, 127, 191]}
+              - !box-1.0.0 {small: [96, 96, 160], big: [127, 127, 191]}
+              - !box-1.0.0 {small: [128, 96, 160], big: [159, 127, 191]}
+              - !box-1.0.0 {small: [160, 96, 160], big: [191, 127, 191]}
+              - !box-1.0.0 {small: [192, 96, 160], big: [223, 127, 191]}
+              - !box-1.0.0 {small: [224, 96, 160], big: [255, 127, 191]}
+              - !box-1.0.0 {small: [0, 128, 160], big: [31, 159, 191]}
+              - !box-1.0.0 {small: [32, 128, 160], big: [63, 159, 191]}
+              - !box-1.0.0 {small: [64, 128, 160], big: [95, 159, 191]}
+              - !box-1.0.0 {small: [96, 128, 160], big: [127, 159, 191]}
+              - !box-1.0.0 {small: [128, 128, 160], big: [159, 159, 191]}
+              - !box-1.0.0 {small: [160, 128, 160], big: [191, 159, 191]}
+              - !box-1.0.0 {small: [192, 128, 160], big: [223, 159, 191]}
+              - !box-1.0.0 {small: [224, 128, 160], big: [255, 159, 191]}
+              - !box-1.0.0 {small: [0, 160, 160], big: [31, 191, 191]}
+              - !box-1.0.0 {small: [32, 160, 160], big: [63, 191, 191]}
+              - !box-1.0.0 {small: [64, 160, 160], big: [95, 191, 191]}
+              - !box-1.0.0 {small: [96, 160, 160], big: [127, 191, 191]}
+              - !box-1.0.0 {small: [128, 160, 160], big: [159, 191, 191]}
+              - !box-1.0.0 {small: [160, 160, 160], big: [191, 191, 191]}
+              - !box-1.0.0 {small: [192, 160, 160], big: [223, 191, 191]}
+              - !box-1.0.0 {small: [224, 160, 160], big: [255, 191, 191]}
+              - !box-1.0.0 {small: [0, 192, 160], big: [31, 223, 191]}
+              - !box-1.0.0 {small: [32, 192, 160], big: [63, 223, 191]}
+              - !box-1.0.0 {small: [64, 192, 160], big: [95, 223, 191]}
+              - !box-1.0.0 {small: [96, 192, 160], big: [127, 223, 191]}
+              - !box-1.0.0 {small: [128, 192, 160], big: [159, 223, 191]}
+              - !box-1.0.0 {small: [160, 192, 160], big: [191, 223, 191]}
+              - !box-1.0.0 {small: [192, 192, 160], big: [223, 223, 191]}
+              - !box-1.0.0 {small: [224, 192, 160], big: [255, 223, 191]}
+              - !box-1.0.0 {small: [0, 224, 160], big: [31, 255, 191]}
+              - !box-1.0.0 {small: [32, 224, 160], big: [63, 255, 191]}
+              - !box-1.0.0 {small: [64, 224, 160], big: [95, 255, 191]}
+              - !box-1.0.0 {small: [96, 224, 160], big: [127, 255, 191]}
+              - !box-1.0.0 {small: [128, 224, 160], big: [159, 255, 191]}
+              - !box-1.0.0 {small: [160, 224, 160], big: [191, 255, 191]}
+              - !box-1.0.0 {small: [192, 224, 160], big: [223, 255, 191]}
+              - !box-1.0.0 {small: [224, 224, 160], big: [255, 255, 191]}
+              - !box-1.0.0 {small: [0, 0, 192], big: [31, 31, 223]}
+              - !box-1.0.0 {small: [32, 0, 192], big: [63, 31, 223]}
+              - !box-1.0.0 {small: [64, 0, 192], big: [95, 31, 223]}
+              - !box-1.0.0 {small: [96, 0, 192], big: [127, 31, 223]}
+              - !box-1.0.0 {small: [128, 0, 192], big: [159, 31, 223]}
+              - !box-1.0.0 {small: [160, 0, 192], big: [191, 31, 223]}
+              - !box-1.0.0 {small: [192, 0, 192], big: [223, 31, 223]}
+              - !box-1.0.0 {small: [224, 0, 192], big: [255, 31, 223]}
+              - !box-1.0.0 {small: [0, 32, 192], big: [31, 63, 223]}
+              - !box-1.0.0 {small: [32, 32, 192], big: [63, 63, 223]}
+              - !box-1.0.0 {small: [64, 32, 192], big: [95, 63, 223]}
+              - !box-1.0.0 {small: [96, 32, 192], big: [127, 63, 223]}
+              - !box-1.0.0 {small: [128, 32, 192], big: [159, 63, 223]}
+              - !box-1.0.0 {small: [160, 32, 192], big: [191, 63, 223]}
+              - !box-1.0.0 {small: [192, 32, 192], big: [223, 63, 223]}
+              - !box-1.0.0 {small: [224, 32, 192], big: [255, 63, 223]}
+              - !box-1.0.0 {small: [0, 64, 192], big: [31, 95, 223]}
+              - !box-1.0.0 {small: [32, 64, 192], big: [63, 95, 223]}
+              - !box-1.0.0 {small: [64, 64, 192], big: [95, 95, 223]}
+              - !box-1.0.0 {small: [96, 64, 192], big: [127, 95, 223]}
+              - !box-1.0.0 {small: [128, 64, 192], big: [159, 95, 223]}
+              - !box-1.0.0 {small: [160, 64, 192], big: [191, 95, 223]}
+              - !box-1.0.0 {small: [192, 64, 192], big: [223, 95, 223]}
+              - !box-1.0.0 {small: [224, 64, 192], big: [255, 95, 223]}
+              - !box-1.0.0 {small: [0, 96, 192], big: [31, 127, 223]}
+              - !box-1.0.0 {small: [32, 96, 192], big: [63, 127, 223]}
+              - !box-1.0.0 {small: [64, 96, 192], big: [95, 127, 223]}
+              - !box-1.0.0 {small: [96, 96, 192], big: [127, 127, 223]}
+              - !box-1.0.0 {small: [128, 96, 192], big: [159, 127, 223]}
+              - !box-1.0.0 {small: [160, 96, 192], big: [191, 127, 223]}
+              - !box-1.0.0 {small: [192, 96, 192], big: [223, 127, 223]}
+              - !box-1.0.0 {small: [224, 96, 192], big: [255, 127, 223]}
+              - !box-1.0.0 {small: [0, 128, 192], big: [31, 159, 223]}
+              - !box-1.0.0 {small: [32, 128, 192], big: [63, 159, 223]}
+              - !box-1.0.0 {small: [64, 128, 192], big: [95, 159, 223]}
+              - !box-1.0.0 {small: [96, 128, 192], big: [127, 159, 223]}
+              - !box-1.0.0 {small: [128, 128, 192], big: [159, 159, 223]}
+              - !box-1.0.0 {small: [160, 128, 192], big: [191, 159, 223]}
+              - !box-1.0.0 {small: [192, 128, 192], big: [223, 159, 223]}
+              - !box-1.0.0 {small: [224, 128, 192], big: [255, 159, 223]}
+              - !box-1.0.0 {small: [0, 160, 192], big: [31, 191, 223]}
+              - !box-1.0.0 {small: [32, 160, 192], big: [63, 191, 223]}
+              - !box-1.0.0 {small: [64, 160, 192], big: [95, 191, 223]}
+              - !box-1.0.0 {small: [96, 160, 192], big: [127, 191, 223]}
+              - !box-1.0.0 {small: [128, 160, 192], big: [159, 191, 223]}
+              - !box-1.0.0 {small: [160, 160, 192], big: [191, 191, 223]}
+              - !box-1.0.0 {small: [192, 160, 192], big: [223, 191, 223]}
+              - !box-1.0.0 {small: [224, 160, 192], big: [255, 191, 223]}
+              - !box-1.0.0 {small: [0, 192, 192], big: [31, 223, 223]}
+              - !box-1.0.0 {small: [32, 192, 192], big: [63, 223, 223]}
+              - !box-1.0.0 {small: [64, 192, 192], big: [95, 223, 223]}
+              - !box-1.0.0 {small: [96, 192, 192], big: [127, 223, 223]}
+              - !box-1.0.0 {small: [128, 192, 192], big: [159, 223, 223]}
+              - !box-1.0.0 {small: [160, 192, 192], big: [191, 223, 223]}
+              - !box-1.0.0 {small: [192, 192, 192], big: [223, 223, 223]}
+              - !box-1.0.0 {small: [224, 192, 192], big: [255, 223, 223]}
+              - !box-1.0.0 {small: [0, 224, 192], big: [31, 255, 223]}
+              - !box-1.0.0 {small: [32, 224, 192], big: [63, 255, 223]}
+              - !box-1.0.0 {small: [64, 224, 192], big: [95, 255, 223]}
+              - !box-1.0.0 {small: [96, 224, 192], big: [127, 255, 223]}
+              - !box-1.0.0 {small: [128, 224, 192], big: [159, 255, 223]}
+              - !box-1.0.0 {small: [160, 224, 192], big: [191, 255, 223]}
+              - !box-1.0.0 {small: [192, 224, 192], big: [223, 255, 223]}
+              - !box-1.0.0 {small: [224, 224, 192], big: [255, 255, 223]}
+              - !box-1.0.0 {small: [0, 0, 224], big: [31, 31, 255]}
+              - !box-1.0.0 {small: [32, 0, 224], big: [63, 31, 255]}
+              - !box-1.0.0 {small: [64, 0, 224], big: [95, 31, 255]}
+              - !box-1.0.0 {small: [96, 0, 224], big: [127, 31, 255]}
+              - !box-1.0.0 {small: [128, 0, 224], big: [159, 31, 255]}
+              - !box-1.0.0 {small: [160, 0, 224], big: [191, 31, 255]}
+              - !box-1.0.0 {small: [192, 0, 224], big: [223, 31, 255]}
+              - !box-1.0.0 {small: [224, 0, 224], big: [255, 31, 255]}
+              - !box-1.0.0 {small: [0, 32, 224], big: [31, 63, 255]}
+              - !box-1.0.0 {small: [32, 32, 224], big: [63, 63, 255]}
+              - !box-1.0.0 {small: [64, 32, 224], big: [95, 63, 255]}
+              - !box-1.0.0 {small: [96, 32, 224], big: [127, 63, 255]}
+              - !box-1.0.0 {small: [128, 32, 224], big: [159, 63, 255]}
+              - !box-1.0.0 {small: [160, 32, 224], big: [191, 63, 255]}
+              - !box-1.0.0 {small: [192, 32, 224], big: [223, 63, 255]}
+              - !box-1.0.0 {small: [224, 32, 224], big: [255, 63, 255]}
+              - !box-1.0.0 {small: [0, 64, 224], big: [31, 95, 255]}
+              - !box-1.0.0 {small: [32, 64, 224], big: [63, 95, 255]}
+              - !box-1.0.0 {small: [64, 64, 224], big: [95, 95, 255]}
+              - !box-1.0.0 {small: [96, 64, 224], big: [127, 95, 255]}
+              - !box-1.0.0 {small: [128, 64, 224], big: [159, 95, 255]}
+              - !box-1.0.0 {small: [160, 64, 224], big: [191, 95, 255]}
+              - !box-1.0.0 {small: [192, 64, 224], big: [223, 95, 255]}
+              - !box-1.0.0 {small: [224, 64, 224], big: [255, 95, 255]}
+              - !box-1.0.0 {small: [0, 96, 224], big: [31, 127, 255]}
+              - !box-1.0.0 {small: [32, 96, 224], big: [63, 127, 255]}
+              - !box-1.0.0 {small: [64, 96, 224], big: [95, 127, 255]}
+              - !box-1.0.0 {small: [96, 96, 224], big: [127, 127, 255]}
+              - !box-1.0.0 {small: [128, 96, 224], big: [159, 127, 255]}
+              - !box-1.0.0 {small: [160, 96, 224], big: [191, 127, 255]}
+              - !box-1.0.0 {small: [192, 96, 224], big: [223, 127, 255]}
+              - !box-1.0.0 {small: [224, 96, 224], big: [255, 127, 255]}
+              - !box-1.0.0 {small: [0, 128, 224], big: [31, 159, 255]}
+              - !box-1.0.0 {small: [32, 128, 224], big: [63, 159, 255]}
+              - !box-1.0.0 {small: [64, 128, 224], big: [95, 159, 255]}
+              - !box-1.0.0 {small: [96, 128, 224], big: [127, 159, 255]}
+              - !box-1.0.0 {small: [128, 128, 224], big: [159, 159, 255]}
+              - !box-1.0.0 {small: [160, 128, 224], big: [191, 159, 255]}
+              - !box-1.0.0 {small: [192, 128, 224], big: [223, 159, 255]}
+              - !box-1.0.0 {small: [224, 128, 224], big: [255, 159, 255]}
+              - !box-1.0.0 {small: [0, 160, 224], big: [31, 191, 255]}
+              - !box-1.0.0 {small: [32, 160, 224], big: [63, 191, 255]}
+              - !box-1.0.0 {small: [64, 160, 224], big: [95, 191, 255]}
+              - !box-1.0.0 {small: [96, 160, 224], big: [127, 191, 255]}
+              - !box-1.0.0 {small: [128, 160, 224], big: [159, 191, 255]}
+              - !box-1.0.0 {small: [160, 160, 224], big: [191, 191, 255]}
+              - !box-1.0.0 {small: [192, 160, 224], big: [223, 191, 255]}
+              - !box-1.0.0 {small: [224, 160, 224], big: [255, 191, 255]}
+              - !box-1.0.0 {small: [0, 192, 224], big: [31, 223, 255]}
+              - !box-1.0.0 {small: [32, 192, 224], big: [63, 223, 255]}
+              - !box-1.0.0 {small: [64, 192, 224], big: [95, 223, 255]}
+              - !box-1.0.0 {small: [96, 192, 224], big: [127, 223, 255]}
+              - !box-1.0.0 {small: [128, 192, 224], big: [159, 223, 255]}
+              - !box-1.0.0 {small: [160, 192, 224], big: [191, 223, 255]}
+              - !box-1.0.0 {small: [192, 192, 224], big: [223, 223, 255]}
+              - !box-1.0.0 {small: [224, 192, 224], big: [255, 223, 255]}
+              - !box-1.0.0 {small: [0, 224, 224], big: [31, 255, 255]}
+              - !box-1.0.0 {small: [32, 224, 224], big: [63, 255, 255]}
+              - !box-1.0.0 {small: [64, 224, 224], big: [95, 255, 255]}
+              - !box-1.0.0 {small: [96, 224, 224], big: [127, 255, 255]}
+              - !box-1.0.0 {small: [128, 224, 224], big: [159, 255, 255]}
+              - !box-1.0.0 {small: [160, 224, 224], big: [191, 255, 255]}
+              - !box-1.0.0 {small: [192, 224, 224], big: [223, 255, 255]}
+              - !box-1.0.0 {small: [224, 224, 224], big: [255, 255, 255]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 0
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetLevelNeighbor: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+        - !leveldata-1.1.0
+          patch: 0
+          level: 1
+          is_subcycling_level: true
+          iteration: !rational-1.0.0 [112, 1]
+          delta_iteration: !rational-1.0.0 [1, 2]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [192, 192, 192], big: [223, 223, 223]}
+              - !box-1.0.0 {small: [224, 192, 192], big: [255, 223, 223]}
+              - !box-1.0.0 {small: [256, 192, 192], big: [287, 223, 223]}
+              - !box-1.0.0 {small: [288, 192, 192], big: [319, 223, 223]}
+              - !box-1.0.0 {small: [192, 224, 192], big: [223, 255, 223]}
+              - !box-1.0.0 {small: [224, 224, 192], big: [255, 255, 223]}
+              - !box-1.0.0 {small: [256, 224, 192], big: [287, 255, 223]}
+              - !box-1.0.0 {small: [288, 224, 192], big: [319, 255, 223]}
+              - !box-1.0.0 {small: [192, 256, 192], big: [223, 287, 223]}
+              - !box-1.0.0 {small: [224, 256, 192], big: [255, 287, 223]}
+              - !box-1.0.0 {small: [256, 256, 192], big: [287, 287, 223]}
+              - !box-1.0.0 {small: [288, 256, 192], big: [319, 287, 223]}
+              - !box-1.0.0 {small: [192, 288, 192], big: [223, 319, 223]}
+              - !box-1.0.0 {small: [224, 288, 192], big: [255, 319, 223]}
+              - !box-1.0.0 {small: [256, 288, 192], big: [287, 319, 223]}
+              - !box-1.0.0 {small: [288, 288, 192], big: [319, 319, 223]}
+              - !box-1.0.0 {small: [192, 192, 224], big: [223, 223, 255]}
+              - !box-1.0.0 {small: [224, 192, 224], big: [255, 223, 255]}
+              - !box-1.0.0 {small: [256, 192, 224], big: [287, 223, 255]}
+              - !box-1.0.0 {small: [288, 192, 224], big: [319, 223, 255]}
+              - !box-1.0.0 {small: [192, 224, 224], big: [223, 255, 255]}
+              - !box-1.0.0 {small: [224, 224, 224], big: [255, 255, 255]}
+              - !box-1.0.0 {small: [256, 224, 224], big: [287, 255, 255]}
+              - !box-1.0.0 {small: [288, 224, 224], big: [319, 255, 255]}
+              - !box-1.0.0 {small: [192, 256, 224], big: [223, 287, 255]}
+              - !box-1.0.0 {small: [224, 256, 224], big: [255, 287, 255]}
+              - !box-1.0.0 {small: [256, 256, 224], big: [287, 287, 255]}
+              - !box-1.0.0 {small: [288, 256, 224], big: [319, 287, 255]}
+              - !box-1.0.0 {small: [192, 288, 224], big: [223, 319, 255]}
+              - !box-1.0.0 {small: [224, 288, 224], big: [255, 319, 255]}
+              - !box-1.0.0 {small: [256, 288, 224], big: [287, 319, 255]}
+              - !box-1.0.0 {small: [288, 288, 224], big: [319, 319, 255]}
+              - !box-1.0.0 {small: [192, 192, 256], big: [223, 223, 287]}
+              - !box-1.0.0 {small: [224, 192, 256], big: [255, 223, 287]}
+              - !box-1.0.0 {small: [256, 192, 256], big: [287, 223, 287]}
+              - !box-1.0.0 {small: [288, 192, 256], big: [319, 223, 287]}
+              - !box-1.0.0 {small: [192, 224, 256], big: [223, 255, 287]}
+              - !box-1.0.0 {small: [224, 224, 256], big: [255, 255, 287]}
+              - !box-1.0.0 {small: [256, 224, 256], big: [287, 255, 287]}
+              - !box-1.0.0 {small: [288, 224, 256], big: [319, 255, 287]}
+              - !box-1.0.0 {small: [192, 256, 256], big: [223, 287, 287]}
+              - !box-1.0.0 {small: [224, 256, 256], big: [255, 287, 287]}
+              - !box-1.0.0 {small: [256, 256, 256], big: [287, 287, 287]}
+              - !box-1.0.0 {small: [288, 256, 256], big: [319, 287, 287]}
+              - !box-1.0.0 {small: [192, 288, 256], big: [223, 319, 287]}
+              - !box-1.0.0 {small: [224, 288, 256], big: [255, 319, 287]}
+              - !box-1.0.0 {small: [256, 288, 256], big: [287, 319, 287]}
+              - !box-1.0.0 {small: [288, 288, 256], big: [319, 319, 287]}
+              - !box-1.0.0 {small: [192, 192, 288], big: [223, 223, 319]}
+              - !box-1.0.0 {small: [224, 192, 288], big: [255, 223, 319]}
+              - !box-1.0.0 {small: [256, 192, 288], big: [287, 223, 319]}
+              - !box-1.0.0 {small: [288, 192, 288], big: [319, 223, 319]}
+              - !box-1.0.0 {small: [192, 224, 288], big: [223, 255, 319]}
+              - !box-1.0.0 {small: [224, 224, 288], big: [255, 255, 319]}
+              - !box-1.0.0 {small: [256, 224, 288], big: [287, 255, 319]}
+              - !box-1.0.0 {small: [288, 224, 288], big: [319, 255, 319]}
+              - !box-1.0.0 {small: [192, 256, 288], big: [223, 287, 319]}
+              - !box-1.0.0 {small: [224, 256, 288], big: [255, 287, 319]}
+              - !box-1.0.0 {small: [256, 256, 288], big: [287, 287, 319]}
+              - !box-1.0.0 {small: [288, 256, 288], big: [319, 287, 319]}
+              - !box-1.0.0 {small: [192, 288, 288], big: [223, 319, 319]}
+              - !box-1.0.0 {small: [224, 288, 288], big: [255, 319, 319]}
+              - !box-1.0.0 {small: [256, 288, 288], big: [287, 319, 319]}
+              - !box-1.0.0 {small: [288, 288, 288], big: [319, 319, 319]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 1
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetLevelNeighbor: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+        - !leveldata-1.1.0
+          patch: 0
+          level: 2
+          is_subcycling_level: true
+          iteration: !rational-1.0.0 [112, 1]
+          delta_iteration: !rational-1.0.0 [1, 4]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [448, 448, 448], big: [479, 479, 479]}
+              - !box-1.0.0 {small: [480, 448, 448], big: [511, 479, 479]}
+              - !box-1.0.0 {small: [512, 448, 448], big: [543, 479, 479]}
+              - !box-1.0.0 {small: [544, 448, 448], big: [575, 479, 479]}
+              - !box-1.0.0 {small: [448, 480, 448], big: [479, 511, 479]}
+              - !box-1.0.0 {small: [480, 480, 448], big: [511, 511, 479]}
+              - !box-1.0.0 {small: [512, 480, 448], big: [543, 511, 479]}
+              - !box-1.0.0 {small: [544, 480, 448], big: [575, 511, 479]}
+              - !box-1.0.0 {small: [448, 512, 448], big: [479, 543, 479]}
+              - !box-1.0.0 {small: [480, 512, 448], big: [511, 543, 479]}
+              - !box-1.0.0 {small: [512, 512, 448], big: [543, 543, 479]}
+              - !box-1.0.0 {small: [544, 512, 448], big: [575, 543, 479]}
+              - !box-1.0.0 {small: [448, 544, 448], big: [479, 575, 479]}
+              - !box-1.0.0 {small: [480, 544, 448], big: [511, 575, 479]}
+              - !box-1.0.0 {small: [512, 544, 448], big: [543, 575, 479]}
+              - !box-1.0.0 {small: [544, 544, 448], big: [575, 575, 479]}
+              - !box-1.0.0 {small: [448, 448, 480], big: [479, 479, 511]}
+              - !box-1.0.0 {small: [480, 448, 480], big: [511, 479, 511]}
+              - !box-1.0.0 {small: [512, 448, 480], big: [543, 479, 511]}
+              - !box-1.0.0 {small: [544, 448, 480], big: [575, 479, 511]}
+              - !box-1.0.0 {small: [448, 480, 480], big: [479, 511, 511]}
+              - !box-1.0.0 {small: [480, 480, 480], big: [511, 511, 511]}
+              - !box-1.0.0 {small: [512, 480, 480], big: [543, 511, 511]}
+              - !box-1.0.0 {small: [544, 480, 480], big: [575, 511, 511]}
+              - !box-1.0.0 {small: [448, 512, 480], big: [479, 543, 511]}
+              - !box-1.0.0 {small: [480, 512, 480], big: [511, 543, 511]}
+              - !box-1.0.0 {small: [512, 512, 480], big: [543, 543, 511]}
+              - !box-1.0.0 {small: [544, 512, 480], big: [575, 543, 511]}
+              - !box-1.0.0 {small: [448, 544, 480], big: [479, 575, 511]}
+              - !box-1.0.0 {small: [480, 544, 480], big: [511, 575, 511]}
+              - !box-1.0.0 {small: [512, 544, 480], big: [543, 575, 511]}
+              - !box-1.0.0 {small: [544, 544, 480], big: [575, 575, 511]}
+              - !box-1.0.0 {small: [448, 448, 512], big: [479, 479, 543]}
+              - !box-1.0.0 {small: [480, 448, 512], big: [511, 479, 543]}
+              - !box-1.0.0 {small: [512, 448, 512], big: [543, 479, 543]}
+              - !box-1.0.0 {small: [544, 448, 512], big: [575, 479, 543]}
+              - !box-1.0.0 {small: [448, 480, 512], big: [479, 511, 543]}
+              - !box-1.0.0 {small: [480, 480, 512], big: [511, 511, 543]}
+              - !box-1.0.0 {small: [512, 480, 512], big: [543, 511, 543]}
+              - !box-1.0.0 {small: [544, 480, 512], big: [575, 511, 543]}
+              - !box-1.0.0 {small: [448, 512, 512], big: [479, 543, 543]}
+              - !box-1.0.0 {small: [480, 512, 512], big: [511, 543, 543]}
+              - !box-1.0.0 {small: [512, 512, 512], big: [543, 543, 543]}
+              - !box-1.0.0 {small: [544, 512, 512], big: [575, 543, 543]}
+              - !box-1.0.0 {small: [448, 544, 512], big: [479, 575, 543]}
+              - !box-1.0.0 {small: [480, 544, 512], big: [511, 575, 543]}
+              - !box-1.0.0 {small: [512, 544, 512], big: [543, 575, 543]}
+              - !box-1.0.0 {small: [544, 544, 512], big: [575, 575, 543]}
+              - !box-1.0.0 {small: [448, 448, 544], big: [479, 479, 575]}
+              - !box-1.0.0 {small: [480, 448, 544], big: [511, 479, 575]}
+              - !box-1.0.0 {small: [512, 448, 544], big: [543, 479, 575]}
+              - !box-1.0.0 {small: [544, 448, 544], big: [575, 479, 575]}
+              - !box-1.0.0 {small: [448, 480, 544], big: [479, 511, 575]}
+              - !box-1.0.0 {small: [480, 480, 544], big: [511, 511, 575]}
+              - !box-1.0.0 {small: [512, 480, 544], big: [543, 511, 575]}
+              - !box-1.0.0 {small: [544, 480, 544], big: [575, 511, 575]}
+              - !box-1.0.0 {small: [448, 512, 544], big: [479, 543, 575]}
+              - !box-1.0.0 {small: [480, 512, 544], big: [511, 543, 575]}
+              - !box-1.0.0 {small: [512, 512, 544], big: [543, 543, 575]}
+              - !box-1.0.0 {small: [544, 512, 544], big: [575, 543, 575]}
+              - !box-1.0.0 {small: [448, 544, 544], big: [479, 575, 575]}
+              - !box-1.0.0 {small: [480, 544, 544], big: [511, 575, 575]}
+              - !box-1.0.0 {small: [512, 544, 544], big: [543, 575, 575]}
+              - !box-1.0.0 {small: [544, 544, 544], big: [575, 575, 575]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 2
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetLevelNeighbor: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 448 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+...

@@ -1,0 +1,1970 @@
+# CarpetX Metadata
+---
+!carpetx-metadata-1.0.0
+nghostzones: [3, 3, 3]
+iteration: 216
+time: 0.75
+delta_time: 0.013888888888888888
+ghext: !ghext-2.0.0
+  globaldata: !globaldata-1.0.0
+    arraygroupdata:
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::ACTIVE
+          numvars: 3
+          varnames: ["active[0]", "active[1]", "active[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 1
+            - 1
+            - 1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::NUM_LEVELS
+          numvars: 3
+          varnames: ["num_levels[0]", "num_levels[1]", "num_levels[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 3
+            - 1
+            - 1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::POSITIONS
+          numvars: 9
+          varnames: ["position_x[0]", "position_x[1]", "position_x[2]", "position_y[0]", "position_y[1]", "position_y[2]", "position_z[0]", "position_z[1]", "position_z[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::RADII
+          numvars: 3
+          varnames: ["radius[0]", "radius[1]", "radius[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+        data:
+          -
+            - -1
+            - 1
+            - 0.5
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::RADIIXYZ
+          numvars: 9
+          varnames: ["radius_x[0]", "radius_x[1]", "radius_x[2]", "radius_y[0]", "radius_y[1]", "radius_y[2]", "radius_z[0]", "radius_z[1]", "radius_z[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+        data:
+          -
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+  patchdata:
+    - !patchdata-1.0.0
+      patch: 0
+      amrcore: !amrcore-1.0.0
+        maxLevel: 2
+        finestLevel: 2
+        geometry:
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [143, 143, 143]}
+            is_periodic: [1, 1, 1]
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [287, 287, 287]}
+            is_periodic: [1, 1, 1]
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [575, 575, 575]}
+            is_periodic: [1, 1, 1]
+        distributionMapping:
+          - !distributionmapping-1.0.0
+            processorMap: [10, 10, 12, 0, 5, 10, 11, 0, 0, 6, 14, 14, 1, 1, 6, 14, 15, 16, 16, 6, 25, 25, 25, 8, 26, 11, 11, 0, 13, 6, 12, 12, 13, 13, 6, 15, 15, 16, 17, 6, 1, 1, 17, 17, 6, 25, 25, 8, 8, 26, 18, 18, 19, 19, 7, 18, 2, 20, 20, 7, 3, 3, 23, 23, 7, 3, 3, 24, 24, 7, 8, 8, 26, 26, 26, 2, 2, 20, 21, 7, 2, 19, 21, 21, 7, 22, 22, 24, 5, 7, 22, 23, 5, 5, 25, 8, 8, 26, 26, 26, 9, 9, 9, 9, 4, 9, 9, 9, 27, 4, 27, 27, 27, 4, 4, 27, 27, 4, 4, 4, 4, 4, 4, 4, 4]
+          - !distributionmapping-1.0.0
+            processorMap: [6, 14, 14, 15, 15, 16, 16, 17, 18, 19, 7, 19, 17, 18, 10, 19, 10, 9, 20, 20, 11, 22, 11, 23, 12, 24, 27, 5, 13, 26, 12, 4, 13, 0, 5, 1, 21, 21, 22, 8, 23, 8, 24, 25, 26, 2, 0, 3, 25, 27, 1, 3, 2, 3]
+          - !distributionmapping-1.0.0
+            processorMap: [7, 18, 8, 22, 14, 23, 14, 10, 15, 3, 15, 13, 0, 11, 1, 25, 18, 27, 20, 20, 22, 24, 23, 2, 10, 12, 13, 5, 25, 9, 11, 16, 27, 4, 5, 17, 21, 21, 24, 2, 19, 19, 12, 16, 26, 26, 9, 4, 16, 3, 6, 6, 17, 17]
+        boxArray:
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [0, 0, 0], big: [31, 31, 31]}
+            - !box-1.0.0 {small: [32, 0, 0], big: [63, 31, 31]}
+            - !box-1.0.0 {small: [64, 0, 0], big: [95, 31, 31]}
+            - !box-1.0.0 {small: [96, 0, 0], big: [127, 31, 31]}
+            - !box-1.0.0 {small: [128, 0, 0], big: [143, 31, 31]}
+            - !box-1.0.0 {small: [0, 32, 0], big: [31, 63, 31]}
+            - !box-1.0.0 {small: [32, 32, 0], big: [63, 63, 31]}
+            - !box-1.0.0 {small: [64, 32, 0], big: [95, 63, 31]}
+            - !box-1.0.0 {small: [96, 32, 0], big: [127, 63, 31]}
+            - !box-1.0.0 {small: [128, 32, 0], big: [143, 63, 31]}
+            - !box-1.0.0 {small: [0, 64, 0], big: [31, 95, 31]}
+            - !box-1.0.0 {small: [32, 64, 0], big: [63, 95, 31]}
+            - !box-1.0.0 {small: [64, 64, 0], big: [95, 95, 31]}
+            - !box-1.0.0 {small: [96, 64, 0], big: [127, 95, 31]}
+            - !box-1.0.0 {small: [128, 64, 0], big: [143, 95, 31]}
+            - !box-1.0.0 {small: [0, 96, 0], big: [31, 127, 31]}
+            - !box-1.0.0 {small: [32, 96, 0], big: [63, 127, 31]}
+            - !box-1.0.0 {small: [64, 96, 0], big: [95, 127, 31]}
+            - !box-1.0.0 {small: [96, 96, 0], big: [127, 127, 31]}
+            - !box-1.0.0 {small: [128, 96, 0], big: [143, 127, 31]}
+            - !box-1.0.0 {small: [0, 128, 0], big: [31, 143, 31]}
+            - !box-1.0.0 {small: [32, 128, 0], big: [63, 143, 31]}
+            - !box-1.0.0 {small: [64, 128, 0], big: [95, 143, 31]}
+            - !box-1.0.0 {small: [96, 128, 0], big: [127, 143, 31]}
+            - !box-1.0.0 {small: [128, 128, 0], big: [143, 143, 31]}
+            - !box-1.0.0 {small: [0, 0, 32], big: [31, 31, 63]}
+            - !box-1.0.0 {small: [32, 0, 32], big: [63, 31, 63]}
+            - !box-1.0.0 {small: [64, 0, 32], big: [95, 31, 63]}
+            - !box-1.0.0 {small: [96, 0, 32], big: [127, 31, 63]}
+            - !box-1.0.0 {small: [128, 0, 32], big: [143, 31, 63]}
+            - !box-1.0.0 {small: [0, 32, 32], big: [31, 63, 63]}
+            - !box-1.0.0 {small: [32, 32, 32], big: [63, 63, 63]}
+            - !box-1.0.0 {small: [64, 32, 32], big: [95, 63, 63]}
+            - !box-1.0.0 {small: [96, 32, 32], big: [127, 63, 63]}
+            - !box-1.0.0 {small: [128, 32, 32], big: [143, 63, 63]}
+            - !box-1.0.0 {small: [0, 64, 32], big: [31, 95, 63]}
+            - !box-1.0.0 {small: [32, 64, 32], big: [63, 95, 63]}
+            - !box-1.0.0 {small: [64, 64, 32], big: [95, 95, 63]}
+            - !box-1.0.0 {small: [96, 64, 32], big: [127, 95, 63]}
+            - !box-1.0.0 {small: [128, 64, 32], big: [143, 95, 63]}
+            - !box-1.0.0 {small: [0, 96, 32], big: [31, 127, 63]}
+            - !box-1.0.0 {small: [32, 96, 32], big: [63, 127, 63]}
+            - !box-1.0.0 {small: [64, 96, 32], big: [95, 127, 63]}
+            - !box-1.0.0 {small: [96, 96, 32], big: [127, 127, 63]}
+            - !box-1.0.0 {small: [128, 96, 32], big: [143, 127, 63]}
+            - !box-1.0.0 {small: [0, 128, 32], big: [31, 143, 63]}
+            - !box-1.0.0 {small: [32, 128, 32], big: [63, 143, 63]}
+            - !box-1.0.0 {small: [64, 128, 32], big: [95, 143, 63]}
+            - !box-1.0.0 {small: [96, 128, 32], big: [127, 143, 63]}
+            - !box-1.0.0 {small: [128, 128, 32], big: [143, 143, 63]}
+            - !box-1.0.0 {small: [0, 0, 64], big: [31, 31, 95]}
+            - !box-1.0.0 {small: [32, 0, 64], big: [63, 31, 95]}
+            - !box-1.0.0 {small: [64, 0, 64], big: [95, 31, 95]}
+            - !box-1.0.0 {small: [96, 0, 64], big: [127, 31, 95]}
+            - !box-1.0.0 {small: [128, 0, 64], big: [143, 31, 95]}
+            - !box-1.0.0 {small: [0, 32, 64], big: [31, 63, 95]}
+            - !box-1.0.0 {small: [32, 32, 64], big: [63, 63, 95]}
+            - !box-1.0.0 {small: [64, 32, 64], big: [95, 63, 95]}
+            - !box-1.0.0 {small: [96, 32, 64], big: [127, 63, 95]}
+            - !box-1.0.0 {small: [128, 32, 64], big: [143, 63, 95]}
+            - !box-1.0.0 {small: [0, 64, 64], big: [31, 95, 95]}
+            - !box-1.0.0 {small: [32, 64, 64], big: [63, 95, 95]}
+            - !box-1.0.0 {small: [64, 64, 64], big: [95, 95, 95]}
+            - !box-1.0.0 {small: [96, 64, 64], big: [127, 95, 95]}
+            - !box-1.0.0 {small: [128, 64, 64], big: [143, 95, 95]}
+            - !box-1.0.0 {small: [0, 96, 64], big: [31, 127, 95]}
+            - !box-1.0.0 {small: [32, 96, 64], big: [63, 127, 95]}
+            - !box-1.0.0 {small: [64, 96, 64], big: [95, 127, 95]}
+            - !box-1.0.0 {small: [96, 96, 64], big: [127, 127, 95]}
+            - !box-1.0.0 {small: [128, 96, 64], big: [143, 127, 95]}
+            - !box-1.0.0 {small: [0, 128, 64], big: [31, 143, 95]}
+            - !box-1.0.0 {small: [32, 128, 64], big: [63, 143, 95]}
+            - !box-1.0.0 {small: [64, 128, 64], big: [95, 143, 95]}
+            - !box-1.0.0 {small: [96, 128, 64], big: [127, 143, 95]}
+            - !box-1.0.0 {small: [128, 128, 64], big: [143, 143, 95]}
+            - !box-1.0.0 {small: [0, 0, 96], big: [31, 31, 127]}
+            - !box-1.0.0 {small: [32, 0, 96], big: [63, 31, 127]}
+            - !box-1.0.0 {small: [64, 0, 96], big: [95, 31, 127]}
+            - !box-1.0.0 {small: [96, 0, 96], big: [127, 31, 127]}
+            - !box-1.0.0 {small: [128, 0, 96], big: [143, 31, 127]}
+            - !box-1.0.0 {small: [0, 32, 96], big: [31, 63, 127]}
+            - !box-1.0.0 {small: [32, 32, 96], big: [63, 63, 127]}
+            - !box-1.0.0 {small: [64, 32, 96], big: [95, 63, 127]}
+            - !box-1.0.0 {small: [96, 32, 96], big: [127, 63, 127]}
+            - !box-1.0.0 {small: [128, 32, 96], big: [143, 63, 127]}
+            - !box-1.0.0 {small: [0, 64, 96], big: [31, 95, 127]}
+            - !box-1.0.0 {small: [32, 64, 96], big: [63, 95, 127]}
+            - !box-1.0.0 {small: [64, 64, 96], big: [95, 95, 127]}
+            - !box-1.0.0 {small: [96, 64, 96], big: [127, 95, 127]}
+            - !box-1.0.0 {small: [128, 64, 96], big: [143, 95, 127]}
+            - !box-1.0.0 {small: [0, 96, 96], big: [31, 127, 127]}
+            - !box-1.0.0 {small: [32, 96, 96], big: [63, 127, 127]}
+            - !box-1.0.0 {small: [64, 96, 96], big: [95, 127, 127]}
+            - !box-1.0.0 {small: [96, 96, 96], big: [127, 127, 127]}
+            - !box-1.0.0 {small: [128, 96, 96], big: [143, 127, 127]}
+            - !box-1.0.0 {small: [0, 128, 96], big: [31, 143, 127]}
+            - !box-1.0.0 {small: [32, 128, 96], big: [63, 143, 127]}
+            - !box-1.0.0 {small: [64, 128, 96], big: [95, 143, 127]}
+            - !box-1.0.0 {small: [96, 128, 96], big: [127, 143, 127]}
+            - !box-1.0.0 {small: [128, 128, 96], big: [143, 143, 127]}
+            - !box-1.0.0 {small: [0, 0, 128], big: [31, 31, 143]}
+            - !box-1.0.0 {small: [32, 0, 128], big: [63, 31, 143]}
+            - !box-1.0.0 {small: [64, 0, 128], big: [95, 31, 143]}
+            - !box-1.0.0 {small: [96, 0, 128], big: [127, 31, 143]}
+            - !box-1.0.0 {small: [128, 0, 128], big: [143, 31, 143]}
+            - !box-1.0.0 {small: [0, 32, 128], big: [31, 63, 143]}
+            - !box-1.0.0 {small: [32, 32, 128], big: [63, 63, 143]}
+            - !box-1.0.0 {small: [64, 32, 128], big: [95, 63, 143]}
+            - !box-1.0.0 {small: [96, 32, 128], big: [127, 63, 143]}
+            - !box-1.0.0 {small: [128, 32, 128], big: [143, 63, 143]}
+            - !box-1.0.0 {small: [0, 64, 128], big: [31, 95, 143]}
+            - !box-1.0.0 {small: [32, 64, 128], big: [63, 95, 143]}
+            - !box-1.0.0 {small: [64, 64, 128], big: [95, 95, 143]}
+            - !box-1.0.0 {small: [96, 64, 128], big: [127, 95, 143]}
+            - !box-1.0.0 {small: [128, 64, 128], big: [143, 95, 143]}
+            - !box-1.0.0 {small: [0, 96, 128], big: [31, 127, 143]}
+            - !box-1.0.0 {small: [32, 96, 128], big: [63, 127, 143]}
+            - !box-1.0.0 {small: [64, 96, 128], big: [95, 127, 143]}
+            - !box-1.0.0 {small: [96, 96, 128], big: [127, 127, 143]}
+            - !box-1.0.0 {small: [128, 96, 128], big: [143, 127, 143]}
+            - !box-1.0.0 {small: [0, 128, 128], big: [31, 143, 143]}
+            - !box-1.0.0 {small: [32, 128, 128], big: [63, 143, 143]}
+            - !box-1.0.0 {small: [64, 128, 128], big: [95, 143, 143]}
+            - !box-1.0.0 {small: [96, 128, 128], big: [127, 143, 143]}
+            - !box-1.0.0 {small: [128, 128, 128], big: [143, 143, 143]}
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [108, 108, 108], big: [131, 131, 123]}
+            - !box-1.0.0 {small: [108, 108, 124], big: [131, 131, 131]}
+            - !box-1.0.0 {small: [132, 108, 108], big: [155, 131, 123]}
+            - !box-1.0.0 {small: [132, 108, 124], big: [155, 131, 131]}
+            - !box-1.0.0 {small: [156, 108, 108], big: [179, 131, 123]}
+            - !box-1.0.0 {small: [156, 108, 124], big: [179, 131, 131]}
+            - !box-1.0.0 {small: [108, 132, 108], big: [131, 155, 123]}
+            - !box-1.0.0 {small: [108, 132, 124], big: [131, 155, 131]}
+            - !box-1.0.0 {small: [132, 132, 108], big: [155, 155, 123]}
+            - !box-1.0.0 {small: [132, 132, 124], big: [155, 155, 131]}
+            - !box-1.0.0 {small: [156, 132, 108], big: [179, 155, 123]}
+            - !box-1.0.0 {small: [156, 132, 124], big: [179, 155, 131]}
+            - !box-1.0.0 {small: [108, 156, 108], big: [131, 179, 123]}
+            - !box-1.0.0 {small: [108, 156, 124], big: [131, 179, 131]}
+            - !box-1.0.0 {small: [132, 156, 108], big: [155, 179, 123]}
+            - !box-1.0.0 {small: [132, 156, 124], big: [155, 179, 131]}
+            - !box-1.0.0 {small: [156, 156, 108], big: [179, 179, 123]}
+            - !box-1.0.0 {small: [156, 156, 124], big: [179, 179, 131]}
+            - !box-1.0.0 {small: [108, 108, 132], big: [131, 131, 147]}
+            - !box-1.0.0 {small: [108, 108, 148], big: [131, 131, 155]}
+            - !box-1.0.0 {small: [132, 108, 132], big: [155, 131, 147]}
+            - !box-1.0.0 {small: [132, 108, 148], big: [155, 131, 155]}
+            - !box-1.0.0 {small: [156, 108, 132], big: [179, 131, 147]}
+            - !box-1.0.0 {small: [156, 108, 148], big: [179, 131, 155]}
+            - !box-1.0.0 {small: [108, 132, 132], big: [131, 155, 147]}
+            - !box-1.0.0 {small: [108, 132, 148], big: [131, 155, 155]}
+            - !box-1.0.0 {small: [132, 132, 132], big: [155, 155, 147]}
+            - !box-1.0.0 {small: [132, 132, 148], big: [155, 155, 155]}
+            - !box-1.0.0 {small: [156, 132, 132], big: [179, 155, 147]}
+            - !box-1.0.0 {small: [156, 132, 148], big: [179, 155, 155]}
+            - !box-1.0.0 {small: [108, 156, 132], big: [131, 179, 147]}
+            - !box-1.0.0 {small: [108, 156, 148], big: [131, 179, 155]}
+            - !box-1.0.0 {small: [132, 156, 132], big: [155, 179, 147]}
+            - !box-1.0.0 {small: [132, 156, 148], big: [155, 179, 155]}
+            - !box-1.0.0 {small: [156, 156, 132], big: [179, 179, 147]}
+            - !box-1.0.0 {small: [156, 156, 148], big: [179, 179, 155]}
+            - !box-1.0.0 {small: [108, 108, 156], big: [131, 131, 171]}
+            - !box-1.0.0 {small: [108, 108, 172], big: [131, 131, 179]}
+            - !box-1.0.0 {small: [132, 108, 156], big: [155, 131, 171]}
+            - !box-1.0.0 {small: [132, 108, 172], big: [155, 131, 179]}
+            - !box-1.0.0 {small: [156, 108, 156], big: [179, 131, 171]}
+            - !box-1.0.0 {small: [156, 108, 172], big: [179, 131, 179]}
+            - !box-1.0.0 {small: [108, 132, 156], big: [131, 155, 171]}
+            - !box-1.0.0 {small: [108, 132, 172], big: [131, 155, 179]}
+            - !box-1.0.0 {small: [132, 132, 156], big: [155, 155, 171]}
+            - !box-1.0.0 {small: [132, 132, 172], big: [155, 155, 179]}
+            - !box-1.0.0 {small: [156, 132, 156], big: [179, 155, 171]}
+            - !box-1.0.0 {small: [156, 132, 172], big: [179, 155, 179]}
+            - !box-1.0.0 {small: [108, 156, 156], big: [131, 179, 171]}
+            - !box-1.0.0 {small: [108, 156, 172], big: [131, 179, 179]}
+            - !box-1.0.0 {small: [132, 156, 156], big: [155, 179, 171]}
+            - !box-1.0.0 {small: [132, 156, 172], big: [155, 179, 179]}
+            - !box-1.0.0 {small: [156, 156, 156], big: [179, 179, 171]}
+            - !box-1.0.0 {small: [156, 156, 172], big: [179, 179, 179]}
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [252, 252, 252], big: [275, 275, 267]}
+            - !box-1.0.0 {small: [252, 252, 268], big: [275, 275, 275]}
+            - !box-1.0.0 {small: [276, 252, 252], big: [299, 275, 267]}
+            - !box-1.0.0 {small: [276, 252, 268], big: [299, 275, 275]}
+            - !box-1.0.0 {small: [300, 252, 252], big: [323, 275, 267]}
+            - !box-1.0.0 {small: [300, 252, 268], big: [323, 275, 275]}
+            - !box-1.0.0 {small: [252, 276, 252], big: [275, 299, 267]}
+            - !box-1.0.0 {small: [252, 276, 268], big: [275, 299, 275]}
+            - !box-1.0.0 {small: [276, 276, 252], big: [299, 299, 267]}
+            - !box-1.0.0 {small: [276, 276, 268], big: [299, 299, 275]}
+            - !box-1.0.0 {small: [300, 276, 252], big: [323, 299, 267]}
+            - !box-1.0.0 {small: [300, 276, 268], big: [323, 299, 275]}
+            - !box-1.0.0 {small: [252, 300, 252], big: [275, 323, 267]}
+            - !box-1.0.0 {small: [252, 300, 268], big: [275, 323, 275]}
+            - !box-1.0.0 {small: [276, 300, 252], big: [299, 323, 267]}
+            - !box-1.0.0 {small: [276, 300, 268], big: [299, 323, 275]}
+            - !box-1.0.0 {small: [300, 300, 252], big: [323, 323, 267]}
+            - !box-1.0.0 {small: [300, 300, 268], big: [323, 323, 275]}
+            - !box-1.0.0 {small: [252, 252, 276], big: [275, 275, 291]}
+            - !box-1.0.0 {small: [252, 252, 292], big: [275, 275, 299]}
+            - !box-1.0.0 {small: [276, 252, 276], big: [299, 275, 291]}
+            - !box-1.0.0 {small: [276, 252, 292], big: [299, 275, 299]}
+            - !box-1.0.0 {small: [300, 252, 276], big: [323, 275, 291]}
+            - !box-1.0.0 {small: [300, 252, 292], big: [323, 275, 299]}
+            - !box-1.0.0 {small: [252, 276, 276], big: [275, 299, 291]}
+            - !box-1.0.0 {small: [252, 276, 292], big: [275, 299, 299]}
+            - !box-1.0.0 {small: [276, 276, 276], big: [299, 299, 291]}
+            - !box-1.0.0 {small: [276, 276, 292], big: [299, 299, 299]}
+            - !box-1.0.0 {small: [300, 276, 276], big: [323, 299, 291]}
+            - !box-1.0.0 {small: [300, 276, 292], big: [323, 299, 299]}
+            - !box-1.0.0 {small: [252, 300, 276], big: [275, 323, 291]}
+            - !box-1.0.0 {small: [252, 300, 292], big: [275, 323, 299]}
+            - !box-1.0.0 {small: [276, 300, 276], big: [299, 323, 291]}
+            - !box-1.0.0 {small: [276, 300, 292], big: [299, 323, 299]}
+            - !box-1.0.0 {small: [300, 300, 276], big: [323, 323, 291]}
+            - !box-1.0.0 {small: [300, 300, 292], big: [323, 323, 299]}
+            - !box-1.0.0 {small: [252, 252, 300], big: [275, 275, 315]}
+            - !box-1.0.0 {small: [252, 252, 316], big: [275, 275, 323]}
+            - !box-1.0.0 {small: [276, 252, 300], big: [299, 275, 315]}
+            - !box-1.0.0 {small: [276, 252, 316], big: [299, 275, 323]}
+            - !box-1.0.0 {small: [300, 252, 300], big: [323, 275, 315]}
+            - !box-1.0.0 {small: [300, 252, 316], big: [323, 275, 323]}
+            - !box-1.0.0 {small: [252, 276, 300], big: [275, 299, 315]}
+            - !box-1.0.0 {small: [252, 276, 316], big: [275, 299, 323]}
+            - !box-1.0.0 {small: [276, 276, 300], big: [299, 299, 315]}
+            - !box-1.0.0 {small: [276, 276, 316], big: [299, 299, 323]}
+            - !box-1.0.0 {small: [300, 276, 300], big: [323, 299, 315]}
+            - !box-1.0.0 {small: [300, 276, 316], big: [323, 299, 323]}
+            - !box-1.0.0 {small: [252, 300, 300], big: [275, 323, 315]}
+            - !box-1.0.0 {small: [252, 300, 316], big: [275, 323, 323]}
+            - !box-1.0.0 {small: [276, 300, 300], big: [299, 323, 315]}
+            - !box-1.0.0 {small: [276, 300, 316], big: [299, 323, 323]}
+            - !box-1.0.0 {small: [300, 300, 300], big: [323, 323, 315]}
+            - !box-1.0.0 {small: [300, 300, 316], big: [323, 323, 323]}
+      leveldata:
+        - !leveldata-1.1.0
+          patch: 0
+          level: 0
+          is_subcycling_level: false
+          iteration: !rational-1.0.0 [54, 1]
+          delta_iteration: !rational-1.0.0 [1, 1]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [0, 0, 0], big: [31, 31, 31]}
+              - !box-1.0.0 {small: [32, 0, 0], big: [63, 31, 31]}
+              - !box-1.0.0 {small: [64, 0, 0], big: [95, 31, 31]}
+              - !box-1.0.0 {small: [96, 0, 0], big: [127, 31, 31]}
+              - !box-1.0.0 {small: [128, 0, 0], big: [143, 31, 31]}
+              - !box-1.0.0 {small: [0, 32, 0], big: [31, 63, 31]}
+              - !box-1.0.0 {small: [32, 32, 0], big: [63, 63, 31]}
+              - !box-1.0.0 {small: [64, 32, 0], big: [95, 63, 31]}
+              - !box-1.0.0 {small: [96, 32, 0], big: [127, 63, 31]}
+              - !box-1.0.0 {small: [128, 32, 0], big: [143, 63, 31]}
+              - !box-1.0.0 {small: [0, 64, 0], big: [31, 95, 31]}
+              - !box-1.0.0 {small: [32, 64, 0], big: [63, 95, 31]}
+              - !box-1.0.0 {small: [64, 64, 0], big: [95, 95, 31]}
+              - !box-1.0.0 {small: [96, 64, 0], big: [127, 95, 31]}
+              - !box-1.0.0 {small: [128, 64, 0], big: [143, 95, 31]}
+              - !box-1.0.0 {small: [0, 96, 0], big: [31, 127, 31]}
+              - !box-1.0.0 {small: [32, 96, 0], big: [63, 127, 31]}
+              - !box-1.0.0 {small: [64, 96, 0], big: [95, 127, 31]}
+              - !box-1.0.0 {small: [96, 96, 0], big: [127, 127, 31]}
+              - !box-1.0.0 {small: [128, 96, 0], big: [143, 127, 31]}
+              - !box-1.0.0 {small: [0, 128, 0], big: [31, 143, 31]}
+              - !box-1.0.0 {small: [32, 128, 0], big: [63, 143, 31]}
+              - !box-1.0.0 {small: [64, 128, 0], big: [95, 143, 31]}
+              - !box-1.0.0 {small: [96, 128, 0], big: [127, 143, 31]}
+              - !box-1.0.0 {small: [128, 128, 0], big: [143, 143, 31]}
+              - !box-1.0.0 {small: [0, 0, 32], big: [31, 31, 63]}
+              - !box-1.0.0 {small: [32, 0, 32], big: [63, 31, 63]}
+              - !box-1.0.0 {small: [64, 0, 32], big: [95, 31, 63]}
+              - !box-1.0.0 {small: [96, 0, 32], big: [127, 31, 63]}
+              - !box-1.0.0 {small: [128, 0, 32], big: [143, 31, 63]}
+              - !box-1.0.0 {small: [0, 32, 32], big: [31, 63, 63]}
+              - !box-1.0.0 {small: [32, 32, 32], big: [63, 63, 63]}
+              - !box-1.0.0 {small: [64, 32, 32], big: [95, 63, 63]}
+              - !box-1.0.0 {small: [96, 32, 32], big: [127, 63, 63]}
+              - !box-1.0.0 {small: [128, 32, 32], big: [143, 63, 63]}
+              - !box-1.0.0 {small: [0, 64, 32], big: [31, 95, 63]}
+              - !box-1.0.0 {small: [32, 64, 32], big: [63, 95, 63]}
+              - !box-1.0.0 {small: [64, 64, 32], big: [95, 95, 63]}
+              - !box-1.0.0 {small: [96, 64, 32], big: [127, 95, 63]}
+              - !box-1.0.0 {small: [128, 64, 32], big: [143, 95, 63]}
+              - !box-1.0.0 {small: [0, 96, 32], big: [31, 127, 63]}
+              - !box-1.0.0 {small: [32, 96, 32], big: [63, 127, 63]}
+              - !box-1.0.0 {small: [64, 96, 32], big: [95, 127, 63]}
+              - !box-1.0.0 {small: [96, 96, 32], big: [127, 127, 63]}
+              - !box-1.0.0 {small: [128, 96, 32], big: [143, 127, 63]}
+              - !box-1.0.0 {small: [0, 128, 32], big: [31, 143, 63]}
+              - !box-1.0.0 {small: [32, 128, 32], big: [63, 143, 63]}
+              - !box-1.0.0 {small: [64, 128, 32], big: [95, 143, 63]}
+              - !box-1.0.0 {small: [96, 128, 32], big: [127, 143, 63]}
+              - !box-1.0.0 {small: [128, 128, 32], big: [143, 143, 63]}
+              - !box-1.0.0 {small: [0, 0, 64], big: [31, 31, 95]}
+              - !box-1.0.0 {small: [32, 0, 64], big: [63, 31, 95]}
+              - !box-1.0.0 {small: [64, 0, 64], big: [95, 31, 95]}
+              - !box-1.0.0 {small: [96, 0, 64], big: [127, 31, 95]}
+              - !box-1.0.0 {small: [128, 0, 64], big: [143, 31, 95]}
+              - !box-1.0.0 {small: [0, 32, 64], big: [31, 63, 95]}
+              - !box-1.0.0 {small: [32, 32, 64], big: [63, 63, 95]}
+              - !box-1.0.0 {small: [64, 32, 64], big: [95, 63, 95]}
+              - !box-1.0.0 {small: [96, 32, 64], big: [127, 63, 95]}
+              - !box-1.0.0 {small: [128, 32, 64], big: [143, 63, 95]}
+              - !box-1.0.0 {small: [0, 64, 64], big: [31, 95, 95]}
+              - !box-1.0.0 {small: [32, 64, 64], big: [63, 95, 95]}
+              - !box-1.0.0 {small: [64, 64, 64], big: [95, 95, 95]}
+              - !box-1.0.0 {small: [96, 64, 64], big: [127, 95, 95]}
+              - !box-1.0.0 {small: [128, 64, 64], big: [143, 95, 95]}
+              - !box-1.0.0 {small: [0, 96, 64], big: [31, 127, 95]}
+              - !box-1.0.0 {small: [32, 96, 64], big: [63, 127, 95]}
+              - !box-1.0.0 {small: [64, 96, 64], big: [95, 127, 95]}
+              - !box-1.0.0 {small: [96, 96, 64], big: [127, 127, 95]}
+              - !box-1.0.0 {small: [128, 96, 64], big: [143, 127, 95]}
+              - !box-1.0.0 {small: [0, 128, 64], big: [31, 143, 95]}
+              - !box-1.0.0 {small: [32, 128, 64], big: [63, 143, 95]}
+              - !box-1.0.0 {small: [64, 128, 64], big: [95, 143, 95]}
+              - !box-1.0.0 {small: [96, 128, 64], big: [127, 143, 95]}
+              - !box-1.0.0 {small: [128, 128, 64], big: [143, 143, 95]}
+              - !box-1.0.0 {small: [0, 0, 96], big: [31, 31, 127]}
+              - !box-1.0.0 {small: [32, 0, 96], big: [63, 31, 127]}
+              - !box-1.0.0 {small: [64, 0, 96], big: [95, 31, 127]}
+              - !box-1.0.0 {small: [96, 0, 96], big: [127, 31, 127]}
+              - !box-1.0.0 {small: [128, 0, 96], big: [143, 31, 127]}
+              - !box-1.0.0 {small: [0, 32, 96], big: [31, 63, 127]}
+              - !box-1.0.0 {small: [32, 32, 96], big: [63, 63, 127]}
+              - !box-1.0.0 {small: [64, 32, 96], big: [95, 63, 127]}
+              - !box-1.0.0 {small: [96, 32, 96], big: [127, 63, 127]}
+              - !box-1.0.0 {small: [128, 32, 96], big: [143, 63, 127]}
+              - !box-1.0.0 {small: [0, 64, 96], big: [31, 95, 127]}
+              - !box-1.0.0 {small: [32, 64, 96], big: [63, 95, 127]}
+              - !box-1.0.0 {small: [64, 64, 96], big: [95, 95, 127]}
+              - !box-1.0.0 {small: [96, 64, 96], big: [127, 95, 127]}
+              - !box-1.0.0 {small: [128, 64, 96], big: [143, 95, 127]}
+              - !box-1.0.0 {small: [0, 96, 96], big: [31, 127, 127]}
+              - !box-1.0.0 {small: [32, 96, 96], big: [63, 127, 127]}
+              - !box-1.0.0 {small: [64, 96, 96], big: [95, 127, 127]}
+              - !box-1.0.0 {small: [96, 96, 96], big: [127, 127, 127]}
+              - !box-1.0.0 {small: [128, 96, 96], big: [143, 127, 127]}
+              - !box-1.0.0 {small: [0, 128, 96], big: [31, 143, 127]}
+              - !box-1.0.0 {small: [32, 128, 96], big: [63, 143, 127]}
+              - !box-1.0.0 {small: [64, 128, 96], big: [95, 143, 127]}
+              - !box-1.0.0 {small: [96, 128, 96], big: [127, 143, 127]}
+              - !box-1.0.0 {small: [128, 128, 96], big: [143, 143, 127]}
+              - !box-1.0.0 {small: [0, 0, 128], big: [31, 31, 143]}
+              - !box-1.0.0 {small: [32, 0, 128], big: [63, 31, 143]}
+              - !box-1.0.0 {small: [64, 0, 128], big: [95, 31, 143]}
+              - !box-1.0.0 {small: [96, 0, 128], big: [127, 31, 143]}
+              - !box-1.0.0 {small: [128, 0, 128], big: [143, 31, 143]}
+              - !box-1.0.0 {small: [0, 32, 128], big: [31, 63, 143]}
+              - !box-1.0.0 {small: [32, 32, 128], big: [63, 63, 143]}
+              - !box-1.0.0 {small: [64, 32, 128], big: [95, 63, 143]}
+              - !box-1.0.0 {small: [96, 32, 128], big: [127, 63, 143]}
+              - !box-1.0.0 {small: [128, 32, 128], big: [143, 63, 143]}
+              - !box-1.0.0 {small: [0, 64, 128], big: [31, 95, 143]}
+              - !box-1.0.0 {small: [32, 64, 128], big: [63, 95, 143]}
+              - !box-1.0.0 {small: [64, 64, 128], big: [95, 95, 143]}
+              - !box-1.0.0 {small: [96, 64, 128], big: [127, 95, 143]}
+              - !box-1.0.0 {small: [128, 64, 128], big: [143, 95, 143]}
+              - !box-1.0.0 {small: [0, 96, 128], big: [31, 127, 143]}
+              - !box-1.0.0 {small: [32, 96, 128], big: [63, 127, 143]}
+              - !box-1.0.0 {small: [64, 96, 128], big: [95, 127, 143]}
+              - !box-1.0.0 {small: [96, 96, 128], big: [127, 127, 143]}
+              - !box-1.0.0 {small: [128, 96, 128], big: [143, 127, 143]}
+              - !box-1.0.0 {small: [0, 128, 128], big: [31, 143, 143]}
+              - !box-1.0.0 {small: [32, 128, 128], big: [63, 143, 143]}
+              - !box-1.0.0 {small: [64, 128, 128], big: [95, 143, 143]}
+              - !box-1.0.0 {small: [96, 128, 128], big: [127, 143, 143]}
+              - !box-1.0.0 {small: [128, 128, 128], big: [143, 143, 143]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 0
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetLevelNeighbor: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+        - !leveldata-1.1.0
+          patch: 0
+          level: 1
+          is_subcycling_level: true
+          iteration: !rational-1.0.0 [54, 1]
+          delta_iteration: !rational-1.0.0 [1, 2]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [108, 108, 108], big: [131, 131, 123]}
+              - !box-1.0.0 {small: [108, 108, 124], big: [131, 131, 131]}
+              - !box-1.0.0 {small: [132, 108, 108], big: [155, 131, 123]}
+              - !box-1.0.0 {small: [132, 108, 124], big: [155, 131, 131]}
+              - !box-1.0.0 {small: [156, 108, 108], big: [179, 131, 123]}
+              - !box-1.0.0 {small: [156, 108, 124], big: [179, 131, 131]}
+              - !box-1.0.0 {small: [108, 132, 108], big: [131, 155, 123]}
+              - !box-1.0.0 {small: [108, 132, 124], big: [131, 155, 131]}
+              - !box-1.0.0 {small: [132, 132, 108], big: [155, 155, 123]}
+              - !box-1.0.0 {small: [132, 132, 124], big: [155, 155, 131]}
+              - !box-1.0.0 {small: [156, 132, 108], big: [179, 155, 123]}
+              - !box-1.0.0 {small: [156, 132, 124], big: [179, 155, 131]}
+              - !box-1.0.0 {small: [108, 156, 108], big: [131, 179, 123]}
+              - !box-1.0.0 {small: [108, 156, 124], big: [131, 179, 131]}
+              - !box-1.0.0 {small: [132, 156, 108], big: [155, 179, 123]}
+              - !box-1.0.0 {small: [132, 156, 124], big: [155, 179, 131]}
+              - !box-1.0.0 {small: [156, 156, 108], big: [179, 179, 123]}
+              - !box-1.0.0 {small: [156, 156, 124], big: [179, 179, 131]}
+              - !box-1.0.0 {small: [108, 108, 132], big: [131, 131, 147]}
+              - !box-1.0.0 {small: [108, 108, 148], big: [131, 131, 155]}
+              - !box-1.0.0 {small: [132, 108, 132], big: [155, 131, 147]}
+              - !box-1.0.0 {small: [132, 108, 148], big: [155, 131, 155]}
+              - !box-1.0.0 {small: [156, 108, 132], big: [179, 131, 147]}
+              - !box-1.0.0 {small: [156, 108, 148], big: [179, 131, 155]}
+              - !box-1.0.0 {small: [108, 132, 132], big: [131, 155, 147]}
+              - !box-1.0.0 {small: [108, 132, 148], big: [131, 155, 155]}
+              - !box-1.0.0 {small: [132, 132, 132], big: [155, 155, 147]}
+              - !box-1.0.0 {small: [132, 132, 148], big: [155, 155, 155]}
+              - !box-1.0.0 {small: [156, 132, 132], big: [179, 155, 147]}
+              - !box-1.0.0 {small: [156, 132, 148], big: [179, 155, 155]}
+              - !box-1.0.0 {small: [108, 156, 132], big: [131, 179, 147]}
+              - !box-1.0.0 {small: [108, 156, 148], big: [131, 179, 155]}
+              - !box-1.0.0 {small: [132, 156, 132], big: [155, 179, 147]}
+              - !box-1.0.0 {small: [132, 156, 148], big: [155, 179, 155]}
+              - !box-1.0.0 {small: [156, 156, 132], big: [179, 179, 147]}
+              - !box-1.0.0 {small: [156, 156, 148], big: [179, 179, 155]}
+              - !box-1.0.0 {small: [108, 108, 156], big: [131, 131, 171]}
+              - !box-1.0.0 {small: [108, 108, 172], big: [131, 131, 179]}
+              - !box-1.0.0 {small: [132, 108, 156], big: [155, 131, 171]}
+              - !box-1.0.0 {small: [132, 108, 172], big: [155, 131, 179]}
+              - !box-1.0.0 {small: [156, 108, 156], big: [179, 131, 171]}
+              - !box-1.0.0 {small: [156, 108, 172], big: [179, 131, 179]}
+              - !box-1.0.0 {small: [108, 132, 156], big: [131, 155, 171]}
+              - !box-1.0.0 {small: [108, 132, 172], big: [131, 155, 179]}
+              - !box-1.0.0 {small: [132, 132, 156], big: [155, 155, 171]}
+              - !box-1.0.0 {small: [132, 132, 172], big: [155, 155, 179]}
+              - !box-1.0.0 {small: [156, 132, 156], big: [179, 155, 171]}
+              - !box-1.0.0 {small: [156, 132, 172], big: [179, 155, 179]}
+              - !box-1.0.0 {small: [108, 156, 156], big: [131, 179, 171]}
+              - !box-1.0.0 {small: [108, 156, 172], big: [131, 179, 179]}
+              - !box-1.0.0 {small: [132, 156, 156], big: [155, 179, 171]}
+              - !box-1.0.0 {small: [132, 156, 172], big: [155, 179, 179]}
+              - !box-1.0.0 {small: [156, 156, 156], big: [179, 179, 171]}
+              - !box-1.0.0 {small: [156, 156, 172], big: [179, 179, 179]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 1
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetLevelNeighbor: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+        - !leveldata-1.1.0
+          patch: 0
+          level: 2
+          is_subcycling_level: true
+          iteration: !rational-1.0.0 [54, 1]
+          delta_iteration: !rational-1.0.0 [1, 4]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [252, 252, 252], big: [275, 275, 267]}
+              - !box-1.0.0 {small: [252, 252, 268], big: [275, 275, 275]}
+              - !box-1.0.0 {small: [276, 252, 252], big: [299, 275, 267]}
+              - !box-1.0.0 {small: [276, 252, 268], big: [299, 275, 275]}
+              - !box-1.0.0 {small: [300, 252, 252], big: [323, 275, 267]}
+              - !box-1.0.0 {small: [300, 252, 268], big: [323, 275, 275]}
+              - !box-1.0.0 {small: [252, 276, 252], big: [275, 299, 267]}
+              - !box-1.0.0 {small: [252, 276, 268], big: [275, 299, 275]}
+              - !box-1.0.0 {small: [276, 276, 252], big: [299, 299, 267]}
+              - !box-1.0.0 {small: [276, 276, 268], big: [299, 299, 275]}
+              - !box-1.0.0 {small: [300, 276, 252], big: [323, 299, 267]}
+              - !box-1.0.0 {small: [300, 276, 268], big: [323, 299, 275]}
+              - !box-1.0.0 {small: [252, 300, 252], big: [275, 323, 267]}
+              - !box-1.0.0 {small: [252, 300, 268], big: [275, 323, 275]}
+              - !box-1.0.0 {small: [276, 300, 252], big: [299, 323, 267]}
+              - !box-1.0.0 {small: [276, 300, 268], big: [299, 323, 275]}
+              - !box-1.0.0 {small: [300, 300, 252], big: [323, 323, 267]}
+              - !box-1.0.0 {small: [300, 300, 268], big: [323, 323, 275]}
+              - !box-1.0.0 {small: [252, 252, 276], big: [275, 275, 291]}
+              - !box-1.0.0 {small: [252, 252, 292], big: [275, 275, 299]}
+              - !box-1.0.0 {small: [276, 252, 276], big: [299, 275, 291]}
+              - !box-1.0.0 {small: [276, 252, 292], big: [299, 275, 299]}
+              - !box-1.0.0 {small: [300, 252, 276], big: [323, 275, 291]}
+              - !box-1.0.0 {small: [300, 252, 292], big: [323, 275, 299]}
+              - !box-1.0.0 {small: [252, 276, 276], big: [275, 299, 291]}
+              - !box-1.0.0 {small: [252, 276, 292], big: [275, 299, 299]}
+              - !box-1.0.0 {small: [276, 276, 276], big: [299, 299, 291]}
+              - !box-1.0.0 {small: [276, 276, 292], big: [299, 299, 299]}
+              - !box-1.0.0 {small: [300, 276, 276], big: [323, 299, 291]}
+              - !box-1.0.0 {small: [300, 276, 292], big: [323, 299, 299]}
+              - !box-1.0.0 {small: [252, 300, 276], big: [275, 323, 291]}
+              - !box-1.0.0 {small: [252, 300, 292], big: [275, 323, 299]}
+              - !box-1.0.0 {small: [276, 300, 276], big: [299, 323, 291]}
+              - !box-1.0.0 {small: [276, 300, 292], big: [299, 323, 299]}
+              - !box-1.0.0 {small: [300, 300, 276], big: [323, 323, 291]}
+              - !box-1.0.0 {small: [300, 300, 292], big: [323, 323, 299]}
+              - !box-1.0.0 {small: [252, 252, 300], big: [275, 275, 315]}
+              - !box-1.0.0 {small: [252, 252, 316], big: [275, 275, 323]}
+              - !box-1.0.0 {small: [276, 252, 300], big: [299, 275, 315]}
+              - !box-1.0.0 {small: [276, 252, 316], big: [299, 275, 323]}
+              - !box-1.0.0 {small: [300, 252, 300], big: [323, 275, 315]}
+              - !box-1.0.0 {small: [300, 252, 316], big: [323, 275, 323]}
+              - !box-1.0.0 {small: [252, 276, 300], big: [275, 299, 315]}
+              - !box-1.0.0 {small: [252, 276, 316], big: [275, 299, 323]}
+              - !box-1.0.0 {small: [276, 276, 300], big: [299, 299, 315]}
+              - !box-1.0.0 {small: [276, 276, 316], big: [299, 299, 323]}
+              - !box-1.0.0 {small: [300, 276, 300], big: [323, 299, 315]}
+              - !box-1.0.0 {small: [300, 276, 316], big: [323, 299, 323]}
+              - !box-1.0.0 {small: [252, 300, 300], big: [275, 323, 315]}
+              - !box-1.0.0 {small: [252, 300, 316], big: [275, 323, 323]}
+              - !box-1.0.0 {small: [276, 300, 300], big: [299, 323, 315]}
+              - !box-1.0.0 {small: [276, 300, 316], big: [299, 323, 323]}
+              - !box-1.0.0 {small: [300, 300, 300], big: [323, 323, 315]}
+              - !box-1.0.0 {small: [300, 300, 316], big: [323, 323, 323]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 2
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetLevelNeighbor: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 Subcycling_RMBndryGroup: Subcycling::Subcycling_SetIsRMBndry: Mark output variables as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: false, ghosts: false}
+                      why:
+                        int: "ODESolvers after lincomb: Mark interior as valid"
+                        outer: "ODESolvers after lincomb: Mark outer boundary as invalid"
+                        ghosts: "ODESolvers after lincomb: Mark ghosts as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 216 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+...
