@@ -7,7 +7,7 @@ ActiveThorns = "
     TestSubcyclingMC2
 "
 
-$out_every = 36
+$out_every = 72
 $nlevels = 3
 $ncells = 144
 

@@ -8,6 +8,6 @@ Currently Loaded Modules:
  
 
 
-real	0m45.460s
-user	28m35.479s
-sys	2m1.689s
+real	1m20.524s
+user	35m50.132s
+sys	2m3.279s

@@ -684,7 +684,7 @@ IOUtil::out_downsample_x: 1
 IOUtil::out_downsample_y: 1
 IOUtil::out_downsample_z: 1
 IOUtil::out_dt: -2
-IOUtil::out_every: 24
+IOUtil::out_every: 48
 IOUtil::out_fileinfo: all
 IOUtil::out_group_separator: "-"
 IOUtil::out_mode: proc
