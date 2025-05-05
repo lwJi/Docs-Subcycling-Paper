@@ -1,0 +1,2446 @@
+# CarpetX Metadata
+---
+!carpetx-metadata-1.0.0
+nghostzones: [3, 3, 3]
+iteration: 540
+time: 1.2499999999999987
+delta_time: 0.0023148148148148147
+ghext: !ghext-2.0.0
+  globaldata: !globaldata-1.0.0
+    arraygroupdata:
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::ACTIVE
+          numvars: 3
+          varnames: ["active[0]", "active[1]", "active[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 1
+            - 1
+            - 1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::NUM_LEVELS
+          numvars: 3
+          varnames: ["num_levels[0]", "num_levels[1]", "num_levels[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 3
+            - 1
+            - 1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::POSITIONS
+          numvars: 9
+          varnames: ["position_x[0]", "position_x[1]", "position_x[2]", "position_y[0]", "position_y[1]", "position_y[2]", "position_z[0]", "position_z[1]", "position_z[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  ghosts: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+        data:
+          -
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::RADII
+          numvars: 3
+          varnames: ["radius[0]", "radius[1]", "radius[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+        data:
+          -
+            - -1
+            - 1
+            - 0.5
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+      - !arraygroupdata-1.0.0
+        commongroupdata: !commongroupdata-1.0.0
+          groupname: BOXINBOX::RADIIXYZ
+          numvars: 9
+          varnames: ["radius_x[0]", "radius_x[1]", "radius_x[2]", "radius_y[0]", "radius_y[1]", "radius_y[2]", "radius_z[0]", "radius_z[1]", "radius_z[2]"]
+          do_checkpoint: true
+          do_restrict: true
+          valid:
+            -
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+              - !why_valid-1.0.0
+                valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                why:
+                  int: "CallFunction iteration 0 CCTK_INITIAL: BoxInBox::BoxInBox_Init: Mark output variables as valid"
+                  outer: SetupGlobals
+                  ghosts: SetupGlobals
+        data:
+          -
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+  patchdata:
+    - !patchdata-1.0.0
+      patch: 0
+      amrcore: !amrcore-1.0.0
+        maxLevel: 2
+        finestLevel: 2
+        geometry:
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [215, 215, 215]}
+            is_periodic: [1, 1, 1]
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [431, 431, 431]}
+            is_periodic: [1, 1, 1]
+          - !geometry-1.0.0
+            prob_domain: !realbox-1.0.0 {xlo: [-4, -4, -4], xhi: [4, 4, 4]}
+            domain: !box-1.0.0 {small: [0, 0, 0], big: [863, 863, 863]}
+            is_periodic: [1, 1, 1]
+        distributionMapping:
+          - !distributionmapping-1.0.0
+            processorMap: [27, 27, 27, 27, 12, 13, 13, 27, 27, 8, 8, 13, 13, 13, 8, 8, 9, 9, 13, 14, 14, 8, 8, 9, 9, 14, 14, 14, 16, 17, 17, 17, 20, 0, 0, 17, 17, 17, 17, 0, 0, 0, 18, 18, 18, 18, 0, 0, 25, 27, 27, 8, 8, 13, 13, 13, 27, 27, 8, 8, 13, 13, 13, 8, 9, 9, 9, 14, 14, 14, 9, 9, 9, 9, 14, 14, 14, 17, 17, 18, 18, 0, 0, 0, 17, 17, 18, 18, 0, 0, 0, 18, 18, 18, 18, 25, 25, 25, 10, 10, 10, 10, 14, 15, 15, 10, 10, 10, 11, 15, 15, 15, 11, 11, 12, 12, 15, 16, 16, 11, 11, 12, 12, 16, 16, 16, 18, 19, 19, 19, 25, 25, 4, 19, 19, 19, 19, 25, 25, 4, 20, 20, 20, 20, 4, 4, 4, 10, 10, 11, 11, 15, 15, 15, 10, 10, 11, 11, 15, 15, 15, 11, 11, 12, 12, 16, 16, 16, 12, 12, 12, 12, 16, 16, 16, 19, 19, 20, 20, 25, 25, 4, 19, 19, 20, 20, 25, 25, 4, 20, 20, 20, 20, 4, 4, 4, 4, 4, 21, 21, 24, 24, 23, 4, 4, 21, 21, 24, 24, 23, 22, 22, 22, 22, 23, 23, 5, 22, 22, 2, 2, 23, 23, 5, 6, 6, 26, 26, 3, 3, 3, 6, 6, 26, 26, 3, 3, 3, 26, 26, 7, 7, 1, 1, 1, 21, 21, 21, 21, 23, 23, 23, 21, 21, 21, 22, 23, 23, 23, 22, 22, 2, 2, 5, 5, 5, 22, 22, 2, 2, 5, 5, 5, 6, 6, 26, 26, 3, 3, 1, 6, 26, 26, 26, 3, 3, 1, 7, 7, 7, 7, 1, 1, 1, 2, 2, 2, 2, 5, 5, 5, 2, 2, 2, 24, 5, 5, 5, 24, 24, 24, 24, 6, 6, 6, 24, 24, 24, 24, 6, 6, 6, 7, 7, 7, 7, 1, 1, 1, 7, 7, 7, 7, 1, 1, 1, 7, 3, 3, 3, 1, 1, 1]
+          - !distributionmapping-1.0.0
+            processorMap: [17, 17, 24, 6, 19, 19, 24, 6, 27, 27, 15, 25, 14, 2, 4, 1, 21, 21, 13, 3, 22, 22, 13, 3, 27, 14, 25, 25, 2, 15, 4, 1, 26, 26, 23, 8, 26, 16, 8, 8, 9, 18, 20, 20, 18, 0, 10, 10, 16, 5, 7, 9, 5, 23, 7, 9, 0, 11, 10, 12, 11, 11, 12, 12]
+          - !distributionmapping-1.0.0
+            processorMap: [23, 23, 2, 2, 24, 10, 13, 25, 24, 13, 25, 17, 10, 17, 17, 4, 4, 12, 12, 19, 20, 26, 26, 27, 20, 3, 3, 5, 21, 8, 22, 1, 9, 18, 18, 19, 6, 11, 11, 5, 6, 27, 27, 8, 21, 22, 22, 1, 9, 19, 7, 7, 21, 14, 14, 15, 0, 14, 15, 15, 0, 16, 16, 16]
+        boxArray:
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [0, 0, 0], big: [31, 31, 31]}
+            - !box-1.0.0 {small: [32, 0, 0], big: [63, 31, 31]}
+            - !box-1.0.0 {small: [64, 0, 0], big: [95, 31, 31]}
+            - !box-1.0.0 {small: [96, 0, 0], big: [127, 31, 31]}
+            - !box-1.0.0 {small: [128, 0, 0], big: [159, 31, 31]}
+            - !box-1.0.0 {small: [160, 0, 0], big: [191, 31, 31]}
+            - !box-1.0.0 {small: [192, 0, 0], big: [215, 31, 31]}
+            - !box-1.0.0 {small: [0, 32, 0], big: [31, 63, 31]}
+            - !box-1.0.0 {small: [32, 32, 0], big: [63, 63, 31]}
+            - !box-1.0.0 {small: [64, 32, 0], big: [95, 63, 31]}
+            - !box-1.0.0 {small: [96, 32, 0], big: [127, 63, 31]}
+            - !box-1.0.0 {small: [128, 32, 0], big: [159, 63, 31]}
+            - !box-1.0.0 {small: [160, 32, 0], big: [191, 63, 31]}
+            - !box-1.0.0 {small: [192, 32, 0], big: [215, 63, 31]}
+            - !box-1.0.0 {small: [0, 64, 0], big: [31, 95, 31]}
+            - !box-1.0.0 {small: [32, 64, 0], big: [63, 95, 31]}
+            - !box-1.0.0 {small: [64, 64, 0], big: [95, 95, 31]}
+            - !box-1.0.0 {small: [96, 64, 0], big: [127, 95, 31]}
+            - !box-1.0.0 {small: [128, 64, 0], big: [159, 95, 31]}
+            - !box-1.0.0 {small: [160, 64, 0], big: [191, 95, 31]}
+            - !box-1.0.0 {small: [192, 64, 0], big: [215, 95, 31]}
+            - !box-1.0.0 {small: [0, 96, 0], big: [31, 127, 31]}
+            - !box-1.0.0 {small: [32, 96, 0], big: [63, 127, 31]}
+            - !box-1.0.0 {small: [64, 96, 0], big: [95, 127, 31]}
+            - !box-1.0.0 {small: [96, 96, 0], big: [127, 127, 31]}
+            - !box-1.0.0 {small: [128, 96, 0], big: [159, 127, 31]}
+            - !box-1.0.0 {small: [160, 96, 0], big: [191, 127, 31]}
+            - !box-1.0.0 {small: [192, 96, 0], big: [215, 127, 31]}
+            - !box-1.0.0 {small: [0, 128, 0], big: [31, 159, 31]}
+            - !box-1.0.0 {small: [32, 128, 0], big: [63, 159, 31]}
+            - !box-1.0.0 {small: [64, 128, 0], big: [95, 159, 31]}
+            - !box-1.0.0 {small: [96, 128, 0], big: [127, 159, 31]}
+            - !box-1.0.0 {small: [128, 128, 0], big: [159, 159, 31]}
+            - !box-1.0.0 {small: [160, 128, 0], big: [191, 159, 31]}
+            - !box-1.0.0 {small: [192, 128, 0], big: [215, 159, 31]}
+            - !box-1.0.0 {small: [0, 160, 0], big: [31, 191, 31]}
+            - !box-1.0.0 {small: [32, 160, 0], big: [63, 191, 31]}
+            - !box-1.0.0 {small: [64, 160, 0], big: [95, 191, 31]}
+            - !box-1.0.0 {small: [96, 160, 0], big: [127, 191, 31]}
+            - !box-1.0.0 {small: [128, 160, 0], big: [159, 191, 31]}
+            - !box-1.0.0 {small: [160, 160, 0], big: [191, 191, 31]}
+            - !box-1.0.0 {small: [192, 160, 0], big: [215, 191, 31]}
+            - !box-1.0.0 {small: [0, 192, 0], big: [31, 215, 31]}
+            - !box-1.0.0 {small: [32, 192, 0], big: [63, 215, 31]}
+            - !box-1.0.0 {small: [64, 192, 0], big: [95, 215, 31]}
+            - !box-1.0.0 {small: [96, 192, 0], big: [127, 215, 31]}
+            - !box-1.0.0 {small: [128, 192, 0], big: [159, 215, 31]}
+            - !box-1.0.0 {small: [160, 192, 0], big: [191, 215, 31]}
+            - !box-1.0.0 {small: [192, 192, 0], big: [215, 215, 31]}
+            - !box-1.0.0 {small: [0, 0, 32], big: [31, 31, 63]}
+            - !box-1.0.0 {small: [32, 0, 32], big: [63, 31, 63]}
+            - !box-1.0.0 {small: [64, 0, 32], big: [95, 31, 63]}
+            - !box-1.0.0 {small: [96, 0, 32], big: [127, 31, 63]}
+            - !box-1.0.0 {small: [128, 0, 32], big: [159, 31, 63]}
+            - !box-1.0.0 {small: [160, 0, 32], big: [191, 31, 63]}
+            - !box-1.0.0 {small: [192, 0, 32], big: [215, 31, 63]}
+            - !box-1.0.0 {small: [0, 32, 32], big: [31, 63, 63]}
+            - !box-1.0.0 {small: [32, 32, 32], big: [63, 63, 63]}
+            - !box-1.0.0 {small: [64, 32, 32], big: [95, 63, 63]}
+            - !box-1.0.0 {small: [96, 32, 32], big: [127, 63, 63]}
+            - !box-1.0.0 {small: [128, 32, 32], big: [159, 63, 63]}
+            - !box-1.0.0 {small: [160, 32, 32], big: [191, 63, 63]}
+            - !box-1.0.0 {small: [192, 32, 32], big: [215, 63, 63]}
+            - !box-1.0.0 {small: [0, 64, 32], big: [31, 95, 63]}
+            - !box-1.0.0 {small: [32, 64, 32], big: [63, 95, 63]}
+            - !box-1.0.0 {small: [64, 64, 32], big: [95, 95, 63]}
+            - !box-1.0.0 {small: [96, 64, 32], big: [127, 95, 63]}
+            - !box-1.0.0 {small: [128, 64, 32], big: [159, 95, 63]}
+            - !box-1.0.0 {small: [160, 64, 32], big: [191, 95, 63]}
+            - !box-1.0.0 {small: [192, 64, 32], big: [215, 95, 63]}
+            - !box-1.0.0 {small: [0, 96, 32], big: [31, 127, 63]}
+            - !box-1.0.0 {small: [32, 96, 32], big: [63, 127, 63]}
+            - !box-1.0.0 {small: [64, 96, 32], big: [95, 127, 63]}
+            - !box-1.0.0 {small: [96, 96, 32], big: [127, 127, 63]}
+            - !box-1.0.0 {small: [128, 96, 32], big: [159, 127, 63]}
+            - !box-1.0.0 {small: [160, 96, 32], big: [191, 127, 63]}
+            - !box-1.0.0 {small: [192, 96, 32], big: [215, 127, 63]}
+            - !box-1.0.0 {small: [0, 128, 32], big: [31, 159, 63]}
+            - !box-1.0.0 {small: [32, 128, 32], big: [63, 159, 63]}
+            - !box-1.0.0 {small: [64, 128, 32], big: [95, 159, 63]}
+            - !box-1.0.0 {small: [96, 128, 32], big: [127, 159, 63]}
+            - !box-1.0.0 {small: [128, 128, 32], big: [159, 159, 63]}
+            - !box-1.0.0 {small: [160, 128, 32], big: [191, 159, 63]}
+            - !box-1.0.0 {small: [192, 128, 32], big: [215, 159, 63]}
+            - !box-1.0.0 {small: [0, 160, 32], big: [31, 191, 63]}
+            - !box-1.0.0 {small: [32, 160, 32], big: [63, 191, 63]}
+            - !box-1.0.0 {small: [64, 160, 32], big: [95, 191, 63]}
+            - !box-1.0.0 {small: [96, 160, 32], big: [127, 191, 63]}
+            - !box-1.0.0 {small: [128, 160, 32], big: [159, 191, 63]}
+            - !box-1.0.0 {small: [160, 160, 32], big: [191, 191, 63]}
+            - !box-1.0.0 {small: [192, 160, 32], big: [215, 191, 63]}
+            - !box-1.0.0 {small: [0, 192, 32], big: [31, 215, 63]}
+            - !box-1.0.0 {small: [32, 192, 32], big: [63, 215, 63]}
+            - !box-1.0.0 {small: [64, 192, 32], big: [95, 215, 63]}
+            - !box-1.0.0 {small: [96, 192, 32], big: [127, 215, 63]}
+            - !box-1.0.0 {small: [128, 192, 32], big: [159, 215, 63]}
+            - !box-1.0.0 {small: [160, 192, 32], big: [191, 215, 63]}
+            - !box-1.0.0 {small: [192, 192, 32], big: [215, 215, 63]}
+            - !box-1.0.0 {small: [0, 0, 64], big: [31, 31, 95]}
+            - !box-1.0.0 {small: [32, 0, 64], big: [63, 31, 95]}
+            - !box-1.0.0 {small: [64, 0, 64], big: [95, 31, 95]}
+            - !box-1.0.0 {small: [96, 0, 64], big: [127, 31, 95]}
+            - !box-1.0.0 {small: [128, 0, 64], big: [159, 31, 95]}
+            - !box-1.0.0 {small: [160, 0, 64], big: [191, 31, 95]}
+            - !box-1.0.0 {small: [192, 0, 64], big: [215, 31, 95]}
+            - !box-1.0.0 {small: [0, 32, 64], big: [31, 63, 95]}
+            - !box-1.0.0 {small: [32, 32, 64], big: [63, 63, 95]}
+            - !box-1.0.0 {small: [64, 32, 64], big: [95, 63, 95]}
+            - !box-1.0.0 {small: [96, 32, 64], big: [127, 63, 95]}
+            - !box-1.0.0 {small: [128, 32, 64], big: [159, 63, 95]}
+            - !box-1.0.0 {small: [160, 32, 64], big: [191, 63, 95]}
+            - !box-1.0.0 {small: [192, 32, 64], big: [215, 63, 95]}
+            - !box-1.0.0 {small: [0, 64, 64], big: [31, 95, 95]}
+            - !box-1.0.0 {small: [32, 64, 64], big: [63, 95, 95]}
+            - !box-1.0.0 {small: [64, 64, 64], big: [95, 95, 95]}
+            - !box-1.0.0 {small: [96, 64, 64], big: [127, 95, 95]}
+            - !box-1.0.0 {small: [128, 64, 64], big: [159, 95, 95]}
+            - !box-1.0.0 {small: [160, 64, 64], big: [191, 95, 95]}
+            - !box-1.0.0 {small: [192, 64, 64], big: [215, 95, 95]}
+            - !box-1.0.0 {small: [0, 96, 64], big: [31, 127, 95]}
+            - !box-1.0.0 {small: [32, 96, 64], big: [63, 127, 95]}
+            - !box-1.0.0 {small: [64, 96, 64], big: [95, 127, 95]}
+            - !box-1.0.0 {small: [96, 96, 64], big: [127, 127, 95]}
+            - !box-1.0.0 {small: [128, 96, 64], big: [159, 127, 95]}
+            - !box-1.0.0 {small: [160, 96, 64], big: [191, 127, 95]}
+            - !box-1.0.0 {small: [192, 96, 64], big: [215, 127, 95]}
+            - !box-1.0.0 {small: [0, 128, 64], big: [31, 159, 95]}
+            - !box-1.0.0 {small: [32, 128, 64], big: [63, 159, 95]}
+            - !box-1.0.0 {small: [64, 128, 64], big: [95, 159, 95]}
+            - !box-1.0.0 {small: [96, 128, 64], big: [127, 159, 95]}
+            - !box-1.0.0 {small: [128, 128, 64], big: [159, 159, 95]}
+            - !box-1.0.0 {small: [160, 128, 64], big: [191, 159, 95]}
+            - !box-1.0.0 {small: [192, 128, 64], big: [215, 159, 95]}
+            - !box-1.0.0 {small: [0, 160, 64], big: [31, 191, 95]}
+            - !box-1.0.0 {small: [32, 160, 64], big: [63, 191, 95]}
+            - !box-1.0.0 {small: [64, 160, 64], big: [95, 191, 95]}
+            - !box-1.0.0 {small: [96, 160, 64], big: [127, 191, 95]}
+            - !box-1.0.0 {small: [128, 160, 64], big: [159, 191, 95]}
+            - !box-1.0.0 {small: [160, 160, 64], big: [191, 191, 95]}
+            - !box-1.0.0 {small: [192, 160, 64], big: [215, 191, 95]}
+            - !box-1.0.0 {small: [0, 192, 64], big: [31, 215, 95]}
+            - !box-1.0.0 {small: [32, 192, 64], big: [63, 215, 95]}
+            - !box-1.0.0 {small: [64, 192, 64], big: [95, 215, 95]}
+            - !box-1.0.0 {small: [96, 192, 64], big: [127, 215, 95]}
+            - !box-1.0.0 {small: [128, 192, 64], big: [159, 215, 95]}
+            - !box-1.0.0 {small: [160, 192, 64], big: [191, 215, 95]}
+            - !box-1.0.0 {small: [192, 192, 64], big: [215, 215, 95]}
+            - !box-1.0.0 {small: [0, 0, 96], big: [31, 31, 127]}
+            - !box-1.0.0 {small: [32, 0, 96], big: [63, 31, 127]}
+            - !box-1.0.0 {small: [64, 0, 96], big: [95, 31, 127]}
+            - !box-1.0.0 {small: [96, 0, 96], big: [127, 31, 127]}
+            - !box-1.0.0 {small: [128, 0, 96], big: [159, 31, 127]}
+            - !box-1.0.0 {small: [160, 0, 96], big: [191, 31, 127]}
+            - !box-1.0.0 {small: [192, 0, 96], big: [215, 31, 127]}
+            - !box-1.0.0 {small: [0, 32, 96], big: [31, 63, 127]}
+            - !box-1.0.0 {small: [32, 32, 96], big: [63, 63, 127]}
+            - !box-1.0.0 {small: [64, 32, 96], big: [95, 63, 127]}
+            - !box-1.0.0 {small: [96, 32, 96], big: [127, 63, 127]}
+            - !box-1.0.0 {small: [128, 32, 96], big: [159, 63, 127]}
+            - !box-1.0.0 {small: [160, 32, 96], big: [191, 63, 127]}
+            - !box-1.0.0 {small: [192, 32, 96], big: [215, 63, 127]}
+            - !box-1.0.0 {small: [0, 64, 96], big: [31, 95, 127]}
+            - !box-1.0.0 {small: [32, 64, 96], big: [63, 95, 127]}
+            - !box-1.0.0 {small: [64, 64, 96], big: [95, 95, 127]}
+            - !box-1.0.0 {small: [96, 64, 96], big: [127, 95, 127]}
+            - !box-1.0.0 {small: [128, 64, 96], big: [159, 95, 127]}
+            - !box-1.0.0 {small: [160, 64, 96], big: [191, 95, 127]}
+            - !box-1.0.0 {small: [192, 64, 96], big: [215, 95, 127]}
+            - !box-1.0.0 {small: [0, 96, 96], big: [31, 127, 127]}
+            - !box-1.0.0 {small: [32, 96, 96], big: [63, 127, 127]}
+            - !box-1.0.0 {small: [64, 96, 96], big: [95, 127, 127]}
+            - !box-1.0.0 {small: [96, 96, 96], big: [127, 127, 127]}
+            - !box-1.0.0 {small: [128, 96, 96], big: [159, 127, 127]}
+            - !box-1.0.0 {small: [160, 96, 96], big: [191, 127, 127]}
+            - !box-1.0.0 {small: [192, 96, 96], big: [215, 127, 127]}
+            - !box-1.0.0 {small: [0, 128, 96], big: [31, 159, 127]}
+            - !box-1.0.0 {small: [32, 128, 96], big: [63, 159, 127]}
+            - !box-1.0.0 {small: [64, 128, 96], big: [95, 159, 127]}
+            - !box-1.0.0 {small: [96, 128, 96], big: [127, 159, 127]}
+            - !box-1.0.0 {small: [128, 128, 96], big: [159, 159, 127]}
+            - !box-1.0.0 {small: [160, 128, 96], big: [191, 159, 127]}
+            - !box-1.0.0 {small: [192, 128, 96], big: [215, 159, 127]}
+            - !box-1.0.0 {small: [0, 160, 96], big: [31, 191, 127]}
+            - !box-1.0.0 {small: [32, 160, 96], big: [63, 191, 127]}
+            - !box-1.0.0 {small: [64, 160, 96], big: [95, 191, 127]}
+            - !box-1.0.0 {small: [96, 160, 96], big: [127, 191, 127]}
+            - !box-1.0.0 {small: [128, 160, 96], big: [159, 191, 127]}
+            - !box-1.0.0 {small: [160, 160, 96], big: [191, 191, 127]}
+            - !box-1.0.0 {small: [192, 160, 96], big: [215, 191, 127]}
+            - !box-1.0.0 {small: [0, 192, 96], big: [31, 215, 127]}
+            - !box-1.0.0 {small: [32, 192, 96], big: [63, 215, 127]}
+            - !box-1.0.0 {small: [64, 192, 96], big: [95, 215, 127]}
+            - !box-1.0.0 {small: [96, 192, 96], big: [127, 215, 127]}
+            - !box-1.0.0 {small: [128, 192, 96], big: [159, 215, 127]}
+            - !box-1.0.0 {small: [160, 192, 96], big: [191, 215, 127]}
+            - !box-1.0.0 {small: [192, 192, 96], big: [215, 215, 127]}
+            - !box-1.0.0 {small: [0, 0, 128], big: [31, 31, 159]}
+            - !box-1.0.0 {small: [32, 0, 128], big: [63, 31, 159]}
+            - !box-1.0.0 {small: [64, 0, 128], big: [95, 31, 159]}
+            - !box-1.0.0 {small: [96, 0, 128], big: [127, 31, 159]}
+            - !box-1.0.0 {small: [128, 0, 128], big: [159, 31, 159]}
+            - !box-1.0.0 {small: [160, 0, 128], big: [191, 31, 159]}
+            - !box-1.0.0 {small: [192, 0, 128], big: [215, 31, 159]}
+            - !box-1.0.0 {small: [0, 32, 128], big: [31, 63, 159]}
+            - !box-1.0.0 {small: [32, 32, 128], big: [63, 63, 159]}
+            - !box-1.0.0 {small: [64, 32, 128], big: [95, 63, 159]}
+            - !box-1.0.0 {small: [96, 32, 128], big: [127, 63, 159]}
+            - !box-1.0.0 {small: [128, 32, 128], big: [159, 63, 159]}
+            - !box-1.0.0 {small: [160, 32, 128], big: [191, 63, 159]}
+            - !box-1.0.0 {small: [192, 32, 128], big: [215, 63, 159]}
+            - !box-1.0.0 {small: [0, 64, 128], big: [31, 95, 159]}
+            - !box-1.0.0 {small: [32, 64, 128], big: [63, 95, 159]}
+            - !box-1.0.0 {small: [64, 64, 128], big: [95, 95, 159]}
+            - !box-1.0.0 {small: [96, 64, 128], big: [127, 95, 159]}
+            - !box-1.0.0 {small: [128, 64, 128], big: [159, 95, 159]}
+            - !box-1.0.0 {small: [160, 64, 128], big: [191, 95, 159]}
+            - !box-1.0.0 {small: [192, 64, 128], big: [215, 95, 159]}
+            - !box-1.0.0 {small: [0, 96, 128], big: [31, 127, 159]}
+            - !box-1.0.0 {small: [32, 96, 128], big: [63, 127, 159]}
+            - !box-1.0.0 {small: [64, 96, 128], big: [95, 127, 159]}
+            - !box-1.0.0 {small: [96, 96, 128], big: [127, 127, 159]}
+            - !box-1.0.0 {small: [128, 96, 128], big: [159, 127, 159]}
+            - !box-1.0.0 {small: [160, 96, 128], big: [191, 127, 159]}
+            - !box-1.0.0 {small: [192, 96, 128], big: [215, 127, 159]}
+            - !box-1.0.0 {small: [0, 128, 128], big: [31, 159, 159]}
+            - !box-1.0.0 {small: [32, 128, 128], big: [63, 159, 159]}
+            - !box-1.0.0 {small: [64, 128, 128], big: [95, 159, 159]}
+            - !box-1.0.0 {small: [96, 128, 128], big: [127, 159, 159]}
+            - !box-1.0.0 {small: [128, 128, 128], big: [159, 159, 159]}
+            - !box-1.0.0 {small: [160, 128, 128], big: [191, 159, 159]}
+            - !box-1.0.0 {small: [192, 128, 128], big: [215, 159, 159]}
+            - !box-1.0.0 {small: [0, 160, 128], big: [31, 191, 159]}
+            - !box-1.0.0 {small: [32, 160, 128], big: [63, 191, 159]}
+            - !box-1.0.0 {small: [64, 160, 128], big: [95, 191, 159]}
+            - !box-1.0.0 {small: [96, 160, 128], big: [127, 191, 159]}
+            - !box-1.0.0 {small: [128, 160, 128], big: [159, 191, 159]}
+            - !box-1.0.0 {small: [160, 160, 128], big: [191, 191, 159]}
+            - !box-1.0.0 {small: [192, 160, 128], big: [215, 191, 159]}
+            - !box-1.0.0 {small: [0, 192, 128], big: [31, 215, 159]}
+            - !box-1.0.0 {small: [32, 192, 128], big: [63, 215, 159]}
+            - !box-1.0.0 {small: [64, 192, 128], big: [95, 215, 159]}
+            - !box-1.0.0 {small: [96, 192, 128], big: [127, 215, 159]}
+            - !box-1.0.0 {small: [128, 192, 128], big: [159, 215, 159]}
+            - !box-1.0.0 {small: [160, 192, 128], big: [191, 215, 159]}
+            - !box-1.0.0 {small: [192, 192, 128], big: [215, 215, 159]}
+            - !box-1.0.0 {small: [0, 0, 160], big: [31, 31, 191]}
+            - !box-1.0.0 {small: [32, 0, 160], big: [63, 31, 191]}
+            - !box-1.0.0 {small: [64, 0, 160], big: [95, 31, 191]}
+            - !box-1.0.0 {small: [96, 0, 160], big: [127, 31, 191]}
+            - !box-1.0.0 {small: [128, 0, 160], big: [159, 31, 191]}
+            - !box-1.0.0 {small: [160, 0, 160], big: [191, 31, 191]}
+            - !box-1.0.0 {small: [192, 0, 160], big: [215, 31, 191]}
+            - !box-1.0.0 {small: [0, 32, 160], big: [31, 63, 191]}
+            - !box-1.0.0 {small: [32, 32, 160], big: [63, 63, 191]}
+            - !box-1.0.0 {small: [64, 32, 160], big: [95, 63, 191]}
+            - !box-1.0.0 {small: [96, 32, 160], big: [127, 63, 191]}
+            - !box-1.0.0 {small: [128, 32, 160], big: [159, 63, 191]}
+            - !box-1.0.0 {small: [160, 32, 160], big: [191, 63, 191]}
+            - !box-1.0.0 {small: [192, 32, 160], big: [215, 63, 191]}
+            - !box-1.0.0 {small: [0, 64, 160], big: [31, 95, 191]}
+            - !box-1.0.0 {small: [32, 64, 160], big: [63, 95, 191]}
+            - !box-1.0.0 {small: [64, 64, 160], big: [95, 95, 191]}
+            - !box-1.0.0 {small: [96, 64, 160], big: [127, 95, 191]}
+            - !box-1.0.0 {small: [128, 64, 160], big: [159, 95, 191]}
+            - !box-1.0.0 {small: [160, 64, 160], big: [191, 95, 191]}
+            - !box-1.0.0 {small: [192, 64, 160], big: [215, 95, 191]}
+            - !box-1.0.0 {small: [0, 96, 160], big: [31, 127, 191]}
+            - !box-1.0.0 {small: [32, 96, 160], big: [63, 127, 191]}
+            - !box-1.0.0 {small: [64, 96, 160], big: [95, 127, 191]}
+            - !box-1.0.0 {small: [96, 96, 160], big: [127, 127, 191]}
+            - !box-1.0.0 {small: [128, 96, 160], big: [159, 127, 191]}
+            - !box-1.0.0 {small: [160, 96, 160], big: [191, 127, 191]}
+            - !box-1.0.0 {small: [192, 96, 160], big: [215, 127, 191]}
+            - !box-1.0.0 {small: [0, 128, 160], big: [31, 159, 191]}
+            - !box-1.0.0 {small: [32, 128, 160], big: [63, 159, 191]}
+            - !box-1.0.0 {small: [64, 128, 160], big: [95, 159, 191]}
+            - !box-1.0.0 {small: [96, 128, 160], big: [127, 159, 191]}
+            - !box-1.0.0 {small: [128, 128, 160], big: [159, 159, 191]}
+            - !box-1.0.0 {small: [160, 128, 160], big: [191, 159, 191]}
+            - !box-1.0.0 {small: [192, 128, 160], big: [215, 159, 191]}
+            - !box-1.0.0 {small: [0, 160, 160], big: [31, 191, 191]}
+            - !box-1.0.0 {small: [32, 160, 160], big: [63, 191, 191]}
+            - !box-1.0.0 {small: [64, 160, 160], big: [95, 191, 191]}
+            - !box-1.0.0 {small: [96, 160, 160], big: [127, 191, 191]}
+            - !box-1.0.0 {small: [128, 160, 160], big: [159, 191, 191]}
+            - !box-1.0.0 {small: [160, 160, 160], big: [191, 191, 191]}
+            - !box-1.0.0 {small: [192, 160, 160], big: [215, 191, 191]}
+            - !box-1.0.0 {small: [0, 192, 160], big: [31, 215, 191]}
+            - !box-1.0.0 {small: [32, 192, 160], big: [63, 215, 191]}
+            - !box-1.0.0 {small: [64, 192, 160], big: [95, 215, 191]}
+            - !box-1.0.0 {small: [96, 192, 160], big: [127, 215, 191]}
+            - !box-1.0.0 {small: [128, 192, 160], big: [159, 215, 191]}
+            - !box-1.0.0 {small: [160, 192, 160], big: [191, 215, 191]}
+            - !box-1.0.0 {small: [192, 192, 160], big: [215, 215, 191]}
+            - !box-1.0.0 {small: [0, 0, 192], big: [31, 31, 215]}
+            - !box-1.0.0 {small: [32, 0, 192], big: [63, 31, 215]}
+            - !box-1.0.0 {small: [64, 0, 192], big: [95, 31, 215]}
+            - !box-1.0.0 {small: [96, 0, 192], big: [127, 31, 215]}
+            - !box-1.0.0 {small: [128, 0, 192], big: [159, 31, 215]}
+            - !box-1.0.0 {small: [160, 0, 192], big: [191, 31, 215]}
+            - !box-1.0.0 {small: [192, 0, 192], big: [215, 31, 215]}
+            - !box-1.0.0 {small: [0, 32, 192], big: [31, 63, 215]}
+            - !box-1.0.0 {small: [32, 32, 192], big: [63, 63, 215]}
+            - !box-1.0.0 {small: [64, 32, 192], big: [95, 63, 215]}
+            - !box-1.0.0 {small: [96, 32, 192], big: [127, 63, 215]}
+            - !box-1.0.0 {small: [128, 32, 192], big: [159, 63, 215]}
+            - !box-1.0.0 {small: [160, 32, 192], big: [191, 63, 215]}
+            - !box-1.0.0 {small: [192, 32, 192], big: [215, 63, 215]}
+            - !box-1.0.0 {small: [0, 64, 192], big: [31, 95, 215]}
+            - !box-1.0.0 {small: [32, 64, 192], big: [63, 95, 215]}
+            - !box-1.0.0 {small: [64, 64, 192], big: [95, 95, 215]}
+            - !box-1.0.0 {small: [96, 64, 192], big: [127, 95, 215]}
+            - !box-1.0.0 {small: [128, 64, 192], big: [159, 95, 215]}
+            - !box-1.0.0 {small: [160, 64, 192], big: [191, 95, 215]}
+            - !box-1.0.0 {small: [192, 64, 192], big: [215, 95, 215]}
+            - !box-1.0.0 {small: [0, 96, 192], big: [31, 127, 215]}
+            - !box-1.0.0 {small: [32, 96, 192], big: [63, 127, 215]}
+            - !box-1.0.0 {small: [64, 96, 192], big: [95, 127, 215]}
+            - !box-1.0.0 {small: [96, 96, 192], big: [127, 127, 215]}
+            - !box-1.0.0 {small: [128, 96, 192], big: [159, 127, 215]}
+            - !box-1.0.0 {small: [160, 96, 192], big: [191, 127, 215]}
+            - !box-1.0.0 {small: [192, 96, 192], big: [215, 127, 215]}
+            - !box-1.0.0 {small: [0, 128, 192], big: [31, 159, 215]}
+            - !box-1.0.0 {small: [32, 128, 192], big: [63, 159, 215]}
+            - !box-1.0.0 {small: [64, 128, 192], big: [95, 159, 215]}
+            - !box-1.0.0 {small: [96, 128, 192], big: [127, 159, 215]}
+            - !box-1.0.0 {small: [128, 128, 192], big: [159, 159, 215]}
+            - !box-1.0.0 {small: [160, 128, 192], big: [191, 159, 215]}
+            - !box-1.0.0 {small: [192, 128, 192], big: [215, 159, 215]}
+            - !box-1.0.0 {small: [0, 160, 192], big: [31, 191, 215]}
+            - !box-1.0.0 {small: [32, 160, 192], big: [63, 191, 215]}
+            - !box-1.0.0 {small: [64, 160, 192], big: [95, 191, 215]}
+            - !box-1.0.0 {small: [96, 160, 192], big: [127, 191, 215]}
+            - !box-1.0.0 {small: [128, 160, 192], big: [159, 191, 215]}
+            - !box-1.0.0 {small: [160, 160, 192], big: [191, 191, 215]}
+            - !box-1.0.0 {small: [192, 160, 192], big: [215, 191, 215]}
+            - !box-1.0.0 {small: [0, 192, 192], big: [31, 215, 215]}
+            - !box-1.0.0 {small: [32, 192, 192], big: [63, 215, 215]}
+            - !box-1.0.0 {small: [64, 192, 192], big: [95, 215, 215]}
+            - !box-1.0.0 {small: [96, 192, 192], big: [127, 215, 215]}
+            - !box-1.0.0 {small: [128, 192, 192], big: [159, 215, 215]}
+            - !box-1.0.0 {small: [160, 192, 192], big: [191, 215, 215]}
+            - !box-1.0.0 {small: [192, 192, 192], big: [215, 215, 215]}
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [162, 162, 162], big: [189, 189, 189]}
+            - !box-1.0.0 {small: [190, 162, 162], big: [217, 189, 189]}
+            - !box-1.0.0 {small: [218, 162, 162], big: [245, 189, 189]}
+            - !box-1.0.0 {small: [246, 162, 162], big: [269, 189, 189]}
+            - !box-1.0.0 {small: [162, 190, 162], big: [189, 217, 189]}
+            - !box-1.0.0 {small: [190, 190, 162], big: [217, 217, 189]}
+            - !box-1.0.0 {small: [218, 190, 162], big: [245, 217, 189]}
+            - !box-1.0.0 {small: [246, 190, 162], big: [269, 217, 189]}
+            - !box-1.0.0 {small: [162, 218, 162], big: [189, 245, 189]}
+            - !box-1.0.0 {small: [190, 218, 162], big: [217, 245, 189]}
+            - !box-1.0.0 {small: [218, 218, 162], big: [245, 245, 189]}
+            - !box-1.0.0 {small: [246, 218, 162], big: [269, 245, 189]}
+            - !box-1.0.0 {small: [162, 246, 162], big: [189, 269, 189]}
+            - !box-1.0.0 {small: [190, 246, 162], big: [217, 269, 189]}
+            - !box-1.0.0 {small: [218, 246, 162], big: [245, 269, 189]}
+            - !box-1.0.0 {small: [246, 246, 162], big: [269, 269, 189]}
+            - !box-1.0.0 {small: [162, 162, 190], big: [189, 189, 217]}
+            - !box-1.0.0 {small: [190, 162, 190], big: [217, 189, 217]}
+            - !box-1.0.0 {small: [218, 162, 190], big: [245, 189, 217]}
+            - !box-1.0.0 {small: [246, 162, 190], big: [269, 189, 217]}
+            - !box-1.0.0 {small: [162, 190, 190], big: [189, 217, 217]}
+            - !box-1.0.0 {small: [190, 190, 190], big: [217, 217, 217]}
+            - !box-1.0.0 {small: [218, 190, 190], big: [245, 217, 217]}
+            - !box-1.0.0 {small: [246, 190, 190], big: [269, 217, 217]}
+            - !box-1.0.0 {small: [162, 218, 190], big: [189, 245, 217]}
+            - !box-1.0.0 {small: [190, 218, 190], big: [217, 245, 217]}
+            - !box-1.0.0 {small: [218, 218, 190], big: [245, 245, 217]}
+            - !box-1.0.0 {small: [246, 218, 190], big: [269, 245, 217]}
+            - !box-1.0.0 {small: [162, 246, 190], big: [189, 269, 217]}
+            - !box-1.0.0 {small: [190, 246, 190], big: [217, 269, 217]}
+            - !box-1.0.0 {small: [218, 246, 190], big: [245, 269, 217]}
+            - !box-1.0.0 {small: [246, 246, 190], big: [269, 269, 217]}
+            - !box-1.0.0 {small: [162, 162, 218], big: [189, 189, 245]}
+            - !box-1.0.0 {small: [190, 162, 218], big: [217, 189, 245]}
+            - !box-1.0.0 {small: [218, 162, 218], big: [245, 189, 245]}
+            - !box-1.0.0 {small: [246, 162, 218], big: [269, 189, 245]}
+            - !box-1.0.0 {small: [162, 190, 218], big: [189, 217, 245]}
+            - !box-1.0.0 {small: [190, 190, 218], big: [217, 217, 245]}
+            - !box-1.0.0 {small: [218, 190, 218], big: [245, 217, 245]}
+            - !box-1.0.0 {small: [246, 190, 218], big: [269, 217, 245]}
+            - !box-1.0.0 {small: [162, 218, 218], big: [189, 245, 245]}
+            - !box-1.0.0 {small: [190, 218, 218], big: [217, 245, 245]}
+            - !box-1.0.0 {small: [218, 218, 218], big: [245, 245, 245]}
+            - !box-1.0.0 {small: [246, 218, 218], big: [269, 245, 245]}
+            - !box-1.0.0 {small: [162, 246, 218], big: [189, 269, 245]}
+            - !box-1.0.0 {small: [190, 246, 218], big: [217, 269, 245]}
+            - !box-1.0.0 {small: [218, 246, 218], big: [245, 269, 245]}
+            - !box-1.0.0 {small: [246, 246, 218], big: [269, 269, 245]}
+            - !box-1.0.0 {small: [162, 162, 246], big: [189, 189, 269]}
+            - !box-1.0.0 {small: [190, 162, 246], big: [217, 189, 269]}
+            - !box-1.0.0 {small: [218, 162, 246], big: [245, 189, 269]}
+            - !box-1.0.0 {small: [246, 162, 246], big: [269, 189, 269]}
+            - !box-1.0.0 {small: [162, 190, 246], big: [189, 217, 269]}
+            - !box-1.0.0 {small: [190, 190, 246], big: [217, 217, 269]}
+            - !box-1.0.0 {small: [218, 190, 246], big: [245, 217, 269]}
+            - !box-1.0.0 {small: [246, 190, 246], big: [269, 217, 269]}
+            - !box-1.0.0 {small: [162, 218, 246], big: [189, 245, 269]}
+            - !box-1.0.0 {small: [190, 218, 246], big: [217, 245, 269]}
+            - !box-1.0.0 {small: [218, 218, 246], big: [245, 245, 269]}
+            - !box-1.0.0 {small: [246, 218, 246], big: [269, 245, 269]}
+            - !box-1.0.0 {small: [162, 246, 246], big: [189, 269, 269]}
+            - !box-1.0.0 {small: [190, 246, 246], big: [217, 269, 269]}
+            - !box-1.0.0 {small: [218, 246, 246], big: [245, 269, 269]}
+            - !box-1.0.0 {small: [246, 246, 246], big: [269, 269, 269]}
+          - !boxarray-1.0.0
+            - !box-1.0.0 {small: [378, 378, 378], big: [405, 405, 405]}
+            - !box-1.0.0 {small: [406, 378, 378], big: [433, 405, 405]}
+            - !box-1.0.0 {small: [434, 378, 378], big: [461, 405, 405]}
+            - !box-1.0.0 {small: [462, 378, 378], big: [485, 405, 405]}
+            - !box-1.0.0 {small: [378, 406, 378], big: [405, 433, 405]}
+            - !box-1.0.0 {small: [406, 406, 378], big: [433, 433, 405]}
+            - !box-1.0.0 {small: [434, 406, 378], big: [461, 433, 405]}
+            - !box-1.0.0 {small: [462, 406, 378], big: [485, 433, 405]}
+            - !box-1.0.0 {small: [378, 434, 378], big: [405, 461, 405]}
+            - !box-1.0.0 {small: [406, 434, 378], big: [433, 461, 405]}
+            - !box-1.0.0 {small: [434, 434, 378], big: [461, 461, 405]}
+            - !box-1.0.0 {small: [462, 434, 378], big: [485, 461, 405]}
+            - !box-1.0.0 {small: [378, 462, 378], big: [405, 485, 405]}
+            - !box-1.0.0 {small: [406, 462, 378], big: [433, 485, 405]}
+            - !box-1.0.0 {small: [434, 462, 378], big: [461, 485, 405]}
+            - !box-1.0.0 {small: [462, 462, 378], big: [485, 485, 405]}
+            - !box-1.0.0 {small: [378, 378, 406], big: [405, 405, 433]}
+            - !box-1.0.0 {small: [406, 378, 406], big: [433, 405, 433]}
+            - !box-1.0.0 {small: [434, 378, 406], big: [461, 405, 433]}
+            - !box-1.0.0 {small: [462, 378, 406], big: [485, 405, 433]}
+            - !box-1.0.0 {small: [378, 406, 406], big: [405, 433, 433]}
+            - !box-1.0.0 {small: [406, 406, 406], big: [433, 433, 433]}
+            - !box-1.0.0 {small: [434, 406, 406], big: [461, 433, 433]}
+            - !box-1.0.0 {small: [462, 406, 406], big: [485, 433, 433]}
+            - !box-1.0.0 {small: [378, 434, 406], big: [405, 461, 433]}
+            - !box-1.0.0 {small: [406, 434, 406], big: [433, 461, 433]}
+            - !box-1.0.0 {small: [434, 434, 406], big: [461, 461, 433]}
+            - !box-1.0.0 {small: [462, 434, 406], big: [485, 461, 433]}
+            - !box-1.0.0 {small: [378, 462, 406], big: [405, 485, 433]}
+            - !box-1.0.0 {small: [406, 462, 406], big: [433, 485, 433]}
+            - !box-1.0.0 {small: [434, 462, 406], big: [461, 485, 433]}
+            - !box-1.0.0 {small: [462, 462, 406], big: [485, 485, 433]}
+            - !box-1.0.0 {small: [378, 378, 434], big: [405, 405, 461]}
+            - !box-1.0.0 {small: [406, 378, 434], big: [433, 405, 461]}
+            - !box-1.0.0 {small: [434, 378, 434], big: [461, 405, 461]}
+            - !box-1.0.0 {small: [462, 378, 434], big: [485, 405, 461]}
+            - !box-1.0.0 {small: [378, 406, 434], big: [405, 433, 461]}
+            - !box-1.0.0 {small: [406, 406, 434], big: [433, 433, 461]}
+            - !box-1.0.0 {small: [434, 406, 434], big: [461, 433, 461]}
+            - !box-1.0.0 {small: [462, 406, 434], big: [485, 433, 461]}
+            - !box-1.0.0 {small: [378, 434, 434], big: [405, 461, 461]}
+            - !box-1.0.0 {small: [406, 434, 434], big: [433, 461, 461]}
+            - !box-1.0.0 {small: [434, 434, 434], big: [461, 461, 461]}
+            - !box-1.0.0 {small: [462, 434, 434], big: [485, 461, 461]}
+            - !box-1.0.0 {small: [378, 462, 434], big: [405, 485, 461]}
+            - !box-1.0.0 {small: [406, 462, 434], big: [433, 485, 461]}
+            - !box-1.0.0 {small: [434, 462, 434], big: [461, 485, 461]}
+            - !box-1.0.0 {small: [462, 462, 434], big: [485, 485, 461]}
+            - !box-1.0.0 {small: [378, 378, 462], big: [405, 405, 485]}
+            - !box-1.0.0 {small: [406, 378, 462], big: [433, 405, 485]}
+            - !box-1.0.0 {small: [434, 378, 462], big: [461, 405, 485]}
+            - !box-1.0.0 {small: [462, 378, 462], big: [485, 405, 485]}
+            - !box-1.0.0 {small: [378, 406, 462], big: [405, 433, 485]}
+            - !box-1.0.0 {small: [406, 406, 462], big: [433, 433, 485]}
+            - !box-1.0.0 {small: [434, 406, 462], big: [461, 433, 485]}
+            - !box-1.0.0 {small: [462, 406, 462], big: [485, 433, 485]}
+            - !box-1.0.0 {small: [378, 434, 462], big: [405, 461, 485]}
+            - !box-1.0.0 {small: [406, 434, 462], big: [433, 461, 485]}
+            - !box-1.0.0 {small: [434, 434, 462], big: [461, 461, 485]}
+            - !box-1.0.0 {small: [462, 434, 462], big: [485, 461, 485]}
+            - !box-1.0.0 {small: [378, 462, 462], big: [405, 485, 485]}
+            - !box-1.0.0 {small: [406, 462, 462], big: [433, 485, 485]}
+            - !box-1.0.0 {small: [434, 462, 462], big: [461, 485, 485]}
+            - !box-1.0.0 {small: [462, 462, 462], big: [485, 485, 485]}
+      leveldata:
+        - !leveldata-1.1.0
+          patch: 0
+          level: 0
+          is_subcycling_level: false
+          iteration: !rational-1.0.0 [540, 1]
+          delta_iteration: !rational-1.0.0 [1, 1]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [0, 0, 0], big: [31, 31, 31]}
+              - !box-1.0.0 {small: [32, 0, 0], big: [63, 31, 31]}
+              - !box-1.0.0 {small: [64, 0, 0], big: [95, 31, 31]}
+              - !box-1.0.0 {small: [96, 0, 0], big: [127, 31, 31]}
+              - !box-1.0.0 {small: [128, 0, 0], big: [159, 31, 31]}
+              - !box-1.0.0 {small: [160, 0, 0], big: [191, 31, 31]}
+              - !box-1.0.0 {small: [192, 0, 0], big: [215, 31, 31]}
+              - !box-1.0.0 {small: [0, 32, 0], big: [31, 63, 31]}
+              - !box-1.0.0 {small: [32, 32, 0], big: [63, 63, 31]}
+              - !box-1.0.0 {small: [64, 32, 0], big: [95, 63, 31]}
+              - !box-1.0.0 {small: [96, 32, 0], big: [127, 63, 31]}
+              - !box-1.0.0 {small: [128, 32, 0], big: [159, 63, 31]}
+              - !box-1.0.0 {small: [160, 32, 0], big: [191, 63, 31]}
+              - !box-1.0.0 {small: [192, 32, 0], big: [215, 63, 31]}
+              - !box-1.0.0 {small: [0, 64, 0], big: [31, 95, 31]}
+              - !box-1.0.0 {small: [32, 64, 0], big: [63, 95, 31]}
+              - !box-1.0.0 {small: [64, 64, 0], big: [95, 95, 31]}
+              - !box-1.0.0 {small: [96, 64, 0], big: [127, 95, 31]}
+              - !box-1.0.0 {small: [128, 64, 0], big: [159, 95, 31]}
+              - !box-1.0.0 {small: [160, 64, 0], big: [191, 95, 31]}
+              - !box-1.0.0 {small: [192, 64, 0], big: [215, 95, 31]}
+              - !box-1.0.0 {small: [0, 96, 0], big: [31, 127, 31]}
+              - !box-1.0.0 {small: [32, 96, 0], big: [63, 127, 31]}
+              - !box-1.0.0 {small: [64, 96, 0], big: [95, 127, 31]}
+              - !box-1.0.0 {small: [96, 96, 0], big: [127, 127, 31]}
+              - !box-1.0.0 {small: [128, 96, 0], big: [159, 127, 31]}
+              - !box-1.0.0 {small: [160, 96, 0], big: [191, 127, 31]}
+              - !box-1.0.0 {small: [192, 96, 0], big: [215, 127, 31]}
+              - !box-1.0.0 {small: [0, 128, 0], big: [31, 159, 31]}
+              - !box-1.0.0 {small: [32, 128, 0], big: [63, 159, 31]}
+              - !box-1.0.0 {small: [64, 128, 0], big: [95, 159, 31]}
+              - !box-1.0.0 {small: [96, 128, 0], big: [127, 159, 31]}
+              - !box-1.0.0 {small: [128, 128, 0], big: [159, 159, 31]}
+              - !box-1.0.0 {small: [160, 128, 0], big: [191, 159, 31]}
+              - !box-1.0.0 {small: [192, 128, 0], big: [215, 159, 31]}
+              - !box-1.0.0 {small: [0, 160, 0], big: [31, 191, 31]}
+              - !box-1.0.0 {small: [32, 160, 0], big: [63, 191, 31]}
+              - !box-1.0.0 {small: [64, 160, 0], big: [95, 191, 31]}
+              - !box-1.0.0 {small: [96, 160, 0], big: [127, 191, 31]}
+              - !box-1.0.0 {small: [128, 160, 0], big: [159, 191, 31]}
+              - !box-1.0.0 {small: [160, 160, 0], big: [191, 191, 31]}
+              - !box-1.0.0 {small: [192, 160, 0], big: [215, 191, 31]}
+              - !box-1.0.0 {small: [0, 192, 0], big: [31, 215, 31]}
+              - !box-1.0.0 {small: [32, 192, 0], big: [63, 215, 31]}
+              - !box-1.0.0 {small: [64, 192, 0], big: [95, 215, 31]}
+              - !box-1.0.0 {small: [96, 192, 0], big: [127, 215, 31]}
+              - !box-1.0.0 {small: [128, 192, 0], big: [159, 215, 31]}
+              - !box-1.0.0 {small: [160, 192, 0], big: [191, 215, 31]}
+              - !box-1.0.0 {small: [192, 192, 0], big: [215, 215, 31]}
+              - !box-1.0.0 {small: [0, 0, 32], big: [31, 31, 63]}
+              - !box-1.0.0 {small: [32, 0, 32], big: [63, 31, 63]}
+              - !box-1.0.0 {small: [64, 0, 32], big: [95, 31, 63]}
+              - !box-1.0.0 {small: [96, 0, 32], big: [127, 31, 63]}
+              - !box-1.0.0 {small: [128, 0, 32], big: [159, 31, 63]}
+              - !box-1.0.0 {small: [160, 0, 32], big: [191, 31, 63]}
+              - !box-1.0.0 {small: [192, 0, 32], big: [215, 31, 63]}
+              - !box-1.0.0 {small: [0, 32, 32], big: [31, 63, 63]}
+              - !box-1.0.0 {small: [32, 32, 32], big: [63, 63, 63]}
+              - !box-1.0.0 {small: [64, 32, 32], big: [95, 63, 63]}
+              - !box-1.0.0 {small: [96, 32, 32], big: [127, 63, 63]}
+              - !box-1.0.0 {small: [128, 32, 32], big: [159, 63, 63]}
+              - !box-1.0.0 {small: [160, 32, 32], big: [191, 63, 63]}
+              - !box-1.0.0 {small: [192, 32, 32], big: [215, 63, 63]}
+              - !box-1.0.0 {small: [0, 64, 32], big: [31, 95, 63]}
+              - !box-1.0.0 {small: [32, 64, 32], big: [63, 95, 63]}
+              - !box-1.0.0 {small: [64, 64, 32], big: [95, 95, 63]}
+              - !box-1.0.0 {small: [96, 64, 32], big: [127, 95, 63]}
+              - !box-1.0.0 {small: [128, 64, 32], big: [159, 95, 63]}
+              - !box-1.0.0 {small: [160, 64, 32], big: [191, 95, 63]}
+              - !box-1.0.0 {small: [192, 64, 32], big: [215, 95, 63]}
+              - !box-1.0.0 {small: [0, 96, 32], big: [31, 127, 63]}
+              - !box-1.0.0 {small: [32, 96, 32], big: [63, 127, 63]}
+              - !box-1.0.0 {small: [64, 96, 32], big: [95, 127, 63]}
+              - !box-1.0.0 {small: [96, 96, 32], big: [127, 127, 63]}
+              - !box-1.0.0 {small: [128, 96, 32], big: [159, 127, 63]}
+              - !box-1.0.0 {small: [160, 96, 32], big: [191, 127, 63]}
+              - !box-1.0.0 {small: [192, 96, 32], big: [215, 127, 63]}
+              - !box-1.0.0 {small: [0, 128, 32], big: [31, 159, 63]}
+              - !box-1.0.0 {small: [32, 128, 32], big: [63, 159, 63]}
+              - !box-1.0.0 {small: [64, 128, 32], big: [95, 159, 63]}
+              - !box-1.0.0 {small: [96, 128, 32], big: [127, 159, 63]}
+              - !box-1.0.0 {small: [128, 128, 32], big: [159, 159, 63]}
+              - !box-1.0.0 {small: [160, 128, 32], big: [191, 159, 63]}
+              - !box-1.0.0 {small: [192, 128, 32], big: [215, 159, 63]}
+              - !box-1.0.0 {small: [0, 160, 32], big: [31, 191, 63]}
+              - !box-1.0.0 {small: [32, 160, 32], big: [63, 191, 63]}
+              - !box-1.0.0 {small: [64, 160, 32], big: [95, 191, 63]}
+              - !box-1.0.0 {small: [96, 160, 32], big: [127, 191, 63]}
+              - !box-1.0.0 {small: [128, 160, 32], big: [159, 191, 63]}
+              - !box-1.0.0 {small: [160, 160, 32], big: [191, 191, 63]}
+              - !box-1.0.0 {small: [192, 160, 32], big: [215, 191, 63]}
+              - !box-1.0.0 {small: [0, 192, 32], big: [31, 215, 63]}
+              - !box-1.0.0 {small: [32, 192, 32], big: [63, 215, 63]}
+              - !box-1.0.0 {small: [64, 192, 32], big: [95, 215, 63]}
+              - !box-1.0.0 {small: [96, 192, 32], big: [127, 215, 63]}
+              - !box-1.0.0 {small: [128, 192, 32], big: [159, 215, 63]}
+              - !box-1.0.0 {small: [160, 192, 32], big: [191, 215, 63]}
+              - !box-1.0.0 {small: [192, 192, 32], big: [215, 215, 63]}
+              - !box-1.0.0 {small: [0, 0, 64], big: [31, 31, 95]}
+              - !box-1.0.0 {small: [32, 0, 64], big: [63, 31, 95]}
+              - !box-1.0.0 {small: [64, 0, 64], big: [95, 31, 95]}
+              - !box-1.0.0 {small: [96, 0, 64], big: [127, 31, 95]}
+              - !box-1.0.0 {small: [128, 0, 64], big: [159, 31, 95]}
+              - !box-1.0.0 {small: [160, 0, 64], big: [191, 31, 95]}
+              - !box-1.0.0 {small: [192, 0, 64], big: [215, 31, 95]}
+              - !box-1.0.0 {small: [0, 32, 64], big: [31, 63, 95]}
+              - !box-1.0.0 {small: [32, 32, 64], big: [63, 63, 95]}
+              - !box-1.0.0 {small: [64, 32, 64], big: [95, 63, 95]}
+              - !box-1.0.0 {small: [96, 32, 64], big: [127, 63, 95]}
+              - !box-1.0.0 {small: [128, 32, 64], big: [159, 63, 95]}
+              - !box-1.0.0 {small: [160, 32, 64], big: [191, 63, 95]}
+              - !box-1.0.0 {small: [192, 32, 64], big: [215, 63, 95]}
+              - !box-1.0.0 {small: [0, 64, 64], big: [31, 95, 95]}
+              - !box-1.0.0 {small: [32, 64, 64], big: [63, 95, 95]}
+              - !box-1.0.0 {small: [64, 64, 64], big: [95, 95, 95]}
+              - !box-1.0.0 {small: [96, 64, 64], big: [127, 95, 95]}
+              - !box-1.0.0 {small: [128, 64, 64], big: [159, 95, 95]}
+              - !box-1.0.0 {small: [160, 64, 64], big: [191, 95, 95]}
+              - !box-1.0.0 {small: [192, 64, 64], big: [215, 95, 95]}
+              - !box-1.0.0 {small: [0, 96, 64], big: [31, 127, 95]}
+              - !box-1.0.0 {small: [32, 96, 64], big: [63, 127, 95]}
+              - !box-1.0.0 {small: [64, 96, 64], big: [95, 127, 95]}
+              - !box-1.0.0 {small: [96, 96, 64], big: [127, 127, 95]}
+              - !box-1.0.0 {small: [128, 96, 64], big: [159, 127, 95]}
+              - !box-1.0.0 {small: [160, 96, 64], big: [191, 127, 95]}
+              - !box-1.0.0 {small: [192, 96, 64], big: [215, 127, 95]}
+              - !box-1.0.0 {small: [0, 128, 64], big: [31, 159, 95]}
+              - !box-1.0.0 {small: [32, 128, 64], big: [63, 159, 95]}
+              - !box-1.0.0 {small: [64, 128, 64], big: [95, 159, 95]}
+              - !box-1.0.0 {small: [96, 128, 64], big: [127, 159, 95]}
+              - !box-1.0.0 {small: [128, 128, 64], big: [159, 159, 95]}
+              - !box-1.0.0 {small: [160, 128, 64], big: [191, 159, 95]}
+              - !box-1.0.0 {small: [192, 128, 64], big: [215, 159, 95]}
+              - !box-1.0.0 {small: [0, 160, 64], big: [31, 191, 95]}
+              - !box-1.0.0 {small: [32, 160, 64], big: [63, 191, 95]}
+              - !box-1.0.0 {small: [64, 160, 64], big: [95, 191, 95]}
+              - !box-1.0.0 {small: [96, 160, 64], big: [127, 191, 95]}
+              - !box-1.0.0 {small: [128, 160, 64], big: [159, 191, 95]}
+              - !box-1.0.0 {small: [160, 160, 64], big: [191, 191, 95]}
+              - !box-1.0.0 {small: [192, 160, 64], big: [215, 191, 95]}
+              - !box-1.0.0 {small: [0, 192, 64], big: [31, 215, 95]}
+              - !box-1.0.0 {small: [32, 192, 64], big: [63, 215, 95]}
+              - !box-1.0.0 {small: [64, 192, 64], big: [95, 215, 95]}
+              - !box-1.0.0 {small: [96, 192, 64], big: [127, 215, 95]}
+              - !box-1.0.0 {small: [128, 192, 64], big: [159, 215, 95]}
+              - !box-1.0.0 {small: [160, 192, 64], big: [191, 215, 95]}
+              - !box-1.0.0 {small: [192, 192, 64], big: [215, 215, 95]}
+              - !box-1.0.0 {small: [0, 0, 96], big: [31, 31, 127]}
+              - !box-1.0.0 {small: [32, 0, 96], big: [63, 31, 127]}
+              - !box-1.0.0 {small: [64, 0, 96], big: [95, 31, 127]}
+              - !box-1.0.0 {small: [96, 0, 96], big: [127, 31, 127]}
+              - !box-1.0.0 {small: [128, 0, 96], big: [159, 31, 127]}
+              - !box-1.0.0 {small: [160, 0, 96], big: [191, 31, 127]}
+              - !box-1.0.0 {small: [192, 0, 96], big: [215, 31, 127]}
+              - !box-1.0.0 {small: [0, 32, 96], big: [31, 63, 127]}
+              - !box-1.0.0 {small: [32, 32, 96], big: [63, 63, 127]}
+              - !box-1.0.0 {small: [64, 32, 96], big: [95, 63, 127]}
+              - !box-1.0.0 {small: [96, 32, 96], big: [127, 63, 127]}
+              - !box-1.0.0 {small: [128, 32, 96], big: [159, 63, 127]}
+              - !box-1.0.0 {small: [160, 32, 96], big: [191, 63, 127]}
+              - !box-1.0.0 {small: [192, 32, 96], big: [215, 63, 127]}
+              - !box-1.0.0 {small: [0, 64, 96], big: [31, 95, 127]}
+              - !box-1.0.0 {small: [32, 64, 96], big: [63, 95, 127]}
+              - !box-1.0.0 {small: [64, 64, 96], big: [95, 95, 127]}
+              - !box-1.0.0 {small: [96, 64, 96], big: [127, 95, 127]}
+              - !box-1.0.0 {small: [128, 64, 96], big: [159, 95, 127]}
+              - !box-1.0.0 {small: [160, 64, 96], big: [191, 95, 127]}
+              - !box-1.0.0 {small: [192, 64, 96], big: [215, 95, 127]}
+              - !box-1.0.0 {small: [0, 96, 96], big: [31, 127, 127]}
+              - !box-1.0.0 {small: [32, 96, 96], big: [63, 127, 127]}
+              - !box-1.0.0 {small: [64, 96, 96], big: [95, 127, 127]}
+              - !box-1.0.0 {small: [96, 96, 96], big: [127, 127, 127]}
+              - !box-1.0.0 {small: [128, 96, 96], big: [159, 127, 127]}
+              - !box-1.0.0 {small: [160, 96, 96], big: [191, 127, 127]}
+              - !box-1.0.0 {small: [192, 96, 96], big: [215, 127, 127]}
+              - !box-1.0.0 {small: [0, 128, 96], big: [31, 159, 127]}
+              - !box-1.0.0 {small: [32, 128, 96], big: [63, 159, 127]}
+              - !box-1.0.0 {small: [64, 128, 96], big: [95, 159, 127]}
+              - !box-1.0.0 {small: [96, 128, 96], big: [127, 159, 127]}
+              - !box-1.0.0 {small: [128, 128, 96], big: [159, 159, 127]}
+              - !box-1.0.0 {small: [160, 128, 96], big: [191, 159, 127]}
+              - !box-1.0.0 {small: [192, 128, 96], big: [215, 159, 127]}
+              - !box-1.0.0 {small: [0, 160, 96], big: [31, 191, 127]}
+              - !box-1.0.0 {small: [32, 160, 96], big: [63, 191, 127]}
+              - !box-1.0.0 {small: [64, 160, 96], big: [95, 191, 127]}
+              - !box-1.0.0 {small: [96, 160, 96], big: [127, 191, 127]}
+              - !box-1.0.0 {small: [128, 160, 96], big: [159, 191, 127]}
+              - !box-1.0.0 {small: [160, 160, 96], big: [191, 191, 127]}
+              - !box-1.0.0 {small: [192, 160, 96], big: [215, 191, 127]}
+              - !box-1.0.0 {small: [0, 192, 96], big: [31, 215, 127]}
+              - !box-1.0.0 {small: [32, 192, 96], big: [63, 215, 127]}
+              - !box-1.0.0 {small: [64, 192, 96], big: [95, 215, 127]}
+              - !box-1.0.0 {small: [96, 192, 96], big: [127, 215, 127]}
+              - !box-1.0.0 {small: [128, 192, 96], big: [159, 215, 127]}
+              - !box-1.0.0 {small: [160, 192, 96], big: [191, 215, 127]}
+              - !box-1.0.0 {small: [192, 192, 96], big: [215, 215, 127]}
+              - !box-1.0.0 {small: [0, 0, 128], big: [31, 31, 159]}
+              - !box-1.0.0 {small: [32, 0, 128], big: [63, 31, 159]}
+              - !box-1.0.0 {small: [64, 0, 128], big: [95, 31, 159]}
+              - !box-1.0.0 {small: [96, 0, 128], big: [127, 31, 159]}
+              - !box-1.0.0 {small: [128, 0, 128], big: [159, 31, 159]}
+              - !box-1.0.0 {small: [160, 0, 128], big: [191, 31, 159]}
+              - !box-1.0.0 {small: [192, 0, 128], big: [215, 31, 159]}
+              - !box-1.0.0 {small: [0, 32, 128], big: [31, 63, 159]}
+              - !box-1.0.0 {small: [32, 32, 128], big: [63, 63, 159]}
+              - !box-1.0.0 {small: [64, 32, 128], big: [95, 63, 159]}
+              - !box-1.0.0 {small: [96, 32, 128], big: [127, 63, 159]}
+              - !box-1.0.0 {small: [128, 32, 128], big: [159, 63, 159]}
+              - !box-1.0.0 {small: [160, 32, 128], big: [191, 63, 159]}
+              - !box-1.0.0 {small: [192, 32, 128], big: [215, 63, 159]}
+              - !box-1.0.0 {small: [0, 64, 128], big: [31, 95, 159]}
+              - !box-1.0.0 {small: [32, 64, 128], big: [63, 95, 159]}
+              - !box-1.0.0 {small: [64, 64, 128], big: [95, 95, 159]}
+              - !box-1.0.0 {small: [96, 64, 128], big: [127, 95, 159]}
+              - !box-1.0.0 {small: [128, 64, 128], big: [159, 95, 159]}
+              - !box-1.0.0 {small: [160, 64, 128], big: [191, 95, 159]}
+              - !box-1.0.0 {small: [192, 64, 128], big: [215, 95, 159]}
+              - !box-1.0.0 {small: [0, 96, 128], big: [31, 127, 159]}
+              - !box-1.0.0 {small: [32, 96, 128], big: [63, 127, 159]}
+              - !box-1.0.0 {small: [64, 96, 128], big: [95, 127, 159]}
+              - !box-1.0.0 {small: [96, 96, 128], big: [127, 127, 159]}
+              - !box-1.0.0 {small: [128, 96, 128], big: [159, 127, 159]}
+              - !box-1.0.0 {small: [160, 96, 128], big: [191, 127, 159]}
+              - !box-1.0.0 {small: [192, 96, 128], big: [215, 127, 159]}
+              - !box-1.0.0 {small: [0, 128, 128], big: [31, 159, 159]}
+              - !box-1.0.0 {small: [32, 128, 128], big: [63, 159, 159]}
+              - !box-1.0.0 {small: [64, 128, 128], big: [95, 159, 159]}
+              - !box-1.0.0 {small: [96, 128, 128], big: [127, 159, 159]}
+              - !box-1.0.0 {small: [128, 128, 128], big: [159, 159, 159]}
+              - !box-1.0.0 {small: [160, 128, 128], big: [191, 159, 159]}
+              - !box-1.0.0 {small: [192, 128, 128], big: [215, 159, 159]}
+              - !box-1.0.0 {small: [0, 160, 128], big: [31, 191, 159]}
+              - !box-1.0.0 {small: [32, 160, 128], big: [63, 191, 159]}
+              - !box-1.0.0 {small: [64, 160, 128], big: [95, 191, 159]}
+              - !box-1.0.0 {small: [96, 160, 128], big: [127, 191, 159]}
+              - !box-1.0.0 {small: [128, 160, 128], big: [159, 191, 159]}
+              - !box-1.0.0 {small: [160, 160, 128], big: [191, 191, 159]}
+              - !box-1.0.0 {small: [192, 160, 128], big: [215, 191, 159]}
+              - !box-1.0.0 {small: [0, 192, 128], big: [31, 215, 159]}
+              - !box-1.0.0 {small: [32, 192, 128], big: [63, 215, 159]}
+              - !box-1.0.0 {small: [64, 192, 128], big: [95, 215, 159]}
+              - !box-1.0.0 {small: [96, 192, 128], big: [127, 215, 159]}
+              - !box-1.0.0 {small: [128, 192, 128], big: [159, 215, 159]}
+              - !box-1.0.0 {small: [160, 192, 128], big: [191, 215, 159]}
+              - !box-1.0.0 {small: [192, 192, 128], big: [215, 215, 159]}
+              - !box-1.0.0 {small: [0, 0, 160], big: [31, 31, 191]}
+              - !box-1.0.0 {small: [32, 0, 160], big: [63, 31, 191]}
+              - !box-1.0.0 {small: [64, 0, 160], big: [95, 31, 191]}
+              - !box-1.0.0 {small: [96, 0, 160], big: [127, 31, 191]}
+              - !box-1.0.0 {small: [128, 0, 160], big: [159, 31, 191]}
+              - !box-1.0.0 {small: [160, 0, 160], big: [191, 31, 191]}
+              - !box-1.0.0 {small: [192, 0, 160], big: [215, 31, 191]}
+              - !box-1.0.0 {small: [0, 32, 160], big: [31, 63, 191]}
+              - !box-1.0.0 {small: [32, 32, 160], big: [63, 63, 191]}
+              - !box-1.0.0 {small: [64, 32, 160], big: [95, 63, 191]}
+              - !box-1.0.0 {small: [96, 32, 160], big: [127, 63, 191]}
+              - !box-1.0.0 {small: [128, 32, 160], big: [159, 63, 191]}
+              - !box-1.0.0 {small: [160, 32, 160], big: [191, 63, 191]}
+              - !box-1.0.0 {small: [192, 32, 160], big: [215, 63, 191]}
+              - !box-1.0.0 {small: [0, 64, 160], big: [31, 95, 191]}
+              - !box-1.0.0 {small: [32, 64, 160], big: [63, 95, 191]}
+              - !box-1.0.0 {small: [64, 64, 160], big: [95, 95, 191]}
+              - !box-1.0.0 {small: [96, 64, 160], big: [127, 95, 191]}
+              - !box-1.0.0 {small: [128, 64, 160], big: [159, 95, 191]}
+              - !box-1.0.0 {small: [160, 64, 160], big: [191, 95, 191]}
+              - !box-1.0.0 {small: [192, 64, 160], big: [215, 95, 191]}
+              - !box-1.0.0 {small: [0, 96, 160], big: [31, 127, 191]}
+              - !box-1.0.0 {small: [32, 96, 160], big: [63, 127, 191]}
+              - !box-1.0.0 {small: [64, 96, 160], big: [95, 127, 191]}
+              - !box-1.0.0 {small: [96, 96, 160], big: [127, 127, 191]}
+              - !box-1.0.0 {small: [128, 96, 160], big: [159, 127, 191]}
+              - !box-1.0.0 {small: [160, 96, 160], big: [191, 127, 191]}
+              - !box-1.0.0 {small: [192, 96, 160], big: [215, 127, 191]}
+              - !box-1.0.0 {small: [0, 128, 160], big: [31, 159, 191]}
+              - !box-1.0.0 {small: [32, 128, 160], big: [63, 159, 191]}
+              - !box-1.0.0 {small: [64, 128, 160], big: [95, 159, 191]}
+              - !box-1.0.0 {small: [96, 128, 160], big: [127, 159, 191]}
+              - !box-1.0.0 {small: [128, 128, 160], big: [159, 159, 191]}
+              - !box-1.0.0 {small: [160, 128, 160], big: [191, 159, 191]}
+              - !box-1.0.0 {small: [192, 128, 160], big: [215, 159, 191]}
+              - !box-1.0.0 {small: [0, 160, 160], big: [31, 191, 191]}
+              - !box-1.0.0 {small: [32, 160, 160], big: [63, 191, 191]}
+              - !box-1.0.0 {small: [64, 160, 160], big: [95, 191, 191]}
+              - !box-1.0.0 {small: [96, 160, 160], big: [127, 191, 191]}
+              - !box-1.0.0 {small: [128, 160, 160], big: [159, 191, 191]}
+              - !box-1.0.0 {small: [160, 160, 160], big: [191, 191, 191]}
+              - !box-1.0.0 {small: [192, 160, 160], big: [215, 191, 191]}
+              - !box-1.0.0 {small: [0, 192, 160], big: [31, 215, 191]}
+              - !box-1.0.0 {small: [32, 192, 160], big: [63, 215, 191]}
+              - !box-1.0.0 {small: [64, 192, 160], big: [95, 215, 191]}
+              - !box-1.0.0 {small: [96, 192, 160], big: [127, 215, 191]}
+              - !box-1.0.0 {small: [128, 192, 160], big: [159, 215, 191]}
+              - !box-1.0.0 {small: [160, 192, 160], big: [191, 215, 191]}
+              - !box-1.0.0 {small: [192, 192, 160], big: [215, 215, 191]}
+              - !box-1.0.0 {small: [0, 0, 192], big: [31, 31, 215]}
+              - !box-1.0.0 {small: [32, 0, 192], big: [63, 31, 215]}
+              - !box-1.0.0 {small: [64, 0, 192], big: [95, 31, 215]}
+              - !box-1.0.0 {small: [96, 0, 192], big: [127, 31, 215]}
+              - !box-1.0.0 {small: [128, 0, 192], big: [159, 31, 215]}
+              - !box-1.0.0 {small: [160, 0, 192], big: [191, 31, 215]}
+              - !box-1.0.0 {small: [192, 0, 192], big: [215, 31, 215]}
+              - !box-1.0.0 {small: [0, 32, 192], big: [31, 63, 215]}
+              - !box-1.0.0 {small: [32, 32, 192], big: [63, 63, 215]}
+              - !box-1.0.0 {small: [64, 32, 192], big: [95, 63, 215]}
+              - !box-1.0.0 {small: [96, 32, 192], big: [127, 63, 215]}
+              - !box-1.0.0 {small: [128, 32, 192], big: [159, 63, 215]}
+              - !box-1.0.0 {small: [160, 32, 192], big: [191, 63, 215]}
+              - !box-1.0.0 {small: [192, 32, 192], big: [215, 63, 215]}
+              - !box-1.0.0 {small: [0, 64, 192], big: [31, 95, 215]}
+              - !box-1.0.0 {small: [32, 64, 192], big: [63, 95, 215]}
+              - !box-1.0.0 {small: [64, 64, 192], big: [95, 95, 215]}
+              - !box-1.0.0 {small: [96, 64, 192], big: [127, 95, 215]}
+              - !box-1.0.0 {small: [128, 64, 192], big: [159, 95, 215]}
+              - !box-1.0.0 {small: [160, 64, 192], big: [191, 95, 215]}
+              - !box-1.0.0 {small: [192, 64, 192], big: [215, 95, 215]}
+              - !box-1.0.0 {small: [0, 96, 192], big: [31, 127, 215]}
+              - !box-1.0.0 {small: [32, 96, 192], big: [63, 127, 215]}
+              - !box-1.0.0 {small: [64, 96, 192], big: [95, 127, 215]}
+              - !box-1.0.0 {small: [96, 96, 192], big: [127, 127, 215]}
+              - !box-1.0.0 {small: [128, 96, 192], big: [159, 127, 215]}
+              - !box-1.0.0 {small: [160, 96, 192], big: [191, 127, 215]}
+              - !box-1.0.0 {small: [192, 96, 192], big: [215, 127, 215]}
+              - !box-1.0.0 {small: [0, 128, 192], big: [31, 159, 215]}
+              - !box-1.0.0 {small: [32, 128, 192], big: [63, 159, 215]}
+              - !box-1.0.0 {small: [64, 128, 192], big: [95, 159, 215]}
+              - !box-1.0.0 {small: [96, 128, 192], big: [127, 159, 215]}
+              - !box-1.0.0 {small: [128, 128, 192], big: [159, 159, 215]}
+              - !box-1.0.0 {small: [160, 128, 192], big: [191, 159, 215]}
+              - !box-1.0.0 {small: [192, 128, 192], big: [215, 159, 215]}
+              - !box-1.0.0 {small: [0, 160, 192], big: [31, 191, 215]}
+              - !box-1.0.0 {small: [32, 160, 192], big: [63, 191, 215]}
+              - !box-1.0.0 {small: [64, 160, 192], big: [95, 191, 215]}
+              - !box-1.0.0 {small: [96, 160, 192], big: [127, 191, 215]}
+              - !box-1.0.0 {small: [128, 160, 192], big: [159, 191, 215]}
+              - !box-1.0.0 {small: [160, 160, 192], big: [191, 191, 215]}
+              - !box-1.0.0 {small: [192, 160, 192], big: [215, 191, 215]}
+              - !box-1.0.0 {small: [0, 192, 192], big: [31, 215, 215]}
+              - !box-1.0.0 {small: [32, 192, 192], big: [63, 215, 215]}
+              - !box-1.0.0 {small: [64, 192, 192], big: [95, 215, 215]}
+              - !box-1.0.0 {small: [96, 192, 192], big: [127, 215, 215]}
+              - !box-1.0.0 {small: [128, 192, 192], big: [159, 215, 215]}
+              - !box-1.0.0 {small: [160, 192, 192], big: [191, 215, 215]}
+              - !box-1.0.0 {small: [192, 192, 192], big: [215, 215, 215]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 0
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: MakeNewLevelFromScratch
+                        outer: MakeNewLevelFromScratch
+                        ghosts: MakeNewLevelFromScratch
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 0
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+        - !leveldata-1.1.0
+          patch: 0
+          level: 1
+          is_subcycling_level: false
+          iteration: !rational-1.0.0 [540, 1]
+          delta_iteration: !rational-1.0.0 [1, 1]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [162, 162, 162], big: [189, 189, 189]}
+              - !box-1.0.0 {small: [190, 162, 162], big: [217, 189, 189]}
+              - !box-1.0.0 {small: [218, 162, 162], big: [245, 189, 189]}
+              - !box-1.0.0 {small: [246, 162, 162], big: [269, 189, 189]}
+              - !box-1.0.0 {small: [162, 190, 162], big: [189, 217, 189]}
+              - !box-1.0.0 {small: [190, 190, 162], big: [217, 217, 189]}
+              - !box-1.0.0 {small: [218, 190, 162], big: [245, 217, 189]}
+              - !box-1.0.0 {small: [246, 190, 162], big: [269, 217, 189]}
+              - !box-1.0.0 {small: [162, 218, 162], big: [189, 245, 189]}
+              - !box-1.0.0 {small: [190, 218, 162], big: [217, 245, 189]}
+              - !box-1.0.0 {small: [218, 218, 162], big: [245, 245, 189]}
+              - !box-1.0.0 {small: [246, 218, 162], big: [269, 245, 189]}
+              - !box-1.0.0 {small: [162, 246, 162], big: [189, 269, 189]}
+              - !box-1.0.0 {small: [190, 246, 162], big: [217, 269, 189]}
+              - !box-1.0.0 {small: [218, 246, 162], big: [245, 269, 189]}
+              - !box-1.0.0 {small: [246, 246, 162], big: [269, 269, 189]}
+              - !box-1.0.0 {small: [162, 162, 190], big: [189, 189, 217]}
+              - !box-1.0.0 {small: [190, 162, 190], big: [217, 189, 217]}
+              - !box-1.0.0 {small: [218, 162, 190], big: [245, 189, 217]}
+              - !box-1.0.0 {small: [246, 162, 190], big: [269, 189, 217]}
+              - !box-1.0.0 {small: [162, 190, 190], big: [189, 217, 217]}
+              - !box-1.0.0 {small: [190, 190, 190], big: [217, 217, 217]}
+              - !box-1.0.0 {small: [218, 190, 190], big: [245, 217, 217]}
+              - !box-1.0.0 {small: [246, 190, 190], big: [269, 217, 217]}
+              - !box-1.0.0 {small: [162, 218, 190], big: [189, 245, 217]}
+              - !box-1.0.0 {small: [190, 218, 190], big: [217, 245, 217]}
+              - !box-1.0.0 {small: [218, 218, 190], big: [245, 245, 217]}
+              - !box-1.0.0 {small: [246, 218, 190], big: [269, 245, 217]}
+              - !box-1.0.0 {small: [162, 246, 190], big: [189, 269, 217]}
+              - !box-1.0.0 {small: [190, 246, 190], big: [217, 269, 217]}
+              - !box-1.0.0 {small: [218, 246, 190], big: [245, 269, 217]}
+              - !box-1.0.0 {small: [246, 246, 190], big: [269, 269, 217]}
+              - !box-1.0.0 {small: [162, 162, 218], big: [189, 189, 245]}
+              - !box-1.0.0 {small: [190, 162, 218], big: [217, 189, 245]}
+              - !box-1.0.0 {small: [218, 162, 218], big: [245, 189, 245]}
+              - !box-1.0.0 {small: [246, 162, 218], big: [269, 189, 245]}
+              - !box-1.0.0 {small: [162, 190, 218], big: [189, 217, 245]}
+              - !box-1.0.0 {small: [190, 190, 218], big: [217, 217, 245]}
+              - !box-1.0.0 {small: [218, 190, 218], big: [245, 217, 245]}
+              - !box-1.0.0 {small: [246, 190, 218], big: [269, 217, 245]}
+              - !box-1.0.0 {small: [162, 218, 218], big: [189, 245, 245]}
+              - !box-1.0.0 {small: [190, 218, 218], big: [217, 245, 245]}
+              - !box-1.0.0 {small: [218, 218, 218], big: [245, 245, 245]}
+              - !box-1.0.0 {small: [246, 218, 218], big: [269, 245, 245]}
+              - !box-1.0.0 {small: [162, 246, 218], big: [189, 269, 245]}
+              - !box-1.0.0 {small: [190, 246, 218], big: [217, 269, 245]}
+              - !box-1.0.0 {small: [218, 246, 218], big: [245, 269, 245]}
+              - !box-1.0.0 {small: [246, 246, 218], big: [269, 269, 245]}
+              - !box-1.0.0 {small: [162, 162, 246], big: [189, 189, 269]}
+              - !box-1.0.0 {small: [190, 162, 246], big: [217, 189, 269]}
+              - !box-1.0.0 {small: [218, 162, 246], big: [245, 189, 269]}
+              - !box-1.0.0 {small: [246, 162, 246], big: [269, 189, 269]}
+              - !box-1.0.0 {small: [162, 190, 246], big: [189, 217, 269]}
+              - !box-1.0.0 {small: [190, 190, 246], big: [217, 217, 269]}
+              - !box-1.0.0 {small: [218, 190, 246], big: [245, 217, 269]}
+              - !box-1.0.0 {small: [246, 190, 246], big: [269, 217, 269]}
+              - !box-1.0.0 {small: [162, 218, 246], big: [189, 245, 269]}
+              - !box-1.0.0 {small: [190, 218, 246], big: [217, 245, 269]}
+              - !box-1.0.0 {small: [218, 218, 246], big: [245, 245, 269]}
+              - !box-1.0.0 {small: [246, 218, 246], big: [269, 245, 269]}
+              - !box-1.0.0 {small: [162, 246, 246], big: [189, 269, 269]}
+              - !box-1.0.0 {small: [190, 246, 246], big: [217, 269, 269]}
+              - !box-1.0.0 {small: [218, 246, 246], big: [245, 269, 269]}
+              - !box-1.0.0 {small: [246, 246, 246], big: [269, 269, 269]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 1
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 1
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+        - !leveldata-1.1.0
+          patch: 0
+          level: 2
+          is_subcycling_level: false
+          iteration: !rational-1.0.0 [540, 1]
+          delta_iteration: !rational-1.0.0 [1, 1]
+          fab: !fabarraybase-1.0.0
+            ixType: [0, 0, 0]
+            nGrowVect: [3, 3, 3]
+            boxArray: !boxarray-1.0.0
+              - !box-1.0.0 {small: [378, 378, 378], big: [405, 405, 405]}
+              - !box-1.0.0 {small: [406, 378, 378], big: [433, 405, 405]}
+              - !box-1.0.0 {small: [434, 378, 378], big: [461, 405, 405]}
+              - !box-1.0.0 {small: [462, 378, 378], big: [485, 405, 405]}
+              - !box-1.0.0 {small: [378, 406, 378], big: [405, 433, 405]}
+              - !box-1.0.0 {small: [406, 406, 378], big: [433, 433, 405]}
+              - !box-1.0.0 {small: [434, 406, 378], big: [461, 433, 405]}
+              - !box-1.0.0 {small: [462, 406, 378], big: [485, 433, 405]}
+              - !box-1.0.0 {small: [378, 434, 378], big: [405, 461, 405]}
+              - !box-1.0.0 {small: [406, 434, 378], big: [433, 461, 405]}
+              - !box-1.0.0 {small: [434, 434, 378], big: [461, 461, 405]}
+              - !box-1.0.0 {small: [462, 434, 378], big: [485, 461, 405]}
+              - !box-1.0.0 {small: [378, 462, 378], big: [405, 485, 405]}
+              - !box-1.0.0 {small: [406, 462, 378], big: [433, 485, 405]}
+              - !box-1.0.0 {small: [434, 462, 378], big: [461, 485, 405]}
+              - !box-1.0.0 {small: [462, 462, 378], big: [485, 485, 405]}
+              - !box-1.0.0 {small: [378, 378, 406], big: [405, 405, 433]}
+              - !box-1.0.0 {small: [406, 378, 406], big: [433, 405, 433]}
+              - !box-1.0.0 {small: [434, 378, 406], big: [461, 405, 433]}
+              - !box-1.0.0 {small: [462, 378, 406], big: [485, 405, 433]}
+              - !box-1.0.0 {small: [378, 406, 406], big: [405, 433, 433]}
+              - !box-1.0.0 {small: [406, 406, 406], big: [433, 433, 433]}
+              - !box-1.0.0 {small: [434, 406, 406], big: [461, 433, 433]}
+              - !box-1.0.0 {small: [462, 406, 406], big: [485, 433, 433]}
+              - !box-1.0.0 {small: [378, 434, 406], big: [405, 461, 433]}
+              - !box-1.0.0 {small: [406, 434, 406], big: [433, 461, 433]}
+              - !box-1.0.0 {small: [434, 434, 406], big: [461, 461, 433]}
+              - !box-1.0.0 {small: [462, 434, 406], big: [485, 461, 433]}
+              - !box-1.0.0 {small: [378, 462, 406], big: [405, 485, 433]}
+              - !box-1.0.0 {small: [406, 462, 406], big: [433, 485, 433]}
+              - !box-1.0.0 {small: [434, 462, 406], big: [461, 485, 433]}
+              - !box-1.0.0 {small: [462, 462, 406], big: [485, 485, 433]}
+              - !box-1.0.0 {small: [378, 378, 434], big: [405, 405, 461]}
+              - !box-1.0.0 {small: [406, 378, 434], big: [433, 405, 461]}
+              - !box-1.0.0 {small: [434, 378, 434], big: [461, 405, 461]}
+              - !box-1.0.0 {small: [462, 378, 434], big: [485, 405, 461]}
+              - !box-1.0.0 {small: [378, 406, 434], big: [405, 433, 461]}
+              - !box-1.0.0 {small: [406, 406, 434], big: [433, 433, 461]}
+              - !box-1.0.0 {small: [434, 406, 434], big: [461, 433, 461]}
+              - !box-1.0.0 {small: [462, 406, 434], big: [485, 433, 461]}
+              - !box-1.0.0 {small: [378, 434, 434], big: [405, 461, 461]}
+              - !box-1.0.0 {small: [406, 434, 434], big: [433, 461, 461]}
+              - !box-1.0.0 {small: [434, 434, 434], big: [461, 461, 461]}
+              - !box-1.0.0 {small: [462, 434, 434], big: [485, 461, 461]}
+              - !box-1.0.0 {small: [378, 462, 434], big: [405, 485, 461]}
+              - !box-1.0.0 {small: [406, 462, 434], big: [433, 485, 461]}
+              - !box-1.0.0 {small: [434, 462, 434], big: [461, 485, 461]}
+              - !box-1.0.0 {small: [462, 462, 434], big: [485, 485, 461]}
+              - !box-1.0.0 {small: [378, 378, 462], big: [405, 405, 485]}
+              - !box-1.0.0 {small: [406, 378, 462], big: [433, 405, 485]}
+              - !box-1.0.0 {small: [434, 378, 462], big: [461, 405, 485]}
+              - !box-1.0.0 {small: [462, 378, 462], big: [485, 405, 485]}
+              - !box-1.0.0 {small: [378, 406, 462], big: [405, 433, 485]}
+              - !box-1.0.0 {small: [406, 406, 462], big: [433, 433, 485]}
+              - !box-1.0.0 {small: [434, 406, 462], big: [461, 433, 485]}
+              - !box-1.0.0 {small: [462, 406, 462], big: [485, 433, 485]}
+              - !box-1.0.0 {small: [378, 434, 462], big: [405, 461, 485]}
+              - !box-1.0.0 {small: [406, 434, 462], big: [433, 461, 485]}
+              - !box-1.0.0 {small: [434, 434, 462], big: [461, 461, 485]}
+              - !box-1.0.0 {small: [462, 434, 462], big: [485, 461, 485]}
+              - !box-1.0.0 {small: [378, 462, 462], big: [405, 485, 485]}
+              - !box-1.0.0 {small: [406, 462, 462], big: [433, 485, 485]}
+              - !box-1.0.0 {small: [434, 462, 462], big: [461, 485, 485]}
+              - !box-1.0.0 {small: [462, 462, 462], big: [485, 485, 485]}
+          groupdata:
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: CARPETXREGRID::REGRID_ERROR
+                numvars: 1
+                varnames: [regrid_error]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 CCTK_POSTSTEP: BoxInBox::EstimateError: Mark output variables as valid"
+                        outer: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+                        ghosts: "CallFunction iteration 0 CCTK_BASEGRID: CarpetXRegrid::CarpetXRegrid_InitError: Mark output variables as valid"
+              patch: 0
+              level: 2
+              indextype: [1, 1, 1]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::LEVEL_NEIGHBOR
+                numvars: 1
+                varnames: [level_neighbor]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: SUBCYCLING::ISRMBNDRY
+                numvars: 1
+                varnames: [isrmbndry]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::STATE
+                numvars: 2
+                varnames: [u, rho]
+                do_checkpoint: true
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: Set from RHS in ODESolvers
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::OLD
+                numvars: 2
+                varnames: [u_old, rho_old]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::RHS
+                numvars: 2
+                varnames: [u_rhs, rho_rhs]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: ODESolvers updated the state vector
+                        outer: ODESolvers updated the state vector
+                        ghosts: ODESolvers updated the state vector
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K1
+                numvars: 2
+                varnames: [u_k1, rho_k1]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K2
+                numvars: 2
+                varnames: [u_k2, rho_k2]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K3
+                numvars: 2
+                varnames: [u_k3, rho_k3]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::K4
+                numvars: 2
+                varnames: [u_k4, rho_k4]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: false, outer: false, ghosts: false}
+                      why:
+                        int: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        outer: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+                        ghosts: "MakeNewLevelFromCoarse: not prolongated because variable is not evolved"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+            - !groupdata-1.1.0
+              commongroupdata: !commongroupdata-1.0.0
+                groupname: TESTSUBCYCLINGMC2::ERROR
+                numvars: 2
+                varnames: [u_err, rho_err]
+                do_checkpoint: false
+                do_restrict: true
+                valid:
+                  -
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+                    - !why_valid-1.0.0
+                      valid: !valid-1.0.0 {int: true, outer: true, ghosts: true}
+                      why:
+                        int: "CallFunction iteration 540 ODESolvers_PostStep: TestSubcyclingMC2::TestSubcyclingMC2_Error: Mark output variables as valid"
+                        outer: "SyncGroupsByDirI after syncing: Mark outer boundaries as valid"
+                        ghosts: "SyncGroupsByDirI after syncing: Mark ghost zones as valid"
+              patch: 0
+              level: 2
+              indextype: [0, 0, 0]
+              nghostzones: [3, 3, 3]
+              parities: [[1, 1, 1], [1, 1, 1]]
+              fluxes: ["", "", ""]
+...
