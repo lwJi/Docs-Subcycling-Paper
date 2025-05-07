@@ -1,0 +1,13 @@
+
+Currently Loaded Modules:
+  1) git/2.24.1      5) intel/23.1.0   9) boost/1.86.0   13) cmake/3.24.2
+  2) autotools/1.2   6) impi/21.9.0   10) petsc/3.22     14) adios2/2.10.2
+  3) xalt/2.10.34    7) gsl/2.7.1     11) papi/5.7.0
+  4) TACC            8) phdf5/1.14.4  12) hwloc/1.11.13
+
+ 
+
+
+real	5m42.164s
+user	298m27.095s
+sys	12m57.454s

@@ -1,0 +1,25 @@
+performance:
+  216:
+    evolution-seconds: 310.078
+    evolution-compute-seconds: 310.005
+    evolution-output-seconds: 0.0724685
+    evolution-cell-updates: 1.9591e+10
+    evolution-iterations: 216
+  432:
+    evolution-seconds: 623.426
+    evolution-compute-seconds: 623.283
+    evolution-output-seconds: 0.143819
+    evolution-cell-updates: 3.91821e+10
+    evolution-iterations: 432
+  648:
+    evolution-seconds: 950.122
+    evolution-compute-seconds: 949.737
+    evolution-output-seconds: 0.385161
+    evolution-cell-updates: 5.87731e+10
+    evolution-iterations: 648
+  864:
+    evolution-seconds: 1292.73
+    evolution-compute-seconds: 1292.28
+    evolution-output-seconds: 0.455023
+    evolution-cell-updates: 7.83642e+10
+    evolution-iterations: 864
