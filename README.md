@@ -2,28 +2,35 @@
 
 ## Turn on Subcycling for Cactus
 
-1. use repo (branch `development`)
+1. Use repo (branch `dev`)
+
     ```bash
-    https://github.com/lwJi/CarpetX.git
+    git clone https://github.com/lwJi/CarpetX.git
     ```
-2. use repo (branch `feature/subcycle`)
+
+2. Use repo (branch `dev`)
+
     ```bash
-    https://github.com/lwJi/AsterX.git
+    git clone https://github.com/lwJi/SpacetimeX.git
     ```
-3. use repo (branch `development`)
+
+3. Use repo (branch `dev`)
+
     ```bash
-    https://github.com/lwJi/SpacetimeX.git
+    git clone https://github.com/EinsteinToolkit/AsterX.git
     ```
-4. add the following pars to the parameter file
+
+4. Add the following pars to the parameter file
+
     ```bash
-    CarpetX::use_subcycling_wip = yes
+    CarpetX::use_subcycling = yes
     CarpetX::restrict_during_sync = no
     ```
 
+5. For more details, please take a look at https://github.com/lwJi/Tutorial-Subcycling
+
 ## Z4cow Thorn
 
-* [Z4cow](https://github.com/lwJi/SpacetimeX/tree/development/Z4cow)
-
-* [Z4cowGPU](https://github.com/lwJi/SpacetimeX/tree/development/Z4cowGPU) (optimized for GPU)
+* [Z4cowGPU](https://github.com/lwJi/SpacetimeX/tree/dev/Z4cowGPU)
 
 * [Z4cowCarpet](https://github.com/lwJi/Spacetime/tree/main/Z4cowCarpet) (Carpet version)
